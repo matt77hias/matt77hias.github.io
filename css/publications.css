@@ -1,0 +1,106 @@
+.publication-Header {
+	width: 100%;
+	height: 64px;
+	text-align: center;
+	vertical-align: text-top;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 32px;
+	margin-top: 32px;
+	text-shadow: 1px 1px #d3d3d3
+}
+
+.publication-RCO {
+	width: 100%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	font-color: #4f4f4f;
+	border-bottom: 2px solid #b3b3b3;
+	border-bottom-style: groove;
+	padding-bottom: 8px;
+}
+
+.publication-Data {
+	width: 720px;
+}
+.publication-Publication {
+	width: 100%;
+	height: 100%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-bottom: 2px solid #b3b3b3;
+	border-bottom-style: groove;
+}
+
+.publication-Title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	font-color: #000000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.publication-Author {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-color: #4f4f4f;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.publication-Journal {
+	font-family: 'Open Sans', italic, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-color: #000000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.publication-ProjectLink {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: italic;
+	font-color: #000000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.publication-Teaser {
+	width: 160px;
+	height: 160px;
+	#padding-left: 16px;
+	padding-right: 16px;
+}
+
+.publication-IconList {
+	width: auto;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	font-style: italic;
+	font-color: #000000;
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 2px;
+}
+
+.publication-Icon {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	font-style: italic;
+	font-color: #000000;
+	text-align: center;
+	height: 100%;
+	width: auto;
+	padding-right: 16px;
+	cursor: hand;
+	cursor: pointer;
+}

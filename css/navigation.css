@@ -1,0 +1,34 @@
+.navigation-NavigationBar {
+	width: auto;
+	height: 100%;
+}
+
+.navigation-NavigationTab{
+	width: 160px;
+	height: 100%;
+
+	display: table-cell;
+	padding-bottom: 12px;
+
+	text-align: center;
+	cursor: hand;
+	cursor: pointer;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.navigation-NavigationTab-selected {
+	width: 160px;
+	height: 100%;
+	display: table-cell;
+	padding-bottom: 8px;
+	text-align: center;
+	cursor: hand;
+	cursor: pointer;
+	border-bottom: 4px solid #6495ED;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+}
