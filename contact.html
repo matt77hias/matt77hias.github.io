@@ -3,12 +3,12 @@
     <head>
         <meta name="MobileOptimized" content="true">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Matthias Moulin - Publications</title>
+        <title>Matthias Moulin - Contact</title>
         <link rel="stylesheet" href="css/header.css"       type="text/css">
         <link rel="stylesheet" href="css/navigation.css"   type="text/css">
         <link rel="stylesheet" href="css/content.css"      type="text/css">
-        <link rel="stylesheet" href="css/publications.css" type="text/css">
-        <script>
+        <link rel="stylesheet" href="css/contact.css"      type="text/css">
+       <script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -18,7 +18,7 @@
 		  ga('send', 'pageview');
 		</script>
     </head>
-    <body id="publications">
+    <body id="contact">
         <header>
             <h1>Matthias Moulin</h1>
             <h2>Computer Graphics Research Group, Department of Computer Science, KULeuven</h2>
@@ -36,20 +36,23 @@
                 <option value="contact.html"     >Contact</option>
             </select>
         </nav>
-        <article id="publication-list">
-            <section>
-                <h1>Publications
-                    <span class="subheader"> 
-						<img id="thumbnail-view-button" class="view-button" src="res/Icons/thumbnail_view.svg" onclick="thumbnailView()">
-                        <img id="list-view-button"      class="view-button" src="res/Icons/list_view.svg"      onclick="listView()">
-                    </span>
-                </h1>
-                <p>These are my publications, sorted by year:</p>
-                <p id="paper-year-links" class="paper-links"></p>
-            </section>
+        <article id="contact">
+            <!-- Contact title-->
+            <h1>Contact</h1>
+            <article class="container">
+                <section class="container-item" style="text-align:left">
+					<span style="font-weight:bold">Email</span>
+					<p> matthias.moulin{at}cs.kuleuven.be </p>
+					<span style="font-weight:bold">Location</span>
+					<p> Room: 02.03<br> Department of Computer Science<br> KULeuven </p>
+                    <p> Celestijnenlaan 200a - Box 2402<br> BE-3001 Heverlee<br> Belgium </p>
+                </section>
+                <aside id="map" class="container-item">
+                    <div class="bordered">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.2196682852227!2d4.678812600000011!3d50.86413289999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c16110fdaa4483%3A0xa0e21d4a20cbf0db!2sCelestijnenlaan+200A%2C+Campus+Arenberg+II%2C+Katholieke+Universiteit+Leuven+-+Sportsecretariaat%2C+3001+Leuven%2C+Belgi%C3%AB!5e0!3m2!1snl!2snl!4v1428496456397" width="400" height="300" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </aside>
+            </article>
         </article>
-        <script src="authors.js"           type="text/javascript"></script>
-        <script src="papers.js"            type="text/javascript"></script>
-        <script src="publicationscript.js" type="text/javascript"></script>
     </body>
 </html>
