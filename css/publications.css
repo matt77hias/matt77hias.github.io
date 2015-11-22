@@ -1,106 +1,116 @@
-.publication-Header {
-	width: 100%;
-	height: 64px;
-	text-align: center;
-	vertical-align: text-top;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	font-size: 32px;
-	margin-top: 32px;
-	text-shadow: 1px 1px #d3d3d3
+.paper-links{
+    text-align:center;
+    max-width:75%;
+    margin-left:auto;
+    margin-right:auto
 }
 
-.publication-RCO {
-	width: 100%;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	font-color: #4f4f4f;
-	border-bottom: 2px solid #b3b3b3;
-	border-bottom-style: groove;
-	padding-bottom: 8px;
+.to-top-link{
+    float:right;
+    font-size:.5em;
+    padding-top:1em;
+    display:inline-block
 }
 
-.publication-Data {
-	width: 720px;
-}
-.publication-Publication {
-	width: 100%;
-	height: 100%;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	border-bottom: 2px solid #b3b3b3;
-	border-bottom-style: groove;
+.view-button{
+    width:.75em;
+    height:.75em;
+    opacity:.4
 }
 
-.publication-Title {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	font-size: 24px;
-	font-color: #000000;
-	padding-top: 2px;
-	padding-bottom: 2px;
+.view-button:hover{
+    opacity:.8
 }
 
-.publication-Author {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	font-color: #4f4f4f;
-	padding-top: 2px;
-	padding-bottom: 2px;
+.paper-thumbnailview{
+    margin-top:1.5em;
+    margin-bottom:1.5em;
+    font-family:condensed;
+    background-color:#f0f0f0;
+    padding:1em;
+    box-shadow:1px 1px 5px gray
 }
 
-.publication-Journal {
-	font-family: 'Open Sans', italic, sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	font-color: #000000;
-	padding-top: 2px;
-	padding-bottom: 2px;
+ul.paper-listview{
+    display:none
 }
 
-.publication-ProjectLink {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	font-style: italic;
-	font-color: #000000;
-	padding-top: 2px;
-	padding-bottom: 2px;
+ul.paper-listview li{
+    margin-bottom:1em;
+    margin-right:1em
 }
 
-.publication-Teaser {
-	width: 160px;
-	height: 160px;
-	#padding-left: 16px;
-	padding-right: 16px;
+.paper-thumbnail{
+    vertical-align:middle;
+    width:12em;
+    opacity:0;
+    transition:opacity .75s ease-in-out}
+
+.paper-title{
+    margin-top:0;
+    margin-bottom:.5em;
+    font-family:condensed;
+    font-weight:bold
 }
 
-.publication-IconList {
-	width: auto;
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 10px;
-	font-style: italic;
-	font-color: #000000;
-	text-align: center;
-	padding-top: 16px;
-	padding-bottom: 2px;
+.paper-title-details{
+    margin:0;
+    padding:0;
+    font-family:condensed;
+    font-weight:bold
 }
 
-.publication-Icon {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 10px;
-	font-style: italic;
-	font-color: #000000;
-	text-align: center;
-	height: 100%;
-	width: auto;
-	padding-right: 16px;
-	cursor: hand;
-	cursor: pointer;
+.paper-authors{
+    margin-top:.5em
+}
+
+.paper-journal-details{
+    font-style:italic
+}
+
+.download{
+    display:inline-block;
+    text-align:center;
+    margin:.5em;
+    width:5em;
+    vertical-align:top
+}
+
+.download-icon{
+    text-align:center;
+    width:3em;
+    height:3em;
+    transition:width .5s ease-in-out,height .5s ease-in-out
+}
+
+@media screen and (max-width:32em){
+    article.paper-thumbnailview.container 
+    aside.container-item{
+        display:none
+    }
+    article.paper-thumbnailview.container 
+    section.container-item{
+        text-align:center;
+        display:block
+    }
+    .paper-inline-thumbnail{
+        display:block
+    }
+}
+
+.download-description{
+    display:block;
+    color:darkblue;
+    font-family:condensed;
+    font-size:.9em
+}
+
+.download-extension{
+    margin:0;
+    font-size:.8em
+}
+
+.download-size{
+    margin:0;
+    font-size:.8em
 }
