@@ -1,13 +1,13 @@
-var Author = function (b, a) {
-    this.fullName         = b;
-    this.personalPageLink = a
+var Author = function (n, l) {
+    this.fullName         = n;
+    this.personalPageLink = l
 };
 
 var AuthorMap = {};
 
-function addAuthor(b, a) {
-    if (!(AuthorMap.hasOwnProperty(b))) {
-        AuthorMap[b] = new Author(b, a)
+function addAuthor(n, l) {
+    if (!(AuthorMap.hasOwnProperty(n))) {
+        AuthorMap[n] = new Author(n, l)
     }
 }
 
@@ -17,9 +17,9 @@ function initializeAuthors() {
     addAuthor("Philip Dutr&eacute;", "http://people.cs.kuleuven.be/~philip.dutre/");
 }
 
-function getAuthor(a) {
-    if (!AuthorMap.hasOwnProperty(a)) { return new Author(a) }
-    else                              { return AuthorMap[a]  }
+function getAuthor(n) {
+    if (!AuthorMap.hasOwnProperty(n)) { return new Author(n) }
+    else                              { return AuthorMap[n]  }
 }
 
 initializeAuthors();

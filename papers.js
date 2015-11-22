@@ -75,7 +75,7 @@ function getRecentPapers(nb) {
 }
 
 addPaper("Efficient visibility heuristics for kd-trees using the RTSAH",
-    ["Matthias Moulin", "Niels Billen", "Philip Dutr&eacute;"],
+    ["Matthias Moulin", "Niels Billen", "Philip Dutr&eacute"],
     "Eurographics Symposium on Rendering - Experimental Ideas & Implementations, June 2015",
     "res/Publications/Efficient Visibility Heuristics for kd-trees Using the RTSAH/Thumbnail.png",
     6, 2015,
@@ -84,6 +84,8 @@ addPaper("Efficient visibility heuristics for kd-trees using the RTSAH",
      new Download("Citation"    , "res/Publications/Efficient Visibility Heuristics for kd-trees Using the RTSAH/Citation.bib"    , undefined, "BIB", "0.1 KB"),
      new Download("Abstract"    , "res/Publications/Efficient Visibility Heuristics for kd-trees Using the RTSAH/Abstract.txt"    , undefined, "TXT", "0.1 KB"),
      new Download("Presentation", "res/Publications/Efficient Visibility Heuristics for kd-trees Using the RTSAH/Presentation.pdf", undefined, "PDF", "6.8 MB"),
-     new Download("DOI"         , "https://dx.doi.org/10.2312/sre.20151164"                                                       , "images/icon_html.png")]);
+     new Download("DOI"         , "https://dx.doi.org/10.2312/sre.20151164"                                                       , "images/icon_html.png")
+	]
+	);
 
 var recent = getRecentPapers(5)
