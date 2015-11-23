@@ -2,7 +2,7 @@ nav{
     text-align:center;
     margin-bottom:2em;
     box-shadow:0 .5em .5em #787878;
-    background-color:#0288d1;
+    background-color:#00571B;
     text-align:center
 }
 
@@ -38,7 +38,7 @@ nav select{
     display:none;
     margin-left:auto;
     margin-right:auto;
-    background:#0250a0;
+    background:#008A2B;
     color:white;
     font-family:CONDENSED;
     font-size:1.4em
