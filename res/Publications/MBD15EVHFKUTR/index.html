@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<title>Efficient visibility heuristics for kd-trees using the
+RTSAH</title>
+<link rel="stylesheet" type="text/css" href=
+"projectpage.css">
+<meta content="true" name="MobileOptimized">
+<meta content="width=device-width, initial-scale=1" name=
+"viewport">
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-51377216-3','auto');ga('send','pageview');
+</script>
+</head>
+
+<body>
+<p id="proceedings">Eurographics Symposium on Rendering -
+Experimental Ideas &amp; Implementations, July 2015</p>
+<h1 id="title">Efficient visibility heuristics for kd-trees using
+the RTSAH</h1>
+<div id="authorlist">
+<p class="author">Matthias Moulin</p>
+<p class="author"><a href=
+"https://perswww.kuleuven.be/~u0093806/">Niels Billen</a></p>
+<p class="author"><a href=
+"http://people.cs.kuleuven.be/~philip.dutre/">Philip
+Dutr&eacute;</a></p>
+</div>
+<div id="graphicslink">
+<p><a href=
+"http://graphics.cs.kuleuven.be/publications.html">Computer
+Graphics Research Group, KU Leuven</a></p>
+</div>
+<a href="teaser.png"><img alt="teaser" src="teaser.jpg" id="teaser"
+name="teaser"></a>
+<div id="abstract-container" class="container">
+<h3 id="abstract-title">Abstract</h3>
+<p id="abstract">Acceleration data structures such as kd-trees aim
+at reducing the per-ray cost which is crucial for rendering
+performance. The de-facto standard for constructing kd-trees, the
+Surface Area Heuristic (SAH), does not take ray termination into
+account and instead assumes rays never hit a geometric primitive.
+The Ray Termination Surface Area Heuristic (RTSAH) is a cost metric
+originally used for determining the traversal order of the voxels
+for occlusion rays that takes ray termination into account. We
+adapt this RTSAH to building kd-trees that aim at reducing the
+per-ray cost of rays. Our build procedure has the same overall
+computational complexity and considers the same finite set of
+splitting planes as the SAH. By taking ray termination into
+account, we favor cutting off child voxels which are not or hardly
+visible to each other. This results in fundamentally different and
+more qualitative kd-trees compared to the SAH.</p>
+</div>
+<div id="downloads-container" class="container">
+<h3 id="downloads-title">Downloads</h3>
+<div>
+<div class="download-item"><a href=
+"MBD15EVHFKUTR_paper.pdf"><img alt="icon" src=
+"projectpage/icon_pdf.png" class="download-item-icon"></a> <a href=
+"MBD15EVHFKUTR_paper.pdf" class="download-item-name">Preprint</a>
+<p class="download-item-extension">PDF</p>
+<p class="download-item-size">(11.1 MiB)</p>
+</div>
+<div class="download-item"><a href=
+"MBD15EVHFKUTR_citation.bib"><img alt="icon" src=
+"projectpage/icon_tex.png" class="download-item-icon"></a> <a href=
+"MBD15EVHFKUTR_citation.bib" class=
+"download-item-name">Citation</a>
+<p class="download-item-extension">BIB</p>
+<p class="download-item-size">(0.3 KiB)</p>
+</div>
+<div class="download-item"><a href=
+"MBD15EVHFKUTR_abstract.txt"><img alt="icon" src=
+"projectpage/icon_txt.png" class="download-item-icon"></a> <a href=
+"MBD15EVHFKUTR_abstract.txt" class=
+"download-item-name">Abstract</a>
+<p class="download-item-extension">TXT</p>
+<p class="download-item-size">(0.9 KiB)</p>
+</div>
+<div class="download-item"><a href=
+"MBD15EVHFKUTR_presentation.pdf"><img alt="icon" src=
+"projectpage/icon_pdf.png" class="download-item-icon"></a> <a href=
+"MBD15EVHFKUTR_presentation.pdf" class=
+"download-item-name">Presentation</a>
+<p class="download-item-extension">PDF</p>
+<p class="download-item-size">(7.0 MiB)</p>
+</div>
+<div class="download-item"><a href=
+"https://dx.doi.org/10.2312/sre.20151164"><img alt="icon" src=
+"projectpage/icon_html.png" class="download-item-icon"></a>
+<a href="https://dx.doi.org/10.2312/sre.20151164" class=
+"download-item-name">DOI</a></div>
+</div>
+<hr>
+<div id="footer">
+<p id="footer-authors">Matthias Moulin, Niels Billen and Philip
+Dutr&eacute;</p>
+<p id="footer-date">Last updated on:</p>
+<script type="text/javascript">
+//<![CDATA[
+document.getElementById("footer-date").innerHTML += " "+document.lastModified;
+//]]>
+</script></div>
+</div>
+</body>
+
+</html>

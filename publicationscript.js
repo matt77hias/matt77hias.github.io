@@ -89,7 +89,7 @@ function constructPaperTableForYearLargeThumbnail(m, n) {
         b.appendChild(x);
         p = document.createElement("div");
         p.className = "paper-links-table";
-        addLinkIconToRow(p, new Download("Project page", l.projectpage, "res/Icon/icon_html.png"));
+        addLinkIconToRow(p, new Download("Project page", l.projectpage, "res/Icons/icon_html.png"));
         for (r = 0; r < l.downloads.length; r += 1) { addLinkIconToRow(p, l.downloads[r]) }
         b.appendChild(p);
         c.appendChild(b); y.appendChild(c)
