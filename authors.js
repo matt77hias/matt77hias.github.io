@@ -12,7 +12,8 @@ function addAuthor(n, l) {
 }
 
 function initializeAuthors() {
-    addAuthor("Niels Billen"       , "https://perswww.kuleuven.be/~u0093806/");
+    addAuthor("Matthias Moulin"    , "http://matt77hias.github.io/");
+	addAuthor("Niels Billen"       , "https://perswww.kuleuven.be/~u0093806/");
     addAuthor("Philip Dutré"       , "http://people.cs.kuleuven.be/~philip.dutre/");
     addAuthor("Philip Dutr&eacute;", "http://people.cs.kuleuven.be/~philip.dutre/");
 }

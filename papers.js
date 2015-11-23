@@ -75,11 +75,28 @@ function getRecentPapers(nb) {
     return a
 }
 
-addPaper("Efficient Visibility Heuristics for kd-trees Using the RTSAH", ["Matthias Moulin", "Niels Billen", "Philip Dutr&eacute;"], "Eurographics Symposium on Rendering - Experimental Ideas & Implementations, June 2015", "res/Publications/MBD15EVHFKUTR/Thumbnail.png", 6, 2015, "res/Publications/MBD15EVHFKUTR/index.html",
+addPaper("Hybrid kd-trees for photon mapping and accelerating ray tracing",
+    ["Matthias Moulin"],
+    "Master's thesis, Department of Computer Science, KULeuven, Belgium, June 2015",
+    "res/Publications/M15HKFPMAART/Thumbnail.png", 6, 2015,
+    "M15HKFPMAART.html",
+    [new Download("Citation"    , "res/Publications/M15HKFPMAART/Citation.bib"    , undefined, "BIB", "0.3 KB"),
+     new Download("Abstract"    , "res/Publications/M15HKFPMAART/Abstract.txt"    , undefined, "TXT", "4.0 KB"),
+     new Download("Presentation", "res/Publications/M15HKFPMAART/Presentation.pdf", undefined, "PDF", "1.4 MB"),
+     new Download("Poster"      , "res/Publications/M15HKFPMAART/Poster.pdf"      , undefined, "PDF", "1.3 MB")
+    ]
+	);
+
+addPaper("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
+    ["Matthias Moulin", "Niels Billen", "Philip Dutr&eacute;"],
+    "Eurographics Symposium on Rendering - Experimental Ideas & Implementations, June 2015",
+    "res/Publications/MBD15EVHFKUTR/Thumbnail.png", 6, 2015,
+    "MBD15EVHFKUTR.html",
     [new Download("Preprint"    , "res/Publications/MBD15EVHFKUTR/Preprint.pdf"    , undefined, "PDF", "10.9 MB"),
-     new Download("Citation"    , "res/Publications/MBD15EVHFKUTR/Citation.bib"    , undefined, "BIB", "0.1 KB"),
-     new Download("Abstract"    , "res/Publications/MBD15EVHFKUTR/Abstract.txt"    , undefined, "TXT", "0.1 KB"),
-     new Download("Presentation", "res/Publications/MBD15EVHFKUTR/Presentation.pdf", undefined, "PDF", "6.8 MB"),
+     new Download("Citation"    , "res/Publications/MBD15EVHFKUTR/Citation.bib"    , undefined, "BIB", "0.6 KB"),
+     new Download("Abstract"    , "res/Publications/MBD15EVHFKUTR/Abstract.txt"    , undefined, "TXT", "0.9 KB"),
+     new Download("Presentation", "res/Publications/MBD15EVHFKUTR/Presentation.pdf", undefined, "PDF", "6.7 MB"),
+     new Download("Poster"      , "res/Publications/MBD15EVHFKUTR/Poster.pdf"      , undefined, "PDF", "1.3 MB"),
      new Download("DOI"         , "https://dx.doi.org/10.2312/sre.20151164"        , "res/Icons/icon_html.png"),
 	 new Download("Lirias"      , "https://lirias.kuleuven.be/handle/123456789/501514", "res/Icons/icon_html.png")
 	]
