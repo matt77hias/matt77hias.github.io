@@ -17,7 +17,7 @@ function addLinkIconToRow(d, b) {
     d.appendChild(a)
 }
 
-function makePublicationThumbnailOpacityHandler(b, c, a) {
+function makeProjectThumbnailOpacityHandler(b, c, a) {
     return function () {
         c.style.opacity = 1;
         c.src = b.src;
@@ -26,14 +26,14 @@ function makePublicationThumbnailOpacityHandler(b, c, a) {
     }
 }
 
-function constructPublicationTableForYearLargeThumbnail(m, n) {
+function constructProjectTableForYearLargeThumbnail(m, n) {
     var t, r, l, e, v, y, g, c, f, w, k, b, u, o, q, a, d, s, x, h, p;
     v = document.getElementById("item-list");
     y = document.createElement("article");
     y.id = "items-" + n;
     g = document.createElement("h1");
     g.id = "items-" + n;
-    g.innerHTML = n + '<a class = "to-top-link" href = "#publications">back to the top</a>';
+    g.innerHTML = n + '<a class = "to-top-link" href = "#projects">back to the top</a>';
     y.appendChild(g);
     for (t = 0; t < m.length; t += 1) {
         l = m[t];
@@ -43,7 +43,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
             f = document.createElement("aside");
             f.className = "container-item";
             k = document.createElement("a");
-            k.href = l.publicationpage;
+            k.href = l.projectpage;
             w = document.createElement("img");
             w.className = "item-thumbnail large-thumbnail bordered";
             k.appendChild(w);
@@ -54,7 +54,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
         b.className = "container-item";
         if (l.thumbnail) {
             o = document.createElement("a");
-            o.href = l.publicationpage;
+            o.href = l.projectpage;
             u = document.createElement("img");
             u.className = "item-inline-thumbnail inline-thumbnail bordered";
             o.appendChild(u);
@@ -62,12 +62,12 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
         }
         if (l.thumbnail) {
             q = new Image();
-            q.onload = q.onerror = makePublicationThumbnailOpacityHandler(q, w, u);
+            q.onload = q.onerror = makeProjectThumbnailOpacityHandler(q, w, u);
             q.src = l.thumbnail
         }
         d = document.createElement("a");
         d.className = "item-title-link";
-        d.href = l.publicationpage;
+        d.href = l.projectpage;
         a = document.createElement("h3");
         a.innerHTML = l.title;
         a.className = "item-title";
@@ -89,7 +89,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
         b.appendChild(x);
         p = document.createElement("div");
         p.className = "item-links-table";
-        addLinkIconToRow(p, new Download("Publication page", l.publicationpage, "res/Icons/icon_html.png"));
+        addLinkIconToRow(p, new Download("Project page", l.projectpage, "res/Icons/icon_html.png"));
         for (r = 0; r < l.downloads.length; r += 1) { addLinkIconToRow(p, l.downloads[r]) }
         b.appendChild(p);
         c.appendChild(b); y.appendChild(c)
@@ -97,7 +97,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
     v.appendChild(y)
 }
 
-function constructPublicationTableForYearSmallDetails(a, h) {
+function constructProjectTableForYearSmallDetails(a, h) {
     var f, e, l, c, g, k, b, d;
     l = document.getElementById("item-list");
     g = document.getElementById("items-" + h);
@@ -106,7 +106,7 @@ function constructPublicationTableForYearSmallDetails(a, h) {
     for (f = 0; f < a.length; f += 1) {
         b = a[f];
         c = document.createElement("li");
-        c.innerHTML += '<a href="' + b.publicationpage + '"><h3 class="item-title-details">' + b.title + "</h3></a>";
+        c.innerHTML += '<a href="' + b.projectpage + '"><h3 class="item-title-details">' + b.title + "</h3></a>";
         for (e = 0; e < b.authors.length; e += 1) {
             d = getAuthor(b.authors[e]);
             if (d.personalPageLink)         { c.innerHTML += '<a href="' + d.personalPageLink + '" class="item-authors-details">' + d.fullName + "</a>" }
@@ -121,27 +121,27 @@ function constructPublicationTableForYearSmallDetails(a, h) {
     l.appendChild(g)
 }
 
-function constructPublicationTableSmallDetails() {
+function constructProjectTableSmallDetails() {
     var c, b, a;
-    b = getPublicationYears();
+    b = getProjectYears();
     b.sort();
     for (c = b.length - 1; c >= 0; c -= 1) {
-        constructPublicationTableForYearSmallDetails(getPublicationsByYear(b[c]), b[c])
+        constructProjectTableForYearSmallDetails(getProjectsByYear(b[c]), b[c])
     }
 }
 
-function constructPublicationTableLargeThumbnail() {
+function constructProjectTableLargeThumbnail() {
     var c, b, a;
-    b = getPublicationYears();
+    b = getProjectYears();
     b.sort();
     for (c = b.length - 1; c >= 0; c -= 1) {
-        constructPublicationTableForYearLargeThumbnail(getPublicationsByYear(b[c]), b[c])
+        constructProjectTableForYearLargeThumbnail(getProjectsByYear(b[c]), b[c])
     }
 }
 
-function constructPublicationYearLinks() {
+function constructProjectYearLinks() {
     var c, a, b;
-    b = getPublicationYears();
+    b = getProjectYears();
     b.sort();
     a = document.getElementById("item-year-links");
     for (c = b.length - 1; c >= 0; c -= 1) {
@@ -179,7 +179,7 @@ function listView() {
     document.getElementById("list-view-button").style.opacity      = 0.8
 }
 
-constructPublicationTableLargeThumbnail();
-constructPublicationTableSmallDetails();
-constructPublicationYearLinks();
+constructProjectTableLargeThumbnail();
+constructProjectTableSmallDetails();
+constructProjectYearLinks();
 thumbnailView();

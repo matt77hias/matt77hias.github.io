@@ -1,7 +1,7 @@
 function constructRecent() {
     var h, g, d, f, m, e, b, a, l, c, k;
     m = document.getElementById("recent");
-    b = getRecentPapers(6);
+    b = getRecentItems(6);
     for (h = 0; h < b.length; h += 1) {
         d = b[h];
         a = document.createElement("div");
