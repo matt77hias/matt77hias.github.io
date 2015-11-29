@@ -33,7 +33,7 @@ function constructProjectTableForYearLargeThumbnail(m, n) {
     y.id = "items-" + n;
     g = document.createElement("h1");
     g.id = "items-" + n;
-    g.innerHTML = n + '<a class = "to-top-link" href = "#projects">back to the top</a>';
+    g.innerHTML = n + '<a class = "to-top-link" href = "#portfolio">back to the top</a>';
     y.appendChild(g);
     for (t = 0; t < m.length; t += 1) {
         l = m[t];
