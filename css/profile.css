@@ -20,12 +20,12 @@
 .icon-github:hover {
     background-position: bottom right;
 }
-.icon-github {
-    background: transparent url('../res/Icons/icon_github.png') top left no-repeat;
+.icon-linkedin {
+    background: transparent url('../res/Icons/icon_linkedin.png') top left no-repeat;
 }
 .icon-youtube {
     background: transparent url('../res/Icons/icon_youtube.png') top left no-repeat;
 }
-.icon-linkedin {
-    background: transparent url('../res/Icons/icon_linkedin.png') top left no-repeat;
+.icon-github {
+    background: transparent url('../res/Icons/icon_github.png') top left no-repeat;
 }
