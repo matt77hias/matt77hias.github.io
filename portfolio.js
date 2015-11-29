@@ -203,6 +203,22 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
     ]
 	);
 
+addProject("Permeability",
+    ["Matthias Moulin", "Niels Billen"],
+    "December 2015",
+    "res/Projects/M15P/Thumbnail.png", 12, 2015,
+    "M15P.html",
+	[new Download("Repository", "https://github.com/matt77hias/Permeability", "res/Icons/icon_html.png")]
+	);
+	
+addProject("Personal webpage",
+    ["Matthias Moulin"],
+    "November 2015",
+    "res/Projects/MB15M/Thumbnail.png", 11, 2015,
+    "http://matt77hias.github.io/",
+	[new Download("Repository", "https://github.com/matt77hias/matt77hias.github.io", "res/Icons/icon_html.png")]
+	);
+	
 addProject("Clipping",
     ["Matthias Moulin"],
     "November 2015",
@@ -276,10 +292,10 @@ addProject("Incisor Segmentation",
 	);
 
 addProject("FrigoShare",
-    ["Matthias Moulin", "Herbert Beraldo", "Ruben Pieters"],
+    ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
     "User Interfaces (H04I2A), June 2014",
-    "res/Projects/MBP14FS/Thumbnail.png", 6, 2014,
-    "MBP14FS.html",
+    "res/Projects/BMP14FS/Thumbnail.png", 6, 2014,
+    "BMP14FS.html",
 	[new Download("App", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png"),
 	 new Download("Blog", "https://anarchikul.wordpress.com/", "res/Icons/icon_html.png")
 	]
