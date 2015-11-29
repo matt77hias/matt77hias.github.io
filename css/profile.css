@@ -1,0 +1,31 @@
+.media {
+    clear: both;
+    max-width: 820px;
+    margin: 10px auto;
+    color: #333;
+    text-align: center;
+    padding: 0.5em 0 0 0;
+}
+
+.icon-linkedin,
+.icon-youtube,
+.icon-github {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+}
+.icon-linkedin:hover,
+.icon-youtube:hover,
+.icon-github:hover {
+    background-position: bottom right;
+}
+.icon-github {
+    background: transparent url('../res/Icons/icon_github.png') top left no-repeat;
+}
+.icon-youtube {
+    background: transparent url('../res/Icons/icon_youtube.png') top left no-repeat;
+}
+.icon-linkedin {
+    background: transparent url('../res/Icons/icon_linkedin.png') top left no-repeat;
+}
