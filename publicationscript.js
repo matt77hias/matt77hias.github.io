@@ -43,7 +43,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
             f = document.createElement("aside");
             f.className = "container-item";
             k = document.createElement("a");
-            k.href = l.publicationpage;
+            k.href = l.projectpage;
             w = document.createElement("img");
             w.className = "item-thumbnail large-thumbnail bordered";
             k.appendChild(w);
@@ -54,7 +54,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
         b.className = "container-item";
         if (l.thumbnail) {
             o = document.createElement("a");
-            o.href = l.publicationpage;
+            o.href = l.projectpage;
             u = document.createElement("img");
             u.className = "item-inline-thumbnail inline-thumbnail bordered";
             o.appendChild(u);
@@ -67,7 +67,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
         }
         d = document.createElement("a");
         d.className = "item-title-link";
-        d.href = l.publicationpage;
+        d.href = l.projectpage;
         a = document.createElement("h3");
         a.innerHTML = l.title;
         a.className = "item-title";
@@ -89,7 +89,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
         b.appendChild(x);
         p = document.createElement("div");
         p.className = "item-links-table";
-        addLinkIconToRow(p, new Download("Publication page", l.publicationpage, "res/Icons/icon_html.png"));
+        addLinkIconToRow(p, new Download("Publication page", l.projectpage, "res/Icons/icon_html.png"));
         for (r = 0; r < l.downloads.length; r += 1) { addLinkIconToRow(p, l.downloads[r]) }
         b.appendChild(p);
         c.appendChild(b); y.appendChild(c)
@@ -106,7 +106,7 @@ function constructPublicationTableForYearSmallDetails(a, h) {
     for (f = 0; f < a.length; f += 1) {
         b = a[f];
         c = document.createElement("li");
-        c.innerHTML += '<a href="' + b.publicationpage + '"><h3 class="item-title-details">' + b.title + "</h3></a>";
+        c.innerHTML += '<a href="' + b.projectpage + '"><h3 class="item-title-details">' + b.title + "</h3></a>";
         for (e = 0; e < b.authors.length; e += 1) {
             d = getAuthor(b.authors[e]);
             if (d.personalPageLink)         { c.innerHTML += '<a href="' + d.personalPageLink + '" class="item-authors-details">' + d.fullName + "</a>" }
