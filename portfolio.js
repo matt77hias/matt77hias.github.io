@@ -204,7 +204,7 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 	);
 
 addProject("Permeability",
-    ["Matthias Moulin", "Niels Billen"],
+    ["Matthias Moulin"],
     "December 2015",
     "res/Projects/M15P/Thumbnail.png", 12, 2015,
     "M15P.html",
