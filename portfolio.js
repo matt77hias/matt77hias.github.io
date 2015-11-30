@@ -212,7 +212,7 @@ addProject("Permeability",
 	);
 	
 addProject("Personal webpage",
-    ["Matthias Moulin"],
+    ["Matthias Moulin", "Niels Billen"],
     "November 2015",
     "res/Projects/MB15M/Thumbnail.png", 11, 2015,
     "http://matt77hias.github.io/",
