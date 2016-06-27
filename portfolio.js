@@ -314,6 +314,14 @@ addProject("pbrt tools",
     "M14P.html",
 	[]
 	);
+	
+addProject("The Puppeteer",
+    ["Matthias Moulin"],
+    "October 2014",
+    "res/Projects/M14TP/Thumbnail.png", 10, 2014,
+    "M14TP.html",
+	[]
+	);
 
 addProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
