@@ -203,6 +203,14 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
     ]
 	);
 
+addProject("FlowGrid Visualization",
+    ["Matthias Moulin"],
+    "April 2016",
+    "res/Projects/M16F/Thumbnail.png", 4, 2016,
+    "M16F.html",
+	[new Download("Repository", "https://github.com/matt77hias/FlowGridVisualization", "res/Icons/icon_html.png")]
+	);	
+	
 addProject("Permeability",
     ["Matthias Moulin"],
     "December 2015",
@@ -218,6 +226,14 @@ addProject("Personal webpage",
     "http://matt77hias.github.io/",
 	[new Download("Repository", "https://github.com/matt77hias/matt77hias.github.io", "res/Icons/icon_html.png")]
 	);
+	
+addProject("FalseColor",
+    ["Matthias Moulin"],
+    "November 2015",
+    "res/Projects/M15F/Thumbnail.png", 11, 2015,
+    "M15F.html",
+	[new Download("Repository", "https://github.com/matt77hias/FalseColor", "res/Icons/icon_html.png")]
+	);	
 	
 addProject("Clipping",
     ["Matthias Moulin"],
@@ -282,6 +298,14 @@ addProject("2048",
     "M142048.html",
 	[]
 	);
+	
+addProject("pbrt tools",
+    ["Matthias Moulin"],
+    "December 2014",
+    "res/Projects/M14P/Thumbnail.png", 12, 2014,
+    "M14P.html",
+	[]
+	);
 
 addProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
@@ -321,7 +345,7 @@ addProject("JUnit Test Deamon",
     ["Mattias Buelens", "Vital D'haveloose", "Matthias Moulin", "Ruben Pieters"],
     "Design of Software Systems (H04J9B), December 2013",
     "res/Projects/MBPD13JTD/Thumbnail.png", 12, 2013,
-    "MBPD13JTD.html",
+    "BDMP13MS.html",
 	[new Download("Repository", "https://github.com/MattiasBuelens/junit", "res/Icons/icon_html.png")]
 	);
 
@@ -345,7 +369,7 @@ addProject("MazeStormer",
     ["Mattias Buelens", "Vital D'haveloose", "Dennis Frett", "Stijn Hoskens", "Matthias Moulin"],
     "Problem Solving and Design: Computer Science (H01Q3C), June 2013",
     "res/Projects/FMBHD13MS/Thumbnail.png", 6, 2013,
-    "FMBHD13MS.html",
+    "BDFHM13MS.html",
 	[new Download("Repository", "https://github.com/MattiasBuelens/MazeStormer", "res/Icons/icon_html.png")]
 	);
 
