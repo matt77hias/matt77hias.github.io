@@ -344,8 +344,8 @@ addProject("Lilyhammer Rendering Engine",
 addProject("JUnit Test Deamon",
     ["Mattias Buelens", "Vital D'haveloose", "Matthias Moulin", "Ruben Pieters"],
     "Design of Software Systems (H04J9B), December 2013",
-    "res/Projects/BDMP13MS/Thumbnail.png", 12, 2013,
-    "BDMP13MS.html",
+    "res/Projects/BDMP13JTD/Thumbnail.png", 12, 2013,
+    "BDMP13JTD.html",
 	[new Download("Repository", "https://github.com/MattiasBuelens/junit", "res/Icons/icon_html.png")]
 	);
 
