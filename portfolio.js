@@ -344,7 +344,7 @@ addProject("Lilyhammer Rendering Engine",
 addProject("JUnit Test Deamon",
     ["Mattias Buelens", "Vital D'haveloose", "Matthias Moulin", "Ruben Pieters"],
     "Design of Software Systems (H04J9B), December 2013",
-    "res/Projects/MBPD13JTD/Thumbnail.png", 12, 2013,
+    "res/Projects/BDMP13MS/Thumbnail.png", 12, 2013,
     "BDMP13MS.html",
 	[new Download("Repository", "https://github.com/MattiasBuelens/junit", "res/Icons/icon_html.png")]
 	);
@@ -368,7 +368,7 @@ addProject("Snake",
 addProject("MazeStormer",
     ["Mattias Buelens", "Vital D'haveloose", "Dennis Frett", "Stijn Hoskens", "Matthias Moulin"],
     "Problem Solving and Design: Computer Science (H01Q3C), June 2013",
-    "res/Projects/FMBHD13MS/Thumbnail.png", 6, 2013,
+    "res/Projects/BDFHM13MS/Thumbnail.png", 6, 2013,
     "BDFHM13MS.html",
 	[new Download("Repository", "https://github.com/MattiasBuelens/MazeStormer", "res/Icons/icon_html.png")]
 	);
@@ -393,15 +393,15 @@ addProject("Aurora",
 addProject("Crossbow Tennis Machine",
     ["Nick Berlanger", "Egon Blyweert", "Jeroen Colon", "Matthias Moulin", "Bart Opsomer", "Joris Panis", "Louis Ponet", "Ben Praet", "Frederick Puttemans"],
     "Problem Solving and Design, Part 2 (H01C2A), June 2011",
-    "res/Projects/BBCMOPPPP2011CTM/Thumbnail.png", 6, 2011,
-    "BBCMOPPPP2011CTM.html",
+    "res/Projects/BBCMOPPPP11CTM/Thumbnail.png", 6, 2011,
+    "BBCMOPPPP11CTM.html",
 	[]
 	);
 
 addProject("MandeLboat",
     ["Jef Aendekerk", "Ben Allaerts", "Wout Behaeghel", "Julian Bouckenooghe", "Robin Clerckx", "Stijn Meylemans", "Matthias Moulin", "Egon Pittoors"],
     "Problem Solving and Design, Part 1 (H01B9A), December 2010",
-    "res/Projects/AABBCMMP2010M/Thumbnail.png", 12, 2010,
-    "AABBCMMP2010M.html",
+    "res/Projects/AABBCMMP10M/Thumbnail.png", 12, 2010,
+    "AABBCMMP10M.html",
 	[]
 	);
