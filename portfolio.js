@@ -203,6 +203,14 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
     ]
 	);
 
+addProject("Gwent",
+    ["Matthias Moulin"],
+    "April 2016",
+    "res/Projects/M16G/Thumbnail.png", 4, 2016,
+    "https://github.com/matt77hias/Gwent",
+	[new Download("Repository", "https://github.com/matt77hias/Gwent", "res/Icons/icon_html.png")]
+	);	
+	
 addProject("FlowGrid Visualization",
     ["Matthias Moulin"],
     "April 2016",
