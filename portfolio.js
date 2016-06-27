@@ -317,7 +317,7 @@ addProject("pbrt tools",
 	
 addProject("The Puppeteer",
     ["Matthias Moulin"],
-    "October 2014",
+    "Capita Selecta Computer Science: Man Machine Interface: Game Design (H05N2A), October 2014",
     "res/Projects/M14TP/Thumbnail.png", 10, 2014,
     "M14TP.html",
 	[]
