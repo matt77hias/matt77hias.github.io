@@ -318,7 +318,7 @@ addProject("Lilyhammer Rendering Engine",
 	);
 
 addProject("JUnit Test Deamon",
-    ["Matthias Moulin", "Mattias Buelens", "Ruben Pieters", "Vital D'haveloose"],
+    ["Mattias Buelens", "Vital D'haveloose", "Matthias Moulin", "Ruben Pieters"],
     "Design of Software Systems (H04J9B), December 2013",
     "res/Projects/MBPD13JTD/Thumbnail.png", 12, 2013,
     "MBPD13JTD.html",
@@ -342,7 +342,7 @@ addProject("Snake",
 	);
 
 addProject("MazeStormer",
-    ["Dennis Frett", "Matthias Moulin", "Mattias Buelens", "Stijn Hoskens", "Vital D'haveloose"],
+    ["Mattias Buelens", "Vital D'haveloose", "Dennis Frett", "Stijn Hoskens", "Matthias Moulin"],
     "Problem Solving and Design: Computer Science (H01Q3C), June 2013",
     "res/Projects/FMBHD13MS/Thumbnail.png", 6, 2013,
     "FMBHD13MS.html",
@@ -358,7 +358,7 @@ addProject("RoboRally",
 	);
 
 addProject("Aurora",
-    ["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
+    ["Sebastiaan Maes", "Sophie Marien", "Pieter Marynissen", "Nathan Moesen", "Tom Molderez", "Matthias Moulin"],
     "Problem Solving and Design, Part 3 (H01D4B), December 2011",
     "res/Projects/MMMMMM11A/Thumbnail.png", 12, 2011,
     "MMMMMM11A.html",
@@ -367,7 +367,7 @@ addProject("Aurora",
 	);
 
 addProject("Crossbow Tennis Machine",
-    ["Matthias Moulin"],
+    ["Joris Panis", "Nick Berlanger", "Egon Blyweert", "Jeroen Colon", "Matthias Moulin", "Bart Opsomer", "Louis Ponet", "Ben Praet", "Frederick Puttemans"],
     "Problem Solving and Design, Part 2 (H01C2A), June 2011",
     "res/Projects/X/Thumbnail.png", 6, 2011,
     "X.html",
@@ -375,7 +375,7 @@ addProject("Crossbow Tennis Machine",
 	);
 
 addProject("MandeLboat",
-    ["Matthias Moulin"],
+    ["Jef Aendekerk", "Ben Allaerts", "Wout Behaeghel", "Julian Bouckenooghe", "Robin Clerckx", "Stijn Meylemans", "Matthias Moulin", "Egon Pittoors"],
     "Problem Solving and Design, Part 1 (H01B9A), December 2010",
     "res/Projects/X/Thumbnail.png", 12, 2010,
     "X.html",
