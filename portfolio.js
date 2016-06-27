@@ -206,8 +206,8 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 addProject("FlowGrid Visualization",
     ["Matthias Moulin"],
     "April 2016",
-    "res/Projects/M16F/Thumbnail.png", 4, 2016,
-    "M16F.html",
+    "res/Projects/M16FV/Thumbnail.png", 4, 2016,
+    "M16FV.html",
 	[new Download("Repository", "https://github.com/matt77hias/FlowGridVisualization", "res/Icons/icon_html.png")]
 	);	
 	
@@ -391,17 +391,17 @@ addProject("Aurora",
 	);
 
 addProject("Crossbow Tennis Machine",
-    ["Joris Panis", "Nick Berlanger", "Egon Blyweert", "Jeroen Colon", "Matthias Moulin", "Bart Opsomer", "Louis Ponet", "Ben Praet", "Frederick Puttemans"],
+    ["Nick Berlanger", "Egon Blyweert", "Jeroen Colon", "Matthias Moulin", "Bart Opsomer", "Joris Panis", "Louis Ponet", "Ben Praet", "Frederick Puttemans"],
     "Problem Solving and Design, Part 2 (H01C2A), June 2011",
-    "res/Projects/X/Thumbnail.png", 6, 2011,
-    "X.html",
+    "res/Projects/BBCMOPPPP2011CTM/Thumbnail.png", 6, 2011,
+    "BBCMOPPPP2011CTM.html",
 	[]
 	);
 
 addProject("MandeLboat",
     ["Jef Aendekerk", "Ben Allaerts", "Wout Behaeghel", "Julian Bouckenooghe", "Robin Clerckx", "Stijn Meylemans", "Matthias Moulin", "Egon Pittoors"],
     "Problem Solving and Design, Part 1 (H01B9A), December 2010",
-    "res/Projects/X/Thumbnail.png", 12, 2010,
-    "X.html",
+    "res/Projects/AABBCMMP2010M/Thumbnail.png", 12, 2010,
+    "AABBCMMP2010M.html",
 	[]
 	);
