@@ -1,0 +1,31 @@
+#recent{
+    display:flex;
+    display:-moz-flex;
+    display:-webkit-flex;
+    flex-flow:wrap row;
+    justify-content:center;
+    text-align:center
+}
+
+.recent-container{
+    display:inline-block;
+    align-self:flex-start;
+    margin:1em;
+    width:25%;
+    min-width:12em;
+    font-family:condensed;
+    background-color:#f0f0f0;
+    padding:1em;
+    box-shadow:1px 1px 5px gray
+}
+
+.recent-title{
+    margin-top:0;
+    margin-bottom:.5em;
+    font-family:condensed;
+    font-weight:bold
+}
+
+.recent-thumbnail{
+    width:100%
+}
