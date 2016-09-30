@@ -211,14 +211,6 @@ addProject("Gwent",
 	[new Download("Repository", "https://github.com/matt77hias/Gwent", "res/Icons/icon_html.png")]
 	);	
 	
-addProject("FlowGrid Visualization",
-    ["Matthias Moulin"],
-    "April 2016",
-    "res/Projects/M16FV/Thumbnail.png", 4, 2016,
-    "M16FV.html",
-	[new Download("Repository", "https://github.com/matt77hias/FlowGridVisualization", "res/Icons/icon_html.png")]
-	);	
-	
 addProject("Permeability",
     ["Matthias Moulin"],
     "December 2015",
@@ -233,14 +225,6 @@ addProject("Personal webpage",
     "res/Projects/MB15M/Thumbnail.png", 11, 2015,
     "http://matt77hias.github.io/",
 	[new Download("Repository", "https://github.com/matt77hias/matt77hias.github.io", "res/Icons/icon_html.png")]
-	);
-	
-addProject("FalseColor",
-    ["Matthias Moulin"],
-    "November 2015",
-    "res/Projects/M15F/Thumbnail.png", 11, 2015,
-    "M15F.html",
-	[new Download("Repository", "https://github.com/matt77hias/FalseColor", "res/Icons/icon_html.png")]
 	);	
 	
 addProject("Clipping",
@@ -304,14 +288,6 @@ addProject("2048",
     "Comparative Programming Languages (H04L5A), December 2014",
     "res/Projects/M142048/Thumbnail.png", 12, 2014,
     "M142048.html",
-	[]
-	);
-	
-addProject("pbrt tools",
-    ["Matthias Moulin"],
-    "December 2014",
-    "res/Projects/M14P/Thumbnail.png", 12, 2014,
-    "M14P.html",
 	[]
 	);
 	
