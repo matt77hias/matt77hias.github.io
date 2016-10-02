@@ -265,7 +265,7 @@ addProject("Personal webpage",
     ["Matthias Moulin", "Niels Billen"],
     "November 2015",
     "res/Projects/PersonalWebpage/Thumbnail.png", 11, 2015,
-    "new Download("Repository", "https://github.com/matt77hias/matt77hias.github.io", "res/Icons/icon_html.png")",
+    "https://github.com/matt77hias/matt77hias.github.io",
 	[new Download("Play", "matt77hias.github.io", "res/Icons/icon_html.png")]
 	);
 	
@@ -411,10 +411,10 @@ addProject("JUnit Test Deamon",
 	[]
 	);
 
-addProject("Car Rental Service",
+addProject("Car Rental Agency",
     ["Matthias Moulin", "Ruben Pieters"],
     "Distributed Systems (B-KUL-H04I4A), December 2013",
-    "res/Projects/CarRentalAgency/Thumbnail.png", 12, 2013,
+    "res/No Image.jpg", 12, 2013,
     "https://github.com/matt77hias/meta-carrental",
 	[]
 	);
