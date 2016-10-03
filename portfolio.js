@@ -233,7 +233,7 @@ addProject("Permeability",
     ["Matthias Moulin"],
     "December 2015",
     "res/Projects/Permeability/Thumbnail.png", 12, 2015,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 	
@@ -307,7 +307,7 @@ addProject("Kajiya",
     ["Matthias Moulin", "Mattias Buelens"],
     "Requirements Analysis for Complex Software Systems (B-KUL-G0K32A), December 2014",
     "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
@@ -339,7 +339,7 @@ addProject("The Puppeteer",
     ["Matthias Moulin"],
     "Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), October 2014",
     "res/Projects/ThePuppeteer/Thumbnail.png", 10, 2014,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
@@ -348,7 +348,7 @@ addProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
     "Computer Vision (B-KUL-H02A5A), June 2014",
     "res/Projects/IncisorSegmentation/Thumbnail.png", 6, 2014,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 	
@@ -380,7 +380,7 @@ addProject("FrigoShare",
     ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
     "User Interfaces (B-KUL-H04I2A), June 2014",
     "res/Projects/FrigoShare/Thumbnail.png", 6, 2014,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png"),
 	 new Download("Blog", "https://anarchikul.wordpress.com/", "res/Icons/icon_html.png")
 	]
@@ -391,7 +391,7 @@ addProject("Pacman",
     ["Matthias Moulin", "Ruben Pieters"],
     "Modelling of Complex Systems (B-KUL-G0Q66B), December 2013",
     "res/Projects/Pacman/Thumbnail.png", 12, 2013,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
@@ -511,7 +511,7 @@ addProject("Crossbow Tennis Machine",
     ["Bart Opsomer", "Ben Praet", "Egon Blyweert", "Frederick Puttemans", "Jeroen Colon", "Joris Panis", "Louis Ponet", "Matthias Moulin", "Nick Berlanger"],
     "Problem Solving and Design, Part 2 (B-KUL-H01C2A), June 2011",
     "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
@@ -520,6 +520,6 @@ addProject("MandeLboat",
 	["Ben Allaerts", "Egon Pittoors", "Jef Aendekerk", "Julian Bouckenooghe", "Matthias Moulin", "Robin Clerckx", "Stijn Meylemans", "Wout Behaeghel"],
     "Problem Solving and Design, Part 1 (B-KUL-H01B9A), December 2010",
     "res/Projects/MandeLboat/Thumbnail.png", 12, 2010,
-    "https://matt77hias.github.io/todo",
+    "https://matt77hias.github.io/private",
 	[]
 	);
