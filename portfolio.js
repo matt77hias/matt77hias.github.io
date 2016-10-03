@@ -352,30 +352,6 @@ addProject("Incisor Segmentation",
 	[]
 	);
 	
-addProject("Face Recognition",
-    ["Matthias Moulin"],
-    "Computer Vision (B-KUL-H02A5A), June 2014",
-    "res/Projects/FaceRecognition/Thumbnail.png", 6, 2014,
-    "https://github.com/matt77hias/FaceRecognition",
-	[]
-	);
-	
-addProject("Segmentation",
-    ["Matthias Moulin"],
-    "Computer Vision (B-KUL-H02A5A), June 2014",
-    "res/Projects/Segmentation/Thumbnail.png", 6, 2014,
-    "https://github.com/matt77hias/Segmentation",
-	[]
-	);
-	
-addProject("Smoothing",
-    ["Matthias Moulin"],
-    "Computer Vision (B-KUL-H02A5A), June 2014",
-    "res/Projects/Smoothing/Thumbnail.png", 6, 2014,
-    "https://github.com/matt77hias/Smoothing",
-	[]
-	);
-
 addProject("FrigoShare",
     ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
     "User Interfaces (B-KUL-H04I2A), June 2014",
@@ -384,6 +360,38 @@ addProject("FrigoShare",
 	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png"),
 	 new Download("Blog", "https://anarchikul.wordpress.com/", "res/Icons/icon_html.png")
 	]
+	);
+	
+addProject("Sampling Experiments",
+    ["Matthias Moulin"],
+    "Computer Graphics II (B-KUL-G0B36A), April 2014",
+    "res/Projects/SamplingExperiments/Thumbnail.png", 4, 2014,
+    "https://github.com/matt77hias/SamplingExperiments",
+	[]
+	);
+	
+addProject("Face Recognition",
+    ["Matthias Moulin"],
+    "Computer Vision (B-KUL-H02A5A), March 2014",
+    "res/Projects/FaceRecognition/Thumbnail.png", 3, 2014,
+    "https://github.com/matt77hias/FaceRecognition",
+	[]
+	);
+	
+addProject("Segmentation",
+    ["Matthias Moulin"],
+    "Computer Vision (B-KUL-H02A5A), March 2014",
+    "res/Projects/Segmentation/Thumbnail.png", 3, 2014,
+    "https://github.com/matt77hias/Segmentation",
+	[]
+	);
+	
+addProject("Smoothing",
+    ["Matthias Moulin"],
+    "Computer Vision (B-KUL-H02A5A), March 2014",
+    "res/Projects/Smoothing/Thumbnail.png", 3, 2014,
+    "https://github.com/matt77hias/Smoothing",
+	[]
 	);
 
 // 1st Semester - 1st Master of Science in Engineering (2013-2014)
