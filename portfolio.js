@@ -204,7 +204,7 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 	);
 
 // 2nd Semester - 1st PhD of Science in Engineering (2015-2016)
-addProject("smallpt",
+addProject("Rosetta smallpt",
     ["Matthias Moulin"],
     "September 2016",
     "res/Projects/smallpt/Thumbnail.png", 9, 2016,
