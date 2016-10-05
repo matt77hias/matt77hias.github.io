@@ -229,7 +229,7 @@ addProject("Gwent",
 	[]
 	);	
 	
-addProject("FlowGridVisualization",
+addProject("FlowGrid Visualization",
     ["Matthias Moulin"],
     "April 2016",
     "res/Projects/FlowGridVisualization/Thumbnail.png", 4, 2016,
@@ -262,7 +262,7 @@ addProject("geompy",
 	[]
 	);
 	
-addProject("FalseColor",
+addProject("FalseColor Visualization",
     ["Matthias Moulin"],
     "November 2015",
     "res/Projects/FalseColor/Thumbnail.png", 11, 2015,
