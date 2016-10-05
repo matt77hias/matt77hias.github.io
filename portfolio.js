@@ -365,17 +365,15 @@ addProject("FrigoShare",
     ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
     "User Interfaces (B-KUL-H04I2A), June 2014",
     "res/Projects/FrigoShare/Thumbnail.png", 6, 2014,
-    "https://matt77hias.github.io/private",
-	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png"),
-	 new Download("Blog", "https://anarchikul.wordpress.com/", "res/Icons/icon_html.png")
-	]
+    "https://anarchikul.wordpress.com/",
+	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png")]
 	);
 	
 addProject("Sampling Experiments",
     ["Matthias Moulin"],
     "Computer Graphics II (B-KUL-G0B36A), April 2014",
     "res/Projects/SamplingExperiments/Thumbnail.png", 4, 2014,
-    "https://github.com/matt77hias/SamplingExperiments",
+    "https://matt77hias.github.io/private",
 	[]
 	);
 	
