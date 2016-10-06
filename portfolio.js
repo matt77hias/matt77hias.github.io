@@ -204,6 +204,14 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 	);
 
 // 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
+addProject("fibpy",
+    ["Matthias Moulin"],
+    "October 2016",
+    "res/Projects/fibpy/Thumbnail.png", 10, 2016,
+    "https://github.com/matt77hias/fibpy",
+	[]
+	);
+
 addProject("pippy",
     ["Matthias Moulin"],
     "October 2016",
