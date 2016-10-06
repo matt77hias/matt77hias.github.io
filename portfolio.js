@@ -238,6 +238,14 @@ addProject("FlowGrid Visualization",
 	);
 	
 // 1st Semester - 1st PhD of Science in Engineering (2015-2016)
+addProject("pbrtpy",
+    ["Matthias Moulin"],
+    "December 2015",
+    "res/Projects/pbrtpy/Thumbnail.png", 12, 2015,
+    "https://github.com/matt77hias/pbrtpy",
+	[]
+	);
+
 addProject("Permeability",
     ["Matthias Moulin"],
     "December 2015",
@@ -246,11 +254,11 @@ addProject("Permeability",
 	[]
 	);
 	
-addProject("pbrtpy",
+addProject("ffpy",
     ["Matthias Moulin"],
     "December 2015",
-    "res/Projects/pbrtpy/Thumbnail.png", 12, 2015,
-    "https://github.com/matt77hias/pbrtpy",
+    "res/Projects/ffpy/Thumbnail.png", 12, 2015,
+    "https://github.com/matt77hias/ffpy",
 	[]
 	);
 	
