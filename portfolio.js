@@ -256,7 +256,7 @@ addProject("Hybrid Survivor",
     "Capita Selecta Computer Science: Man Machine Interface: Game Design (H05N2A), June 2015",
     "res/Projects/MSL15HS/Thumbnail.png", 6, 2015,
     "MSL15HS.html",
-	[new Download("Repository", "https://github.com/matt77hias/HybridSurvivor", "res/Icons/icon_html.png")]
+	[new Download("Repository", "https://github.com/matt77hias/meta-HybridSurvivor", "res/Icons/icon_html.png")]
 	);
 
 addProject("Stochastic Experiments",
