@@ -307,7 +307,7 @@ addProject("Hybrid Survivor",
     ["Matthias Moulin", "Milan Samyn", "Samuel Lannoy"],
     "Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), June 2015",
     "res/Projects/HybridSurvivor/Thumbnail.png", 6, 2015,
-    "https://github.com/matt77hias/meta-HybridSurvivor",
+    "https://github.com/matt77hias/HybridSurvivor",
 	[]
 	);
 
