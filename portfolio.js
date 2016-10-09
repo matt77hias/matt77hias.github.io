@@ -203,221 +203,354 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
     ]
 	);
 
+// 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
+addProject("fibpy",
+    ["Matthias Moulin"],
+    "October 2016",
+    "res/Projects/fibpy/Thumbnail.png", 10, 2016,
+    "https://github.com/matt77hias/fibpy",
+	[]
+	);
+
+addProject("pippy",
+    ["Matthias Moulin"],
+    "October 2016",
+    "res/Projects/pippy/Thumbnail.png", 10, 2016,
+    "https://github.com/matt77hias/pippy",
+	[]
+	);
+	
+// 2nd Semester - 1st PhD of Science in Engineering (2015-2016)
+addProject("Rosetta smallpt",
+    ["Matthias Moulin"],
+    "September 2016",
+    "res/Projects/smallpt/Thumbnail.png", 9, 2016,
+    "https://github.com/matt77hias/smallpt",
+	[]
+	);
+	
 addProject("Gwent",
     ["Matthias Moulin"],
     "April 2016",
-    "res/Projects/M16G/Thumbnail.png", 4, 2016,
+    "res/Projects/Gwent/Thumbnail.png", 4, 2016,
     "https://github.com/matt77hias/Gwent",
-	[new Download("Repository", "https://github.com/matt77hias/Gwent", "res/Icons/icon_html.png")]
+	[]
 	);	
 	
 addProject("FlowGrid Visualization",
     ["Matthias Moulin"],
     "April 2016",
-    "res/Projects/M16FV/Thumbnail.png", 4, 2016,
-    "M16FV.html",
-	[new Download("Repository", "https://github.com/matt77hias/FlowGridVisualization", "res/Icons/icon_html.png")]
-	);	
+    "res/Projects/FlowGridVisualization/Thumbnail.png", 4, 2016,
+    "https://github.com/matt77hias/FlowGridVisualization",
+	[]
+	);
 	
+// 1st Semester - 1st PhD of Science in Engineering (2015-2016)
+addProject("pbrtpy",
+    ["Matthias Moulin"],
+    "December 2015",
+    "res/Projects/pbrtpy/Thumbnail.png", 12, 2015,
+    "https://github.com/matt77hias/pbrtpy",
+	[]
+	);
+
 addProject("Permeability",
     ["Matthias Moulin"],
     "December 2015",
-    "res/Projects/M15P/Thumbnail.png", 12, 2015,
-    "M15P.html",
-	[new Download("Repository", "https://github.com/matt77hias/Permeability", "res/Icons/icon_html.png")]
+    "res/Projects/Permeability/Thumbnail.png", 12, 2015,
+    "https://matt77hias.github.io/private",
+	[]
+	);
+	
+addProject("ffpy",
+    ["Matthias Moulin"],
+    "December 2015",
+    "res/Projects/ffpy/Thumbnail.png", 12, 2015,
+    "https://github.com/matt77hias/ffpy",
+	[]
+	);
+	
+addProject("geompy",
+    ["Matthias Moulin"],
+    "December 2015",
+    "res/Projects/geompy/Thumbnail.png", 12, 2015,
+    "https://github.com/matt77hias/geompy",
+	[]
+	);
+	
+addProject("FalseColor Visualization",
+    ["Matthias Moulin"],
+    "November 2015",
+    "res/Projects/FalseColor/Thumbnail.png", 11, 2015,
+    "https://github.com/matt77hias/FalseColor",
+	[]
 	);
 	
 addProject("Personal webpage",
     ["Matthias Moulin", "Niels Billen"],
     "November 2015",
-    "res/Projects/MB15M/Thumbnail.png", 11, 2015,
-    "http://matt77hias.github.io/",
-	[new Download("Repository", "https://github.com/matt77hias/matt77hias.github.io", "res/Icons/icon_html.png")]
+    "res/Projects/PersonalWebpage/Thumbnail.png", 11, 2015,
+    "https://github.com/matt77hias/matt77hias.github.io",
+	[new Download("Play", "matt77hias.github.io", "res/Icons/icon_html.png")]
 	);
-	
-addProject("FalseColor",
-    ["Matthias Moulin"],
-    "November 2015",
-    "res/Projects/M15F/Thumbnail.png", 11, 2015,
-    "M15F.html",
-	[new Download("Repository", "https://github.com/matt77hias/FalseColor", "res/Icons/icon_html.png")]
-	);	
 	
 addProject("Clipping",
     ["Matthias Moulin"],
     "November 2015",
-    "res/Projects/M15C/Thumbnail.png", 11, 2015,
-    "M15C.html",
-	[new Download("Repository", "https://github.com/matt77hias/Clipping", "res/Icons/icon_html.png")]
+    "res/Projects/Clipping/Thumbnail.png", 11, 2015,
+    "https://github.com/matt77hias/Clipping",
+	[]
 	);
 
+// 2nd Semester - 2nd Master of Science in Engineering (2014-2015)
 addProject("Hybrid Survivor",
     ["Matthias Moulin", "Milan Samyn", "Samuel Lannoy"],
-    "Capita Selecta Computer Science: Man Machine Interface: Game Design (H05N2A), June 2015",
-    "res/Projects/MSL15HS/Thumbnail.png", 6, 2015,
-    "MSL15HS.html",
-	[new Download("Repository", "https://github.com/matt77hias/meta-HybridSurvivor", "res/Icons/icon_html.png")]
+    "Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), June 2015",
+    "res/Projects/HybridSurvivor/Thumbnail.png", 6, 2015,
+    "https://github.com/matt77hias/meta-HybridSurvivor",
+	[]
 	);
 
 addProject("Stochastic Experiments",
     ["Matthias Moulin"],
-    "Deterministic and Stochastic Integration Techniques (H03G3B), May 2015",
-    "res/Projects/M15SE/Thumbnail.png", 5, 2015,
-    "M15SE.html",
-	[new Download("Repository", "https://github.com/matt77hias/StochasticExperiments", "res/Icons/icon_html.png")]
+    "Deterministic and Stochastic Integration Techniques (B-KUL-H03G3B), May 2015",
+    "res/Projects/StochasticExperiments/Thumbnail.png", 5, 2015,
+    "https://github.com/matt77hias/StochasticExperiments",
+	[]
 	);
 
 addProject("Quadrature Experiments",
     ["Matthias Moulin"],
-    "Deterministic and Stochastic Integration Techniques (H03G3B), May 2015",
-    "res/Projects/M15QE/Thumbnail.png", 5, 2015,
-    "M15QE.html",
-	[new Download("Repository", "https://github.com/matt77hias/QuadratureExperiments", "res/Icons/icon_html.png")]
+    "Deterministic and Stochastic Integration Techniques (B-KUL-H03G3B), May 2015",
+    "res/Projects/QuadratureExperiments/Thumbnail.png", 5, 2015,
+    "https://github.com/matt77hias/QuadratureExperiments",
+	[]
 	);
 
+// 1st Semester - 2nd Master of Science in Engineering (2014-2015)
 addProject("Kajiya",
     ["Matthias Moulin", "Mattias Buelens"],
-    "Requirements Analysis for Complex Software Systems (G0K32A), December 2014",
-    "res/Projects/MB14K/Thumbnail.png", 12, 2014,
-    "MB14K.html",
+    "Requirements Analysis for Complex Software Systems (B-KUL-G0K32A), December 2014",
+    "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
 addProject("Fingerprint Compression",
     ["Matthias Moulin"],
-    "Wavelets (H03F7A), December 2014",
-    "res/Projects/M14FC/Thumbnail.png", 12, 2014,
-    "M14FC.html",
-	[new Download("Repository", "https://github.com/matt77hias/FingerprintCompression", "res/Icons/icon_html.png")]
+    "Wavelets (B-KUL-H03F7A), December 2014",
+    "res/Projects/FingerprintCompression/Thumbnail.png", 12, 2014,
+    "https://github.com/matt77hias/FingerprintCompression",
+	[]
 	);
 
 addProject("Tron",
     ["Matthias Moulin"],
-    "Comparative Programming Languages (H04L5A), December 2014",
-    "res/Projects/M14T/Thumbnail.png", 12, 2014,
-    "M14T.html",
-	[]
+    "Comparative Programming Languages (B-KUL-H04L5A), December 2014",
+    "res/Projects/Tron/Thumbnail.png", 12, 2014,
+    "https://github.com/matt77hias/Tron",
+	[new Download("Play", "http://matt77hias.github.io/Tron/", "res/Icons/icon_html.png")]
 	);
 
 addProject("2048",
     ["Matthias Moulin"],
-    "Comparative Programming Languages (H04L5A), December 2014",
-    "res/Projects/M142048/Thumbnail.png", 12, 2014,
-    "M142048.html",
-	[]
-	);
-	
-addProject("pbrt tools",
-    ["Matthias Moulin"],
-    "December 2014",
-    "res/Projects/M14P/Thumbnail.png", 12, 2014,
-    "M14P.html",
+    "Comparative Programming Languages (B-KUL-H04L5A), December 2014",
+    "res/Projects/2048/Thumbnail.png", 12, 2014,
+    "https://github.com/matt77hias/2048",
 	[]
 	);
 	
 addProject("The Puppeteer",
     ["Matthias Moulin"],
-    "Capita Selecta Computer Science: Man Machine Interface: Game Design (H05N2A), October 2014",
-    "res/Projects/M14TP/Thumbnail.png", 10, 2014,
-    "M14TP.html",
+    "Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), October 2014",
+    "res/Projects/ThePuppeteer/Thumbnail.png", 10, 2014,
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
+// 2nd Semester - 1st Master of Science in Engineering (2013-2014)
 addProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
-    "Computer Vision (H02A5A), June 2014",
-    "res/Projects/MS14IS/Thumbnail.png", 6, 2014,
-    "MS14IS.html",
+    "Computer Vision (B-KUL-H02A5A), June 2014",
+    "res/Projects/IncisorSegmentation/Thumbnail.png", 6, 2014,
+    "https://matt77hias.github.io/private",
+	[]
+	);
+	
+addProject("FrigoShare",
+    ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
+    "User Interfaces (B-KUL-H04I2A), June 2014",
+    "res/Projects/FrigoShare/Thumbnail.png", 6, 2014,
+    "https://anarchikul.wordpress.com/",
+	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png")]
+	);
+	
+addProject("Sampling Experiments",
+    ["Matthias Moulin"],
+    "Computer Graphics II (B-KUL-G0B36A), April 2014",
+    "res/Projects/SamplingExperiments/Thumbnail.png", 4, 2014,
+    "https://matt77hias.github.io/private",
+	[]
+	);
+	
+addProject("Face Recognition",
+    ["Matthias Moulin"],
+    "Computer Vision (B-KUL-H02A5A), March 2014",
+    "res/Projects/FaceRecognition/Thumbnail.png", 3, 2014,
+    "https://github.com/matt77hias/FaceRecognition",
+	[]
+	);
+	
+addProject("Segmentation",
+    ["Matthias Moulin"],
+    "Computer Vision (B-KUL-H02A5A), March 2014",
+    "res/Projects/Segmentation/Thumbnail.png", 3, 2014,
+    "https://github.com/matt77hias/Segmentation",
+	[]
+	);
+	
+addProject("Smoothing",
+    ["Matthias Moulin"],
+    "Computer Vision (B-KUL-H02A5A), March 2014",
+    "res/Projects/Smoothing/Thumbnail.png", 3, 2014,
+    "https://github.com/matt77hias/Smoothing",
 	[]
 	);
 
-addProject("FrigoShare",
-    ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
-    "User Interfaces (H04I2A), June 2014",
-    "res/Projects/BMP14FS/Thumbnail.png", 6, 2014,
-    "BMP14FS.html",
-	[new Download("App", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png"),
-	 new Download("Blog", "https://anarchikul.wordpress.com/", "res/Icons/icon_html.png")
-	]
-	);
-
+// 1st Semester - 1st Master of Science in Engineering (2013-2014)
 addProject("Pacman",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Modelling of Complex Systems (G0Q66B), December 2013",
-    "res/Projects/MP13P/Thumbnail.png", 12, 2013,
-    "MP13P.html",
+    "Modelling of Complex Systems (B-KUL-G0Q66B), December 2013",
+    "res/Projects/Pacman/Thumbnail.png", 12, 2013,
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
 addProject("Lilyhammer Rendering Engine",
     ["Matthias Moulin"],
-    "Computer Graphics I (G0Q66B), December 2013",
-    "res/Projects/M13LRE/Thumbnail.png", 12, 2013,
-    "M13LRE.html",
+    "Computer Graphics I (B-KUL-G0Q66B), December 2013",
+    "res/Projects/LilyhammerRenderingEngine/Thumbnail.png", 12, 2013,
+    "LilyhammerRenderingEngine.html",
 	[]
 	);
 
 addProject("JUnit Test Deamon",
-    ["Mattias Buelens", "Vital D'haveloose", "Matthias Moulin", "Ruben Pieters"],
-    "Design of Software Systems (H04J9B), December 2013",
-    "res/Projects/BDMP13JTD/Thumbnail.png", 12, 2013,
-    "BDMP13JTD.html",
-	[new Download("Repository", "https://github.com/MattiasBuelens/junit", "res/Icons/icon_html.png")]
-	);
-
-addProject("Car Rental Service",
-    ["Matthias Moulin", "Ruben Pieters"],
-    "Distributed Systems (H04I4A), December 2013",
-    "res/Projects/MP13CRS/Thumbnail.png", 12, 2013,
-    "MP13CRS.html",
+    ["Matthias Moulin", "Mattias Buelens", "Ruben Pieters", "Vital D'haveloose"],
+    "Design of Software Systems (B-KUL-H04J9B), December 2013",
+    "res/Projects/JUnitTestDeamon/Thumbnail.png", 12, 2013,
+    "https://github.com/matt77hias/junit",
 	[]
 	);
 
+addProject("Car Rental Agency",
+    ["Matthias Moulin", "Ruben Pieters"],
+    "Distributed Systems (B-KUL-H04I4A), December 2013",
+    "res/No Image.jpg", 12, 2013,
+    "https://github.com/matt77hias/meta-carrental",
+	[]
+	);
+	
+addProject("Synchronization Experiments",
+    ["Matthias Moulin"],
+    "Operating Systems (B-KUL-H04G1B), November 2013",
+    "res/Projects/SynchronizationExperiments/Thumbnail.png", 11, 2013,
+    "https://github.com/matt77hias/JavaSyncExperiments",
+	[]
+	);
+
+// Holiday (2013)
+addProject("Survival Island",
+    ["Matthias Moulin"],
+    "August 2013",
+    "res/Projects/SurvivalIsland/Thumbnail.png", 8, 2013,
+    "https://github.com/matt77hias/SurvivalIsland",
+	[new Download("Play", "https://matt77hias.github.io/SurvivalIsland", "res/Icons/icon_html.png")]
+	);
+	
 addProject("Snake",
     ["Matthias Moulin"],
     "August 2013",
-    "res/Projects/M13S/Thumbnail.png", 8, 2013,
-    "M13S.html",
+    "res/Projects/Snake/Thumbnail.png", 8, 2013,
+    "https://github.com/matt77hias/Snake",
+	[]
+	);
+	
+// 1st + 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
+addProject("MazeStormer",
+    ["Dennis Frett", "Matthias Moulin", "Mattias Buelens", "Stijn Hoskens", "Vital D'haveloose", "Stijn Hoskens"],
+    "Problem Solving and Design: Computer Science (B-KUL-H01Q3C), June 2013",
+    "res/Projects/MazeStormer/Thumbnail.png", 6, 2013,
+    "https://github.com/matt77hias/MazeStormer",
+	[]
+	);
+	
+// 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
+addProject("Network Simulation, Part 2",
+    ["Matthias Moulin"],
+    "Computer Networks (B-KUL-G0Q43A), April 2013",
+    "res/Projects/NetworkSimulation2/Thumbnail.png", 4, 2013,
+    "https://github.com/matt77hias/NS2",
+	[]
+	);
+	
+addProject("Network Simulation, Part 1",
+    ["Matthias Moulin", "Ruben Pieters"],
+    "Computer Networks (B-KUL-G0Q43A), April 2013",
+    "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
+    "https://github.com/matt77hias/NS1",
+	[]
+	);
+	
+addProject("Socket Experiments",
+    ["Matthias Moulin", "Ruben Pieters"],
+    "Computer Networks (B-KUL-G0Q43A), April 2013",
+    "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
+    "https://github.com/matt77hias/JavaSocketExperiments",
+	[]
+	);
+	
+// 1st Semester - 3th Bachelor of Science in Engineering (2012-2013)
+addProject("MIPS Samples",
+    ["Matthias Moulin"],
+    "Computer Architecture and System Software (B-KUL-H01P5A), December 2012",
+    "res/Projects/MIPSSamples/Thumbnail.png", 12, 2012,
+    "https://github.com/matt77hias/MIPSSamples",
 	[]
 	);
 
-addProject("MazeStormer",
-    ["Mattias Buelens", "Vital D'haveloose", "Dennis Frett", "Stijn Hoskens", "Matthias Moulin"],
-    "Problem Solving and Design: Computer Science (H01Q3C), June 2013",
-    "res/Projects/BDFHM13MS/Thumbnail.png", 6, 2013,
-    "BDFHM13MS.html",
-	[new Download("Repository", "https://github.com/MattiasBuelens/MazeStormer", "res/Icons/icon_html.png")]
-	);
-
+// 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
 addProject("RoboRally",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Object Oriented Programming (H01P1A), June 2012",
-    "res/Projects/MP12RR/Thumbnail.png", 6, 2012,
-    "MP12RR.html",
+    "Object Oriented Programming (B-KUL-H01P1A), June 2012",
+    "res/Projects/RoboRally/Thumbnail.png", 6, 2012,
+    "https://github.com/matt77hias/RoboRally",
 	[]
 	);
 
+// 1st Semester - 2nd Bachelor of Science in Engineering (2011-2012)
 addProject("Aurora",
-    ["Sebastiaan Maes", "Sophie Marien", "Pieter Marynissen", "Nathan Moesen", "Tom Molderez", "Matthias Moulin"],
-    "Problem Solving and Design, Part 3 (H01D4B), December 2011",
-    "res/Projects/MMMMMM11A/Thumbnail.png", 12, 2011,
-    "MMMMMM11A.html",
-	[new Download("App", "http://aurora--cwb1.appspot.com/", "res/Icons/icon_html.png"),
-	new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon_html.png")]
+	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
+    "Problem Solving and Design, Part 3 (B-KUL-H01D4B), December 2011",
+    "res/Projects/Aurora/Thumbnail.png", 12, 2011,
+    "https://github.com/matt77hias/Aurora",
+	[new Download("Play", "http://aurora--cwb1.appspot.com/", "res/Icons/icon_html.png"),
+	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon_html.png")]
 	);
-
+	
+// 2nd Semester - 1st Bachelor of Science in Engineering (2010-2011)
 addProject("Crossbow Tennis Machine",
-    ["Nick Berlanger", "Egon Blyweert", "Jeroen Colon", "Matthias Moulin", "Bart Opsomer", "Joris Panis", "Louis Ponet", "Ben Praet", "Frederick Puttemans"],
-    "Problem Solving and Design, Part 2 (H01C2A), June 2011",
-    "res/Projects/BBCMOPPPP11CTM/Thumbnail.png", 6, 2011,
-    "BBCMOPPPP11CTM.html",
+    ["Bart Opsomer", "Ben Praet", "Egon Blyweert", "Frederick Puttemans", "Jeroen Colon", "Joris Panis", "Louis Ponet", "Matthias Moulin", "Nick Berlanger"],
+    "Problem Solving and Design, Part 2 (B-KUL-H01C2A), June 2011",
+    "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
+    "https://matt77hias.github.io/private",
 	[]
 	);
 
+// 1st Semester - 1st Bachelor of Science in Engineering (2010-2011)
 addProject("MandeLboat",
-    ["Jef Aendekerk", "Ben Allaerts", "Wout Behaeghel", "Julian Bouckenooghe", "Robin Clerckx", "Stijn Meylemans", "Matthias Moulin", "Egon Pittoors"],
-    "Problem Solving and Design, Part 1 (H01B9A), December 2010",
-    "res/Projects/AABBCMMP10M/Thumbnail.png", 12, 2010,
-    "AABBCMMP10M.html",
+	["Ben Allaerts", "Egon Pittoors", "Jef Aendekerk", "Julian Bouckenooghe", "Matthias Moulin", "Robin Clerckx", "Stijn Meylemans", "Wout Behaeghel"],
+    "Problem Solving and Design, Part 1 (B-KUL-H01B9A), December 2010",
+    "res/Projects/MandeLboat/Thumbnail.png", 12, 2010,
+    "https://matt77hias.github.io/private",
 	[]
 	);

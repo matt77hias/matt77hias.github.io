@@ -1,26 +1,25 @@
-var Author = function (n, l) {
-    this.fullName         = n;
-    this.personalPageLink = l
+var Author = function (name, url) {
+    this.fullName         = name;
+    this.personalPageLink = url
 };
 
 var AuthorMap = {};
 
-function addAuthor(n, l) {
-    if (!(AuthorMap.hasOwnProperty(n))) {
-        AuthorMap[n] = new Author(n, l)
+function addAuthor(name, url) {
+    if (!(AuthorMap.hasOwnProperty(name))) {
+        AuthorMap[name] = new Author(name, url)
     }
 }
 
 function initializeAuthors() {
-    addAuthor("Matthias Moulin"    , "http://matt77hias.github.io/");
-	addAuthor("Niels Billen"       , "https://perswww.kuleuven.be/~u0093806/");
-    addAuthor("Philip Dutré"       , "http://people.cs.kuleuven.be/~philip.dutre/");
-    addAuthor("Philip Dutr&eacute;", "http://people.cs.kuleuven.be/~philip.dutre/");
+    addAuthor("Matthias Moulin"    , "https://matt77hias.github.io/");
+	addAuthor("Niels Billen"       , "https://nielsbillen.github.io/");
+    addAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre/");
 }
 
-function getAuthor(n) {
-    if (!AuthorMap.hasOwnProperty(n)) { return new Author(n) }
-    else                              { return AuthorMap[n]  }
+function getAuthor(name) {
+    if (!AuthorMap.hasOwnProperty(name)) { return new Author(name) }
+    else                                 { return AuthorMap[name]  }
 }
 
 initializeAuthors();

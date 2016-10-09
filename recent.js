@@ -12,14 +12,14 @@ function constructRecent() {
         k = document.createElement("h4");
         k.className = "recent-authors";
         a.appendChild(k);
-        for (g = 0; g < d.authors.length; g += 1) {
-            f = getAuthor(d.authors[g]);
-            if (f.personalPageLink)         { k.innerHTML += '<a href="' + f.personalPageLink + '">' + f.fullName + "</a>" }
-            else                            { k.innerHTML += f.fullName }
-            if (g === d.authors.length - 1) { k.innerHTML += "."        }
-            else                            { k.innerHTML += ", "       }
-        }
-        a.appendChild(k);
+        //for (g = 0; g < d.authors.length; g += 1) {
+        //    f = getAuthor(d.authors[g]);
+        //    if (f.personalPageLink)         { k.innerHTML += '<a href="' + f.personalPageLink + '">' + f.fullName + "</a>" }
+        //    else                            { k.innerHTML += f.fullName }
+        //    if (g === d.authors.length - 1) { k.innerHTML += "."        }
+        //    else                            { k.innerHTML += ", "       }
+        //}
+        //a.appendChild(k);
         c = document.createElement("a");
         c.href = d.projectpage;
         l = document.createElement("img");
