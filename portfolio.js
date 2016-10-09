@@ -309,8 +309,9 @@ addProject("Hybrid Survivor",
     "res/Projects/HybridSurvivor/Thumbnail.png", 6, 2015,
     "https://github.com/matt77hias/HybridSurvivor",
 	[new Download("Oculus Rift", "https://github.com/matt77hias/HybridSurvivor-OculusRift", "res/Icons/icon_html.png"),
-	 new Download("HTC Vive", "https://github.com/matt77hias/HybridSurvivor-PC", "res/Icons/icon_html.png")],
+	 new Download("HTC Vive", "https://github.com/matt77hias/HybridSurvivor-PC", "res/Icons/icon_html.png"),
 	 new Download("PC & web", "https://github.com/matt77hias/HybridSurvivor-HTCVive", "res/Icons/icon_html.png")
+	]
 	);
 
 addProject("Stochastic Experiments",
@@ -540,7 +541,8 @@ addProject("Aurora",
     "res/Projects/Aurora/Thumbnail.png", 12, 2011,
     "https://github.com/matt77hias/Aurora",
 	[new Download("Play", "http://aurora--cwb1.appspot.com/", "res/Icons/icon_html.png"),
-	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon_html.png")]
+	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon_html.png")
+	]
 	);
 	
 // 2nd Semester - 1st Bachelor of Science in Engineering (2010-2011)
