@@ -310,7 +310,7 @@ addProject("Hybrid Survivor",
     "https://github.com/matt77hias/HybridSurvivor",
 	[new Download("Oculus Rift", "https://github.com/matt77hias/HybridSurvivor-OculusRift", "res/Icons/icon_html.png"),
 	 new Download("HTC Vive", "https://github.com/matt77hias/HybridSurvivor-PC", "res/Icons/icon_html.png")],
-	 new Download("PC/web", "https://github.com/matt77hias/HybridSurvivor-HTCVive", "res/Icons/icon_html.png")
+	 new Download("PC & web", "https://github.com/matt77hias/HybridSurvivor-HTCVive", "res/Icons/icon_html.png")
 	);
 
 addProject("Stochastic Experiments",
@@ -449,7 +449,7 @@ addProject("Car Rental Agency",
     "Distributed Systems (B-KUL-H04I4A), December 2013",
     "res/No Image.jpg", 12, 2013,
     "https://github.com/matt77hias/meta-carrental",
-	[new Download("Java RNI 1", "https://github.com/matt77hias/JavaRMI1", "res/Icons/icon_html.png"),
+	[new Download("Java RMI 1", "https://github.com/matt77hias/JavaRMI1", "res/Icons/icon_html.png"),
 	 new Download("Java RMI 2", "https://github.com/matt77hias/JavaRMI2", "res/Icons/icon_html.png"),
 	 new Download("Java EE", "https://github.com/matt77hias/JavaEE", "res/Icons/icon_html.png"),
 	 new Download("Java GAE", "https://github.com/matt77hias/JavaGAE", "res/Icons/icon_html.png")
