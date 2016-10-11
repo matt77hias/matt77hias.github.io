@@ -206,7 +206,7 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 // 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
 addProject("Monte Carlo Integration Techniques",
     ["Matthias Moulin"],
-    "Teaching: Problem Solving and Design, Part 3 (B-KUL-H01D4B), October 2011",
+    "Teaching: Problem Solving and Design, Part 3 (B-KUL-H01D4B), October 2016",
     "res/Projects/MC/Thumbnail.png", 10, 2016,
     "https://github.com/ComputerGraphicsResearchGroup/peno3",
 	[new Download("Supplementary Notes", "https://github.com/matt77hias/MC/blob/master/MC.pdf", "res/Icons/icon_pdf.png"),
