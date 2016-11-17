@@ -237,7 +237,17 @@ addProject("Rosetta smallpt",
     "September 2016",
     "res/Projects/smallpt/Thumbnail.png", 9, 2016,
     "https://github.com/matt77hias/smallpt",
-	[]
+	[new Download("C", "https://github.com/matt77hias/c-smallpt", "res/Icons/icon_html.png",
+	 new Download("C++", "https://github.com/matt77hias/cpp-smallpt", "res/Icons/icon_html.png",
+	 new Download("C#", "https://github.com/matt77hias/cs-smallpt", "res/Icons/icon_html.png",
+	 new Download("CUDA", "https://github.com/matt77hias/cu-smallpt", "res/Icons/icon_html.png",
+	 new Download("Erlang", "https://github.com/matt77hias/erl-smallpt", "res/Icons/icon_html.png",
+	 new Download("Java", "https://github.com/matt77hias/java-smallpt", "res/Icons/icon_html.png",
+	 new Download("J#", "https://github.com/matt77hias/jsl-smallpt", "res/Icons/icon_html.png",
+	 new Download("Prolog", "https://github.com/matt77hias/pl-smallpt", "res/Icons/icon_html.png",
+	 new Download("Python 2.7/3.5", "https://github.com/matt77hias/py-smallpt", "res/Icons/icon_html.png",
+	 new Download("Python 2.7/3.5 + NumPy", "https://github.com/matt77hias/numpy-smallpt", "res/Icons/icon_html.png",
+	 new Download("Racket", "https://github.com/matt77hias/rkt-smallpt", "res/Icons/icon_html.png"]
 	);
 	
 addProject("Gwent",
