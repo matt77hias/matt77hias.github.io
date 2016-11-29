@@ -246,8 +246,10 @@ addProject("Rosetta smallpt",
 	 new Download("Java", "https://github.com/matt77hias/java-smallpt", "res/Icons/icon_html.png"),
 	 new Download("J#", "https://github.com/matt77hias/jsl-smallpt", "res/Icons/icon_html.png"),
 	 new Download("Prolog", "https://github.com/matt77hias/pl-smallpt", "res/Icons/icon_html.png"),
-	 new Download("Python 2.7/3.5", "https://github.com/matt77hias/py-smallpt", "res/Icons/icon_html.png"),
-	 new Download("Python 2.7/3.5 + NumPy", "https://github.com/matt77hias/numpy-smallpt", "res/Icons/icon_html.png"),
+	 new Download("Python 2.7", "https://github.com/matt77hias/py-smallpt", "res/Icons/icon_html.png"),
+	 new Download("Python 3.5", "https://github.com/matt77hias/py-smallpt", "res/Icons/icon_html.png"),
+	 new Download("Python 2.7 + NumPy", "https://github.com/matt77hias/numpy-smallpt", "res/Icons/icon_html.png"),
+	 new Download("Python 3.5 + NumPy", "https://github.com/matt77hias/numpy-smallpt", "res/Icons/icon_html.png"),
 	 new Download("Racket", "https://github.com/matt77hias/rkt-smallpt", "res/Icons/icon_html.png")]
 	);
 	
