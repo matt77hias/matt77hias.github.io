@@ -251,7 +251,8 @@ addProject("Rosetta smallpt",
 	 new Download("Python 3.5", "https://github.com/matt77hias/py-smallpt", "res/Icons/icon_html.png"),
 	 new Download("Python 2.7 + NumPy", "https://github.com/matt77hias/numpy-smallpt", "res/Icons/icon_html.png"),
 	 new Download("Python 3.5 + NumPy", "https://github.com/matt77hias/numpy-smallpt", "res/Icons/icon_html.png"),
-	 new Download("Racket", "https://github.com/matt77hias/rkt-smallpt", "res/Icons/icon_html.png")]
+	 new Download("Racket", "https://github.com/matt77hias/rkt-smallpt", "res/Icons/icon_html.png"),
+	 new Download("TypeScript", "https://github.com/matt77hias/ts-smallpt", "res/Icons/icon_html.png")]
 	);
 	
 addProject("Gwent",
