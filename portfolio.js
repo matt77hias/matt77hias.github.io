@@ -528,7 +528,7 @@ addProject("Network Simulation, Part 2",
 	);
 	
 addProject("Network Simulation, Part 1",
-    ["Matthias Moulin", "Ruben Pieters"],
+    ["Matthias Moulin"],
     "Course: Computer Networks (B-KUL-G0Q43A), April 2013",
     "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
     "https://github.com/matt77hias/NS1",
