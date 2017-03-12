@@ -176,6 +176,9 @@ function getRecentProjects(nb) {
 
 var recent = getRecentItems(5)
 
+//-----------------------------------------------------------------------------
+// Publications
+//-----------------------------------------------------------------------------
 addPublication("Hybrid kd-trees for photon mapping and accelerating ray tracing",
     ["Matthias Moulin"],
     "Master's thesis, Department of Computer Science, KULeuven, Belgium, June 2015",
@@ -202,8 +205,24 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 	 new Download("Lirias", "https://lirias.kuleuven.be/handle/123456789/501514", "res/Icons/icon_html.png")
     ]
 	);
+	
+//-----------------------------------------------------------------------------
+// 2nd Semester - 2nd PhD of Science in Engineering (2016-2017)
+//-----------------------------------------------------------------------------
+addProject("MAGE",
+    ["Matthias Moulin"],
+    "MAGE, January 2017",
+    "res/Projects/MAGE/Thumbnail.png", 1, 2017,
+    "https://github.com/matt77hias/MAGE-Meta",
+	[new Download("Code", "https://github.com/matt77hias/MAGE", "res/Icons/icon_pdf.png"),
+	 new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc", "res/Icons/icon_html.png"),
+	 new Download("Font Utility", "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon_html.png")
+	]
+	);
 
+//-----------------------------------------------------------------------------
 // 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
+//-----------------------------------------------------------------------------
 addProject("Monte Carlo Integration Techniques",
     ["Matthias Moulin"],
     "Teaching: Problem Solving and Design, Part 3 (B-KUL-H01D4B), October 2016",
@@ -231,7 +250,9 @@ addProject("pippy",
 	[]
 	);
 	
+//-----------------------------------------------------------------------------
 // 2nd Semester - 1st PhD of Science in Engineering (2015-2016)
+//-----------------------------------------------------------------------------
 addProject("Rosetta smallpt",
     ["Matthias Moulin"],
     "September 2016",
@@ -272,7 +293,9 @@ addProject("FlowGrid Visualization",
 	[]
 	);
 	
+//-----------------------------------------------------------------------------
 // 1st Semester - 1st PhD of Science in Engineering (2015-2016)
+//-----------------------------------------------------------------------------
 addProject("pbrtpy",
     ["Matthias Moulin"],
     "December 2015",
@@ -329,7 +352,9 @@ addProject("Clipping",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Master of Science in Engineering (2014-2015)
+//-----------------------------------------------------------------------------
 addProject("Hybrid Survivor",
     ["Matthias Moulin", "Milan Samyn", "Samuel Lannoy"],
     "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), June 2015",
@@ -357,7 +382,9 @@ addProject("Quadrature Experiments",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 1st Semester - 2nd Master of Science in Engineering (2014-2015)
+//-----------------------------------------------------------------------------
 addProject("Kajiya",
     ["Matthias Moulin", "Mattias Buelens"],
     "Course: Requirements Analysis for Complex Software Systems (B-KUL-G0K32A), December 2014",
@@ -398,7 +425,9 @@ addProject("The Puppeteer",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 2nd Semester - 1st Master of Science in Engineering (2013-2014)
+//-----------------------------------------------------------------------------
 addProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
     "Course: Computer Vision (B-KUL-H02A5A), June 2014",
@@ -447,7 +476,9 @@ addProject("Smoothing",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 1st Semester - 1st Master of Science in Engineering (2013-2014)
+//-----------------------------------------------------------------------------
 addProject("Pacman",
     ["Matthias Moulin", "Ruben Pieters"],
     "Course: Modelling of Complex Systems (B-KUL-G0Q66B), December 2013",
@@ -492,7 +523,9 @@ addProject("Synchronization Experiments",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // Holiday (2013)
+//-----------------------------------------------------------------------------
 addProject("Survival Island",
     ["Matthias Moulin"],
     "August 2013",
@@ -509,7 +542,9 @@ addProject("Snake",
 	[]
 	);
 	
+//-----------------------------------------------------------------------------
 // 1st + 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
+//-----------------------------------------------------------------------------
 addProject("MazeStormer",
     ["Dennis Frett", "Matthias Moulin", "Mattias Buelens", "Stijn Hoskens", "Vital D'haveloose", "Stijn Hoskens"],
     "Course: Problem Solving and Design: Computer Science (B-KUL-H01Q3C), June 2013",
@@ -518,7 +553,9 @@ addProject("MazeStormer",
 	[]
 	);
 	
+//-----------------------------------------------------------------------------
 // 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
+//-----------------------------------------------------------------------------
 addProject("Network Simulation, Part 2",
     ["Matthias Moulin"],
     "Course: Computer Networks (B-KUL-G0Q43A), April 2013",
@@ -543,7 +580,9 @@ addProject("Socket Experiments",
 	[]
 	);
 	
+//-----------------------------------------------------------------------------
 // 1st Semester - 3th Bachelor of Science in Engineering (2012-2013)
+//-----------------------------------------------------------------------------
 addProject("MIPS Samples",
     ["Matthias Moulin"],
     "Course: Computer Architecture and System Software (B-KUL-H01P5A), December 2012",
@@ -552,7 +591,9 @@ addProject("MIPS Samples",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
+//-----------------------------------------------------------------------------
 addProject("RoboRally",
     ["Matthias Moulin", "Ruben Pieters"],
     "Course: Object Oriented Programming (B-KUL-H01P1A), June 2012",
@@ -561,7 +602,9 @@ addProject("RoboRally",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 1st Semester - 2nd Bachelor of Science in Engineering (2011-2012)
+//-----------------------------------------------------------------------------
 addProject("Aurora",
 	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
     "Course: Problem Solving and Design, Part 3 (B-KUL-H01D4B), December 2011",
@@ -572,7 +615,9 @@ addProject("Aurora",
 	]
 	);
 	
+//-----------------------------------------------------------------------------
 // 2nd Semester - 1st Bachelor of Science in Engineering (2010-2011)
+//-----------------------------------------------------------------------------
 addProject("Crossbow Tennis Machine",
     ["Bart Opsomer", "Ben Praet", "Egon Blyweert", "Frederick Puttemans", "Jeroen Colon", "Joris Panis", "Louis Ponet", "Matthias Moulin", "Nick Berlanger"],
     "Course: Problem Solving and Design, Part 2 (B-KUL-H01C2A), June 2011",
@@ -581,7 +626,9 @@ addProject("Crossbow Tennis Machine",
 	[]
 	);
 
+//-----------------------------------------------------------------------------
 // 1st Semester - 1st Bachelor of Science in Engineering (2010-2011)
+//-----------------------------------------------------------------------------
 addProject("MandeLboat",
 	["Ben Allaerts", "Egon Pittoors", "Jef Aendekerk", "Julian Bouckenooghe", "Matthias Moulin", "Robin Clerckx", "Stijn Meylemans", "Wout Behaeghel"],
     "Course: Problem Solving and Design, Part 1 (B-KUL-H01B9A), December 2010",
