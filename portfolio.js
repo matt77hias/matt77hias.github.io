@@ -211,7 +211,7 @@ addPublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
 //-----------------------------------------------------------------------------
 addProject("MAGE",
     ["Matthias Moulin"],
-    "MAGE, January 2017",
+    "January 2017",
     "res/Projects/MAGE/Thumbnail.png", 1, 2017,
     "https://github.com/matt77hias/MAGE-Meta",
 	[new Download("Code", "https://github.com/matt77hias/MAGE", "res/Icons/icon_html.png"),
