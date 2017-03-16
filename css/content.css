@@ -1,14 +1,14 @@
-body{
-    margin:0;
-    padding:0;
-    font-family:REGULAR;
-    font-size:100%;
-    text-align:justify;
-    background-color:#e5e5e5
+body {
+    margin: 0;
+    padding: 0;
+    font-family: REGULAR;
+    font-size: 100%;
+    text-align: justify;
+    background-color: #e5e5e5;
 }
 
-a{
-    text-decoration:none
+a {
+    text-decoration: none;
 }
 
 @font-face{
@@ -25,98 +25,102 @@ a{
     src:url('fonts/OpenSans-CondLight.eot?#iefix') format('embedded-opentype'),local('Open Sans Condensed Light'),url('fonts/OpenSans-CondLight.woff2') format('woff2'),url('fonts/OpenSans-CondLight.woff') format('woff'),url('fonts/OpenSans-CondLight.ttf') format('truetype'),url('fonts/OpenSans-CondLight.svg#svgFontName') format('svg')
 }
 
-h1{
-    font-size:2.5em;
-    font-weight:normal;
-    font-family:condensed;
-    margin:0
+h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    font-family: condensed;
+    margin: 0;
 }
 
-h2{
-    font-size:2em;
-    font-weight:normal;
-    font-family:condensed;
-    margin:0
+h2 {
+    font-size: 2em;  
+    font-weight: normal;
+    font-family: condensed;
+    margin: 0;
 }
 
-h3{
-    font-size:1.5em;
-    font-family:condensedbold;
-    font-weight:normal
+h3 {
+    font-size: 1.5em;
+    font-family: condensedbold;
+    font-weight: normal;
+    
 }
 
-h4{
-    font-size:1em;
-    font-weight:normal
+h4 {
+    font-size: 1em;   
+    font-weight: normal;
 }
 
-.subheader{
-    float:right
+.subheader {
+    float: right;
 }
 
-body>article{
+body > article {
     margin-left:auto;
-    margin-right:auto;
-    margin-top:1em;
-    margin-bottom:1em;
-    max-width:56em;
-    background:white;
-    box-shadow:0 0 .75em gray;
-    padding:1em
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 56em;
+    background: white;
+    box-shadow: 0em 0em 0.75em gray;
+    padding: 1em;
 }
 
-@media screen and (max-width:58em){
-    body>article{margin-left:1em;margin-right:1em}
-}
-
-body>article:first-child{
-    margin-top:0
-}
-
-body>article:last-child{
-    margin-bottom:0
-}
-
-article h1{
-    border-bottom:1px solid #c6c6c6
-}
-
-.bordered{
-    box-shadow:.25em .25em .25em #c6c6c6;
-    border:1px solid #606060;
-    padding:.25em
-}
-
-.container{
-    display:table;
-    padding-top:1em;
-    padding-bottom:1em
-}
-
-.container-item{
-    display:table-cell;
-    vertical-align:middle
-}
-
-aside.container-item{
-    padding-right:1em
-}
-
-.inline-thumbnail{
-    display:none;
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-    opacity:0;
-    transition:opacity .75s ease-in-out;
-    margin-bottom:1em
-}
-
-@media screen and (max-width:24em){
-    .large-thumbnail{
-        display:none
+@media screen and (max-width: 58em) {
+    body > article {
+        margin-left:1em;
+        margin-right: 1em;
     }
-    .inline-thumbnail{
-        display:block
+}
+
+body > article:first-child {
+    margin-top: 0;   
+}
+
+body > article:last-child {
+    margin-bottom: 0;
+}
+
+article h1 {
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.bordered {
+    box-shadow: 0.25em 0.25em 0.25em #C6C6C6;
+    border: 1px solid #606060;
+    padding: 0.25em;
+}
+
+.container {
+    display: table;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.container-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+aside.container-item {
+    padding-right: 1em;
+}
+
+.inline-thumbnail {
+    display: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 24em) {
+    .large-thumbnail {
+        display: none;
+    }
+    .inline-thumbnail {
+        display: block;
     }
 }
