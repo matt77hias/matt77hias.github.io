@@ -15,6 +15,7 @@ function initializeAuthors() {
     addAuthor("Matthias Moulin"    , "https://matt77hias.github.io/");
 	addAuthor("Niels Billen"       , "https://nielsbillen.github.io/");
     addAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre/");
+	addAuthor("Ruben Pieters"      , "https://rubenpieters.github.io/");
 }
 
 function getAuthor(name) {
