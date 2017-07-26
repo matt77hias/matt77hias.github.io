@@ -7,25 +7,33 @@
     padding: 0.5em 0 0 0;
 }
 
+.icon-github,
 .icon-linkedin,
-.icon-youtube,
-.icon-github {
+.icon-twitter,
+.icon-youtube {
     display: inline-block;
     width: 40px;
     height: 40px;
     margin: 2px;
 }
+
+.icon-github:hover,
 .icon-linkedin:hover,
-.icon-youtube:hover,
-.icon-github:hover {
+.icon-twitter:hover,
+.icon-youtube:hover {
     background-position: bottom right;
+}
+
+
+.icon-github {
+    background: transparent url('../res/Icons/icon_github.png') top left no-repeat;
 }
 .icon-linkedin {
     background: transparent url('../res/Icons/icon_linkedin.png') top left no-repeat;
 }
+.icon-twitter {
+    background: transparent url('../res/Icons/icon_twitter.png') top left no-repeat;
+}
 .icon-youtube {
     background: transparent url('../res/Icons/icon_youtube.png') top left no-repeat;
-}
-.icon-github {
-    background: transparent url('../res/Icons/icon_github.png') top left no-repeat;
 }
