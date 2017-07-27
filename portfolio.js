@@ -277,14 +277,6 @@ addProject("Rosetta smallpt",
 	 new Download("TypeScript", "https://github.com/matt77hias/ts-smallpt", "res/Icons/icon_html.png")]
 	);
 	
-addProject("Gwent",
-    ["Matthias Moulin"],
-    "April 2016",
-    "res/Projects/Gwent/Thumbnail.png", 4, 2016,
-    "https://github.com/matt77hias/Gwent",
-	[]
-	);	
-	
 addProject("FlowGrid Visualization",
     ["Matthias Moulin"],
     "April 2016",
