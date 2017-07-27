@@ -277,14 +277,6 @@ addProject("Rosetta smallpt",
 	 new Download("TypeScript", "https://github.com/matt77hias/ts-smallpt", "res/Icons/icon_html.png")]
 	);
 	
-addProject("FlowGrid Visualization",
-    ["Matthias Moulin"],
-    "April 2016",
-    "res/Projects/FlowGridVisualization/Thumbnail.png", 4, 2016,
-    "https://github.com/matt77hias/FlowGridVisualization",
-	[]
-	);
-	
 //-----------------------------------------------------------------------------
 // 1st Semester - 1st PhD of Science in Engineering (2015-2016)
 //-----------------------------------------------------------------------------
