@@ -1,4 +1,4 @@
-<p align="center"><img src="https://matt77hias.github.io/res/Picture.jpg" width="50"></p>
+<p align="center"><img src="https://matt77hias.github.io/res/Picture.jpg" width="75"></p>
 
 # [matt77hias.github.io](http://matt77hias.github.io)
 My personal [webpage](http://matt77hias.github.io).
