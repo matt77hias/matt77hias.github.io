@@ -1,20 +1,19 @@
 function constructRecent() {
-    var h, g, d, f, m, e, b, a, l, c, k;
-    m = document.getElementById("recent");
-    b = getRecentItems(6);
-    for (h = 0; h < b.length; h += 1) {
-        d = b[h];
-        a = document.createElement("div");
-        a.className = "recent-container";
-        c = document.createElement("a");
-        c.href = d.projectpage;
-        l = document.createElement("img");
-        l.className = "recent-thumbnail";
-        l.src = d.thumbnail;
-        c.appendChild(l);
-        a.appendChild(c);
-        m.appendChild(a)
+    var doc = document.getElementById("recent");
+	var items = getRecentItems(6);
+    for (var i = 0; i < items.length; ++i) {
+        var item = items[i];
+        var div = document.createElement("div");
+        div.className = "recent-container";
+        var a = document.createElement("a");
+        a.href = item.projectpage;
+		var img = document.createElement("img");
+        img.className = "recent-thumbnail";
+        img.src = item.thumbnail;
+        a.appendChild(img);
+        div.appendChild(a);
+        doc.appendChild(div)
     }
-    console.log(b)
 }
+
 constructRecent();
