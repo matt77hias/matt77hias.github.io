@@ -295,23 +295,7 @@ addProject("Permeability",
     "https://matt77hias.github.io/private",
 	[]
 	);
-	
-addProject("ffpy",
-    ["Matthias Moulin"],
-    "December 2015",
-    "res/Projects/ffpy/Thumbnail.png", 12, 2015,
-    "https://github.com/matt77hias/ffpy",
-	[]
-	);
-	
-addProject("geompy",
-    ["Matthias Moulin"],
-    "December 2015",
-    "res/Projects/geompy/Thumbnail.png", 12, 2015,
-    "https://github.com/matt77hias/geompy",
-	[]
-	);
-	
+
 addProject("FalseColor Visualization",
     ["Matthias Moulin"],
     "November 2015",
