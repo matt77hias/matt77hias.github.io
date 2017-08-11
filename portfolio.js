@@ -400,14 +400,6 @@ addProject("2048",
     "https://github.com/matt77hias/2048",
 	[]
 	);
-	
-addProject("The Puppeteer",
-    ["Matthias Moulin"],
-    "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), October 2014",
-    "res/Projects/ThePuppeteer/Thumbnail.png", 10, 2014,
-    "https://matt77hias.github.io/private",
-	[]
-	);
 
 //-----------------------------------------------------------------------------
 // 2nd Semester - 1st Master of Science in Engineering (2013-2014)
@@ -510,14 +502,6 @@ addProject("Synchronization Experiments",
 //-----------------------------------------------------------------------------
 // Holiday (2013)
 //-----------------------------------------------------------------------------
-addProject("Survival Island",
-    ["Matthias Moulin"],
-    "August 2013",
-    "res/Projects/SurvivalIsland/Thumbnail.png", 8, 2013,
-    "https://github.com/matt77hias/SurvivalIsland",
-	[new Download("Play", "https://matt77hias.github.io/SurvivalIsland", "res/Icons/icon_html.png")]
-	);
-	
 addProject("Snake",
     ["Matthias Moulin"],
     "August 2013",
