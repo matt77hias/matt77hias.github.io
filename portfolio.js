@@ -181,7 +181,7 @@ var recent = getRecentItems(5)
 //-----------------------------------------------------------------------------
 addPublication("Hybrid kd-trees for photon mapping and accelerating ray tracing",
     ["Matthias Moulin"],
-    "Master's thesis, Department of Computer Science, KULeuven, Belgium, June 2015",
+    "Master's thesis, Department of Computer Science, KU Leuven, Belgium, June 2015",
     "res/Publications/M15HKFPMAART/Thumbnail.png", 6, 2015,
     "M15HKFPMAART.html",
     [new Download("Citation", "res/Publications/M15HKFPMAART/Citation.bib", undefined, "BIB", "0.3 KB"),
