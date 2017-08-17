@@ -1,19 +1,28 @@
-function constructRecent() {
+function ConstructHTMLRecentItems() {
+   
     var doc = document.getElementById("recent");
-	var items = getRecentItems(6);
+	
+	var items = GetRecentItems(6);
     for (var i = 0; i < items.length; ++i) {
         var item = items[i];
-        var div = document.createElement("div");
+        
+		// Create the division/section for the item.
+		var div = document.createElement("div");
         div.className = "recent-container";
-        var a = document.createElement("a");
-        a.href = item.projectpage;
-		var img = document.createElement("img");
+        
+		// Create the thumbnail image hyperref.
+		var a_img     = document.createElement("a");
+        a_img.href    = item.projectpage;
+		
+		// Create the thumbnail image.
+		var img       = document.createElement("img");
         img.className = "recent-thumbnail";
-        img.src = item.thumbnail;
-        a.appendChild(img);
-        div.appendChild(a);
-        doc.appendChild(div)
+        img.src       = item.thumbnail;
+        
+        a_img.appendChild(img);
+        div.appendChild(a_img);
+        doc.appendChild(div);
     }
 }
 
-constructRecent();
+ConstructHTMLRecentItems();

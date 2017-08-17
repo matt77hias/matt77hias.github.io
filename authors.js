@@ -1,26 +1,30 @@
+var g_authors = {};
+
 var Author = function (name, url) {
-    this.fullName         = name;
-    this.personalPageLink = url
+    this.name = name;
+    this.url  = url;
 };
 
-var AuthorMap = {};
-
-function addAuthor(name, url) {
-    if (!(AuthorMap.hasOwnProperty(name))) {
-        AuthorMap[name] = new Author(name, url)
+function AddAuthor(name, url) {
+    if (!(g_authors.hasOwnProperty(name))) {
+        g_authors[name] = new Author(name, url);
     }
 }
 
-function initializeAuthors() {
-    addAuthor("Matthias Moulin"    , "https://matt77hias.github.io/");
-	addAuthor("Niels Billen"       , "https://nielsbillen.github.io/");
-    addAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre/");
-	addAuthor("Ruben Pieters"      , "https://rubenpieters.github.io/");
+function GetAuthor(name) {
+    if (!g_authors.hasOwnProperty(name)) {
+        return new Author(name);
+    }
+    else {
+        return g_authors[name];
+    }
 }
 
-function getAuthor(name) {
-    if (!AuthorMap.hasOwnProperty(name)) { return new Author(name) }
-    else                                 { return AuthorMap[name]  }
+function InitializeAuthors() {
+    AddAuthor("Matthias Moulin"    , "https://matt77hias.github.io/");
+    AddAuthor("Niels Billen"       , "https://nielsbillen.github.io/");
+    AddAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre/");
+    AddAuthor("Ruben Pieters"      , "https://rubenpieters.github.io/");
 }
 
-initializeAuthors();
+InitializeAuthors();
