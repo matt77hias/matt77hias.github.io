@@ -33,7 +33,7 @@ function makeProjectThumbnailOpacityHandler(b, c, a) {
     }
 }
 
-function constructProjectTableForYearLargeThumbnail(m, n) {
+function ConstructProjectTableForYearForThumbnails(m, n) {
     var t, r, l, e, v, y, g, c, f, w, k, b, u, o, q, a, d, s, x, h, p;
     v = document.getElementById("item-list");
     y = document.createElement("article");
@@ -45,7 +45,7 @@ function constructProjectTableForYearLargeThumbnail(m, n) {
     for (t = 0; t < m.length; t += 1) {
         l = m[t];
         c = document.createElement("article");
-        c.className = "item-thumbnailview container";
+        c.className = "item-thumbnail-view container";
         if (l.thumbnail) {
             f = document.createElement("aside");
             f.className = "container-item";
@@ -104,12 +104,12 @@ function constructProjectTableForYearLargeThumbnail(m, n) {
     v.appendChild(y)
 }
 
-function constructProjectTableForYearSmallDetails(a, h) {
+function ConstructProjectTableForYearForList(a, h) {
     var f, e, l, c, g, k, b, d;
     l = document.getElementById("item-list");
     g = document.getElementById("items-" + h);
     k = document.createElement("ul");
-    k.className = "item-listview";
+    k.className = "item-list-view";
     for (f = 0; f < a.length; f += 1) {
         b = a[f];
         c = document.createElement("li");
@@ -128,65 +128,67 @@ function constructProjectTableForYearSmallDetails(a, h) {
     l.appendChild(g)
 }
 
-function constructProjectTableSmallDetails() {
-    var c, b, a;
-    b = GetProjectYears();
-    b.sort();
-    for (c = b.length - 1; c >= 0; c -= 1) {
-        constructProjectTableForYearSmallDetails(GetProjectsOfYear(b[c]), b[c])
+function ConstructProjectTableForThumbnails() {
+    var years = GetProjectYears();
+    for (var i = years.length - 1; i >= 0; --i) {
+		var year = years[i];
+		var projects = GetProjectsOfYear(year);
+        ConstructProjectTableForYearForThumbnails(projects, year);
     }
 }
 
-function constructProjectTableLargeThumbnail() {
-    var c, b, a;
-    b = GetProjectYears();
-    b.sort();
-    for (c = b.length - 1; c >= 0; c -= 1) {
-        constructProjectTableForYearLargeThumbnail(GetProjectsOfYear(b[c]), b[c])
+function ConstructProjectTableForList() {
+    var years = GetProjectYears();
+    for (var i = years.length - 1; i >= 0; --i) {
+        var year = years[i];
+		var projects = GetProjectsOfYear(year);
+		ConstructProjectTableForYearForList(projects, year);
     }
 }
 
-function constructProjectYearLinks() {
-    var c, a, b;
-    b = GetProjectYears();
-    b.sort();
-    a = document.getElementById("item-year-links");
-    for (c = b.length - 1; c >= 0; c -= 1) {
-        a.innerHTML += '<a href = "#items-' + b[c] + '">' + b[c] + "</a>";
-        if (c > 0) { a.innerHTML += ", " }
-        else       { a.innerHTML += "."  }
+function ConstructProjectYearLinks() {
+    var years = GetProjectYears();
+    var links = document.getElementById("item-year-links");
+    for (var i = years.length - 1; i >= 0; --i) {
+		var year = years[i];
+		
+        links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
+        if (i > 0) { links.innerHTML += ", "; }
+        else       { links.innerHTML += ".";  }
     }
 }
 
-function thumbnailView() {
-    var a, b;
-    b = document.getElementsByClassName("item-thumbnailview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "block"
+function ShowThumbnails() {
+    var ts = document.getElementsByClassName("item-thumbnail-view");
+    for (var i = 0; i < ts.length; ++i) {
+        ts[i].style.display = "block"
     }
-    b = document.getElementsByClassName("item-listview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "none"
+	
+    var ls = document.getElementsByClassName("item-list-view");
+    for (var j = 0; j < ls.length; ++j) {
+        ls[j].style.display = "none"
     }
+	
     document.getElementById("thumbnail-view-button").style.opacity = 0.8;
     document.getElementById("list-view-button").style.opacity      = ""
 }
 
-function listView() {
-    var a, b;
-    b = document.getElementsByClassName("item-thumbnailview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "none"
+function ShowList() {
+    var ts = document.getElementsByClassName("item-thumbnail-view");
+    for (var i = 0; i < ts.length; ++i) {
+        ts[i].style.display = "none"
     }
-    b = document.getElementsByClassName("item-listview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "block"
+	
+    var ls = document.getElementsByClassName("item-list-view");
+    for (var j = 0; j < ls.length; ++j) {
+        ls[j].style.display = "block"
     }
+	
     document.getElementById("thumbnail-view-button").style.opacity = "";
     document.getElementById("list-view-button").style.opacity      = 0.8
 }
 
-constructProjectTableLargeThumbnail();
-constructProjectTableSmallDetails();
-constructProjectYearLinks();
-thumbnailView();
+ConstructProjectTableForThumbnails();
+ConstructProjectTableForList();
+ConstructProjectYearLinks();
+ShowThumbnails();

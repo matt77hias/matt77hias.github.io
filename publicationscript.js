@@ -33,7 +33,7 @@ function makePublicationThumbnailOpacityHandler(b, c, a) {
     }
 }
 
-function constructPublicationTableForYearLargeThumbnail(m, n) {
+function ConstructPublicationTableForYearForThumbnails(m, n) {
     var t, r, l, e, v, y, g, c, f, w, k, b, u, o, q, a, d, s, x, h, p;
     v = document.getElementById("item-list");
     y = document.createElement("article");
@@ -45,7 +45,7 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
     for (t = 0; t < m.length; t += 1) {
         l = m[t];
         c = document.createElement("article");
-        c.className = "item-thumbnailview container";
+        c.className = "item-thumbnail-view container";
         if (l.thumbnail) {
             f = document.createElement("aside");
             f.className = "container-item";
@@ -104,12 +104,12 @@ function constructPublicationTableForYearLargeThumbnail(m, n) {
     v.appendChild(y)
 }
 
-function constructPublicationTableForYearSmallDetails(a, h) {
+function ConstructPublicationTableForYearForList(a, h) {
     var f, e, l, c, g, k, b, d;
     l = document.getElementById("item-list");
     g = document.getElementById("items-" + h);
     k = document.createElement("ul");
-    k.className = "item-listview";
+    k.className = "item-list-view";
     for (f = 0; f < a.length; f += 1) {
         b = a[f];
         c = document.createElement("li");
@@ -128,65 +128,67 @@ function constructPublicationTableForYearSmallDetails(a, h) {
     l.appendChild(g)
 }
 
-function constructPublicationTableSmallDetails() {
-    var c, b, a;
-    b = GetPublicationYears();
-    b.sort();
-    for (c = b.length - 1; c >= 0; c -= 1) {
-        constructPublicationTableForYearSmallDetails(GetPublicationsOfYear(b[c]), b[c])
+function ConstructPublicationTableForThumbnails() {
+    var years = GetPublicationYears();
+    for (var i = years.length - 1; i >= 0; --i) {
+		var year = years[i];
+		var publications = GetPublicationsOfYear(year);
+        ConstructPublicationTableForYearForThumbnails(publications, year);
     }
 }
 
-function constructPublicationTableLargeThumbnail() {
-    var c, b, a;
-    b = GetPublicationYears();
-    b.sort();
-    for (c = b.length - 1; c >= 0; c -= 1) {
-        constructPublicationTableForYearLargeThumbnail(GetPublicationsOfYear(b[c]), b[c])
+function ConstructPublicationTableForList() {
+    var years = GetPublicationYears();
+    for (var i = years.length - 1; i >= 0; --i) {
+        var year = years[i];
+		var publications = GetPublicationsOfYear(year);
+		ConstructPublicationTableForYearForList(publications, year);
     }
 }
 
-function constructPublicationYearLinks() {
-    var c, a, b;
-    b = GetPublicationYears();
-    b.sort();
-    a = document.getElementById("item-year-links");
-    for (c = b.length - 1; c >= 0; c -= 1) {
-        a.innerHTML += '<a href = "#items-' + b[c] + '">' + b[c] + "</a>";
-        if (c > 0) { a.innerHTML += ", " }
-        else       { a.innerHTML += "."  }
+function ConstructPublicationYearLinks() {
+    var years = GetPublicationYears();
+    var links = document.getElementById("item-year-links");
+    for (var i = years.length - 1; i >= 0; --i) {
+		var year = years[i];
+		
+        links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
+        if (i > 0) { links.innerHTML += ", "; }
+        else       { links.innerHTML += ".";  }
     }
 }
 
-function thumbnailView() {
-    var a, b;
-    b = document.getElementsByClassName("item-thumbnailview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "block"
+function ShowThumbnails() {
+    var ts = document.getElementsByClassName("item-thumbnail-view");
+    for (var i = 0; i < ts.length; ++i) {
+        ts[i].style.display = "block"
     }
-    b = document.getElementsByClassName("item-listview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "none"
+	
+    var ls = document.getElementsByClassName("item-list-view");
+    for (var j = 0; j < ls.length; ++j) {
+        ls[j].style.display = "none"
     }
+	
     document.getElementById("thumbnail-view-button").style.opacity = 0.8;
     document.getElementById("list-view-button").style.opacity      = ""
 }
 
-function listView() {
-    var a, b;
-    b = document.getElementsByClassName("item-thumbnailview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "none"
+function ShowList() {
+    var ts = document.getElementsByClassName("item-thumbnail-view");
+    for (var i = 0; i < ts.length; ++i) {
+        ts[i].style.display = "none"
     }
-    b = document.getElementsByClassName("item-listview");
-    for (a = 0; a < b.length; a += 1) {
-        b[a].style.display = "block"
+	
+    var ls = document.getElementsByClassName("item-list-view");
+    for (var j = 0; j < ls.length; ++j) {
+        ls[j].style.display = "block"
     }
+	
     document.getElementById("thumbnail-view-button").style.opacity = "";
     document.getElementById("list-view-button").style.opacity      = 0.8
 }
 
-constructPublicationTableLargeThumbnail();
-constructPublicationTableSmallDetails();
-constructPublicationYearLinks();
-thumbnailView();
+ConstructPublicationTableForThumbnails();
+ConstructPublicationTableForList();
+ConstructPublicationYearLinks();
+ShowThumbnails();

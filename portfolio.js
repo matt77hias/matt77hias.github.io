@@ -1,14 +1,7 @@
-var g_items_by_year = {};
-var g_items_by_date = [];
-var g_items_by_date_sorted = true;
-
 var g_publications_by_year = {};
-var g_publications_by_date = [];
-var g_publications_by_date_sorted = true;
-
-var g_projects_by_year = {};
-var g_projects_by_date = [];
-var g_projects_by_date_sorted = true;
+var g_projects_by_year     = {};
+var g_items_by_date        = [];
+var g_items_by_date_sorted = true;
 
 function GetIconFromLink(link) {
     var extension = link.split(".").pop();
@@ -54,35 +47,26 @@ var Project = function (title, authors, description, thumbnail, month, year, pro
 };
 
 function AddItem(item, year) {
-    if (!g_items_by_year.hasOwnProperty(year)) {
-        g_items_by_year[year] = []
-    }
-
-    g_items_by_year[year].push(item);
     g_items_by_date.push(item);
     g_items_by_date_sorted = false;
 }
 
 function AddPublication(publication, year) {
     if (!g_publications_by_year.hasOwnProperty(year)) {
-        g_publications_by_year[year] = []
+        g_publications_by_year[year] = [];
     }
 
     g_publications_by_year[year].push(publication);
-    g_publications_by_date.push(publication);
-    g_publications_by_date_sorted = false;
-
+	
     AddItem(publication, year);
 }
 
 function AddProject(project, year) {
     if (!g_projects_by_year.hasOwnProperty(year)) {
-        g_projects_by_year[year] = []
+        g_projects_by_year[year] = [];
     }
 
     g_projects_by_year[year].push(project);
-    g_projects_by_date.push(project);
-    g_projects_by_date_sorted = false;
 
     AddItem(project, year);
 }
@@ -112,31 +96,29 @@ function GetDataOfYear(map, year) {
     }
 }
 
-function GetItemsOfYear(year) {
-    return GetDataOfYear(g_items_by_year, year)
-}
-
 function GetPublicationsOfYear(year) {
-    return GetDataOfYear(g_publications_by_year, year)
+    return GetDataOfYear(g_publications_by_year, year);
 }
 
 function GetProjectsOfYear(year) {
-    return GetDataOfYear(g_projects_by_year, year)
+    return GetDataOfYear(g_projects_by_year, year);
 }
 
-function GetItemYears() {
-    return Object.keys(g_items_by_year)
+function GetDataYears(map) {
+	var years = Object.keys(map);
+	years.sort();
+	return years;
 }
 
 function GetPublicationYears() {
-    return Object.keys(g_publications_by_year)
+	return GetDataYears(g_publications_by_year);
 }
 
 function GetProjectYears() {
-    return Object.keys(g_projects_by_year)
+	return GetDataYears(g_projects_by_year);
 }
 
-function Sort(list) {
+function SortItems(list) {
     list.sort(function (lhs, rhs) {
         if      (lhs.year  < rhs.year)  { return  1; }
         else if (lhs.year  > rhs.year)  { return -1; }
@@ -146,41 +128,18 @@ function Sort(list) {
     });
 }
 
-function GetRecentData(list, count) {
-    var recent = [];
-
-    for (var i = 0; i < Math.min(count, list.length); ++i) {
-        recent.push(list[i]);
-    }
-
-    return recent;
-}
-
 function GetRecentItems(count) {
     if (g_items_by_date_sorted === false) {
-        Sort(g_items_by_date, count);
+        SortItems(g_items_by_date, count);
         g_items_by_date_sorted = true;
     }
-
-    return GetRecentData(g_items_by_date, count);
-}
-
-function GetRecentPublications(count) {
-    if (g_publications_by_date_sorted === false) {
-        Sort(g_publications_by_date, count);
-        g_publications_by_date_sorted = true;
+	
+	var recent = [];
+    for (var i = 0; i < Math.min(count, g_items_by_date.length); ++i) {
+        recent.push(g_items_by_date[i]);
     }
-
-    return GetRecentData(g_publications_by_date, count);
-}
-
-function GetRecentProjects(count) {
-    if (g_projects_by_date_sorted === false) {
-        Sort(g_projects_by_date, count);
-        g_projects_by_date_sorted = true;
-    }
-
-    return GetRecentData(g_projects_by_date, count);
+	
+    return recent;
 }
 
 //-----------------------------------------------------------------------------

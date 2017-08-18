@@ -23,7 +23,7 @@
     opacity: .8;
 }
 
-.item-thumbnailview {
+.item-thumbnail-view {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     font-family: condensed;
@@ -32,11 +32,11 @@
     box-shadow:1px 1px 5px gray;
 }
 
-ul.item-listview {
+ul.item-list-view {
     display: none;
 }
 
-ul.item-listview li {
+ul.item-list-view li {
     margin-bottom: 1em;
     margin-right: 1em;
 }
@@ -87,11 +87,11 @@ ul.item-listview li {
 }
 
 @media screen and (max-width:32em) {
-    article.item-thumbnailview.container 
+    article.item-thumbnail-view.container 
     aside.container-item {
         display: none;
     }
-    article.item-thumbnailview.container 
+    article.item-thumbnail-view.container 
     section.container-item {
         text-align: center;
         display: block;
