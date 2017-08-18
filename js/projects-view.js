@@ -2,130 +2,173 @@ function AppendDownload(acc, download) {
     // Create the division/section for the download.
     var div          = document.createElement("div");
     div.className    = "download";
+	acc.appendChild(div);
 
     // Create the download image hyperref.
     var a_img        = document.createElement("a");
     a_img.href       = download.link;
+	div.appendChild(a_img);
 
     // Create the download image.
     var img          = document.createElement("img");
     img.className    = "download-icon";
     img.src          = download.icon;
+	a_img.appendChild(img);
 
      // Create the download text hyperref.
     var a_txt        = document.createElement("a");
     a_txt.className  = "download-description";
     a_txt.href       = download.link;
     a_txt.innerHTML  = download.description;
-
-    a_img.appendChild(img);
-    div.appendChild(a_img);
     div.appendChild(a_txt);
-    acc.appendChild(div);
 }
 
-function makeProjectThumbnailOpacityHandler(b, c, a) {
+function MakeProjectThumbnailOpacityHandler(image, img1, img2) {
     return function () {
-        c.style.opacity = 1;
-        c.src = b.src;
-        a.style.opacity = 1;
-        a.src = b.src
+        img1.style.opacity = 1;
+        img1.src = image.src;
+        img2.style.opacity = 1;
+        img2.src = image.src
     }
 }
 
-function ConstructProjectTableForYearForThumbnails(m, n) {
-    var t, r, l, e, v, y, g, c, f, w, k, b, u, o, q, a, d, s, x, h, p;
-    v = document.getElementById("item-list");
-    y = document.createElement("article");
-    y.id = "items-" + n;
-    g = document.createElement("h1");
-    g.id = "items-" + n;
-    g.innerHTML = n + '<a class = "to-top-link" href = "#portfolio">back to the top</a>';
-    y.appendChild(g);
-    for (t = 0; t < m.length; t += 1) {
-        l = m[t];
-        c = document.createElement("article");
-        c.className = "item-thumbnail-view container";
-        if (l.thumbnail) {
-            f = document.createElement("aside");
-            f.className = "container-item";
-            k = document.createElement("a");
-            k.href = l.projectpage;
-            w = document.createElement("img");
-            w.className = "item-thumbnail large-thumbnail bordered";
-            k.appendChild(w);
-            f.appendChild(k);
-            c.appendChild(f)
+function ConstructProjectTableForYearForThumbnails(projects, year) {
+    var list = document.getElementById("item-list");
+    
+	var articles = document.createElement("article");
+	articles.id = "items-" + year;
+	list.appendChild(articles);
+    
+	var h1 = document.createElement("h1");
+    h1.id = "items-" + year;
+	articles.appendChild(h1);
+    h1.innerHTML = year + '<a class = "to-top-link" href = "#projects">back to the top</a>';
+    
+	for (var i = 0; i < projects.length; ++i) {
+        var project = projects[i];
+        
+		var article = document.createElement("article");
+        article.className = "item-thumbnail-view container";
+		articles.appendChild(article);
+		
+		if (project.thumbnail) {
+            var aside = document.createElement("aside");
+            aside.className = "container-item";
+			article.appendChild(aside);
+		}
+		
+		var section = document.createElement("section");
+        section.className = "container-item";
+		article.appendChild(section); 
+        
+		if (project.thumbnail) {
+			var a_img1 = document.createElement("a");
+            a_img1.href = project.projectpage;
+			aside.appendChild(a_img1);
+			var a_img2 = document.createElement("a");
+            a_img2.href = project.projectpage;
+			section.appendChild(a_img2);
+            
+			var img1 = document.createElement("img");
+            img1.className = "item-thumbnail large-thumbnail bordered";
+			a_img1.appendChild(img1);
+			var img2 = document.createElement("img");
+            img2.className = "item-inline-thumbnail inline-thumbnail bordered";
+			a_img2.appendChild(img2);
+            
+            var image = new Image();
+			image.src = project.thumbnail;
+            image.onload = image.onerror = MakeProjectThumbnailOpacityHandler(image, img1, img2);
         }
-        b = document.createElement("section");
-        b.className = "container-item";
-        if (l.thumbnail) {
-            o = document.createElement("a");
-            o.href = l.projectpage;
-            u = document.createElement("img");
-            u.className = "item-inline-thumbnail inline-thumbnail bordered";
-            o.appendChild(u);
-            b.appendChild(o)
+        
+		var a_title = document.createElement("a");
+        a_title.className = "item-title-link";
+        a_title.href = project.projectpage;
+		section.appendChild(a_title);
+        
+		var h3 = document.createElement("h3");
+		h3.className = "item-title";
+		a_title.appendChild(h3);
+		h3.innerHTML = project.title;
+
+		var h4 = document.createElement("h4");
+        h4.className = "item-authors";
+        section.appendChild(h4);
+        
+		for (var j = 0; j < project.authors.length; ++j) {
+            var author = GetAuthor(project.authors[j]);
+            
+			if (author.url) { 
+				h4.innerHTML += '<a href="' + author.url + '">' + author.name + "</a>";
+			}
+            else { 
+				h4.innerHTML += author.name;
+			}
+			
+            if (j === project.authors.length - 1) { 
+				h4.innerHTML += ".</br>";
+			}
+            else { 
+				h4.innerHTML += ", ";
+			}
         }
-        if (l.thumbnail) {
-            q = new Image();
-            q.onload = q.onerror = makeProjectThumbnailOpacityHandler(q, w, u);
-            q.src = l.thumbnail
-        }
-        d = document.createElement("a");
-        d.className = "item-title-link";
-        d.href = l.projectpage;
-        a = document.createElement("h3");
-        a.innerHTML = l.title;
-        a.className = "item-title";
-        d.appendChild(a);
-        b.appendChild(d);
-        s = document.createElement("h4");
-        s.className = "item-authors";
-        b.appendChild(s);
-        for (r = 0; r < l.authors.length; r += 1) {
-            e = GetAuthor(l.authors[r]);
-            if (e.url)         { s.innerHTML += '<a href="' + e.url + '">' + e.name + "</a>" }
-            else                            { s.innerHTML += e.name }
-            if (r === l.authors.length - 1) { s.innerHTML += "."        }
-            else                            { s.innerHTML += ", "       }
-        }
-        x = document.createElement("p");
-        x.innerHTML = l.description;
-        x.className = "item-details";
-        b.appendChild(x);
-        p = document.createElement("div");
-        p.className = "item-links-table";
-        AppendDownload(p, new Download("Project page", l.projectpage, "res/Icons/icon_html.png"));
-        for (r = 0; r < l.downloads.length; r += 1) { AppendDownload(p, l.downloads[r]) }
-        b.appendChild(p);
-        c.appendChild(b); y.appendChild(c)
+        
+		var p = document.createElement("p");
+		p.className = "item-description";
+		section.appendChild(p);
+        p.innerHTML = project.citation;
+        
+		var div = document.createElement("div");
+        div.className = "item-links-table";
+		section.appendChild(div);
+		
+		var download = new Download("Project page", project.projectpage, "res/Icons/icon_html.png");
+        AppendDownload(div, download);
+        for (var k = 0; k < project.downloads.length; ++k) { 
+			download = project.downloads[k];
+			AppendDownload(div, download);
+		}
     }
-    v.appendChild(y)
 }
 
-function ConstructProjectTableForYearForList(a, h) {
-    var f, e, l, c, g, k, b, d;
-    l = document.getElementById("item-list");
-    g = document.getElementById("items-" + h);
-    k = document.createElement("ul");
-    k.className = "item-list-view";
-    for (f = 0; f < a.length; f += 1) {
-        b = a[f];
-        c = document.createElement("li");
-        c.innerHTML += '<a href="' + b.projectpage + '"><h3 class="item-title-details">' + b.title + "</h3></a>";
-        for (e = 0; e < b.authors.length; e += 1) {
-            d = GetAuthor(b.authors[e]);
-            if (d.url)         { c.innerHTML += '<a href="' + d.url + '" class="item-authors-details">' + d.name + "</a>" }
-            else                            { c.innerHTML += d.name }
-            if (e === b.authors.length - 1) { c.innerHTML += ".</br>"   }
-            else                            { c.innerHTML += ", "       }
+function ConstructProjectTableForYearForList(projects, year) {
+    var list = document.getElementById("item-list");
+    
+	var links = document.getElementById("items-" + year);
+	list.appendChild(links);
+    
+	var ul = document.createElement("ul");
+	ul.className = "item-list-view";
+	list.appendChild(ul);
+    
+	for (var i = 0; i < projects.length; ++i) {
+        var project = projects[i];
+        
+		var li = document.createElement("li");
+		ul.appendChild(li);
+        
+		li.innerHTML += '<a href="' + project.projectpage + '"><h3 class="item-title-details">' + project.title + "</h3></a>";
+	
+		for (var j = 0; j < project.authors.length; ++j) {
+            var author = GetAuthor(project.authors[j]);
+            
+			if (author.url) { 
+				li.innerHTML += '<a href="' + author.url + '" class="item-authors-details">' + author.name + "</a>";
+			}
+            else { 
+				li.innerHTML += author.name;
+			}
+			
+            if (j === project.authors.length - 1) { 
+				li.innerHTML += ".</br>";
+			}
+            else { 
+				li.innerHTML += ", ";
+			}
         }
-        c.innerHTML += '<span class="item-details">' + b.description + "</span>"; 
-		k.appendChild(c)
+		
+        li.innerHTML += '<span class="item-details">' + project.description + "</span>";
     }
-    g.appendChild(k);
-    l.appendChild(g)
 }
 
 function ConstructProjectTableForThumbnails() {

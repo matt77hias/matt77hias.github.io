@@ -9,19 +9,18 @@ function ConstructHTMLRecentItems() {
 		// Create the division/section for the item.
 		var div = document.createElement("div");
         div.className = "recent-container";
+		doc.appendChild(div);
         
 		// Create the thumbnail image hyperref.
 		var a_img     = document.createElement("a");
         a_img.href    = item.projectpage;
+		div.appendChild(a_img);
 		
 		// Create the thumbnail image.
 		var img       = document.createElement("img");
         img.className = "recent-thumbnail";
         img.src       = item.thumbnail;
-        
-        a_img.appendChild(img);
-        div.appendChild(a_img);
-        doc.appendChild(div);
+		a_img.appendChild(img);
     }
 }
 
