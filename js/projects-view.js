@@ -116,13 +116,13 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
 		var p = document.createElement("p");
 		p.className = "item-description";
 		section.appendChild(p);
-        p.innerHTML = project.citation;
+        p.innerHTML = project.description;
         
 		var div = document.createElement("div");
         div.className = "item-links-table";
 		section.appendChild(div);
 		
-		var download = new Download("Project page", project.projectpage, "res/Icons/icon_html.png");
+		var download = new Download("Project page", project.projectpage, "res/Icons/icon-html.png");
         AppendDownload(div, download);
         for (var k = 0; k < project.downloads.length; ++k) { 
 			download = project.downloads[k];

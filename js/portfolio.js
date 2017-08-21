@@ -6,14 +6,14 @@ var g_items_by_date_sorted = true;
 function GetIconFromLink(link) {
     var extension = link.split(".").pop();
 
-    if      (extension === "pdf")                                                                                             { return "res/Icons/icon_pdf.png";     }
-    else if (extension === "bib" || extension === "tex")                                                                      { return "res/Icons/icon_tex.png";     }
-    else if (extension === "html")                                                                                            { return "res/Icons/icon_html.png";    }
-    else if (extension === "txt")                                                                                             { return "res/Icons/icon_txt.png";     }
-    else if (extension === "zip" || extension === "rar")                                                                      { return "res/Icons/icon_zip.png";     }
-    else if (extension === "mov" || extension === "mp4" || extension === "avi" || extension === "mkv" || extension === "wmv") { return "res/Icons/icon_video.png";   }
-    else if (extension === "ppt" || extension === "pptx")                                                                     { return "res/Icons/icon_ppt.png";     }
-    else                                                                                                                      { return "res/Icons/icon_unknown.png"; }
+    if      (extension === "pdf")                                                                                             { return "res/Icons/icon-pdf.png";     }
+    else if (extension === "bib" || extension === "tex")                                                                      { return "res/Icons/icon-tex.png";     }
+    else if (extension === "html")                                                                                            { return "res/Icons/icon-html.png";    }
+    else if (extension === "txt")                                                                                             { return "res/Icons/icon-txt.png";     }
+    else if (extension === "zip" || extension === "rar")                                                                      { return "res/Icons/icon-zip.png";     }
+    else if (extension === "mov" || extension === "mp4" || extension === "avi" || extension === "mkv" || extension === "wmv") { return "res/Icons/icon-video.png";   }
+    else if (extension === "ppt" || extension === "pptx")                                                                     { return "res/Icons/icon-ppt.png";     }
+    else                                                                                                                      { return "res/Icons/icon-unknown.png"; }
 }
 
 var Download = function (description, link, icon, extension, size) {
@@ -167,8 +167,8 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
      new Download("Abstract",     "res/Publications/MBD15EVHFKUTR/Abstract.txt",      undefined, "TXT",  "0.9 KB"),
      new Download("Presentation", "res/Publications/MBD15EVHFKUTR/Presentation.pdf",  undefined, "PDF",  "6.7 MB"),
      new Download("Poster",       "res/Publications/MBD15EVHFKUTR/Poster.pdf",        undefined, "PDF",  "1.3 MB"),
-     new Download("DOI",          "https://dx.doi.org/10.2312/sre.20151164",            "res/Icons/icon_html.png"),
-	 new Download("Lirias",       "https://lirias.kuleuven.be/handle/123456789/501514", "res/Icons/icon_html.png")
+     new Download("DOI",          "https://dx.doi.org/10.2312/sre.20151164",            "res/Icons/icon-html.png"),
+	 new Download("Lirias",       "https://lirias.kuleuven.be/handle/123456789/501514", "res/Icons/icon-html.png")
     ]
 	);
 	
@@ -180,9 +180,9 @@ CreateProject("MAGE",
     "January 2017",
     "res/Projects/MAGE/Thumbnail.png", 1, 2017,
     "https://github.com/matt77hias/MAGE-Meta",
-	[new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon_html.png"),
-	 new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc",        "res/Icons/icon_html.png"),
-	 new Download("Font Utility",  "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon_html.png")
+	[new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon-html.png"),
+	 new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc",        "res/Icons/icon-html.png"),
+	 new Download("Font Utility",  "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon-html.png")
 	]
 	);
 
@@ -194,8 +194,8 @@ CreateProject("Monte Carlo Integration Techniques",
     "October 2016",
     "res/Projects/MC/Thumbnail.png", 10, 2016,
     "https://github.com/matt77hias/MCExperiments",
-	[new Download("Supplementary Notes", "https://github.com/matt77hias/MC/blob/master/MC.pdf", "res/Icons/icon_pdf.png"),
-	 new Download("Supplementary Notes", "https://github.com/matt77hias/MC",                    "res/Icons/icon_html.png")
+	[new Download("Supplementary Notes", "https://github.com/matt77hias/MC/blob/master/MC.pdf", "res/Icons/icon-pdf.png"),
+	 new Download("Supplementary Notes", "https://github.com/matt77hias/MC",                    "res/Icons/icon-html.png")
 	]
 	);
 
@@ -223,23 +223,23 @@ CreateProject("Rosetta smallpt",
     "September 2016",
     "res/Projects/smallpt/Thumbnail.png", 9, 2016,
     "https://github.com/matt77hias/smallpt",
-	[new Download("C",                  "https://github.com/matt77hias/c-smallpt",      "res/Icons/icon_html.png"),
-	 new Download("C++",                "https://github.com/matt77hias/cpp-smallpt",    "res/Icons/icon_html.png"),
-	 new Download("C#",                 "https://github.com/matt77hias/cs-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("CoffeeScript",       "https://github.com/matt77hias/coffee-smallpt", "res/Icons/icon_html.png"),
-	 new Download("CUDA",               "https://github.com/matt77hias/cu-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("Erlang",             "https://github.com/matt77hias/erl-smallpt",    "res/Icons/icon_html.png"),
-	 new Download("Haskell",            "https://github.com/matt77hias/hs-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("Java",               "https://github.com/matt77hias/java-smallpt",   "res/Icons/icon_html.png"),
-	 new Download("JavaScript",         "https://github.com/matt77hias/js-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("J#",                 "https://github.com/matt77hias/jsl-smallpt",    "res/Icons/icon_html.png"),
-	 new Download("Prolog",             "https://github.com/matt77hias/pl-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("Python 2.7",         "https://github.com/matt77hias/py-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("Python 3.5",         "https://github.com/matt77hias/py-smallpt",     "res/Icons/icon_html.png"),
-	 new Download("Python 2.7 + NumPy", "https://github.com/matt77hias/numpy-smallpt",  "res/Icons/icon_html.png"),
-	 new Download("Python 3.5 + NumPy", "https://github.com/matt77hias/numpy-smallpt",  "res/Icons/icon_html.png"),
-	 new Download("Racket",             "https://github.com/matt77hias/rkt-smallpt",    "res/Icons/icon_html.png"),
-	 new Download("TypeScript",         "https://github.com/matt77hias/ts-smallpt",     "res/Icons/icon_html.png")]
+	[new Download("C",                  "https://github.com/matt77hias/c-smallpt",      "res/Icons/icon-html.png"),
+	 new Download("C++",                "https://github.com/matt77hias/cpp-smallpt",    "res/Icons/icon-html.png"),
+	 new Download("C#",                 "https://github.com/matt77hias/cs-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("CoffeeScript",       "https://github.com/matt77hias/coffee-smallpt", "res/Icons/icon-html.png"),
+	 new Download("CUDA",               "https://github.com/matt77hias/cu-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("Erlang",             "https://github.com/matt77hias/erl-smallpt",    "res/Icons/icon-html.png"),
+	 new Download("Haskell",            "https://github.com/matt77hias/hs-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("Java",               "https://github.com/matt77hias/java-smallpt",   "res/Icons/icon-html.png"),
+	 new Download("JavaScript",         "https://github.com/matt77hias/js-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("J#",                 "https://github.com/matt77hias/jsl-smallpt",    "res/Icons/icon-html.png"),
+	 new Download("Prolog",             "https://github.com/matt77hias/pl-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("Python 2.7",         "https://github.com/matt77hias/py-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("Python 3.5",         "https://github.com/matt77hias/py-smallpt",     "res/Icons/icon-html.png"),
+	 new Download("Python 2.7 + NumPy", "https://github.com/matt77hias/numpy-smallpt",  "res/Icons/icon-html.png"),
+	 new Download("Python 3.5 + NumPy", "https://github.com/matt77hias/numpy-smallpt",  "res/Icons/icon-html.png"),
+	 new Download("Racket",             "https://github.com/matt77hias/rkt-smallpt",    "res/Icons/icon-html.png"),
+	 new Download("TypeScript",         "https://github.com/matt77hias/ts-smallpt",     "res/Icons/icon-html.png")]
 	);
 	
 //-----------------------------------------------------------------------------
@@ -274,7 +274,7 @@ CreateProject("Personal Webpage",
     "November 2015",
     "res/Projects/PersonalWebpage/Thumbnail.png", 11, 2015,
     "https://github.com/matt77hias/matt77hias.github.io",
-	[new Download("Play", "matt77hias.github.io", "res/Icons/icon_html.png")]
+	[new Download("Play", "matt77hias.github.io", "res/Icons/icon-html.png")]
 	);
 	
 CreateProject("Clipping",
@@ -293,9 +293,9 @@ CreateProject("Hybrid Survivor",
     "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), June 2015",
     "res/Projects/HybridSurvivor/Thumbnail.png", 6, 2015,
     "https://github.com/matt77hias/HybridSurvivor",
-	[new Download("Oculus Rift", "https://github.com/matt77hias/HybridSurvivor-OculusRift", "res/Icons/icon_html.png"),
-	 new Download("HTC Vive",    "https://github.com/matt77hias/HybridSurvivor-PC",         "res/Icons/icon_html.png"),
-	 new Download("PC & Web",    "https://github.com/matt77hias/HybridSurvivor-HTCVive",    "res/Icons/icon_html.png")
+	[new Download("Oculus Rift", "https://github.com/matt77hias/HybridSurvivor-OculusRift", "res/Icons/icon-html.png"),
+	 new Download("HTC Vive",    "https://github.com/matt77hias/HybridSurvivor-PC",         "res/Icons/icon-html.png"),
+	 new Download("PC & Web",    "https://github.com/matt77hias/HybridSurvivor-HTCVive",    "res/Icons/icon-html.png")
 	]
 	);
 
@@ -339,7 +339,7 @@ CreateProject("Tron",
     "Course: Comparative Programming Languages (B-KUL-H04L5A), December 2014",
     "res/Projects/Tron/Thumbnail.png", 12, 2014,
     "https://github.com/matt77hias/Tron",
-	[new Download("Play", "http://matt77hias.github.io/Tron/", "res/Icons/icon_html.png")]
+	[new Download("Play", "http://matt77hias.github.io/Tron/", "res/Icons/icon-html.png")]
 	);
 
 CreateProject("2048",
@@ -366,7 +366,7 @@ CreateProject("FrigoShare",
     "Course: User Interfaces (B-KUL-H04I2A), June 2014",
     "res/Projects/FrigoShare/Thumbnail.png", 6, 2014,
     "https://anarchikul.wordpress.com/",
-	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon_html.png")]
+	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png")]
 	);
 	
 CreateProject("Sampling Experiments",
@@ -433,10 +433,10 @@ CreateProject("Car Rental Agency",
     "Course: Distributed Systems (B-KUL-H04I4A), December 2013",
     "res/No Image.jpg", 12, 2013,
     "https://github.com/matt77hias/CarRental-Meta",
-	[new Download("Java RMI 1", "https://github.com/matt77hias/JavaRMI1", "res/Icons/icon_html.png"),
-	 new Download("Java RMI 2", "https://github.com/matt77hias/JavaRMI2", "res/Icons/icon_html.png"),
-	 new Download("Java EE",    "https://github.com/matt77hias/JavaEE",   "res/Icons/icon_html.png"),
-	 new Download("Java GAE",   "https://github.com/matt77hias/JavaGAE",  "res/Icons/icon_html.png")
+	[new Download("Java RMI 1", "https://github.com/matt77hias/JavaRMI1", "res/Icons/icon-html.png"),
+	 new Download("Java RMI 2", "https://github.com/matt77hias/JavaRMI2", "res/Icons/icon-html.png"),
+	 new Download("Java EE",    "https://github.com/matt77hias/JavaEE",   "res/Icons/icon-html.png"),
+	 new Download("Java GAE",   "https://github.com/matt77hias/JavaGAE",  "res/Icons/icon-html.png")
 	]
 	);
 	
@@ -527,8 +527,8 @@ CreateProject("Aurora",
     "Course: Problem Solving and Design, Part 3 (B-KUL-H01D4B), December 2011",
     "res/Projects/Aurora/Thumbnail.png", 12, 2011,
     "https://github.com/matt77hias/Aurora",
-	[new Download("Play", "http://aurora--cwb1.appspot.com/",                            "res/Icons/icon_html.png"),
-	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon_html.png")
+	[new Download("Play", "http://aurora--cwb1.appspot.com/",                            "res/Icons/icon-html.png"),
+	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon-html.png")
 	]
 	);
 	

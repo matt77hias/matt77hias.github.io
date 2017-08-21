@@ -122,7 +122,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
         div.className = "item-links-table";
 		section.appendChild(div);
 		
-		var download = new Download("Publication page", publication.projectpage, "res/Icons/icon_html.png");
+		var download = new Download("Publication page", publication.projectpage, "res/Icons/icon-html.png");
         AppendDownload(div, download);
         for (var k = 0; k < publication.downloads.length; ++k) { 
 			download = publication.downloads[k];
