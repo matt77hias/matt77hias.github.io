@@ -4,7 +4,7 @@
     padding-left: 1em;   
 }
 
-@media screen and (max-width: 54em) {
+@media screen and (max-width: 1em) {
     #map {
         display: none;   
     }
@@ -15,52 +15,11 @@
     margin-right: auto;
 }
 
-.person {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    background-color: #f0f0f0;
-    padding: 1em;
-    box-shadow: 1px 1px 5px gray;
-}
-
-.contact-thumbnail {
-    width: 10em;
-    opacity: 0;
-    transition: opacity 0.75s ease-in-out, width 0.75s ease-in-out;
-}
-
-.contact-description {
-    text-align: justify;
-}
-
-.contact-name {
-    font-weight: bold;
-    font-size: 1.5em;
-    font-family: condensed;
-    margin-top: 0;
-}
-
-.contact-function {
-    font-weight: bold;
-    font-size: 1.1em;
-    font-family: condensed;
-}
-
-@media screen and (max-width: 32em) {
-    .contact-thumbnail {
-        width:8em;
-    }
-}
-
 @media screen and (max-width: 24em) {
     .container-item {
         text-align: center;
     }
     aside.container-item {
         display: none;
-    }
-    .contact-inline-thumbnail {
-        display: block;  
     }
 }

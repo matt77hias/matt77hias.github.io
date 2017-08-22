@@ -147,13 +147,13 @@ function ConstructProjectTableForYearForList(projects, year) {
 		var li = document.createElement("li");
 		ul.appendChild(li);
         
-		li.innerHTML += '<a href="' + project.projectpage + '"><h3 class="item-title-details">' + project.title + "</h3></a>";
+		li.innerHTML += '<a href="' + project.projectpage + '"><h3 class="item-title">' + project.title + "</h3></a>";
 	
 		for (var j = 0; j < project.authors.length; ++j) {
             var author = GetAuthor(project.authors[j]);
             
 			if (author.url) { 
-				li.innerHTML += '<a href="' + author.url + '" class="item-authors-details">' + author.name + "</a>";
+				li.innerHTML += '<a href="' + author.url + '" class="item-authors">' + author.name + "</a>";
 			}
             else { 
 				li.innerHTML += author.name;
@@ -167,7 +167,7 @@ function ConstructProjectTableForYearForList(projects, year) {
 			}
         }
 		
-        li.innerHTML += '<span class="item-details">' + project.description + "</span>";
+        li.innerHTML += '<span class="item-description">' + project.description + "</span>";
     }
 }
 

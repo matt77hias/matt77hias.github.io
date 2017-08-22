@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.recent-container{
+.recent-container {
     display: flex;
     flex-direction: column;
     margin: 1em;
@@ -17,12 +17,6 @@
     background-color: #f0f0f0;
     padding: 1em;
     box-shadow: 1px 1px 5px gray;
-}
-
-.recent-title {
-    margin: 0;
-    font-family: condensed;
-    font-weight: bold;
 }
 
 .recent-thumbnail{

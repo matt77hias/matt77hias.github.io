@@ -147,13 +147,13 @@ function ConstructPublicationTableForYearForList(publications, year) {
 		var li = document.createElement("li");
 		ul.appendChild(li);
         
-		li.innerHTML += '<a href="' + publication.projectpage + '"><h3 class="item-title-details">' + publication.title + "</h3></a>";
+		li.innerHTML += '<a href="' + publication.projectpage + '"><h3 class="item-title">' + publication.title + "</h3></a>";
 		
 		for (var j = 0; j < publication.authors.length; ++j) {
             var author = GetAuthor(publication.authors[j]);
             
 			if (author.url) { 
-				li.innerHTML += '<a href="' + author.url + '" class="item-authors-details">' + author.name + "</a>";
+				li.innerHTML += '<a href="' + author.url + '" class="item-authors">' + author.name + "</a>";
 			}
             else { 
 				li.innerHTML += author.name;
@@ -167,7 +167,7 @@ function ConstructPublicationTableForYearForList(publications, year) {
 			}
         }
 		
-        li.innerHTML += '<span class="item-details">' + publication.citation + "</span>";
+        li.innerHTML += '<span class="item-description">' + publication.citation + "</span>";
     }
 }
 
