@@ -115,22 +115,3 @@ h3 {
     margin-bottom: 0;
     font-size: .8em;
 }
-
-#footer {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-
-#footer-authors {
-    display: table-cell;
-    margin-top: 0;
-	font-size: .8em;
-}
-
-#footer-date {
-    display: table-cell;
-    margin-top: 0;
-    font-size: .8em;
-    text-align: right;
-}
