@@ -3,7 +3,7 @@
 [![License][s1]][li] [![Twitter Follow][s2]][tw]
 
 [s1]: https://img.shields.io/badge/licence-No%20Licence-blue.svg
-[s2]: https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow @matt77hias
+[s2]: https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow@matt77hias
 [li]: https://raw.githubusercontent.com/matt77hias/matt77hias.github.io/master/LICENSE.txt
 [tw]: https://twitter.com/intent/follow?screen_name=matt77hias
 
