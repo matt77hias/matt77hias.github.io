@@ -180,9 +180,11 @@ CreateProject("MAGE",
     "January 2017",
     "res/Projects/MAGE/Thumbnail.png", 1, 2017,
     "https://github.com/matt77hias/MAGE-Meta",
-	[new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon-html.png"),
+	[new Download("Assets",        "https://github.com/matt77hias/MAGE-Assets",     "res/Icons/icon-html.png"),
+	 new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon-html.png"),
 	 new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc",        "res/Icons/icon-html.png"),
-	 new Download("Font Utility",  "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon-html.png")
+	 new Download("Font Utility",  "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon-html.png"),
+	 new Download("Meta",          "https://github.com/matt77hias/MAGE-Meta",       "res/Icons/icon-html.png")
 	]
 	);
 
