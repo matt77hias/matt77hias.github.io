@@ -368,7 +368,8 @@ CreateProject("FrigoShare",
     "Course: User Interfaces (B-KUL-H04I2A), June 2014",
     "res/Projects/FrigoShare/Thumbnail.png", 6, 2014,
     "https://anarchikul.wordpress.com/",
-	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png")]
+	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png"), 
+	 new Download("Code", "https://github.com/matt77hias/FrigoShare", "res/Icons/icon-html.png")]
 	);
 	
 CreateProject("Sampling Experiments",
