@@ -8,6 +8,7 @@
 }
 
 .icon-github,
+.icon-goodreads,
 .icon-linkedin,
 .icon-twitter,
 .icon-youtube {
@@ -18,15 +19,18 @@
 }
 
 .icon-github:hover,
+.icon-goodreads:hover,
 .icon-linkedin:hover,
 .icon-twitter:hover,
 .icon-youtube:hover {
     background-position: bottom right;
 }
 
-
 .icon-github {
     background: transparent url('../res/Icons/icon-github.png') top left no-repeat;
+}
+.icon-goodreads {
+    background: transparent url('../res/Icons/icon-goodreads.png') top left no-repeat;
 }
 .icon-linkedin {
     background: transparent url('../res/Icons/icon-linkedin.png') top left no-repeat;
