@@ -8,6 +8,7 @@
 }
 
 .icon-github,
+.icon-gitter,
 .icon-goodreads,
 .icon-linkedin,
 .icon-twitter,
@@ -19,6 +20,7 @@
 }
 
 .icon-github:hover,
+.icon-gitter:hover,
 .icon-goodreads:hover,
 .icon-linkedin:hover,
 .icon-twitter:hover,
@@ -28,6 +30,9 @@
 
 .icon-github {
     background: transparent url('../res/Icons/icon-github.png') top left no-repeat;
+}
+.icon-gitter {
+    background: transparent url('../res/Icons/icon-gitter.png') top left no-repeat;
 }
 .icon-goodreads {
     background: transparent url('../res/Icons/icon-goodreads.png') top left no-repeat;
