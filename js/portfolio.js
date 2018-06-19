@@ -530,7 +530,7 @@ CreateProject("Aurora",
     "Course: Problem Solving and Design, Part 3 (B-KUL-H01D4B), December 2011",
     "res/Projects/Aurora/Thumbnail.png", 12, 2011,
     "https://github.com/matt77hias/Aurora",
-	[new Download("Play", "http://aurora--cwb1.appspot.com/",                            "res/Icons/icon-html.png"),
+	[new Download("Play", "https://aurora--cwb1.appspot.com/",                           "res/Icons/icon-html.png"),
 	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon-html.png")
 	]
 	);
@@ -543,7 +543,7 @@ CreateProject("Crossbow Tennis Machine",
     "Course: Problem Solving and Design, Part 2 (B-KUL-H01C2A), June 2011",
     "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
     "https://matt77hias.github.io/private",
-	[]
+	[new Download("Teaser", "https://www.youtube.com/watch?v=TLGgxP7FdLA", "res/Icons/icon-html.png")]
 	);
 
 //-----------------------------------------------------------------------------
