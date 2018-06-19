@@ -470,7 +470,8 @@ CreateProject("MazeStormer",
     "Course: Problem Solving and Design: Computer Science (B-KUL-H01Q3C), June 2013",
     "res/Projects/MazeStormer/Thumbnail.png", 6, 2013,
     "https://github.com/matt77hias/MazeStormer",
-	[]
+	[new Download("Demo 1", "https://www.youtube.com/watch?v=PkklxX5FeSE", "res/Icons/icon-html.png"), 
+	 new Download("Demo 2", "https://www.youtube.com/watch?v=WiFAeo-Ifsk", "res/Icons/icon-html.png")]
 	);
 	
 //-----------------------------------------------------------------------------
