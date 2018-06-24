@@ -179,7 +179,7 @@ CreateProject("MAGE",
     ["Matthias Moulin"],
     "January 2017",
     "res/Projects/MAGE/Thumbnail.png", 1, 2017,
-    "https://github.com/matt77hias/MAGE-Meta",
+    "https://github.com/matt77hias/MAGE",
 	[new Download("Assets",        "https://github.com/matt77hias/MAGE-Assets",     "res/Icons/icon-html.png"),
 	 new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon-html.png"),
 	 new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc",        "res/Icons/icon-html.png"),
@@ -371,6 +371,14 @@ CreateProject("FrigoShare",
 	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png"), 
 	 new Download("Code", "https://github.com/matt77hias/FrigoShare", "res/Icons/icon-html.png")]
 	);
+
+CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
+    ["Matthias Moulin", "Ruben Pieters"],
+    "Course: Software Architecture (B-KUL-H07Z9A), June 2014",
+    "res/No Image.jpg", 6, 2014,
+    "https://matt77hias.github.io/private",
+	[]
+	);
 	
 CreateProject("Sampling Experiments",
     ["Matthias Moulin"],
@@ -470,7 +478,8 @@ CreateProject("MazeStormer",
     "Course: Problem Solving and Design: Computer Science (B-KUL-H01Q3C), June 2013",
     "res/Projects/MazeStormer/Thumbnail.png", 6, 2013,
     "https://github.com/matt77hias/MazeStormer",
-	[]
+	[new Download("Demo 1", "https://www.youtube.com/watch?v=PkklxX5FeSE", "res/Icons/icon-html.png"), 
+	 new Download("Demo 2", "https://www.youtube.com/watch?v=WiFAeo-Ifsk", "res/Icons/icon-html.png")]
 	);
 	
 //-----------------------------------------------------------------------------
@@ -530,7 +539,7 @@ CreateProject("Aurora",
     "Course: Problem Solving and Design, Part 3 (B-KUL-H01D4B), December 2011",
     "res/Projects/Aurora/Thumbnail.png", 12, 2011,
     "https://github.com/matt77hias/Aurora",
-	[new Download("Play", "http://aurora--cwb1.appspot.com/",                            "res/Icons/icon-html.png"),
+	[new Download("Play", "https://aurora--cwb1.appspot.com/",                           "res/Icons/icon-html.png"),
 	 new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon-html.png")
 	]
 	);
@@ -543,7 +552,7 @@ CreateProject("Crossbow Tennis Machine",
     "Course: Problem Solving and Design, Part 2 (B-KUL-H01C2A), June 2011",
     "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
     "https://matt77hias.github.io/private",
-	[]
+	[new Download("Teaser", "https://www.youtube.com/watch?v=TLGgxP7FdLA", "res/Icons/icon-html.png")]
 	);
 
 //-----------------------------------------------------------------------------
