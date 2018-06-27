@@ -9,7 +9,7 @@
 [li]: https://raw.githubusercontent.com/matt77hias/matt77hias.github.io/master/LICENSE.txt
 [gi]: https://gitter.im/matt77hias/Lobby
 
-# [matt77hias.github.io](http://matt77hias.github.io)
-My personal [webpage](http://matt77hias.github.io).
+# [matt77hias.github.io](https://matt77hias.github.io)
+My personal [webpage](https://matt77hias.github.io).
 
 <p align="center">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
