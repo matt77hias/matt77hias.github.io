@@ -21,10 +21,10 @@ function GetAuthor(name) {
 }
 
 function InitializeAuthors() {
-    AddAuthor("Matthias Moulin"    , "https://matt77hias.github.io/");
-    AddAuthor("Niels Billen"       , "https://nielsbillen.github.io/");
-    AddAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre/");
-    AddAuthor("Ruben Pieters"      , "https://rubenpieters.github.io/");
+    AddAuthor("Matthias Moulin"    , "https://matt77hias.github.io");
+    AddAuthor("Niels Billen"       , "https://nielsbillen.github.io");
+    AddAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre");
+    AddAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 }
 
 InitializeAuthors();
