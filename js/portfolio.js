@@ -149,7 +149,7 @@ CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Traci
     ["Matthias Moulin"],
     "Master's thesis, Department of Computer Science, KU Leuven, Belgium, June 2015",
     "res/Publications/Moulin2015-2/Thumbnail.png", 6, 2015,
-    "Moulin2015-2.html",
+    "res/Publications/Moulin2015-2/Publication.html",
     [new Download("Citation",     "res/Publications/Moulin2015-2/Citation.bib",      undefined, "BIB", "0.3 KB"),
      new Download("Abstract",     "res/Publications/Moulin2015-2/Abstract.txt",      undefined, "TXT", "4.0 KB"),
      new Download("Presentation", "res/Publications/Moulin2015-2/Presentation.pdf",  undefined, "PDF", "1.4 MB"),
@@ -161,7 +161,7 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
     ["Matthias Moulin", "Niels Billen", "Philip Dutr&eacute;"],
     "Eurographics Symposium on Rendering - Experimental Ideas & Implementations, June 2015",
     "res/Publications/Moulin2015-1/Thumbnail.png", 6, 2015,
-    "Moulin2015-1.html",
+    "res/Publications/Moulin2015-1/Publication.html",
     [new Download("Preprint",     "res/Publications/Moulin2015-1/Preprint.pdf",      undefined, "PDF", "10.9 MB"),
      new Download("Citation",     "res/Publications/Moulin2015-1/Citation.bib",      undefined, "BIB",  "0.6 KB"),
      new Download("Abstract",     "res/Publications/Moulin2015-1/Abstract.txt",      undefined, "TXT",  "0.9 KB"),
@@ -427,7 +427,7 @@ CreateProject("Lilyhammer Rendering Engine",
     ["Matthias Moulin"],
     "Course: Computer Graphics I (B-KUL-G0Q66B), December 2013",
     "res/Projects/LilyhammerRenderingEngine/Thumbnail.png", 12, 2013,
-    "LilyhammerRenderingEngine.html",
+    "res/Projects/LilyhammerRenderingEngine/Project.html",
 	[]
 	);
 
