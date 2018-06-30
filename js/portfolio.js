@@ -145,7 +145,7 @@ function GetRecentItems(count) {
 //-----------------------------------------------------------------------------
 // Publications
 //-----------------------------------------------------------------------------
-CreatePublication("Hybrid kd-trees for photon mapping and accelerating ray tracing",
+CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing",
     ["Matthias Moulin"],
     "Master's thesis, Department of Computer Science, KU Leuven, Belgium, June 2015",
     "res/Publications/Moulin2015-2/Thumbnail.png", 6, 2015,
