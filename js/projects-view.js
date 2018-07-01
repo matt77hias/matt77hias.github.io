@@ -42,7 +42,7 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
 	var h1 = document.createElement("h1");
     h1.id = "items-" + year;
 	articles.appendChild(h1);
-    h1.innerHTML = year + '<a class = "to-top-link" href = "#projects">back to the top</a>';
+    h1.innerHTML = year + '<a class = "to-top-link" href = "#portfolio">back to the top</a>';
     
 	for (var i = 0; i < projects.length; ++i) {
         var project = projects[i];
