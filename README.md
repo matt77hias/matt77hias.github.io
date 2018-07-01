@@ -18,4 +18,6 @@ My personal [webpage](https://matt77hias.github.io).
 * [PDF.js](https://github.com/mozilla/pdf.js/blob/master/LICENSE)
 
 ## Development utilities
+* Adobe Acrobat X Pro
+  * If present, .pdf meta data is displayed on browser tabs. This .pdf meta data, defined by LaTeX templates, MS Office, etc., is sometimes rubbish. In these cases, one best changes this data after .pdf compilation.
 * [Twitter Card validator](https://cards-dev.twitter.com/validator)
