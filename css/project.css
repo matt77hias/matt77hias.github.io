@@ -1,7 +1,7 @@
 body {
     color: #555;
-    font-family: "Times New Roman";
-    background-color: snow;
+    font-family: "condensed";
+    background-color: white;
     font-size: 100%;
     text-align: left;
     max-width: 50em;
@@ -33,14 +33,25 @@ h1 {
     }
 }
 
+h3 {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
 #proceedings {
-     font-size: 90%;
-     font-style: italic;
-     text-align: center;
+    font-size: 90%;
+    font-style: italic;
+    text-align: center;
 }
 
 #authorlist {
     text-align: center;
+}
+
+.author {
+    display: inline-block;
+    width: 10em;
+    margin: .5em;
 }
 
 #graphicslink {
@@ -48,36 +59,37 @@ h1 {
     margin-bottom: 2em;
 }
 
-h3 {
-    margin-top: .5em;
-    margin-bottom: .5em;
+#dedication {
+	font-style: italic;
+    text-align: center;
 }
 
-.container {
-    margin-bottom: 4em;
-}
-
-#abstract {
-    text-align: justify;
-}
-
-#teaser {
-    width: 75%;
+#banner {
     max-width: 50em;
     display: block;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
-    box-shadow: 1px 1px 5px #999;
     padding: 5px;
-    border: solid 1px #CCC;
 }
 
-.author {
-    display: inline-block;
-    width: 10em;
-    margin: .5em;
+#teaser {
+    max-width: 50em;
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+#abstract {
+    text-align: justify;
+}
+
+.container {
+    margin-bottom: 4em;
 }
 
 .download-item {
