@@ -14,5 +14,8 @@ My personal [webpage](https://matt77hias.github.io).
 
 <p align="center">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
 
-## Utilities
+## Additional licenses:
+* [PDF.js](https://github.com/mozilla/pdf.js/blob/master/LICENSE)
+
+## Development utilities
 * [Twitter Card validator](https://cards-dev.twitter.com/validator)
