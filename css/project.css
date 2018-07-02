@@ -65,7 +65,7 @@ h3 {
 }
 
 #banner {
-    max-width: 50em;
+	width: 100%;
     display: block;
     margin-top: 1em;
     margin-left: auto;
@@ -75,7 +75,7 @@ h3 {
 }
 
 #teaser {
-    max-width: 50em;
+	width: 100%;
     display: block;
     margin-top: 1em;
     margin-left: auto;
