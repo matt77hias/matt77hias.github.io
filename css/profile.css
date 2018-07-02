@@ -7,7 +7,10 @@
     padding: 0.5em 0 0 0;
 }
 
+
+.icon-bitbucket,
 .icon-github,
+.icon-gitlab,
 .icon-gitter,
 .icon-goodreads,
 .icon-linkedin,
@@ -20,7 +23,9 @@
     margin: 2px;
 }
 
+.icon-bitbucket:hover,
 .icon-github:hover,
+.icon-gitlab:hover,
 .icon-gitter:hover,
 .icon-goodreads:hover,
 .icon-linkedin:hover,
@@ -30,8 +35,14 @@
     background-position: bottom right;
 }
 
+.icon-bitbucket {
+    background: transparent url('../res/Icons/icon-bitbucket.png') top left no-repeat;
+}
 .icon-github {
     background: transparent url('../res/Icons/icon-github.png') top left no-repeat;
+}
+.icon-gitlab {
+    background: transparent url('../res/Icons/icon-gitlab.png') top left no-repeat;
 }
 .icon-gitter {
     background: transparent url('../res/Icons/icon-gitter.png') top left no-repeat;
