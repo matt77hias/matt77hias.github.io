@@ -301,7 +301,7 @@ CreateProject("Clipping",
 //-----------------------------------------------------------------------------
 CreateProject("Hybrid Survivor",
     ["Matthias Moulin", "Milan Samyn", "Samuel Lannoy"],
-    "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design (B-KUL-H05N2A), June 2015",
+    "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H05N2AE.htm'>(B-KUL-H05N2A)</a>, June 2015",
     "res/Projects/HybridSurvivor/Thumbnail.png", 6, 2015,
     "https://github.com/matt77hias/HybridSurvivor",
 	[new Download("Oculus Rift", "https://github.com/matt77hias/HybridSurvivor-OculusRift", "res/Icons/icon-html.png"),
@@ -312,7 +312,7 @@ CreateProject("Hybrid Survivor",
 
 CreateProject("Stochastic Experiments",
     ["Matthias Moulin"],
-    "Course: Deterministic and Stochastic Integration Techniques (B-KUL-H03G3B), May 2015",
+    "Course: Deterministic and Stochastic Integration Techniques <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H03G3BE.htm'>(B-KUL-H03G3B)</a>, May 2015",
     "res/Projects/StochasticExperiments/Thumbnail.png", 5, 2015,
     "https://github.com/matt77hias/StochasticExperiments",
 	[]
@@ -320,7 +320,7 @@ CreateProject("Stochastic Experiments",
 
 CreateProject("Quadrature Experiments",
     ["Matthias Moulin"],
-    "Course: Deterministic and Stochastic Integration Techniques (B-KUL-H03G3B), May 2015",
+    "Course: Deterministic and Stochastic Integration Techniques <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H03G3BE.htm'>(B-KUL-H03G3B)</a>, May 2015",
     "res/Projects/QuadratureExperiments/Thumbnail.png", 5, 2015,
     "https://github.com/matt77hias/QuadratureExperiments",
 	[]
@@ -331,7 +331,7 @@ CreateProject("Quadrature Experiments",
 //-----------------------------------------------------------------------------
 CreateProject("Kajiya",
     ["Matthias Moulin", "Mattias Buelens"],
-    "Course: Requirements Analysis for Complex Software Systems (B-KUL-G0K32A), December 2014",
+    "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
     "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
     "https://matt77hias.github.io/private",
 	[]
@@ -339,7 +339,7 @@ CreateProject("Kajiya",
 
 CreateProject("Fingerprint Compression",
     ["Matthias Moulin"],
-    "Course: Wavelets (B-KUL-H03F7A), December 2014",
+    "Course: Wavelets <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H03F7AE.htm'>(B-KUL-H03F7A)</a>, December 2014",
     "res/Projects/FingerprintCompression/Thumbnail.png", 12, 2014,
     "https://github.com/matt77hias/FingerprintCompression",
 	[]
@@ -347,7 +347,7 @@ CreateProject("Fingerprint Compression",
 
 CreateProject("Tron",
     ["Matthias Moulin"],
-    "Course: Comparative Programming Languages (B-KUL-H04L5A), December 2014",
+    "Course: Comparative Programming Languages <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04L5AE.htm'>(B-KUL-H04L5A)</a>, December 2014",
     "res/Projects/Tron/Thumbnail.png", 12, 2014,
     "https://github.com/matt77hias/Tron",
 	[new Download("Play", "http://matt77hias.github.io/Tron/", "res/Icons/icon-html.png")]
@@ -355,7 +355,7 @@ CreateProject("Tron",
 
 CreateProject("2048",
     ["Matthias Moulin"],
-    "Course: Comparative Programming Languages (B-KUL-H04L5A), December 2014",
+    "Course: Comparative Programming Languages <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04L5AE.htm'>(B-KUL-H04L5A)</a>, December 2014",
     "res/Projects/2048/Thumbnail.png", 12, 2014,
     "https://github.com/matt77hias/2048",
 	[]
@@ -366,7 +366,7 @@ CreateProject("2048",
 //-----------------------------------------------------------------------------
 CreateProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
-    "Course: Computer Vision (B-KUL-H02A5A), June 2014",
+    "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, June 2014",
     "res/Projects/IncisorSegmentation/Thumbnail.png", 6, 2014,
     "https://matt77hias.github.io/private",
 	[]
@@ -374,7 +374,7 @@ CreateProject("Incisor Segmentation",
 	
 CreateProject("FrigoShare",
     ["Herbert Beraldo", "Matthias Moulin", "Ruben Pieters"],
-    "Course: User Interfaces (B-KUL-H04I2A), June 2014",
+    "Course: User Interfaces <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04I2AE.htm'>(B-KUL-H04I2A)</a>, June 2014",
     "res/Projects/FrigoShare/Thumbnail.png", 6, 2014,
     "https://anarchikul.wordpress.com/",
 	[new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png"), 
@@ -383,7 +383,7 @@ CreateProject("FrigoShare",
 
 CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Software Architecture (B-KUL-H07Z9A), June 2014",
+    "Course: Software Architecture <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H07Z9AE.htm'>(B-KUL-H07Z9A)</a>, June 2014",
     "res/No Image.jpg", 6, 2014,
     "https://matt77hias.github.io/private",
 	[]
@@ -391,7 +391,7 @@ CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
 	
 CreateProject("Sampling Experiments",
     ["Matthias Moulin"],
-    "Course: Computer Graphics II (B-KUL-G0B36A), April 2014",
+    "Course: Computer Graphics II <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0B36AE.htm'>(B-KUL-G0B36A)</a>, April 2014",
     "res/Projects/SamplingExperiments/Thumbnail.png", 4, 2014,
     "https://matt77hias.github.io/private",
 	[]
@@ -399,7 +399,7 @@ CreateProject("Sampling Experiments",
 	
 CreateProject("Face Recognition",
     ["Matthias Moulin"],
-    "Course: Computer Vision (B-KUL-H02A5A), March 2014",
+    "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, March 2014",
     "res/Projects/FaceRecognition/Thumbnail.png", 3, 2014,
     "https://github.com/matt77hias/FaceRecognition",
 	[]
@@ -407,7 +407,7 @@ CreateProject("Face Recognition",
 	
 CreateProject("Segmentation",
     ["Matthias Moulin"],
-    "Course: Computer Vision (B-KUL-H02A5A), March 2014",
+    "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, March 2014",
     "res/Projects/Segmentation/Thumbnail.png", 3, 2014,
     "https://github.com/matt77hias/Segmentation",
 	[]
@@ -415,7 +415,7 @@ CreateProject("Segmentation",
 	
 CreateProject("Smoothing",
     ["Matthias Moulin"],
-    "Course: Computer Vision (B-KUL-H02A5A), March 2014",
+    "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, March 2014",
     "res/Projects/Smoothing/Thumbnail.png", 3, 2014,
     "https://github.com/matt77hias/Smoothing",
 	[]
@@ -426,7 +426,7 @@ CreateProject("Smoothing",
 //-----------------------------------------------------------------------------
 CreateProject("Pacman",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Modelling of Complex Systems (B-KUL-G0Q66B), December 2013",
+    "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
     "res/Projects/Pacman/Thumbnail.png", 12, 2013,
     "https://matt77hias.github.io/private",
 	[]
@@ -434,7 +434,7 @@ CreateProject("Pacman",
 
 CreateProject("Lilyhammer Rendering Engine",
     ["Matthias Moulin"],
-    "Course: Computer Graphics I (B-KUL-G0Q66B), December 2013",
+    "Course: Computer Graphics I <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0Q66BE.htm'>(B-KUL-G0Q66B)</a>, December 2013",
     "res/Projects/LilyhammerRenderingEngine/Thumbnail.png", 12, 2013,
     "res/Projects/LilyhammerRenderingEngine/Project.html",
 	[]
@@ -442,7 +442,7 @@ CreateProject("Lilyhammer Rendering Engine",
 
 CreateProject("JUnit Test Deamon",
     ["Matthias Moulin", "Mattias Buelens", "Ruben Pieters", "Vital D'haveloose"],
-    "Course: Design of Software Systems (B-KUL-H04J9B), December 2013",
+    "Course: Design of Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04J9BE.htm'>(B-KUL-H04J9B)</a>, December 2013",
     "res/Projects/JUnitTestDeamon/Thumbnail.png", 12, 2013,
     "https://github.com/matt77hias/junit",
 	[]
@@ -450,7 +450,7 @@ CreateProject("JUnit Test Deamon",
 
 CreateProject("Car Rental Agency",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Distributed Systems (B-KUL-H04I4A), December 2013",
+    "Course: Distributed Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04I4AE.htm'>(B-KUL-H04I4A)</a>, December 2013",
     "res/No Image.jpg", 12, 2013,
     "https://github.com/matt77hias/CarRental-Meta",
 	[new Download("Java RMI 1", "https://github.com/matt77hias/JavaRMI1", "res/Icons/icon-html.png"),
@@ -462,7 +462,7 @@ CreateProject("Car Rental Agency",
 	
 CreateProject("Synchronization Experiments",
     ["Matthias Moulin"],
-    "Course: Operating Systems (B-KUL-H04G1B), November 2013",
+    "Course: Operating Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04G1BE.htm'>(B-KUL-H04G1B)</a>, November 2013",
     "res/Projects/SynchronizationExperiments/Thumbnail.png", 11, 2013,
     "https://github.com/matt77hias/JavaSyncExperiments",
 	[]
@@ -484,7 +484,7 @@ CreateProject("Snake",
 //-----------------------------------------------------------------------------
 CreateProject("MazeStormer",
     ["Dennis Frett", "Matthias Moulin", "Mattias Buelens", "Stijn Hoskens", "Vital D'haveloose", "Stijn Hoskens"],
-    "Course: Problem Solving and Design: Computer Science (B-KUL-H01Q3C), June 2013",
+    "Course: Problem Solving and Design: Computer Science <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01Q3CE.htm'>(B-KUL-H01Q3C)</a>, June 2013",
     "res/Projects/MazeStormer/Thumbnail.png", 6, 2013,
     "https://github.com/matt77hias/MazeStormer",
 	[new Download("Demo 1", "https://www.youtube.com/watch?v=PkklxX5FeSE", "res/Icons/icon-html.png"), 
@@ -496,7 +496,7 @@ CreateProject("MazeStormer",
 //-----------------------------------------------------------------------------
 CreateProject("Network Simulation, Part 2",
     ["Matthias Moulin"],
-    "Course: Computer Networks (B-KUL-G0Q43A), April 2013",
+    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
     "res/Projects/NetworkSimulation2/Thumbnail.png", 4, 2013,
     "https://github.com/matt77hias/NS2",
 	[]
@@ -504,7 +504,7 @@ CreateProject("Network Simulation, Part 2",
 	
 CreateProject("Network Simulation, Part 1",
     ["Matthias Moulin"],
-    "Course: Computer Networks (B-KUL-G0Q43A), April 2013",
+    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
     "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
     "https://github.com/matt77hias/NS1",
 	[]
@@ -512,7 +512,7 @@ CreateProject("Network Simulation, Part 1",
 	
 CreateProject("Socket Experiments",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Computer Networks (B-KUL-G0Q43A), April 2013",
+    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
     "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
     "https://github.com/matt77hias/JavaSocketExperiments",
 	[]
@@ -523,7 +523,7 @@ CreateProject("Socket Experiments",
 //-----------------------------------------------------------------------------
 CreateProject("MIPS Samples",
     ["Matthias Moulin"],
-    "Course: Computer Architecture and System Software (B-KUL-H01P5A), December 2012",
+    "Course: Computer Architecture and System Software <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P5AE.htm'>(B-KUL-H01P5A)</a>, December 2012",
     "res/Projects/MIPSSamples/Thumbnail.png", 12, 2012,
     "https://github.com/matt77hias/MIPSSamples",
 	[]
@@ -534,7 +534,7 @@ CreateProject("MIPS Samples",
 //-----------------------------------------------------------------------------
 CreateProject("RoboRally",
     ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Object Oriented Programming (B-KUL-H01P1A), June 2012",
+    "Course: Object Oriented Programming <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P1AE.htm'>(B-KUL-H01P1A)</a>, June 2012",
     "res/Projects/RoboRally/Thumbnail.png", 6, 2012,
     "https://github.com/matt77hias/RoboRally",
 	[]
@@ -545,7 +545,7 @@ CreateProject("RoboRally",
 //-----------------------------------------------------------------------------
 CreateProject("Aurora",
 	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
-    "Course: Problem Solving and Design, Part 3 (B-KUL-H01D4B), December 2011",
+    "Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
     "res/Projects/Aurora/Thumbnail.png", 12, 2011,
     "https://github.com/matt77hias/Aurora",
 	[new Download("Play", "https://aurora--cwb1.appspot.com/",                           "res/Icons/icon-html.png"),
@@ -558,7 +558,7 @@ CreateProject("Aurora",
 //-----------------------------------------------------------------------------
 CreateProject("Crossbow Tennis Machine",
     ["Bart Opsomer", "Ben Praet", "Egon Blyweert", "Frederick Puttemans", "Jeroen Colon", "Joris Panis", "Louis Ponet", "Matthias Moulin", "Nick Berlanger"],
-    "Course: Problem Solving and Design, Part 2 (B-KUL-H01C2A), June 2011",
+    "Course: Problem Solving and Design, Part 2 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01C2AE.htm'>(B-KUL-H01C2A)</a>, June 2011",
     "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
     "https://matt77hias.github.io/private",
 	[new Download("Teaser", "https://www.youtube.com/watch?v=TLGgxP7FdLA", "res/Icons/icon-html.png")]
@@ -569,7 +569,7 @@ CreateProject("Crossbow Tennis Machine",
 //-----------------------------------------------------------------------------
 CreateProject("MandeLboat",
 	["Ben Allaerts", "Egon Pittoors", "Jef Aendekerk", "Julian Bouckenooghe", "Matthias Moulin", "Robin Clerckx", "Stijn Meylemans", "Wout Behaeghel"],
-    "Course: Problem Solving and Design, Part 1 (B-KUL-H01B9A), December 2010",
+    "Course: Problem Solving and Design, Part 1 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01B9AE.htm'>(B-KUL-H01B9A)</a>, December 2010",
     "res/Projects/MandeLboat/Thumbnail.png", 12, 2010,
     "https://matt77hias.github.io/private",
 	[]
