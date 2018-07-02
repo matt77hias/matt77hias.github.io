@@ -11,6 +11,7 @@
 .icon-gitter,
 .icon-goodreads,
 .icon-linkedin,
+.icon-mail,
 .icon-twitter,
 .icon-youtube {
     display: inline-block;
@@ -23,6 +24,7 @@
 .icon-gitter:hover,
 .icon-goodreads:hover,
 .icon-linkedin:hover,
+.icon-mail:hover,
 .icon-twitter:hover,
 .icon-youtube:hover {
     background-position: bottom right;
@@ -39,6 +41,9 @@
 }
 .icon-linkedin {
     background: transparent url('../res/Icons/icon-linkedin.png') top left no-repeat;
+}
+.icon-mail {
+    background: transparent url('../res/Icons/icon-mail.png') top left no-repeat;
 }
 .icon-twitter {
     background: transparent url('../res/Icons/icon-twitter.png') top left no-repeat;
