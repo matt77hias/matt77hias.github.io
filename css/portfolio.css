@@ -74,13 +74,12 @@ ul.item-list-view li {
 .download {
     display: inline-block;
     text-align: center;
-    margin: .5em;
     width: 5em;
+    margin-bottom: .5em;
     vertical-align: top;
 }
 
 .download-icon {
-    text-align: center;
     width: 3em;
     height: 3em;
     transition: width .5s ease-in-out,height .5s ease-in-out;
@@ -102,18 +101,23 @@ ul.item-list-view li {
 }
 
 .download-description {
-    display: block;
-    font-family: condensed;
+	display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+	font-family: condensed;
     font-size: .9em;
-    color: darkgreen;
 }
 
 .download-extension {
-    margin: 0;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: .8em;
 }
 
 .download-size {
-    margin: 0;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: .8em;
 }
