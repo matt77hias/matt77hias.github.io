@@ -122,7 +122,7 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
         div.className = "item-links-table";
 		section.appendChild(div);
 		
-		var download = new Download("Project page", project.projectpage, "res/Icons/icon-html.png");
+		var download = new Download("Project Page", project.projectpage, "res/Icons/icon-html.png");
         AppendDownload(div, download);
         for (var k = 0; k < project.downloads.length; ++k) { 
 			download = project.downloads[k];
