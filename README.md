@@ -15,7 +15,7 @@ My personal [webpage](https://matt77hias.github.io).
 <p align="center">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
 
 ## Additional licenses:
-* [PDF.js](https://github.com/mozilla/pdf.js/blob/master/LICENSE)
+* [PDF.js](https://github.com/mozilla/pdf.js) [[Apache License 2.0](https://github.com/mozilla/pdf.js/blob/master/LICENSE)]
 
 ## Development utilities
 * Adobe Acrobat X Pro
