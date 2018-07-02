@@ -1,22 +1,26 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="MobileOptimized" content="true">
-        <meta name="viewport"        content="width=device-width, initial-scale=1">
-        <meta name="twitter:card"    content="summary_large_image">
-		<meta name="twitter:site"    content="@matt77hias">
-		<meta name="twitter:title"   content="Matthias Moulin">
-		<meta name="twitter:image"   content="https://matt77hias.github.io/res/Picture.jpg">
+        <meta charset="utf-8">
+		<meta name='author'           content="Matthias Moulin">
+		<meta name='copyright'        content="Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized"  content="320">
+        <meta name="twitter:card"     content="summary_large_image">
+		<meta name="twitter:image"    content="https://matt77hias.github.io/res/Picture.jpg">
+		<meta name="twitter:site"     content="@matt77hias">
+		<meta name="twitter:title"    content="Matthias Moulin">
+		<meta name="viewport"         content="width=device-width, initial-scale=1.0">
 		<title>Matthias Moulin</title>
-        <link rel="icon" 		  href="favicon.ico"        type="image/x-icon">
-		<link rel="shortcut icon" href="favicon.ico"        type="image/x-icon">
-        <link rel="stylesheet"    href="css/header.css"     type="text/css">
-		<link rel="stylesheet"    href="css/navigation.css" type="text/css">
-		<link rel="stylesheet"    href="css/profile.css"    type="text/css">
-        <link rel="stylesheet"    href="css/content.css"    type="text/css">
-        <link rel="stylesheet"    href="css/index.css"      type="text/css">
-		<link rel="stylesheet"    href="css/footer.css"     type="text/css">
-        <script src="js/google-analytics.js" async type="text/javascript"></script>
+        <link rel="icon" 		      href="favicon.ico"        type="image/x-icon">
+		<link rel="shortcut icon"     href="favicon.ico"        type="image/x-icon">
+        <link rel="stylesheet"        href="css/header.css"     type="text/css">
+		<link rel="stylesheet"        href="css/navigation.css" type="text/css">
+		<link rel="stylesheet"        href="css/profile.css"    type="text/css">
+        <link rel="stylesheet"        href="css/content.css"    type="text/css">
+        <link rel="stylesheet"        href="css/index.css"      type="text/css">
+		<link rel="stylesheet"        href="css/footer.css"     type="text/css">
+        <script src="js/google-analytics.js" async              type="text/javascript"></script>
     </head>
 	
     <body id="home">
@@ -26,11 +30,11 @@
         </header>
 		
        <nav id="navigationbar">
-            <a class="home"         href="index.html"       >Home</a>
-            <a class="publications" href="publications.html">Publications</a>
-            <a class="portfolio"    href="portfolio.html"   >Portfolio</a>
-            <a class="blog"         href="blog"             >Blog</a>
-			<a class="resume"       href="pdf.js/web/viewer.html?file=%2F../../res/CV.pdf">Resume</a>
+            <a class="home"           href="index.html"       >Home</a>
+            <a class="publications"   href="publications.html">Publications</a>
+            <a class="portfolio"      href="portfolio.html"   >Portfolio</a>
+            <a class="blog"           href="blog"             >Blog</a>
+			<a class="resume"         href="pdf.js/web/viewer.html?file=%2F../../res/CV.pdf">Resume</a>
             <select onchange="window.location = this.value;">
                 <option value=""                 >Navigation</option>
                 <option value="index.html"       >Home</option>
@@ -47,19 +51,18 @@
 			<a href="https://www.goodreads.com/matt77hias"                   class="icon-goodreads" target="_blank"></a>
 			<a href="https://be.linkedin.com/pub/matthias-moulin/8b/a49/a23" class="icon-linkedin"  target="_blank"></a>
 			<a href="https://twitter.com/matt77hias"               			 class="icon-twitter"   target="_blank"></a>
-			<a href="https://www.youtube.com/user/Matt77hias"                class="icon-youtube"   target="_blank"></a>
+			<a href="https://www.youtube.com/user/matt77hias"                class="icon-youtube"   target="_blank"></a>
 		</div>
 		
         <article>
             <h1>Welcome</h1>
-            <p>Welcome to my personal website (which is still under construction).</p>
-            <p>I am a software engineer, currently pursuing a Ph.D at the Department of Computer Science at the KU Leuven.
-			   <br>My research interest includes:
+            <p>Welcome to my personal website.</p>
+            <p>I am a CS engineer, currently pursuing a PhD in the <a href="http://graphics.cs.kuleuven.be">Computer Graphics Research Group</a> at the <a href="https://wms.cs.kuleuven.be/cs/english">Department of Computer Science</a> at the <a href="https://www.kuleuven.be/english">KU Leuven</a>.</p>
+			<p>My research interest includes:
 			   <ul>
+					<li>Acceleration data structures for ray tracing queries and their build heuristics;</li>
 					<li>Real-time rendering;</li>
-					<li>Acceleration data structures for ray tracing and build heuristics;</li>
-					<li>Global illumination light transport algorithms;</li>
-					<li>Adaptive sampling and reconstruction techniques for increasing the convergence speed of physically based rendering algorithms.</li>
+					<li>(Global illumination) light transport and rendering algorithms.</li>
                </ul>
             </p>
         </article>
@@ -69,14 +72,11 @@
             <div id="recent"></div>
         </article>
 		
-        <script src="js/authors.js"           type="text/javascript"></script>
-        <script src="js/portfolio.js"         type="text/javascript"></script>
-        <script src="js/recent.js"     		  type="text/javascript"></script>
+        <script src="js/portfolio.js" type="text/javascript"></script>
+        <script src="js/recent.js"    type="text/javascript"></script>
 		
 		<footer>
-			<div class="container">
 			<p class="copyright">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
-			</div>
 		</footer>
 		
     </body>

@@ -1,20 +1,26 @@
+<!doctype html>
 <html>
 	<head>
-		<meta name="MobileOptimized" content="true">
-		<meta name="viewport"        content="width=device-width, initial-scale=1">
-		<meta name="twitter:card"    content="summary_large_image">
-		<meta name="twitter:site"    content="@matt77hias">
-		<meta name="twitter:title"   content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
-		<meta name="twitter:image"   content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Teaser.png">
+		<meta charset="utf-8">
+		<meta name='author'           content="Matthias Moulin">
+		<meta name='copyright'        content="Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized"  content="320">
+		<meta name="twitter:card"     content="summary_large_image">
+		<meta name="twitter:image"    content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Teaser.png">
+		<meta name="twitter:site"     content="@matt77hias">
+		<meta name="twitter:title"    content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta name="viewport"         content="width=device-width, initial-scale=1.0">
 		<title>Efficient visibility heuristics for kd-trees using the RTSAH</title>
-		<link rel="icon" 		  href="../../../favicon.ico"     type="image/x-icon">
-		<link rel="shortcut icon" href="../../../favicon.ico"     type="image/x-icon">  
-		<link rel="stylesheet"    href="../../../css/project.css" type="text/css">
-		<link rel="stylesheet"    href="../../../css/footer.css"  type="text/css">
-		<script src="../../../js/google-analytics.js" async type="text/javascript"></script>
+		<link rel="icon" 		      href="../../../favicon.ico"     type="image/x-icon">
+		<link rel="shortcut icon"     href="../../../favicon.ico"     type="image/x-icon">  
+		<link rel="stylesheet"        href="../../../css/project.css" type="text/css">
+		<link rel="stylesheet"        href="../../../css/footer.css"  type="text/css">
+		<script src="../../../js/google-analytics.js" async           type="text/javascript"></script>
 	</head>
 
 	<body>
+	
 		<p id="proceedings">Eurographics Symposium on Rendering - Experimental Ideas &amp; Implementations, June 2015</p>
 		
 		<h1 id="title">Efficient Visibility Heuristics for kd-trees Using the RTSAH</h1>
@@ -38,7 +44,8 @@
 		<div id="abstract-container" class="container">
 			<h3 id="abstract-title">Abstract</h3>
 			
-			<p id="abstract">Acceleration data structures such as kd-trees aim at reducing the per-ray cost which is crucial for rendering performance. The de-facto standard for constructing kd-trees, the Surface Area Heuristic (SAH), does not take ray termination into account and instead assumes rays never hit a geometric primitive. The Ray Termination Surface Area Heuristic (RTSAH) is a cost metric originally used for determining the traversal order of the voxels for occlusion rays that takes ray termination into account. We adapt this RTSAH to building kd-trees that aim at reducing the per-ray cost of rays. Our build procedure has the same overall computational complexity and considers the same finite set of splitting planes as the SAH. By taking ray termination into account, we favor cutting off child voxels which are not or hardly visible to each other. This results in fundamentally different and more qualitative kd-trees compared to the SAH.</p>
+			<p id="abstract">Acceleration data structures such as kd-trees aim at reducing the per-ray cost which is crucial for rendering performance. The de-facto standard for constructing kd-trees, the Surface Area Heuristic (SAH), does not take ray termination into account and instead assumes rays never hit a geometric primitive. The Ray Termination Surface Area Heuristic (RTSAH) is a cost metric originally used for determining the traversal order of the voxels for occlusion rays that takes ray termination into account. We adapt this RTSAH to building kd-trees that aim at reducing the per-ray cost of rays. Our build procedure has the same overall computational complexity and considers the same finite set of splitting planes as the SAH. By taking ray termination into account, we favor cutting off child voxels which are not or hardly visible to each other. This results in fundamentally different and more qualitative kd-trees compared to the SAH.
+			</p>
 		</div>
 
 		<div id="downloads-container">
@@ -93,7 +100,8 @@
 		<hr>
 		
 		<footer>
-			<div><p class="copyright">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p></div>
-		</footer>	
+			<p class="copyright">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
+		</footer>
+		
 	</body>
 </html>
