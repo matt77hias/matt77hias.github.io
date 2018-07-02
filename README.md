@@ -12,8 +12,6 @@
 # [matt77hias.github.io](https://matt77hias.github.io)
 My personal [webpage](https://matt77hias.github.io).
 
-<p align="center">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
-
 ## Additional licenses:
 * [PDF.js](https://github.com/mozilla/pdf.js) [[Apache License 2.0](https://github.com/mozilla/pdf.js/blob/master/LICENSE)]
 
@@ -21,3 +19,5 @@ My personal [webpage](https://matt77hias.github.io).
 * Adobe Acrobat X Pro
   * If present, .pdf meta data are displayed on browser tabs. These .pdf meta data (defined by LaTeX templates, MS Office, etc.) are sometimes rubbish. In these cases, one best changes these data after .pdf compilation.
 * [Twitter Card validator](https://cards-dev.twitter.com/validator)
+
+<p align="center">Copyright © 2015-2018 Matthias Moulin. All Rights Reserved.</p>
