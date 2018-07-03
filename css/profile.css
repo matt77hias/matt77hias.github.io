@@ -9,6 +9,7 @@
 
 
 .icon-bitbucket,
+.icon-gamedevnet,
 .icon-github,
 .icon-gitlab,
 .icon-gitter,
@@ -16,6 +17,7 @@
 .icon-linkedin,
 .icon-mail,
 .icon-orcid,
+.icon-readit,
 .icon-researchgate,
 .icon-skype,
 .icon-twitter,
@@ -27,6 +29,7 @@
 }
 
 .icon-bitbucket:hover,
+.icon-gamedevnet:hover,
 .icon-github:hover,
 .icon-gitlab:hover,
 .icon-gitter:hover,
@@ -34,6 +37,7 @@
 .icon-linkedin:hover,
 .icon-mail:hover,
 .icon-orcid:hover,
+.icon-readit:hover,
 .icon-researchgate:hover,
 .icon-skype:hover,
 .icon-twitter:hover,
@@ -43,6 +47,9 @@
 
 .icon-bitbucket {
     background: transparent url('../res/Icons/icon-bitbucket.png') top left no-repeat;
+}
+.icon-gamedevnet {
+    background: transparent url('../res/Icons/icon-gamedevnet.png') top left no-repeat;
 }
 .icon-github {
     background: transparent url('../res/Icons/icon-github.png') top left no-repeat;
@@ -64,6 +71,9 @@
 }
 .icon-orcid {
     background: transparent url('../res/Icons/icon-orcid.png') top left no-repeat;
+}
+.icon-readit {
+    background: transparent url('../res/Icons/icon-readit.png') top left no-repeat;
 }
 .icon-researchgate {
     background: transparent url('../res/Icons/icon-researchgate.png') top left no-repeat;
