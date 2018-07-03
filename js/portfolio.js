@@ -1,3 +1,5 @@
+"use strict";
+
 var g_publications_by_year = {};
 var g_projects_by_year     = {};
 var g_items_by_date        = [];

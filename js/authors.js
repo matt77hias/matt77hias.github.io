@@ -1,3 +1,5 @@
+"use strict";
+
 var g_authors = {};
 
 var Author = function (name, url) {

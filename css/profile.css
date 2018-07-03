@@ -15,6 +15,9 @@
 .icon-goodreads,
 .icon-linkedin,
 .icon-mail,
+.icon-orcid,
+.icon-researchgate,
+.icon-skype,
 .icon-twitter,
 .icon-youtube {
     display: inline-block;
@@ -30,6 +33,9 @@
 .icon-goodreads:hover,
 .icon-linkedin:hover,
 .icon-mail:hover,
+.icon-orcid:hover,
+.icon-researchgate:hover,
+.icon-skype:hover,
 .icon-twitter:hover,
 .icon-youtube:hover {
     background-position: bottom right;
@@ -55,6 +61,15 @@
 }
 .icon-mail {
     background: transparent url('../res/Icons/icon-mail.png') top left no-repeat;
+}
+.icon-orcid {
+    background: transparent url('../res/Icons/icon-orcid.png') top left no-repeat;
+}
+.icon-researchgate {
+    background: transparent url('../res/Icons/icon-researchgate.png') top left no-repeat;
+}
+.icon-skype {
+    background: transparent url('../res/Icons/icon-skype.png') top left no-repeat;
 }
 .icon-twitter {
     background: transparent url('../res/Icons/icon-twitter.png') top left no-repeat;

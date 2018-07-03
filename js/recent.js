@@ -1,3 +1,5 @@
+"use strict";
+
 function ConstructHTMLRecentItems() {
    
     var doc = document.getElementById("recent");

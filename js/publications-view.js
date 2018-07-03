@@ -1,3 +1,5 @@
+"use strict";
+
 function AppendDownload(acc, download) {
     // Create the division/section for the download.
     var div          = document.createElement("div");
