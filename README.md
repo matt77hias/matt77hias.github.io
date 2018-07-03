@@ -13,6 +13,8 @@
 My personal [webpage](https://matt77hias.github.io).
 
 ## Additional licenses:
+* [Google Analytics](https://github.com/GoogleWebComponents/google-analytics) [[Apache License 2.0](https://github.com/GoogleWebComponents/google-analytics/blob/master/LICENSE)]
+* [jQuery](https://github.com/jquery/jquery) [[MIT](https://github.com/jquery/jquery/blob/master/LICENSE.txt)]
 * [PDF.js](https://github.com/mozilla/pdf.js) [[Apache License 2.0](https://github.com/mozilla/pdf.js/blob/master/LICENSE)]
 
 ## Development utilities
