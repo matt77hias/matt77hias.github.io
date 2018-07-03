@@ -158,8 +158,8 @@ CreatePublication("On the use of Local Ray Termination for Efficiently Construct
 	 new Download("Supplementary Material (1/3)", "res/Publications/Moulin2018-1/Supplementary1.pdf", undefined, "PDF", "(Coming Soon)"),
 	 new Download("Supplementary Material (2/3)", "res/Publications/Moulin2018-1/Supplementary2.pdf", undefined, "PDF", "(Coming Soon)"),
      new Download("Supplementary Material (3/3)", "res/Publications/Moulin2018-1/Supplementary3.zip", undefined, "ZIP", "(Coming Soon)"),
-     new Download("DOI",           "https://matt77hias.github.io/private", "res/Icons/icon-html.png"),
-	 new Download("Lirias",        "https://matt77hias.github.io/private", "res/Icons/icon-html.png")
+     new Download("DOI",           "https://matt77hias.github.io/404.html", "res/Icons/icon-html.png"),
+	 new Download("Lirias",        "https://matt77hias.github.io/404.html", "res/Icons/icon-html.png")
     ]
 	);
 
@@ -336,7 +336,7 @@ CreateProject("Kajiya",
     ["Matthias Moulin", "Mattias Buelens"],
     "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
     "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[]
 	);
 
@@ -371,7 +371,7 @@ CreateProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
     "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, June 2014",
     "res/Projects/IncisorSegmentation/Thumbnail.png", 6, 2014,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[]
 	);
 	
@@ -388,7 +388,7 @@ CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
     ["Matthias Moulin", "Ruben Pieters"],
     "Course: Software Architecture <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H07Z9AE.htm'>(B-KUL-H07Z9A)</a>, June 2014",
     "res/No Image.jpg", 6, 2014,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[]
 	);
 	
@@ -396,7 +396,7 @@ CreateProject("Sampling Experiments",
     ["Matthias Moulin"],
     "Course: Computer Graphics II <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0B36AE.htm'>(B-KUL-G0B36A)</a>, April 2014",
     "res/Projects/SamplingExperiments/Thumbnail.png", 4, 2014,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[]
 	);
 	
@@ -431,7 +431,7 @@ CreateProject("Pacman",
     ["Matthias Moulin", "Ruben Pieters"],
     "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
     "res/Projects/Pacman/Thumbnail.png", 12, 2013,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[]
 	);
 
@@ -563,7 +563,7 @@ CreateProject("Crossbow Tennis Machine",
     ["Bart Opsomer", "Ben Praet", "Egon Blyweert", "Frederick Puttemans", "Jeroen Colon", "Joris Panis", "Louis Ponet", "Matthias Moulin", "Nick Berlanger"],
     "Course: Problem Solving and Design, Part 2 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01C2AE.htm'>(B-KUL-H01C2A)</a>, June 2011",
     "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[new Download("Teaser", "https://www.youtube.com/watch?v=TLGgxP7FdLA", "res/Icons/icon-html.png")]
 	);
 
@@ -574,6 +574,6 @@ CreateProject("MandeLboat",
 	["Ben Allaerts", "Egon Pittoors", "Jef Aendekerk", "Julian Bouckenooghe", "Matthias Moulin", "Robin Clerckx", "Stijn Meylemans", "Wout Behaeghel"],
     "Course: Problem Solving and Design, Part 1 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01B9AE.htm'>(B-KUL-H01B9A)</a>, December 2010",
     "res/Projects/MandeLboat/Thumbnail.png", 12, 2010,
-    "https://matt77hias.github.io/private",
+    "https://matt77hias.github.io/404.html",
 	[]
 	);
