@@ -1,9 +1,9 @@
-.me-thumbnail {
-    vertical-align: middle;
+#me-thumbnail {
 	margin: 1em;
-    width: 12em;
     opacity: 0;
     transition: opacity .75s ease-in-out;
+	vertical-align: middle;
+	width: 12em;
 }
 
 #recent {
@@ -16,17 +16,17 @@
 }
 
 .recent-container {
+	background-color: #F0F0F0;
+	box-shadow: 1px 1px 5px gray;
     display: flex;
     flex-direction: column;
+	font-family: condensed;
     margin: 1em;
-    width: 25%;
     min-width: 12em;
-    font-family: condensed;
-    background-color: #f0f0f0;
     padding: 1em;
-    box-shadow: 1px 1px 5px gray;
+	width: 25%;
 }
 
-.recent-thumbnail{
-    width:100%;
+.recent-thumbnail {
+    width: 100%;
 }

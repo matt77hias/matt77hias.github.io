@@ -1,13 +1,13 @@
 footer {
-    position: relative;
-    height: 50px;
+    height: 20px;
+	position: relative;
     width: 100%;
 }
 
 p.copyright {
+	font-size: 0.7em;
+	bottom:0;
     position: absolute;
+	text-align: center;
     width: 100%;
-    font-size: 0.7em;
-    text-align: center;
-    bottom:0;
 }

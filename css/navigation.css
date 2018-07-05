@@ -1,22 +1,21 @@
 nav {    
-    text-align: center;
-    margin-bottom: 2em;
+	background-color: #00571B;
     box-shadow: 0em 0.5em 0.5em #787878;
-    background-color: #00571B;
+    margin-bottom: 2em;
     text-align: center;
 }
 
-nav a  {
+nav a {
+	border-bottom: 0.25em solid transparent;
+	color: white;
     display: inline-block;
-    color: white;
-    font-family: CONDENSED;
+    font-family: condensed;
     font-size: 1.4em;
-    min-width: 5em;
     margin-left: 2%;
     margin-right: 2%;
-    padding-top: 0.5em;
+	min-width: 5em;
     padding-bottom: 0.5em;
-    border-bottom: 0.25em solid transparent;
+	padding-top: 0.5em;
     transition: border-bottom 0.2s ease-in-out;
 }
 
@@ -24,27 +23,20 @@ nav a:hover {
     border-bottom: 0.25em solid white;
 }
 
-#home nav a.home, 
-#publications nav a.publications, 
-#contact nav a.contact, 
-#resources nav a.resources {
-    border-bottom: 0.25em solid white;
-}
-
 nav select {
+	background: #008A2B;
+    color: white;
     display: none;
+	font-family: condensed;
+    font-size: 1.4em;
     margin-left: auto;
     margin-right: auto;
-    background: #008A2B;
-    color: white;
-    font-family: CONDENSED;
-    font-size: 1.4em;
 }
 
 @media screen and (max-width: 46em) {
     nav {
-        padding-top: 0.5em;
         padding-bottom: 0.5em;
+		padding-top: 0.5em;
     }
     nav a {
         display: none;   
@@ -52,4 +44,12 @@ nav select {
     nav select {
         display: block;
     }
+}
+
+#home nav a.home, 
+#publications nav a.publications, 
+#portfolio nav a.portfolio, 
+#blog nav a.blog, 
+#resume nav a.resume {
+    border-bottom: 0.25em solid white;
 }
