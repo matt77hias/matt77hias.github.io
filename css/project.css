@@ -1,12 +1,12 @@
 body {
+	background-color: white;
     color: #555;
     font-family: "condensed";
-    background-color: white;
     font-size: 100%;
-    text-align: left;
-    max-width: 50em;
     margin-left: auto;
     margin-right: auto;
+	max-width: 50em;
+	text-align: left;
 }
 
 @media screen and (max-width:54em) {
@@ -22,8 +22,8 @@ a {
 }
 
 h1 {
-    margin-top: .5em;
     margin-bottom: .5em;
+	margin-top: .5em;
     text-align: center;
 }
 
@@ -34,54 +34,44 @@ h1 {
 }
 
 h3 {
-    margin-top: .5em;
     margin-bottom: .5em;
+	margin-top: .5em;
 }
 
-#proceedings {
+.proceedings {
     font-size: 90%;
     font-style: italic;
     text-align: center;
 }
 
-#authorlist {
+.authorlist {
     text-align: center;
 }
 
 .author {
     display: inline-block;
-    width: 10em;
     margin: .5em;
+	width: 10em;
 }
 
-#graphicslink {
-    text-align: center;
+.affiliation {
     margin-bottom: 2em;
+	text-align: center;
 }
 
-#dedication {
+.dedication {
 	font-style: italic;
     text-align: center;
 }
 
-#banner {
-	width: 100%;
+.teaser {
     display: block;
-    margin-top: 1em;
+	margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
+	margin-top: 1em;
     padding: 5px;
-}
-
-#teaser {
 	width: 100%;
-    display: block;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1em;
-    padding: 5px;
 }
 
 .abstract {
@@ -94,34 +84,34 @@ h3 {
 
 .download-item {
     display: inline-block;
-    text-align: center;
-    width: 6em;
     margin-bottom: .5em;
+	text-align: center;
     vertical-align: top;
+	width: 6em;
 }
 
 .download-item-icon {
-    width: 3em;
     height: 3em;
+	width: 3em;
 }
 
 .download-item-name {
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: .9em;
+    margin-bottom: 0;
+	margin-top: 0;
 }
 
 .download-item-extension {
     display: block;
+	margin-bottom: 0;
     margin-top: 0;
-    margin-bottom: 0;
     font-size: .8em;
 }
 
 .download-item-size {
     display: block;
-    margin-top: 0;
     margin-bottom: 0;
+	margin-top: 0;
     font-size: .8em;
 }
