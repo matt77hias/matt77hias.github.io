@@ -6,6 +6,12 @@
 	width: 12em;
 }
 
+@media screen and (max-width: 32em) {
+    #me-thumbnail {
+		margin: 0em;
+    }
+}
+
 #recent {
     display: flex;
     display: -moz-flex;
