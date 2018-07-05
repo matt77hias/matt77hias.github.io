@@ -89,11 +89,7 @@ ul.item-list-view li {
     article.item-thumbnail-view.container 
     aside.container-item {
         display: none;
-    }
-    article.item-thumbnail-view.container 
-    section.container-item {
         text-align: center;
-        display: block;
     }
     .item-inline-thumbnail {
         display: block;
