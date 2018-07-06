@@ -118,7 +118,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
 		var p = document.createElement("p");
 		p.className = "item-description";
 		section.appendChild(p);
-        p.innerHTML = publication.citation;
+        p.innerHTML = publication.description;
         
 		var div = document.createElement("div");
         div.className = "item-links-table";
@@ -169,7 +169,7 @@ function ConstructPublicationTableForYearForList(publications, year) {
 			}
         }
 		
-        li.innerHTML += '<span class="item-description">' + publication.citation + "</span>";
+        li.innerHTML += '<span class="item-description">' + publication.description + "</span>";
     }
 }
 
