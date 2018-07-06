@@ -1,35 +1,26 @@
 .item-links {
-    text-align: center;
-    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
+	max-width: 75%;
+	text-align: center;
 }
 
 .to-top-link {
+	color: green;
+    display: inline-block;
     float: right;
     font-size: .5em;
     padding-top: 1em;
-    display: inline-block;
-    color: green;
 }
 
 .view-button {
-    width: .75em;
     height: .75em;
     opacity: .4;
+	width: .75em;
 }
 
 .view-button:hover {
     opacity: .8;
-}
-
-.item-thumbnail-view {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    font-family: condensed;
-    background-color: #F0F0F0;
-    padding: 1em;
-    box-shadow:1px 1px 5px gray;
 }
 
 ul.item-list-view {
@@ -41,48 +32,50 @@ ul.item-list-view li {
     margin-right: 1em;
 }
 
+.item-thumbnail-view {
+	background-color: #F0F0F0;
+	box-shadow:1px 1px 5px gray;
+	font-family: condensed;
+    margin-bottom: 1.5em;
+	margin-top: 1.5em;
+    padding: 1em;
+}
+
 .item-thumbnail {
-    vertical-align: middle;
-    width: 12em;
     opacity: 0;
     transition: opacity .75s ease-in-out;
+	vertical-align: middle;
+    width: 12em;
 }
 
 .item-title {
-    margin-top: 0;
-    margin-bottom: .5em;
-    font-family: condensed;
-    font-weight: bold;
     color: green;
-}
-
-.item-title-description {
-    margin: 0;
-    padding: 0;
     font-family: condensed;
     font-weight: bold;
+    margin-bottom: .5em;
+	margin-top: 0;
 }
 
 .item-authors {
     margin-top: .5em;
 }
 
-.item-description-details {
-    font-style: italic;
+.item-description {
+    font-family: condensed;
 }
 
 .download {
     display: inline-block;
-    text-align: center;
-    width: 5em;
     margin-bottom: .5em;
+	text-align: center;
     vertical-align: top;
+	width: 5em;
 }
 
 .download-icon {
-    width: 3em;
     height: 3em;
     transition: width .5s ease-in-out,height .5s ease-in-out;
+	width: 3em;
 }
 
 @media screen and (max-width:32em) {
@@ -98,22 +91,22 @@ ul.item-list-view li {
 
 .download-description {
 	display: block;
-    margin-top: 0;
-    margin-bottom: 0;
 	font-family: condensed;
     font-size: .9em;
+    margin-bottom: 0;
+	margin-top: 0;
 }
 
 .download-extension {
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: .8em;
+    margin-bottom: 0;
+	margin-top: 0;
 }
 
 .download-size {
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: .8em;
+    margin-bottom: 0;
+	margin-top: 0;
 }
