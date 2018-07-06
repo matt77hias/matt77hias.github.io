@@ -65,10 +65,10 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
 		
 		if (publication.thumbnail) {
 			var a_img1 = document.createElement("a");
-            a_img1.href = publication.projectpage;
+            a_img1.href = publication.url;
 			aside.appendChild(a_img1);
 			var a_img2 = document.createElement("a");
-            a_img2.href = publication.projectpage;
+            a_img2.href = publication.url;
 			section.appendChild(a_img2);
             
 			var img1 = document.createElement("img");
@@ -85,7 +85,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
         
 		var a_title = document.createElement("a");
         a_title.className = "item-title-link";
-        a_title.href = publication.projectpage;
+        a_title.href = publication.url;
 		section.appendChild(a_title);
         
 		var h3 = document.createElement("h3");
@@ -124,7 +124,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
         div.className = "item-links-table";
 		section.appendChild(div);
 		
-		var download = new Download("Publication Page", publication.projectpage, "res/Icons/icon-html.png");
+		var download = new Download("Publication Page", publication.url, "res/Icons/icon-html.png");
         AppendDownload(div, download);
         for (var k = 0; k < publication.downloads.length; ++k) { 
 			download = publication.downloads[k];
@@ -149,7 +149,7 @@ function ConstructPublicationTableForYearForList(publications, year) {
 		var li = document.createElement("li");
 		ul.appendChild(li);
         
-		li.innerHTML += '<a href="' + publication.projectpage + '"><h3 class="item-title">' + publication.title + "</h3></a>";
+		li.innerHTML += '<a href="' + publication.url + '"><h3 class="item-title">' + publication.title + "</h3></a>";
 		
 		for (var j = 0; j < publication.authors.length; ++j) {
             var author = GetAuthor(publication.authors[j]);

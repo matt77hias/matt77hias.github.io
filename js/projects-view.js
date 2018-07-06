@@ -65,10 +65,10 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
         
 		if (project.thumbnail) {
 			var a_img1 = document.createElement("a");
-            a_img1.href = project.projectpage;
+            a_img1.href = project.url;
 			aside.appendChild(a_img1);
 			var a_img2 = document.createElement("a");
-            a_img2.href = project.projectpage;
+            a_img2.href = project.url;
 			section.appendChild(a_img2);
             
 			var img1 = document.createElement("img");
@@ -85,7 +85,7 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
         
 		var a_title = document.createElement("a");
         a_title.className = "item-title-link";
-        a_title.href = project.projectpage;
+        a_title.href = project.url;
 		section.appendChild(a_title);
         
 		var h3 = document.createElement("h3");
@@ -124,7 +124,7 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
         div.className = "item-links-table";
 		section.appendChild(div);
 		
-		var download = new Download("Project Page", project.projectpage, "res/Icons/icon-html.png");
+		var download = new Download("Project Page", project.url, "res/Icons/icon-html.png");
         AppendDownload(div, download);
         for (var k = 0; k < project.downloads.length; ++k) { 
 			download = project.downloads[k];
@@ -149,7 +149,7 @@ function ConstructProjectTableForYearForList(projects, year) {
 		var li = document.createElement("li");
 		ul.appendChild(li);
         
-		li.innerHTML += '<a href="' + project.projectpage + '"><h3 class="item-title">' + project.title + "</h3></a>";
+		li.innerHTML += '<a href="' + project.url + '"><h3 class="item-title">' + project.title + "</h3></a>";
 	
 		for (var j = 0; j < project.authors.length; ++j) {
             var author = GetAuthor(project.authors[j]);

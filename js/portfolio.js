@@ -2,6 +2,7 @@
 
 var g_authors = {};
 
+var g_posts_by_year        = {};
 var g_projects_by_year     = {};
 var g_publications_by_year = {};
 
@@ -34,31 +35,48 @@ var Download = function (description, link, icon, extension, size) {
     this.size        = size;
 };
 
-var Project = function (title, authors, description, thumbnail, month, year, projectpage, downloads) {
+var Post = function (title, authors, description, month, year, url) {
+    this.title       = title;
+    this.authors     = authors;
+    this.description = description;
+    this.month       = month;
+    this.year        = year;
+    this.url         = url;
+};
+
+var Project = function (title, authors, description, thumbnail, month, year, url, downloads) {
     this.title       = title;
     this.authors     = authors;
     this.description = description;
     this.thumbnail   = thumbnail;
     this.month       = month;
     this.year        = year;
-    this.projectpage = projectpage;
+    this.url         = url;
     this.downloads   = downloads;
 };
 
-var Publication = function (title, authors, description, thumbnail, month, year, projectpage, downloads) {
+var Publication = function (title, authors, description, thumbnail, month, year, url, downloads) {
     this.title       = title;
     this.authors     = authors;
     this.description = description;
     this.thumbnail   = thumbnail;
     this.month       = month;
     this.year        = year;
-    this.projectpage = projectpage;
+    this.url = url;
     this.downloads   = downloads;
 };
 
 function AddItem(item, year) {
     g_items_by_date.push(item);
     g_items_by_date_sorted = false;
+}
+
+function AddPost(post, year) {
+    if (!g_posts_by_year.hasOwnProperty(year)) {
+        g_posts_by_year[year] = [];
+    }
+
+    g_posts_by_year[year].push(post);
 }
 
 function AddProject(project, year) {
@@ -87,13 +105,18 @@ function CreateAuthor(name, url) {
     }
 }
 
-function CreateProject(title, authors, description, thumbnail, month, year, projectpage, downloads) {
-    var project = new Project(title, authors, description, thumbnail, month, year, projectpage, downloads);
+function CreatePost(title, authors, description, month, year, url) {
+    var post = new Post(title, authors, description, month, year, url);
+    AddPost(post, year);
+}
+
+function CreateProject(title, authors, description, thumbnail, month, year, url, downloads) {
+    var project = new Project(title, authors, description, thumbnail, month, year, url, downloads);
     AddProject(project, year);
 }
 
-function CreatePublication(title, authors, description, thumbnail, month, year, projectpage, downloads) {
-    var publication = new Publication(title, authors, description, thumbnail, month, year, projectpage, downloads);
+function CreatePublication(title, authors, description, thumbnail, month, year, url, downloads) {
+    var publication = new Publication(title, authors, description, thumbnail, month, year, url, downloads);
     AddPublication(publication, year);
 }
 
@@ -121,6 +144,10 @@ function GetDataOfYear(map, year) {
     }
 }
 
+function GetPostsOfYear(year) {
+    return GetDataOfYear(g_posts_by_year, year);
+}
+
 function GetProjectsOfYear(year) {
     return GetDataOfYear(g_projects_by_year, year);
 }
@@ -133,6 +160,10 @@ function GetDataYears(map) {
 	var years = Object.keys(map);
 	years.sort();
 	return years;
+}
+
+function GetPostYears() {
+	return GetDataYears(g_posts_by_year);
 }
 
 function GetProjectYears() {
@@ -175,6 +206,44 @@ CreateAuthor("Matthias Moulin"    , "https://matt77hias.github.io");
 CreateAuthor("Niels Billen"       , "https://nielsbillen.github.io");
 CreateAuthor("Philip Dutr&eacute;", "https://sites.google.com/site/philipdutre");
 CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
+
+//-----------------------------------------------------------------------------
+// Posts
+//-----------------------------------------------------------------------------
+CreatePost("Linear, Gamma and sRGB Color Spaces",
+    ["Matthias Moulin"],
+    "July 2018", 7, 2018,
+    "https://matt77hias.github.io/blog/color/perception/2018/07/01/linear-gamma-and-sRGB-color-spaces.html");
+	
+CreatePost("Candidate Partitions of Hierarchical Acceleration Data Structures for Ray Tracing",
+    ["Matthias Moulin"],
+    "February 2018", 2, 2018,
+    "https://matt77hias.github.io/blog/ads/ray-tracing/2018/02/04/candidate-partitions-of-hierarchical-acceleration-data-structures-for-ray-tracing.html");
+	
+CreatePost("The Universal Pointer",
+    ["Matthias Moulin"],
+    "January 2018", 1, 2018,
+    "https://matt77hias.github.io/blog/c++/2018/01/28/the-universal-pointer.html");
+	
+CreatePost("C++ Wishlist",
+    ["Matthias Moulin"],
+    "January 2018", 1, 2018,
+    "https://matt77hias.github.io/blog/c++/2018/01/27/cpp-wishlist.html");
+	
+CreatePost("NDC to Projection to Camera Space",
+    ["Matthias Moulin"],
+    "October 2017", 10, 2017,
+    "https://matt77hias.github.io/blog/transformations/2017/10/19/ndc-to-projection-to-view-space.html");
+	
+CreatePost("Reducing Shader Binding Dependencies",
+    ["Matthias Moulin"],
+    "September 2017", 9, 2017,
+    "https://matt77hias.github.io/blog/hlsl/2017/09/07/reducing-shader-binding-dependencies.html");
+	
+CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
+    ["Matthias Moulin"],
+    "August 2017", 8, 2017,
+    "https://matt77hias.github.io/blog/culling/2017/08/24/creating-a-view-frustum.html");
 
 //-----------------------------------------------------------------------------
 // Publications
