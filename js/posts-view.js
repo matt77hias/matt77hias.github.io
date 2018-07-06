@@ -10,7 +10,7 @@ function ConstructPostTableForYearForList(posts, year) {
 	var h1 = document.createElement("h1");
     h1.id = "items-" + year;
 	articles.appendChild(h1);
-    h1.innerHTML = year + '<a class = "to-top-link" href = "#portfolio">back to the top</a>';
+    h1.innerHTML = year + '<a class = "to-top-link" href = "#blog">back to the top</a>';
     
 	var ul = document.createElement("ul");
 	ul.className = "item-list-view";
