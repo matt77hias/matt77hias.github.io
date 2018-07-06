@@ -25,6 +25,7 @@
 
 ul.item-list-view {
     display: none;
+	list-style-type: none;
 }
 
 ul.item-list-view li {
