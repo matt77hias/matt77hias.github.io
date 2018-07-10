@@ -14,7 +14,7 @@ function ConstructHTMLRecentItems() {
         
 		// Create the thumbnail image hyperref.
 		var a_img     = document.createElement("a");
-        a_img.href    = item.projectpage;
+        a_img.href    = item.url;
 		div.appendChild(a_img);
 		
 		// Create the thumbnail image.
