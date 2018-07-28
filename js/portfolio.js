@@ -213,37 +213,37 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 CreatePost("Linear, Gamma and sRGB Color Spaces",
     ["Matthias Moulin"],
     "July 2018", 7, 2018,
-    "https://matt77hias.github.io/blog/color/perception/2018/07/01/linear-gamma-and-sRGB-color-spaces.html");
+    "https://matt77hias.github.io/blog/2018/07/01/linear-gamma-and-sRGB-color-spaces.html");
 	
 CreatePost("Candidate Partitions of Hierarchical Acceleration Data Structures for Ray Tracing",
     ["Matthias Moulin"],
     "February 2018", 2, 2018,
-    "https://matt77hias.github.io/blog/ads/ray-tracing/2018/02/04/candidate-partitions-of-hierarchical-acceleration-data-structures-for-ray-tracing.html");
+    "https://matt77hias.github.io/blog/2018/02/04/candidate-partitions-of-hierarchical-acceleration-data-structures-for-ray-tracing.html");
 	
 CreatePost("The Universal Pointer",
     ["Matthias Moulin"],
     "January 2018", 1, 2018,
-    "https://matt77hias.github.io/blog/c++/2018/01/28/the-universal-pointer.html");
+    "https://matt77hias.github.io/blog/2018/01/28/the-universal-pointer.html");
 	
 CreatePost("C++ Wishlist",
     ["Matthias Moulin"],
     "January 2018", 1, 2018,
-    "https://matt77hias.github.io/blog/c++/2018/01/27/cpp-wishlist.html");
+    "https://matt77hias.github.io/blog/2018/01/27/cpp-wishlist.html");
 	
 CreatePost("NDC to Projection to Camera Space",
     ["Matthias Moulin"],
     "October 2017", 10, 2017,
-    "https://matt77hias.github.io/blog/transformations/2017/10/19/ndc-to-projection-to-view-space.html");
+    "https://matt77hias.github.io/blog/2017/10/19/ndc-to-projection-to-view-space.html");
 	
 CreatePost("Reducing Shader Binding Dependencies",
     ["Matthias Moulin"],
     "September 2017", 9, 2017,
-    "https://matt77hias.github.io/blog/hlsl/2017/09/07/reducing-shader-binding-dependencies.html");
+    "https://matt77hias.github.io/blog/2017/09/07/reducing-shader-binding-dependencies.html");
 	
 CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
     ["Matthias Moulin"],
     "August 2017", 8, 2017,
-    "https://matt77hias.github.io/blog/culling/2017/08/24/creating-a-view-frustum.html");
+    "https://matt77hias.github.io/blog/2017/08/24/creating-a-view-frustum.html");
 
 //-----------------------------------------------------------------------------
 // Publications
