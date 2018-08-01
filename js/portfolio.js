@@ -260,8 +260,8 @@ CreatePublication("On the Use of Local Ray Termination for Efficiently Construct
 		new Download("Supplementary Material (1/3)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf", undefined, "PDF", "24.5 MiB"),
 		new Download("Supplementary Material (2/3)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf", undefined, "PDF", "0.6 KiB"),
 		new Download("Supplementary Material (3/3)", "res/Publications/Moulin2018-1/Supplementary3.zip", undefined, "ZIP", "Coming Eventually"),
-		new Download("DOI",           "https://doi.org/10.1007/s00371-018-1575-x", "res/Icons/icon-html.png"),
-		new Download("Lirias",        "https://matt77hias.github.io/404.html",     "res/Icons/icon-html.png")
+		new Download("DOI",           "https://doi.org/10.1007/s00371-018-1575-x",          "res/Icons/icon-html.png"),
+		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/625753", "res/Icons/icon-html.png")
     ]);
 
 CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing",
