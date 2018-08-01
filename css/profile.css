@@ -8,6 +8,7 @@
 }
 
 .icon-bitbucket,
+.icon-deviantart,
 .icon-gamedevnet,
 .icon-github,
 .icon-gitlab,
@@ -28,6 +29,7 @@
 }
 
 .icon-bitbucket:hover,
+.icon-deviantart:hover,
 .icon-gamedevnet:hover,
 .icon-github:hover,
 .icon-gitlab:hover,
@@ -46,6 +48,9 @@
 
 .icon-bitbucket {
     background: transparent url('../res/Icons/icon-bitbucket.png') top left no-repeat;
+}
+.icon-deviantart {
+    background: transparent url('../res/Icons/icon-deviantart.png') top left no-repeat;
 }
 .icon-gamedevnet {
     background: transparent url('../res/Icons/icon-gamedevnet.png') top left no-repeat;
