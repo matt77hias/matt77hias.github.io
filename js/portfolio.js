@@ -469,7 +469,7 @@ CreateProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
     "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, June 2014",
     "res/Projects/IncisorSegmentation/Thumbnail.png", 6, 2014,
-    "https://matt77hias.github.io/404.html",
+    "https://github.com/matt77hias/IncisorSegmentation",
 	[]);
 	
 CreateProject("FrigoShare",
