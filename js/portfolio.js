@@ -385,15 +385,6 @@ CreateProject("FalseColor Visualization",
     "https://github.com/matt77hias/FalseColor",
 	[]);
 	
-CreateProject("Personal Webpage",
-    ["Matthias Moulin", "Niels Billen"],
-    "November 2015",
-    "res/Projects/PersonalWebpage/Thumbnail.png", 11, 2015,
-    "https://github.com/matt77hias/matt77hias.github.io",
-	[
-		new Download("Play", "matt77hias.github.io", "res/Icons/icon-html.png")
-	]);
-	
 CreateProject("Clipping",
     ["Matthias Moulin"],
     "November 2015",
