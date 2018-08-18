@@ -210,6 +210,11 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 //-----------------------------------------------------------------------------
 // Posts
 //-----------------------------------------------------------------------------
+CreatePost("The Constructible Array",
+    ["Matthias Moulin"],
+    "August 2018", 8, 2018,
+    "https://matt77hias.github.io/blog/2018/08/08/the-constructible-array.html");
+
 CreatePost("Linear, Gamma and sRGB Color Spaces",
     ["Matthias Moulin"],
     "July 2018", 7, 2018,
