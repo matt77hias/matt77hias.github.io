@@ -210,6 +210,11 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 //-----------------------------------------------------------------------------
 // Posts
 //-----------------------------------------------------------------------------
+CreatePost("Voxel Cone Tracing",
+    ["Matthias Moulin"],
+    "August 2018", 8, 2018,
+    "https://matt77hias.github.io/blog/2018/08/19/voxel-cone-tracing.html");
+
 CreatePost("The Constructible Array",
     ["Matthias Moulin"],
     "August 2018", 8, 2018,
