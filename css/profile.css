@@ -19,8 +19,10 @@
 .icon-orcid,
 .icon-readit,
 .icon-researchgate,
+.icon-shadertoy,
 .icon-skype,
 .icon-slideshare,
+.icon-stackexchange,
 .icon-twitter,
 .icon-youtube {
     display: inline-block;
@@ -41,8 +43,10 @@
 .icon-orcid:hover,
 .icon-readit:hover,
 .icon-researchgate:hover,
+.icon-shadertoy:hover,
 .icon-skype:hover,
 .icon-slideshare:hover,
+.icon-stackexchange:hover,
 .icon-twitter:hover,
 .icon-youtube:hover {
     background-position: bottom right;
@@ -84,11 +88,17 @@
 .icon-researchgate {
     background: transparent url('../res/Icons/icon-researchgate.png') top left no-repeat;
 }
+.icon-shadertoy {
+    background: transparent url('../res/Icons/icon-shadertoy.png') top left no-repeat;
+}
 .icon-skype {
     background: transparent url('../res/Icons/icon-skype.png') top left no-repeat;
 }
 .icon-slideshare {
     background: transparent url('../res/Icons/icon-slideshare.png') top left no-repeat;
+}
+.icon-stackexchange {
+    background: transparent url('../res/Icons/icon-stackexchange.png') top left no-repeat;
 }
 .icon-twitter {
     background: transparent url('../res/Icons/icon-twitter.png') top left no-repeat;
