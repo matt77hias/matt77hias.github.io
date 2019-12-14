@@ -260,7 +260,7 @@ CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
 //-----------------------------------------------------------------------------
 CreatePublication("On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs",
     ["Matthias Moulin", "Philip Dutr&eacute;"],
-    "To appear in The Visual Computer 35, 12, December 2019 (First online: July 2018)",
+    "To appear in The Visual Computer, Volume 35, Issue 12, December 2019 (First online: July 2018)",
     "res/Publications/Moulin2018-1/Thumbnail.png", 7, 2018,
     "res/Publications/Moulin2018-1/Publication.html",
     [
