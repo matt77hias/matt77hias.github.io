@@ -1,6 +1,7 @@
 "use strict";
 
-function ConstructPostTableForYearForList(posts, year) {
+function ConstructPostTableForYearForList(posts, year)
+{
     var list = document.getElementById("item-list");
     
 	var articles = document.createElement("article");
@@ -16,7 +17,8 @@ function ConstructPostTableForYearForList(posts, year) {
 	ul.className = "item-list-view";
 	list.appendChild(ul);
     
-	for (var i = 0; i < posts.length; ++i) {
+	for (var i = 0; i < posts.length; ++i)
+	{
         var post = posts[i];
         
 		var li = document.createElement("li");
@@ -24,20 +26,25 @@ function ConstructPostTableForYearForList(posts, year) {
         
 		li.innerHTML += '<a href="' + post.url + '"><h3 class="item-title">' + post.title + "</h3></a>";
 	
-		for (var j = 0; j < post.authors.length; ++j) {
+		for (var j = 0; j < post.authors.length; ++j)
+		{
             var author = GetAuthor(post.authors[j]);
             
-			if (author.url) { 
+			if (author.url)
+			{ 
 				li.innerHTML += '<a href="' + author.url + '" class="item-authors">' + author.name + "</a>";
 			}
-            else { 
+            else
+			{ 
 				li.innerHTML += author.name;
 			}
 			
-            if (j === post.authors.length - 1) { 
+            if (j === post.authors.length - 1)
+			{ 
 				li.innerHTML += ".</br>";
 			}
-            else { 
+            else
+			{ 
 				li.innerHTML += ", ";
 			}
         }
@@ -46,30 +53,42 @@ function ConstructPostTableForYearForList(posts, year) {
     }
 }
 
-function ConstructPostTableForList() {
+function ConstructPostTableForList()
+{
     var years = GetPostYears();
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
         var year  = years[i];
 		var posts = GetPostsOfYear(year);
 		ConstructPostTableForYearForList(posts, year);
     }
 }
 
-function ConstructPostYearLinks() {
+function ConstructPostYearLinks()
+{
     var years = GetPostYears();
     var links = document.getElementById("item-year-links");
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
 		var year = years[i];
 		
         links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
-        if (i > 0) { links.innerHTML += ", "; }
-        else       { links.innerHTML += ".";  }
+        if (i > 0)
+		{
+			links.innerHTML += ", ";
+		}
+        else
+		{
+			links.innerHTML += ".";
+		}
     }
 }
 
-function ShowList() {
+function ShowList()
+{
     var ls = document.getElementsByClassName("item-list-view");
-    for (var j = 0; j < ls.length; ++j) {
+    for (var j = 0; j < ls.length; ++j)
+	{
         ls[j].style.display = "block"
     }
 }

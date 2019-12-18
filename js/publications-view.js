@@ -1,6 +1,7 @@
 "use strict";
 
-function AppendDownload(acc, download) {
+function AppendDownload(acc, download)
+{
     // Create the division/section for the download.
     var div          = document.createElement("div");
     div.className    = "download";
@@ -25,8 +26,10 @@ function AppendDownload(acc, download) {
     div.appendChild(a_txt);
 }
 
-function MakePublicationThumbnailOpacityHandler(image, img1, img2) {
-    return function () {
+function MakePublicationThumbnailOpacityHandler(image, img1, img2)
+{
+    return function ()
+	{
         img1.style.opacity = 1;
         img1.src = image.src;
         img2.style.opacity = 1;
@@ -34,7 +37,8 @@ function MakePublicationThumbnailOpacityHandler(image, img1, img2) {
     }
 }
 
-function ConstructPublicationTableForYearForThumbnails(publications, year) {
+function ConstructPublicationTableForYearForThumbnails(publications, year)
+{
     var list = document.getElementById("item-list");
     
 	var articles = document.createElement("article");
@@ -46,14 +50,16 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
 	articles.appendChild(h1);
     h1.innerHTML = year + '<a class = "to-top-link" href = "#publications">back to the top</a>';
     
-	for (var i = 0; i < publications.length; ++i) {
+	for (var i = 0; i < publications.length; ++i)
+	{
         var publication = publications[i];
         
 		var article = document.createElement("article");
         article.className = "item-thumbnail-view container";
 		articles.appendChild(article);
 		
-		if (publication.thumbnail) {
+		if (publication.thumbnail)
+		{
             var aside = document.createElement("aside");
             aside.className = "container-item";
 			article.appendChild(aside);
@@ -63,7 +69,8 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
         section.className = "container-item";
 		article.appendChild(section); 
 		
-		if (publication.thumbnail) {
+		if (publication.thumbnail)
+		{
 			var a_img1 = document.createElement("a");
             a_img1.href = publication.url;
 			aside.appendChild(a_img1);
@@ -97,20 +104,25 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
         h4.className = "item-authors";
         section.appendChild(h4);
         
-		for (var j = 0; j < publication.authors.length; ++j) {
+		for (var j = 0; j < publication.authors.length; ++j)
+		{
             var author = GetAuthor(publication.authors[j]);
             
-			if (author.url) { 
+			if (author.url)
+			{ 
 				h4.innerHTML += '<a href="' + author.url + '">' + author.name + "</a>";
 			}
-            else { 
+            else
+			{ 
 				h4.innerHTML += author.name;
 			}
 			
-            if (j === publication.authors.length - 1) { 
+            if (j === publication.authors.length - 1)
+			{ 
 				h4.innerHTML += ".</br>";
 			}
-            else { 
+            else
+			{ 
 				h4.innerHTML += ", ";
 			}
         }
@@ -126,14 +138,16 @@ function ConstructPublicationTableForYearForThumbnails(publications, year) {
 		
 		var download = new Download("Publication Page", publication.url, "res/Icons/icon-html.png");
         AppendDownload(div, download);
-        for (var k = 0; k < publication.downloads.length; ++k) { 
+        for (var k = 0; k < publication.downloads.length; ++k)
+		{ 
 			download = publication.downloads[k];
 			AppendDownload(div, download);
 		}
     }
 }
 
-function ConstructPublicationTableForYearForList(publications, year) {
+function ConstructPublicationTableForYearForList(publications, year)
+{
     var list = document.getElementById("item-list");
     
 	var links = document.getElementById("items-" + year);
@@ -143,7 +157,8 @@ function ConstructPublicationTableForYearForList(publications, year) {
 	ul.className = "item-list-view";
 	list.appendChild(ul);
     
-	for (var i = 0; i < publications.length; ++i) {
+	for (var i = 0; i < publications.length; ++i)
+	{
         var publication = publications[i];
         
 		var li = document.createElement("li");
@@ -151,20 +166,25 @@ function ConstructPublicationTableForYearForList(publications, year) {
         
 		li.innerHTML += '<a href="' + publication.url + '"><h3 class="item-title">' + publication.title + "</h3></a>";
 		
-		for (var j = 0; j < publication.authors.length; ++j) {
+		for (var j = 0; j < publication.authors.length; ++j)
+		{
             var author = GetAuthor(publication.authors[j]);
             
-			if (author.url) { 
+			if (author.url)
+			{ 
 				li.innerHTML += '<a href="' + author.url + '" class="item-authors">' + author.name + "</a>";
 			}
-            else { 
+            else
+			{ 
 				li.innerHTML += author.name;
 			}
 			
-            if (j === publication.authors.length - 1) { 
+            if (j === publication.authors.length - 1)
+			{ 
 				li.innerHTML += ".</br>";
 			}
-            else { 
+            else
+			{ 
 				li.innerHTML += ", ";
 			}
         }
@@ -173,44 +193,59 @@ function ConstructPublicationTableForYearForList(publications, year) {
     }
 }
 
-function ConstructPublicationTableForThumbnails() {
+function ConstructPublicationTableForThumbnails()
+{
     var years = GetPublicationYears();
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
 		var year = years[i];
 		var publications = GetPublicationsOfYear(year);
         ConstructPublicationTableForYearForThumbnails(publications, year);
     }
 }
 
-function ConstructPublicationTableForList() {
+function ConstructPublicationTableForList()
+{
     var years = GetPublicationYears();
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
         var year = years[i];
 		var publications = GetPublicationsOfYear(year);
 		ConstructPublicationTableForYearForList(publications, year);
     }
 }
 
-function ConstructPublicationYearLinks() {
+function ConstructPublicationYearLinks()
+{
     var years = GetPublicationYears();
     var links = document.getElementById("item-year-links");
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
 		var year = years[i];
 		
         links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
-        if (i > 0) { links.innerHTML += ", "; }
-        else       { links.innerHTML += ".";  }
+        if (i > 0)
+		{
+			links.innerHTML += ", ";
+		}
+        else
+		{
+			links.innerHTML += ".";
+		}
     }
 }
 
-function ShowThumbnails() {
+function ShowThumbnails()
+{
     var ts = document.getElementsByClassName("item-thumbnail-view");
-    for (var i = 0; i < ts.length; ++i) {
+    for (var i = 0; i < ts.length; ++i)
+	{
         ts[i].style.display = "block"
     }
 	
     var ls = document.getElementsByClassName("item-list-view");
-    for (var j = 0; j < ls.length; ++j) {
+    for (var j = 0; j < ls.length; ++j)
+	{
         ls[j].style.display = "none"
     }
 	
@@ -218,14 +253,17 @@ function ShowThumbnails() {
     document.getElementById("list-view-button").style.opacity      = ""
 }
 
-function ShowList() {
+function ShowList()
+{
     var ts = document.getElementsByClassName("item-thumbnail-view");
-    for (var i = 0; i < ts.length; ++i) {
+    for (var i = 0; i < ts.length; ++i)
+	{
         ts[i].style.display = "none"
     }
 	
     var ls = document.getElementsByClassName("item-list-view");
-    for (var j = 0; j < ls.length; ++j) {
+    for (var j = 0; j < ls.length; ++j)
+	{
         ls[j].style.display = "block"
     }
 	

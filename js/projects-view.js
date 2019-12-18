@@ -1,6 +1,7 @@
 "use strict";
 
-function AppendDownload(acc, download) {
+function AppendDownload(acc, download)
+{
     // Create the division/section for the download.
     var div          = document.createElement("div");
     div.className    = "download";
@@ -25,8 +26,10 @@ function AppendDownload(acc, download) {
     div.appendChild(a_txt);
 }
 
-function MakeProjectThumbnailOpacityHandler(image, img1, img2) {
-    return function () {
+function MakeProjectThumbnailOpacityHandler(image, img1, img2)
+{
+    return function ()
+	{
         img1.style.opacity = 1;
         img1.src = image.src;
         img2.style.opacity = 1;
@@ -34,7 +37,8 @@ function MakeProjectThumbnailOpacityHandler(image, img1, img2) {
     }
 }
 
-function ConstructProjectTableForYearForThumbnails(projects, year) {
+function ConstructProjectTableForYearForThumbnails(projects, year)
+{
     var list = document.getElementById("item-list");
     
 	var articles = document.createElement("article");
@@ -46,14 +50,16 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
 	articles.appendChild(h1);
     h1.innerHTML = year + '<a class = "to-top-link" href = "#portfolio">back to the top</a>';
     
-	for (var i = 0; i < projects.length; ++i) {
+	for (var i = 0; i < projects.length; ++i)
+	{
         var project = projects[i];
         
 		var article = document.createElement("article");
         article.className = "item-thumbnail-view container";
 		articles.appendChild(article);
 		
-		if (project.thumbnail) {
+		if (project.thumbnail)
+		{
             var aside = document.createElement("aside");
             aside.className = "container-item";
 			article.appendChild(aside);
@@ -63,7 +69,8 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
         section.className = "container-item";
 		article.appendChild(section); 
         
-		if (project.thumbnail) {
+		if (project.thumbnail)
+		{
 			var a_img1 = document.createElement("a");
             a_img1.href = project.url;
 			aside.appendChild(a_img1);
@@ -97,20 +104,25 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
         h4.className = "item-authors";
         section.appendChild(h4);
         
-		for (var j = 0; j < project.authors.length; ++j) {
+		for (var j = 0; j < project.authors.length; ++j)
+		{
             var author = GetAuthor(project.authors[j]);
             
-			if (author.url) { 
+			if (author.url)
+			{ 
 				h4.innerHTML += '<a href="' + author.url + '">' + author.name + "</a>";
 			}
-            else { 
+            else
+			{ 
 				h4.innerHTML += author.name;
 			}
 			
-            if (j === project.authors.length - 1) { 
+            if (j === project.authors.length - 1)
+			{ 
 				h4.innerHTML += ".</br>";
 			}
-            else { 
+            else
+			{ 
 				h4.innerHTML += ", ";
 			}
         }
@@ -126,14 +138,16 @@ function ConstructProjectTableForYearForThumbnails(projects, year) {
 		
 		var download = new Download("Project Page", project.url, "res/Icons/icon-html.png");
         AppendDownload(div, download);
-        for (var k = 0; k < project.downloads.length; ++k) { 
+        for (var k = 0; k < project.downloads.length; ++k)
+		{ 
 			download = project.downloads[k];
 			AppendDownload(div, download);
 		}
     }
 }
 
-function ConstructProjectTableForYearForList(projects, year) {
+function ConstructProjectTableForYearForList(projects, year)
+{
     var list = document.getElementById("item-list");
     
 	var links = document.getElementById("items-" + year);
@@ -143,7 +157,8 @@ function ConstructProjectTableForYearForList(projects, year) {
 	ul.className = "item-list-view";
 	list.appendChild(ul);
     
-	for (var i = 0; i < projects.length; ++i) {
+	for (var i = 0; i < projects.length; ++i)
+	{
         var project = projects[i];
         
 		var li = document.createElement("li");
@@ -151,20 +166,25 @@ function ConstructProjectTableForYearForList(projects, year) {
         
 		li.innerHTML += '<a href="' + project.url + '"><h3 class="item-title">' + project.title + "</h3></a>";
 	
-		for (var j = 0; j < project.authors.length; ++j) {
+		for (var j = 0; j < project.authors.length; ++j)
+		{
             var author = GetAuthor(project.authors[j]);
             
-			if (author.url) { 
+			if (author.url)
+			{ 
 				li.innerHTML += '<a href="' + author.url + '" class="item-authors">' + author.name + "</a>";
 			}
-            else { 
+            else
+			{ 
 				li.innerHTML += author.name;
 			}
 			
-            if (j === project.authors.length - 1) { 
+            if (j === project.authors.length - 1)
+			{ 
 				li.innerHTML += ".</br>";
 			}
-            else { 
+            else
+			{ 
 				li.innerHTML += ", ";
 			}
         }
@@ -173,44 +193,59 @@ function ConstructProjectTableForYearForList(projects, year) {
     }
 }
 
-function ConstructProjectTableForThumbnails() {
+function ConstructProjectTableForThumbnails()
+{
     var years = GetProjectYears();
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
 		var year = years[i];
 		var projects = GetProjectsOfYear(year);
         ConstructProjectTableForYearForThumbnails(projects, year);
     }
 }
 
-function ConstructProjectTableForList() {
+function ConstructProjectTableForList()
+{
     var years = GetProjectYears();
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
         var year = years[i];
 		var projects = GetProjectsOfYear(year);
 		ConstructProjectTableForYearForList(projects, year);
     }
 }
 
-function ConstructProjectYearLinks() {
+function ConstructProjectYearLinks()
+{
     var years = GetProjectYears();
     var links = document.getElementById("item-year-links");
-    for (var i = years.length - 1; i >= 0; --i) {
+    for (var i = years.length - 1; i >= 0; --i)
+	{
 		var year = years[i];
 		
         links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
-        if (i > 0) { links.innerHTML += ", "; }
-        else       { links.innerHTML += ".";  }
+        if (i > 0)
+		{
+			links.innerHTML += ", ";
+		}
+        else
+		{
+			links.innerHTML += ".";
+		}
     }
 }
 
-function ShowThumbnails() {
+function ShowThumbnails()
+{
     var ts = document.getElementsByClassName("item-thumbnail-view");
-    for (var i = 0; i < ts.length; ++i) {
+    for (var i = 0; i < ts.length; ++i)
+	{
         ts[i].style.display = "block"
     }
 	
     var ls = document.getElementsByClassName("item-list-view");
-    for (var j = 0; j < ls.length; ++j) {
+    for (var j = 0; j < ls.length; ++j)
+	{
         ls[j].style.display = "none"
     }
 	
@@ -218,14 +253,17 @@ function ShowThumbnails() {
     document.getElementById("list-view-button").style.opacity      = ""
 }
 
-function ShowList() {
+function ShowList()
+{
     var ts = document.getElementsByClassName("item-thumbnail-view");
-    for (var i = 0; i < ts.length; ++i) {
+    for (var i = 0; i < ts.length; ++i)
+	{
         ts[i].style.display = "none"
     }
 	
     var ls = document.getElementsByClassName("item-list-view");
-    for (var j = 0; j < ls.length; ++j) {
+    for (var j = 0; j < ls.length; ++j)
+	{
         ls[j].style.display = "block"
     }
 	

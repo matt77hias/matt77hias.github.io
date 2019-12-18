@@ -9,7 +9,8 @@ var g_publications_by_year = {};
 var g_items_by_date        = [];
 var g_items_by_date_sorted = true;
 
-function GetIconFromLink(link) {
+function GetIconFromLink(link)
+{
     var extension = link.split(".").pop();
 
     if      (extension === "pdf")                                                                                             { return "res/Icons/icon-pdf.png";     }
@@ -22,12 +23,14 @@ function GetIconFromLink(link) {
     else                                                                                                                      { return "res/Icons/icon-unknown.png"; }
 }
 
-var Author = function (name, url) {
+var Author = function (name, url)
+{
     this.name = name;
     this.url  = url;
 };
 
-var Download = function (description, link, icon, extension, size) {
+var Download = function (description, link, icon, extension, size)
+{
     this.description = description;
     this.link        = link;
     this.icon        = (icon) ? icon : GetIconFromLink(link);
@@ -35,7 +38,8 @@ var Download = function (description, link, icon, extension, size) {
     this.size        = size;
 };
 
-var Post = function (title, authors, description, month, year, url) {
+var Post = function (title, authors, description, month, year, url)
+{
     this.title       = title;
     this.authors     = authors;
     this.description = description;
@@ -44,7 +48,8 @@ var Post = function (title, authors, description, month, year, url) {
     this.url         = url;
 };
 
-var Project = function (title, authors, description, thumbnail, month, year, url, downloads) {
+var Project = function (title, authors, description, thumbnail, month, year, url, downloads)
+{
     this.title       = title;
     this.authors     = authors;
     this.description = description;
@@ -55,7 +60,8 @@ var Project = function (title, authors, description, thumbnail, month, year, url
     this.downloads   = downloads;
 };
 
-var Publication = function (title, authors, description, thumbnail, month, year, url, downloads) {
+var Publication = function (title, authors, description, thumbnail, month, year, url, downloads)
+{
     this.title       = title;
     this.authors     = authors;
     this.description = description;
@@ -66,21 +72,25 @@ var Publication = function (title, authors, description, thumbnail, month, year,
     this.downloads   = downloads;
 };
 
-function AddItem(item, year) {
+function AddItem(item, year)
+{
     g_items_by_date.push(item);
     g_items_by_date_sorted = false;
 }
 
 function AddPost(post, year) {
-    if (!g_posts_by_year.hasOwnProperty(year)) {
+    if (!g_posts_by_year.hasOwnProperty(year))
+	{
         g_posts_by_year[year] = [];
     }
 
     g_posts_by_year[year].push(post);
 }
 
-function AddProject(project, year) {
-    if (!g_projects_by_year.hasOwnProperty(year)) {
+function AddProject(project, year)
+{
+    if (!g_projects_by_year.hasOwnProperty(year))
+	{
         g_projects_by_year[year] = [];
     }
 
@@ -89,8 +99,10 @@ function AddProject(project, year) {
     AddItem(project, year);
 }
 
-function AddPublication(publication, year) {
-    if (!g_publications_by_year.hasOwnProperty(year)) {
+function AddPublication(publication, year)
+{
+    if (!g_publications_by_year.hasOwnProperty(year))
+	{
         g_publications_by_year[year] = [];
     }
 
@@ -99,83 +111,104 @@ function AddPublication(publication, year) {
     AddItem(publication, year);
 }
 
-function CreateAuthor(name, url) {
-    if (!(g_authors.hasOwnProperty(name))) {
+function CreateAuthor(name, url)
+{
+    if (!(g_authors.hasOwnProperty(name)))
+	{
         g_authors[name] = new Author(name, url);
     }
 }
 
-function CreatePost(title, authors, description, month, year, url) {
+function CreatePost(title, authors, description, month, year, url)
+{
     var post = new Post(title, authors, description, month, year, url);
     AddPost(post, year);
 }
 
-function CreateProject(title, authors, description, thumbnail, month, year, url, downloads) {
+function CreateProject(title, authors, description, thumbnail, month, year, url, downloads)
+{
     var project = new Project(title, authors, description, thumbnail, month, year, url, downloads);
     AddProject(project, year);
 }
 
-function CreatePublication(title, authors, description, thumbnail, month, year, url, downloads) {
+function CreatePublication(title, authors, description, thumbnail, month, year, url, downloads)
+{
     var publication = new Publication(title, authors, description, thumbnail, month, year, url, downloads);
     AddPublication(publication, year);
 }
 
-function GetAuthor(name) {
-    if (!g_authors.hasOwnProperty(name)) {
+function GetAuthor(name)
+{
+    if (!g_authors.hasOwnProperty(name))
+	{
         return new Author(name);
     }
-    else {
+    else
+	{
         return g_authors[name];
     }
 }
 
-function GetDataOfYear(map, year) {
-    if (map.hasOwnProperty(year)) {
+function GetDataOfYear(map, year)
+{
+    if (map.hasOwnProperty(year))
+	{
         var data = map[year];
 
-        data.sort(function (lhs, rhs) {
+        data.sort(function (lhs, rhs)
+		{
             return rhs.month - lhs.month;
         });
 
         return data;
     }
-    else {
+    else
+	{
         return [];
     }
 }
 
-function GetPostsOfYear(year) {
+function GetPostsOfYear(year)
+{
     return GetDataOfYear(g_posts_by_year, year);
 }
 
-function GetProjectsOfYear(year) {
+function GetProjectsOfYear(year)
+{
     return GetDataOfYear(g_projects_by_year, year);
 }
 
-function GetPublicationsOfYear(year) {
+function GetPublicationsOfYear(year)
+{
     return GetDataOfYear(g_publications_by_year, year);
 }
 
-function GetDataYears(map) {
+function GetDataYears(map)
+{
 	var years = Object.keys(map);
 	years.sort();
 	return years;
 }
 
-function GetPostYears() {
+function GetPostYears()
+{
 	return GetDataYears(g_posts_by_year);
 }
 
-function GetProjectYears() {
+function GetProjectYears()
+{
 	return GetDataYears(g_projects_by_year);
 }
 
-function GetPublicationYears() {
+function GetPublicationYears()
+{
 	return GetDataYears(g_publications_by_year);
 }
 
-function SortItems(list) {
-    list.sort(function (lhs, rhs) {
+function SortItems(list)
+{
+    list.sort(function (lhs, rhs)
+	{
         if      (lhs.year  < rhs.year)  { return  1; }
         else if (lhs.year  > rhs.year)  { return -1; }
         else if (lhs.month < rhs.month) { return  1; }
@@ -184,14 +217,17 @@ function SortItems(list) {
     });
 }
 
-function GetRecentItems(count) {
-    if (false === g_items_by_date_sorted) {
+function GetRecentItems(count)
+{
+    if (false === g_items_by_date_sorted)
+	{
         SortItems(g_items_by_date);
         g_items_by_date_sorted = true;
     }
 	
 	var recent = [];
-    for (var i = 0; i < Math.min(count, g_items_by_date.length); ++i) {
+    for (var i = 0; i < Math.min(count, g_items_by_date.length); ++i)
+	{
         recent.push(g_items_by_date[i]);
     }
 	
@@ -641,25 +677,3 @@ CreateProject("Aurora",
 		new Download("Play", "https://aurora--cwb1.appspot.com/",                           "res/Icons/icon-html.png"),
 		new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon-html.png")
 	]);
-	
-//-----------------------------------------------------------------------------
-// 2nd Semester - 1st Bachelor of Science in Engineering (2010-2011)
-//-----------------------------------------------------------------------------
-CreateProject("Crossbow Tennis Machine",
-    ["Bart Opsomer", "Ben Praet", "Egon Blyweert", "Frederick Puttemans", "Jeroen Colon", "Joris Panis", "Louis Ponet", "Matthias Moulin", "Nick Berlanger"],
-    "Course: Problem Solving and Design, Part 2 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01C2AE.htm'>(B-KUL-H01C2A)</a>, June 2011",
-    "res/Projects/CrossbowTennisMachine/Thumbnail.png", 6, 2011,
-    "https://matt77hias.github.io/404.html",
-	[
-		new Download("Teaser", "https://www.youtube.com/watch?v=TLGgxP7FdLA", "res/Icons/icon-html.png")
-	]);
-
-//-----------------------------------------------------------------------------
-// 1st Semester - 1st Bachelor of Science in Engineering (2010-2011)
-//-----------------------------------------------------------------------------
-CreateProject("MandeLboat", 
-	["Ben Allaerts", "Egon Pittoors", "Jef Aendekerk", "Julian Bouckenooghe", "Matthias Moulin", "Robin Clerckx", "Stijn Meylemans", "Wout Behaeghel"],
-    "Course: Problem Solving and Design, Part 1 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01B9AE.htm'>(B-KUL-H01B9A)</a>, December 2010",
-    "res/Projects/MandeLboat/Thumbnail.png", 12, 2010,
-    "https://matt77hias.github.io/404.html",
-	[]);

@@ -1,10 +1,12 @@
 "use strict";
 
-function ConstructHTMLRecentItems() {
+function ConstructHTMLRecentItems()
+{
     var doc = document.getElementById("recent");
 	
 	var items = GetRecentItems(6);
-    for (var i = 0; i < items.length; ++i) {
+    for (var i = 0; i < items.length; ++i)
+	{
         var item = items[i];
         
 		// Create the division/section for the item.
