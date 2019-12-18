@@ -1,4 +1,5 @@
-body {
+body
+{
 	background-color: #E5E5E5;
 	font-family: regular;
     font-size: 100%;
@@ -7,55 +8,64 @@ body {
     text-align: justify;
 }
 
-a {
+a
+{
     color: darkgreen;
 	text-decoration: none;
 }
 
-@font-face{
+@font-face
+{
     font-family:regular;
     src:url(fonts/OpenSans-Light.ttf);
     src:url('fonts/OpenSans-Light.eot');
     src:url('fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),local('Open Sans Light'),url('fonts/OpenSans-Light.woff2') format('woff2'),url('fonts/OpenSans-Light.woff') format('woff'),url('fonts/OpenSans-Light.ttf') format('truetype'),url('fonts/OpenSans-Light.svg#svgFontName') format('svg')
 }
 
-@font-face{
+@font-face
+{
     font-family:condensed;
     src:url(fonts/OpenSans-CondLight.ttf);
     src:url('fonts/OpenSans-CondLight.eot');
     src:url('fonts/OpenSans-CondLight.eot?#iefix') format('embedded-opentype'),local('Open Sans Condensed Light'),url('fonts/OpenSans-CondLight.woff2') format('woff2'),url('fonts/OpenSans-CondLight.woff') format('woff'),url('fonts/OpenSans-CondLight.ttf') format('truetype'),url('fonts/OpenSans-CondLight.svg#svgFontName') format('svg')
 }
 
-h1 {
+h1
+{
 	font-family: condensed;
     font-size: 2.5em;
     font-weight: normal;
     margin: 0;
 }
 
-h2 {
+h2
+{
 	font-family: condensed;
     font-size: 2em;  
     font-weight: normal;
     margin: 0;
 }
 
-h3 {
+h3
+{
 	font-family: condensedbold;
     font-size: 1.5em;
     font-weight: normal;
 }
 
-h4 {
+h4
+{
     font-size: 1em;   
     font-weight: normal;
 }
 
-article h1 {
+article h1
+{
     border-bottom: 1px solid #C6C6C6;
 }
 
-body > article {
+body > article
+{
 	background: white;
 	box-shadow: 0em 0em 0.75em gray;
 	margin-bottom: 1em;
@@ -66,43 +76,52 @@ body > article {
     padding: 1em;
 }
 
-@media screen and (max-width: 58em) {
-    body > article {
+@media screen and (max-width: 58em)
+{
+    body > article
+	{
         margin-left: 1em;
         margin-right: 1em;
     }
 }
 
-body > article:first-child {
+body > article:first-child
+{
     margin-top: 0;   
 }
 
-body > article:last-child {
+body > article:last-child
+{
     margin-bottom: 0;
 }
 
-.bordered {
+.bordered
+{
 	border: 1px solid #606060;
     box-shadow: 0.25em 0.25em 0.25em #C6C6C6;
     padding: 0.25em;
 }
 
-.container {
+.container
+{
     display: table;
     padding-bottom: 1em;
 	padding-top: 1em;
 }
 
-.container-item {
+.container-item
+{
     display: table-cell;
     vertical-align: middle;
 }
 
-aside.container-item {
+aside.container-item
+{
     padding-right: 1em;
 }
 
-.inline-thumbnail {
+.inline-thumbnail
+{
     display: none;
     margin-bottom: 1em;
     margin-left: auto;
@@ -112,15 +131,19 @@ aside.container-item {
 	width: 50%;
 }
 
-@media screen and (max-width: 32em) {
-    .large-thumbnail {
+@media screen and (max-width: 32em)
+{
+    .large-thumbnail
+	{
         display: none;
     }
-    .inline-thumbnail {
+    .inline-thumbnail
+	{
         display: block;
     }
 }
 
-.subheader {
+.subheader
+{
     float: right;
 }

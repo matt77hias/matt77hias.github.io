@@ -1,4 +1,5 @@
-body {
+body
+{
 	background-color: white;
     color: #555;
     font-family: "condensed";
@@ -9,62 +10,75 @@ body {
 	text-align: left;
 }
 
-@media screen and (max-width:54em) {
-    body {
+@media screen and (max-width:54em)
+{
+    body
+	{
         margin-left: 2em;
         margin-right: 2em;
     }
 }
 
-a {
+a
+{
     color: green;
     text-decoration: none;
 }
 
-h1 {
+h1
+{
     margin-bottom: .5em;
 	margin-top: .5em;
     text-align: center;
 }
 
-@media screen and (max-width:32em) {
-    h1 {
+@media screen and (max-width:32em)
+{
+    h1
+	{
         font-size: 1.5em;
     }
 }
 
-h3 {
+h3
+{
     margin-bottom: .5em;
 	margin-top: .5em;
 }
 
-.proceedings {
+.proceedings
+{
     font-size: 90%;
     font-style: italic;
     text-align: center;
 }
 
-.authorlist {
+.authorlist
+{
     text-align: center;
 }
 
-.author {
+.author
+{
     display: inline-block;
     margin: .5em;
 	width: 10em;
 }
 
-.affiliation {
+.affiliation
+{
     margin-bottom: 2em;
 	text-align: center;
 }
 
-.dedication {
+.dedication
+{
 	font-style: italic;
     text-align: center;
 }
 
-.teaser {
+.teaser
+{
     display: block;
 	margin-bottom: 1em;
     margin-left: auto;
@@ -74,15 +88,18 @@ h3 {
 	width: 100%;
 }
 
-.abstract {
+.abstract
+{
     text-align: justify;
 }
 
-.container {
+.container
+{
     margin-bottom: 4em;
 }
 
-.download-item {
+.download-item
+{
     display: inline-block;
     margin-bottom: .5em;
 	text-align: center;
@@ -90,26 +107,30 @@ h3 {
 	width: 6em;
 }
 
-.download-item-icon {
+.download-item-icon
+{
     height: 3em;
 	width: 3em;
 }
 
-.download-item-name {
+.download-item-name
+{
     display: block;
     font-size: .9em;
     margin-bottom: 0;
 	margin-top: 0;
 }
 
-.download-item-extension {
+.download-item-extension
+{
     display: block;
 	margin-bottom: 0;
     margin-top: 0;
     font-size: .8em;
 }
 
-.download-item-size {
+.download-item-size
+{
     display: block;
     margin-bottom: 0;
 	margin-top: 0;

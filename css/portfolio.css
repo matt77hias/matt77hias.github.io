@@ -1,11 +1,13 @@
-.item-links {
+.item-links
+{
     margin-left: auto;
     margin-right: auto;
 	max-width: 75%;
 	text-align: center;
 }
 
-.to-top-link {
+.to-top-link
+{
 	color: green;
     display: inline-block;
     float: right;
@@ -13,27 +15,32 @@
     padding-top: 1em;
 }
 
-.view-button {
+.view-button
+{
     height: .75em;
     opacity: .4;
 	width: .75em;
 }
 
-.view-button:hover {
+.view-button:hover
+{
     opacity: .8;
 }
 
-ul.item-list-view {
+ul.item-list-view
+{
     display: none;
 	list-style-type: none;
 }
 
-ul.item-list-view li {
+ul.item-list-view li
+{
     margin-bottom: 1em;
     margin-right: 1em;
 }
 
-.item-thumbnail-view {
+.item-thumbnail-view
+{
 	background-color: #F0F0F0;
 	box-shadow:1px 1px 5px gray;
 	font-family: condensed;
@@ -42,14 +49,16 @@ ul.item-list-view li {
     padding: 1em;
 }
 
-.item-thumbnail {
+.item-thumbnail
+{
     opacity: 0;
     transition: opacity .75s ease-in-out;
 	vertical-align: middle;
     width: 12em;
 }
 
-.item-title {
+.item-title
+{
     color: green;
     font-family: condensed;
     font-weight: bold;
@@ -57,15 +66,18 @@ ul.item-list-view li {
 	margin-top: 0;
 }
 
-.item-authors {
+.item-authors
+{
     margin-top: .5em;
 }
 
-.item-description {
+.item-description
+{
     font-family: condensed;
 }
 
-.download {
+.download
+{
     display: inline-block;
     margin-bottom: .5em;
 	text-align: center;
@@ -73,24 +85,29 @@ ul.item-list-view li {
 	width: 5em;
 }
 
-.download-icon {
+.download-icon
+{
     height: 3em;
     transition: width .5s ease-in-out,height .5s ease-in-out;
 	width: 3em;
 }
 
-@media screen and (max-width:32em) {
+@media screen and (max-width:32em)
+{
     article.item-thumbnail-view.container 
-    aside.container-item {
+    aside.container-item
+	{
         display: none;
         text-align: center;
     }
-    .item-inline-thumbnail {
+    .item-inline-thumbnail
+	{
         display: block;
     }
 }
 
-.download-description {
+.download-description
+{
 	display: block;
 	font-family: condensed;
     font-size: .9em;
@@ -98,14 +115,16 @@ ul.item-list-view li {
 	margin-top: 0;
 }
 
-.download-extension {
+.download-extension
+{
     display: block;
     font-size: .8em;
     margin-bottom: 0;
 	margin-top: 0;
 }
 
-.download-size {
+.download-size
+{
     display: block;
     font-size: .8em;
     margin-bottom: 0;

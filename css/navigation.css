@@ -1,11 +1,13 @@
-nav {    
+nav
+{    
 	background-color: #00571B;
     box-shadow: 0em 0.5em 0.5em #787878;
     margin-bottom: 2em;
     text-align: center;
 }
 
-nav a {
+nav a
+{
 	border-bottom: 0.25em solid transparent;
 	color: white;
     display: inline-block;
@@ -19,11 +21,13 @@ nav a {
     transition: border-bottom 0.2s ease-in-out;
 }
 
-nav a:hover {
+nav a:hover
+{
     border-bottom: 0.25em solid white;
 }
 
-nav select {
+nav select
+{
 	background: #008A2B;
     color: white;
     display: none;
@@ -33,15 +37,19 @@ nav select {
     margin-right: auto;
 }
 
-@media screen and (max-width: 46em) {
-    nav {
+@media screen and (max-width: 46em)
+{
+    nav
+	{
         padding-bottom: 0.5em;
 		padding-top: 0.5em;
     }
-    nav a {
+    nav a
+	{
         display: none;   
     }
-    nav select {
+    nav select
+	{
         display: block;
     }
 }
@@ -50,6 +58,7 @@ nav select {
 #publications nav a.publications, 
 #portfolio nav a.portfolio, 
 #blog nav a.blog, 
-#resume nav a.resume {
+#resume nav a.resume
+{
     border-bottom: 0.25em solid white;
 }

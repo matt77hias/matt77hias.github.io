@@ -1,10 +1,12 @@
-footer {
+footer
+{
     height: 20px;
 	position: relative;
     width: 100%;
 }
 
-p.copyright {
+p.copyright
+{
 	font-size: 0.7em;
 	bottom:0;
     position: absolute;

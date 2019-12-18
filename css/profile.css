@@ -1,4 +1,5 @@
-.profile {
+.profile
+{
     clear: both;
 	color: #333;
     margin: 10px auto;
@@ -23,7 +24,8 @@
 .icon-slideshare,
 .icon-stackexchange,
 .icon-twitter,
-.icon-youtube {
+.icon-youtube
+{
     display: inline-block;
     margin: 2px;
     height: 40px;
@@ -47,61 +49,80 @@
 .icon-slideshare:hover,
 .icon-stackexchange:hover,
 .icon-twitter:hover,
-.icon-youtube:hover {
+.icon-youtube:hover
+{
     background-position: bottom right;
 }
 
-.icon-bitbucket {
+.icon-bitbucket
+{
     background: transparent url('../res/Icons/icon-bitbucket.png') top left no-repeat;
 }
-.icon-deviantart {
+.icon-deviantart
+{
     background: transparent url('../res/Icons/icon-deviantart.png') top left no-repeat;
 }
-.icon-gamedevnet {
+.icon-gamedevnet
+{
     background: transparent url('../res/Icons/icon-gamedevnet.png') top left no-repeat;
 }
-.icon-github {
+.icon-github
+{
     background: transparent url('../res/Icons/icon-github.png') top left no-repeat;
 }
-.icon-gitlab {
+.icon-gitlab
+{
     background: transparent url('../res/Icons/icon-gitlab.png') top left no-repeat;
 }
-.icon-gitter {
+.icon-gitter
+{
     background: transparent url('../res/Icons/icon-gitter.png') top left no-repeat;
 }
-.icon-goodreads {
+.icon-goodreads
+{
     background: transparent url('../res/Icons/icon-goodreads.png') top left no-repeat;
 }
-.icon-linkedin {
+.icon-linkedin
+{
     background: transparent url('../res/Icons/icon-linkedin.png') top left no-repeat;
 }
-.icon-mail {
+.icon-mail
+{
     background: transparent url('../res/Icons/icon-mail.png') top left no-repeat;
 }
-.icon-orcid {
+.icon-orcid
+{
     background: transparent url('../res/Icons/icon-orcid.png') top left no-repeat;
 }
-.icon-readit {
+.icon-readit
+{
     background: transparent url('../res/Icons/icon-readit.png') top left no-repeat;
 }
-.icon-researchgate {
+.icon-researchgate
+{
     background: transparent url('../res/Icons/icon-researchgate.png') top left no-repeat;
 }
-.icon-shadertoy {
+.icon-shadertoy
+{
     background: transparent url('../res/Icons/icon-shadertoy.png') top left no-repeat;
 }
-.icon-skype {
+.icon-skype
+{
     background: transparent url('../res/Icons/icon-skype.png') top left no-repeat;
 }
-.icon-slideshare {
+.icon-slideshare
+{
     background: transparent url('../res/Icons/icon-slideshare.png') top left no-repeat;
 }
-.icon-stackexchange {
+.icon-stackexchange
+{
     background: transparent url('../res/Icons/icon-stackexchange.png') top left no-repeat;
 }
-.icon-twitter {
+.icon-twitter
+{
     background: transparent url('../res/Icons/icon-twitter.png') top left no-repeat;
 }
-.icon-youtube {
+.icon-youtube
+{
     background: transparent url('../res/Icons/icon-youtube.png') top left no-repeat;
 }
