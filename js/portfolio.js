@@ -78,7 +78,8 @@ function AddItem(item, year)
     g_items_by_date_sorted = false;
 }
 
-function AddPost(post, year) {
+function AddPost(post, year)
+{
     if (!g_posts_by_year.hasOwnProperty(year))
 	{
         g_posts_by_year[year] = [];
