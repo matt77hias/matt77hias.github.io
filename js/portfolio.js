@@ -29,13 +29,11 @@ var Author = function (name, url)
     this.url  = url;
 };
 
-var Download = function (description, link, icon, extension, size)
+var Download = function (description, link, icon)
 {
     this.description = description;
     this.link        = link;
     this.icon        = (icon) ? icon : GetIconFromLink(link);
-    this.extension   = extension;
-    this.size        = size;
 };
 
 var Post = function (title, authors, description, month, year, url)
@@ -301,13 +299,13 @@ CreatePublication("On the Use of Local Ray Termination for Efficiently Construct
     "res/Publications/Moulin2018-1/Thumbnail.png", 7, 2018,
     "res/Publications/Moulin2018-1/Publication.html",
     [
-		new Download("Preprint",      "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Preprint.pdf", undefined, "PDF", "5.94 MiB"),
-		new Download("Citation",      "res/Publications/Moulin2018-1/Citation.bib", undefined, "BIB", "0.6 KiB"),
-		new Download("Abstract",      "res/Publications/Moulin2018-1/Abstract.txt", undefined, "TXT", "1.7 KiB"),
-		new Download("Supplementary Material (1/2)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf", undefined, "PDF", "24.5 MiB"),
-		new Download("Supplementary Material (2/2)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf", undefined, "PDF", "0.6 KiB"),
-		new Download("DOI",           "https://doi.org/10.1007/s00371-018-1575-x",          "res/Icons/icon-html.png"),
-		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/625753", "res/Icons/icon-html.png")
+		new Download("Preprint",      "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Preprint.pdf",                      undefined),
+		new Download("Citation",      "res/Publications/Moulin2018-1/Citation.bib",                                                           undefined),
+		new Download("Abstract",      "res/Publications/Moulin2018-1/Abstract.txt",                                                           undefined),
+		new Download("Supplementary Material (1/2)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf", undefined),
+		new Download("Supplementary Material (2/2)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf", undefined),
+		new Download("DOI",           "https://doi.org/10.1007/s00371-018-1575-x",                                            "res/Icons/icon-html.png"),
+		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/625753",                                   "res/Icons/icon-html.png")
     ]);
 
 CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing",
@@ -316,12 +314,12 @@ CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Traci
     "res/Publications/Moulin2015-2/Thumbnail.png", 6, 2015,
     "res/Publications/Moulin2015-2/Publication.html",
     [
-		new Download("Dissertation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-2/Dissertation.pdf", undefined, "PDF", "47.5 MiB"),
-		new Download("Citation",      "res/Publications/Moulin2015-2/Citation.bib",    undefined, "BIB", "0.3 KiB"),
-		new Download("Abstract",      "res/Publications/Moulin2015-2/Abstract.txt",    undefined, "TXT", "4.0 KiB"),
-		new Download("Abstract (NL)", "res/Publications/Moulin2015-2/Abstract_NL.txt", undefined, "TXT", "4.0 KiB"),
-		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-2/Presentation.pdf", undefined, "PDF", "1.4 MiB"),
-		new Download("Poster",        "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-2/Poster.pdf",       undefined, "PDF", "1.3 MiB")
+		new Download("Dissertation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-2/Dissertation.pdf", undefined),
+		new Download("Citation",      "res/Publications/Moulin2015-2/Citation.bib",                                          undefined),
+		new Download("Abstract",      "res/Publications/Moulin2015-2/Abstract.txt",                                          undefined),
+		new Download("Abstract (NL)", "res/Publications/Moulin2015-2/Abstract_NL.txt",                                       undefined),
+		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-2/Presentation.pdf", undefined),
+		new Download("Poster",        "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-2/Poster.pdf",       undefined)
     ]);
 
 CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH",
@@ -330,13 +328,13 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
     "res/Publications/Moulin2015-1/Thumbnail.png", 6, 2015,
     "res/Publications/Moulin2015-1/Publication.html",
     [
-		new Download("Preprint",      "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-1/Preprint.pdf",     undefined, "PDF", "10.5 MiB"),
-		new Download("Citation",      "res/Publications/Moulin2015-1/Citation.bib", undefined, "BIB", "0.6 KiB"),
-		new Download("Abstract",      "res/Publications/Moulin2015-1/Abstract.txt", undefined, "TXT", "0.9 KiB"),
-		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-1/Presentation.pdf", undefined, "PDF", "6.7 MiB"),
-		new Download("Poster",        "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-1/Poster.pdf",       undefined, "PDF", "1.3 MiB"),
-		new Download("DOI",           "https://dx.doi.org/10.2312/sre.20151164",            "res/Icons/icon-html.png"),
-		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/501514", "res/Icons/icon-html.png")
+		new Download("Preprint",      "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-1/Preprint.pdf",     undefined),
+		new Download("Citation",      "res/Publications/Moulin2015-1/Citation.bib",                                          undefined),
+		new Download("Abstract",      "res/Publications/Moulin2015-1/Abstract.txt",                                          undefined),
+		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-1/Presentation.pdf", undefined),
+		new Download("Poster",        "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2015-1/Poster.pdf",       undefined),
+		new Download("DOI",           "https://dx.doi.org/10.2312/sre.20151164",                             "res/Icons/icon-html.png"),
+		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/501514",                  "res/Icons/icon-html.png")
 	]);
 
 //-----------------------------------------------------------------------------
@@ -517,7 +515,7 @@ CreateProject("FrigoShare",
     "https://anarchikul.wordpress.com/",
 	[
 		new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png"), 
-		new Download("Code", "https://github.com/matt77hias/FrigoShare", "res/Icons/icon-html.png")
+		new Download("Code", "https://github.com/matt77hias/FrigoShare",                     "res/Icons/icon-html.png")
 	]);
 
 CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
