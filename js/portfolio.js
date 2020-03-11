@@ -303,9 +303,8 @@ CreatePublication("On the Use of Local Ray Termination for Efficiently Construct
 		new Download("Preprint",      "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Preprint.pdf", undefined, "PDF", "5.94 MiB"),
 		new Download("Citation",      "res/Publications/Moulin2018-1/Citation.bib", undefined, "BIB", "0.6 KiB"),
 		new Download("Abstract",      "res/Publications/Moulin2018-1/Abstract.txt", undefined, "TXT", "1.7 KiB"),
-		new Download("Supplementary Material (1/3)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf", undefined, "PDF", "24.5 MiB"),
-		new Download("Supplementary Material (2/3)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf", undefined, "PDF", "0.6 KiB"),
-		new Download("Supplementary Material (3/3)", "res/Publications/Moulin2018-1/Supplementary3.zip", undefined, "ZIP", "Coming Eventually"),
+		new Download("Supplementary Material (1/2)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf", undefined, "PDF", "24.5 MiB"),
+		new Download("Supplementary Material (2/2)", "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf", undefined, "PDF", "0.6 KiB"),
 		new Download("DOI",           "https://doi.org/10.1007/s00371-018-1575-x",          "res/Icons/icon-html.png"),
 		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/625753", "res/Icons/icon-html.png")
     ]);
