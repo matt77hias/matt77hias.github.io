@@ -245,6 +245,16 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 //-----------------------------------------------------------------------------
 // Posts
 //-----------------------------------------------------------------------------
+CreatePost("MAGE: Asserts",
+    ["Matthias Moulin"],
+    "August 2018", 8, 2020,
+    "https://matt77hias.github.io/blog/2020/08/25/asserts.html");
+
+CreatePost("Closure",
+    ["Matthias Moulin"],
+    "August 2018", 8, 2020,
+    "https://matt77hias.github.io/blog/2020/08/24/closure.html");
+
 CreatePost("Voxel Cone Tracing",
     ["Matthias Moulin"],
     "August 2018", 8, 2018,
