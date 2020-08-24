@@ -245,7 +245,7 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 //-----------------------------------------------------------------------------
 // Posts
 //-----------------------------------------------------------------------------
-CreatePost("MAGE: Asserts",
+CreatePost("🧙 MAGE: Asserts",
     ["Matthias Moulin"],
     "August 2018", 8, 2020,
     "https://matt77hias.github.io/blog/2020/08/25/mage-asserts.html");
