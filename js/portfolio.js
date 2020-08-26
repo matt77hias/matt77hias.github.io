@@ -304,15 +304,15 @@ CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
 // Publications
 //-----------------------------------------------------------------------------
 CreatePublication("Specular Voxel Cone Tracing",
-    ["Matthias Moulin""],
+    ["Matthias Moulin"],
     "Internal Presentation, KU Leuven, January 2019",
     "res/Publications/Moulin2019-1/Thumbnail.png", 1, 2019,
     "res/Publications/Moulin2019-1/Publication.html",
     [
-		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2019-1/Presentation.pdf",                  undefined),
-		new Download("Citation",      "res/Publications/Moulin2019-1/Citation.bib",                                                           undefined),
-		new Download("Abstract",      "res/Publications/Moulin2019-1/Abstract.txt",                                                           undefined),
-		new Download("Code",          "https://github.com/matt77hias/MAGE",                                                   "res/Icons/icon-html.png")
+		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2019-1/Presentation.pdf", undefined),
+		new Download("Citation",      "res/Publications/Moulin2019-1/Citation.bib",                                          undefined),
+		new Download("Abstract",      "res/Publications/Moulin2019-1/Abstract.txt",                                          undefined),
+		new Download("Code",          "https://github.com/matt77hias/MAGE",                                  "res/Icons/icon-html.png")
     ]);
 
 CreatePublication("On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs",
