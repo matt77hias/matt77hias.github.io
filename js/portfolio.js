@@ -305,7 +305,7 @@ CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
 //-----------------------------------------------------------------------------
 CreatePublication("Specular Voxel Cone Tracing",
     ["Matthias Moulin"],
-    "Internal Presentation, KU Leuven, January 2019",
+    "Internal Presentation, Department of Computer Science, KU Leuven, January 2019",
     "res/Publications/Moulin2019-1/Thumbnail.png", 1, 2019,
     "res/Publications/Moulin2019-1/Publication.html",
     [
