@@ -13,14 +13,38 @@ function GetIconFromLink(link)
 {
     var extension = link.split(".").pop();
 
-    if      (extension === "pdf")                                                                                             { return "res/Icons/icon-pdf.png";     }
-    else if (extension === "bib" || extension === "tex")                                                                      { return "res/Icons/icon-tex.png";     }
-    else if (extension === "html")                                                                                            { return "res/Icons/icon-html.png";    }
-    else if (extension === "txt")                                                                                             { return "res/Icons/icon-txt.png";     }
-    else if (extension === "zip" || extension === "rar")                                                                      { return "res/Icons/icon-zip.png";     }
-    else if (extension === "mov" || extension === "mp4" || extension === "avi" || extension === "mkv" || extension === "wmv") { return "res/Icons/icon-video.png";   }
-    else if (extension === "ppt" || extension === "pptx")                                                                     { return "res/Icons/icon-ppt.png";     }
-    else                                                                                                                      { return "res/Icons/icon-unknown.png"; }
+    if (extension === "pdf")
+	{
+		return "res/Icons/icon-pdf.png";
+	}
+    else if (extension === "bib" || extension === "tex")
+	{
+		return "res/Icons/icon-tex.png";
+	}
+    else if (extension === "html")
+	{
+		return "res/Icons/icon-html.png";
+	}
+    else if (extension === "txt")
+	{
+		return "res/Icons/icon-txt.png";
+	}
+    else if (extension === "zip" || extension === "rar")
+	{
+		return "res/Icons/icon-zip.png";
+	}
+    else if (extension === "mov" || extension === "mp4" || extension === "avi" || extension === "mkv" || extension === "wmv")
+	{
+		return "res/Icons/icon-video.png";
+	}
+    else if (extension === "ppt" || extension === "pptx")
+	{
+		return "res/Icons/icon-ppt.png";
+	}
+    else
+	{
+		return "res/Icons/icon-unknown.png";
+	}
 }
 
 var Author = function (name, url)
@@ -693,7 +717,4 @@ CreateProject("Aurora",
 	"Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
     "res/Projects/Aurora/Thumbnail.png", 12, 2011,
     "https://github.com/matt77hias/Aurora",
-	[
-		new Download("Play", "https://aurora--cwb1.appspot.com/",                           "res/Icons/icon-html.png"),
-		new Download("Wiki", "http://ariadne.cs.kuleuven.be/mediawiki/index.php/CWB1-1112", "res/Icons/icon-html.png")
-	]);
+	[]);
