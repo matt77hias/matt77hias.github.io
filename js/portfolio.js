@@ -269,6 +269,7 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 //-----------------------------------------------------------------------------
 // Posts
 //-----------------------------------------------------------------------------
+
 CreatePost("🧙 MAGE: Asserts",
     ["Matthias Moulin"],
     "August 2018", 8, 2020,
@@ -327,6 +328,7 @@ CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
 //-----------------------------------------------------------------------------
 // Publications
 //-----------------------------------------------------------------------------
+
 CreatePublication("Specular Voxel Cone Tracing",
     ["Matthias Moulin"],
     "Internal Presentation, Department of Computer Science, KU Leuven, January 2019",
@@ -390,6 +392,7 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd PhD of Science in Engineering (2016-2017)
 //-----------------------------------------------------------------------------
+
 CreateProject("MAGE",
     ["Matthias Moulin"],
     "January 2017",
@@ -406,6 +409,7 @@ CreateProject("MAGE",
 //-----------------------------------------------------------------------------
 // 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
 //-----------------------------------------------------------------------------
+
 CreateProject("Monte Carlo Integration Techniques",
     ["Matthias Moulin"],
     "October 2016",
@@ -433,6 +437,7 @@ CreateProject("pippy",
 //-----------------------------------------------------------------------------
 // 2nd Semester - 1st PhD of Science in Engineering (2015-2016)
 //-----------------------------------------------------------------------------
+
 CreateProject("Rosetta smallpt",
     ["Matthias Moulin"],
     "September 2016",
@@ -462,6 +467,7 @@ CreateProject("Rosetta smallpt",
 //-----------------------------------------------------------------------------
 // 1st Semester - 1st PhD of Science in Engineering (2015-2016)
 //-----------------------------------------------------------------------------
+
 CreateProject("pbrtpy",
     ["Matthias Moulin"],
     "December 2015",
@@ -486,6 +492,7 @@ CreateProject("Clipping",
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Master of Science in Engineering (2014-2015)
 //-----------------------------------------------------------------------------
+
 CreateProject("Hybrid Survivor",
     ["Matthias Moulin", "Milan Samyn", "Samuel Lannoy"],
     "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H05N2AE.htm'>(B-KUL-H05N2A)</a>, June 2015",
@@ -514,6 +521,7 @@ CreateProject("Quadrature Experiments",
 //-----------------------------------------------------------------------------
 // 1st Semester - 2nd Master of Science in Engineering (2014-2015)
 //-----------------------------------------------------------------------------
+
 CreateProject("Kajiya",
     ["Matthias Moulin", "Mattias Buelens"],
     "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
@@ -547,6 +555,7 @@ CreateProject("2048",
 //-----------------------------------------------------------------------------
 // 2nd Semester - 1st Master of Science in Engineering (2013-2014)
 //-----------------------------------------------------------------------------
+
 CreateProject("Incisor Segmentation",
     ["Matthias Moulin", "Milan Samyn"],
     "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>, June 2014",
@@ -602,6 +611,7 @@ CreateProject("Smoothing",
 //-----------------------------------------------------------------------------
 // 1st Semester - 1st Master of Science in Engineering (2013-2014)
 //-----------------------------------------------------------------------------
+
 CreateProject("Pacman",
     ["Matthias Moulin", "Ruben Pieters"],
     "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
@@ -645,6 +655,7 @@ CreateProject("Synchronization Experiments",
 //-----------------------------------------------------------------------------
 // Holiday (2013)
 //-----------------------------------------------------------------------------
+
 CreateProject("Snake",
     ["Matthias Moulin"],
     "August 2013",
@@ -655,6 +666,7 @@ CreateProject("Snake",
 //-----------------------------------------------------------------------------
 // 1st + 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
 //-----------------------------------------------------------------------------
+
 CreateProject("MazeStormer",
     ["Dennis Frett", "Matthias Moulin", "Mattias Buelens", "Stijn Hoskens", "Vital D'haveloose", "Stijn Hoskens"],
     "Course: Problem Solving and Design: Computer Science <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01Q3CE.htm'>(B-KUL-H01Q3C)</a>, June 2013",
@@ -668,6 +680,7 @@ CreateProject("MazeStormer",
 //-----------------------------------------------------------------------------
 // 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
 //-----------------------------------------------------------------------------
+
 CreateProject("Network Simulation, Part 2",
     ["Matthias Moulin"],
     "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
@@ -692,6 +705,7 @@ CreateProject("Socket Experiments",
 //-----------------------------------------------------------------------------
 // 1st Semester - 3th Bachelor of Science in Engineering (2012-2013)
 //-----------------------------------------------------------------------------
+
 CreateProject("MIPS Samples",
     ["Matthias Moulin"],
     "Course: Computer Architecture and System Software <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P5AE.htm'>(B-KUL-H01P5A)</a>, December 2012",
@@ -702,6 +716,7 @@ CreateProject("MIPS Samples",
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
 //-----------------------------------------------------------------------------
+
 CreateProject("RoboRally",
     ["Matthias Moulin", "Ruben Pieters"],
     "Course: Object Oriented Programming <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P1AE.htm'>(B-KUL-H01P1A)</a>, June 2012",
@@ -712,6 +727,7 @@ CreateProject("RoboRally",
 //-----------------------------------------------------------------------------
 // 1st Semester - 2nd Bachelor of Science in Engineering (2011-2012)
 //-----------------------------------------------------------------------------
+
 CreateProject("Aurora",
 	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
 	"Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
