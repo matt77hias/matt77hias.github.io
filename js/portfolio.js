@@ -47,20 +47,20 @@ function GetIconFromLink(link)
 	}
 }
 
-var Author = function (name, url)
+var Author = function(name, url)
 {
     this.name = name;
     this.url  = url;
 };
 
-var Download = function (description, link, icon)
+var Download = function(description, link, icon)
 {
     this.description = description;
     this.link        = link;
     this.icon        = (icon) ? icon : GetIconFromLink(link);
 };
 
-var Post = function (title, authors, description, month, year, url)
+var Post = function(title, authors, description, month, year, url)
 {
     this.title       = title;
     this.authors     = authors;
@@ -70,7 +70,7 @@ var Post = function (title, authors, description, month, year, url)
     this.url         = url;
 };
 
-var Project = function (title, authors, description, thumbnail, month, year, url, downloads)
+var Project = function(title, authors, description, thumbnail, month, year, url, downloads)
 {
     this.title       = title;
     this.authors     = authors;
@@ -82,7 +82,7 @@ var Project = function (title, authors, description, thumbnail, month, year, url
     this.downloads   = downloads;
 };
 
-var Publication = function (title, authors, description, thumbnail, month, year, url, downloads)
+var Publication = function(title, authors, description, thumbnail, month, year, url, downloads)
 {
     this.title       = title;
     this.authors     = authors;
