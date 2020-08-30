@@ -1,4 +1,4 @@
-.item-links
+.item-urls
 {
     margin-left: auto;
     margin-right: auto;
@@ -6,7 +6,7 @@
 	text-align: center;
 }
 
-.to-top-link
+.to-top-url
 {
 	color: green;
     display: inline-block;
