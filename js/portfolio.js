@@ -9,9 +9,9 @@ var g_publications_by_year = {};
 var g_items_by_date        = [];
 var g_items_by_date_sorted = true;
 
-function GetIconFromLink(link)
+function GetIcon(url)
 {
-    var extension = link.split(".").pop();
+    var extension = url.split(".").pop();
 
     if (extension === "pdf")
 	{
@@ -53,11 +53,11 @@ var Author = function(name, url)
     this.url  = url;
 };
 
-var Download = function(description, link, icon)
+var Download = function(description, url, icon)
 {
     this.description = description;
-    this.link        = link;
-    this.icon        = (icon) ? icon : GetIconFromLink(link);
+    this.url         = url;
+    this.icon        = (icon) ? icon : GetIcon(url);
 };
 
 var Post = function(title, authors, description, month, year, url)
@@ -90,7 +90,7 @@ var Publication = function(title, authors, description, thumbnail, month, year, 
     this.thumbnail   = thumbnail;
     this.month       = month;
     this.year        = year;
-    this.url = url;
+    this.url         = url;
     this.downloads   = downloads;
 };
 

@@ -11,7 +11,7 @@ function ConstructPostTableForYearForList(posts, year)
 	var h1 = document.createElement("h1");
     h1.id = "items-" + year;
 	articles.appendChild(h1);
-    h1.innerHTML = year + '<a class = "to-top-link" href = "#blog">back to the top</a>';
+    h1.innerHTML = year + '<a class = "to-top-url" href = "#blog">back to the top</a>';
     
 	var ul = document.createElement("ul");
 	ul.className = "item-list-view";
@@ -67,19 +67,19 @@ function ConstructPostTableForList()
 function ConstructPostYearLinks()
 {
     var years = GetPostYears();
-    var links = document.getElementById("item-year-links");
+    var urls = document.getElementById("item-year-urls");
     for (var i = years.length - 1; i >= 0; --i)
 	{
 		var year = years[i];
 		
-        links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
+        urls.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
         if (i > 0)
 		{
-			links.innerHTML += ", ";
+			urls.innerHTML += ", ";
 		}
         else
 		{
-			links.innerHTML += ".";
+			urls.innerHTML += ".";
 		}
     }
 }

@@ -9,7 +9,7 @@ function AppendDownload(acc, download)
 
     // Create the download image hyperref.
     var a_img        = document.createElement("a");
-    a_img.href       = download.link;
+    a_img.href       = download.url;
 	div.appendChild(a_img);
 
     // Create the download image.
@@ -21,7 +21,7 @@ function AppendDownload(acc, download)
      // Create the download text hyperref.
     var a_txt        = document.createElement("a");
     a_txt.className  = "download-description";
-    a_txt.href       = download.link;
+    a_txt.href       = download.url;
     a_txt.innerHTML  = download.description;
     div.appendChild(a_txt);
 }
@@ -48,7 +48,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year)
 	var h1 = document.createElement("h1");
     h1.id = "items-" + year;
 	articles.appendChild(h1);
-    h1.innerHTML = year + '<a class = "to-top-link" href = "#publications">back to the top</a>';
+    h1.innerHTML = year + '<a class = "to-top-url" href = "#publications">back to the top</a>';
     
 	for (var i = 0; i < publications.length; ++i)
 	{
@@ -91,7 +91,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year)
         }
         
 		var a_title = document.createElement("a");
-        a_title.className = "item-title-link";
+        a_title.className = "item-title-url";
         a_title.href = publication.url;
 		section.appendChild(a_title);
         
@@ -133,7 +133,7 @@ function ConstructPublicationTableForYearForThumbnails(publications, year)
         p.innerHTML = publication.description;
         
 		var div = document.createElement("div");
-        div.className = "item-links-table";
+        div.className = "item-urls-table";
 		section.appendChild(div);
 		
 		var download = new Download("Publication Page", publication.url, "res/Icons/icon-html.png");
@@ -150,8 +150,8 @@ function ConstructPublicationTableForYearForList(publications, year)
 {
     var list = document.getElementById("item-list");
     
-	var links = document.getElementById("items-" + year);
-	list.appendChild(links);
+	var urls = document.getElementById("items-" + year);
+	list.appendChild(urls);
     
 	var ul = document.createElement("ul");
 	ul.className = "item-list-view";
@@ -218,19 +218,19 @@ function ConstructPublicationTableForList()
 function ConstructPublicationYearLinks()
 {
     var years = GetPublicationYears();
-    var links = document.getElementById("item-year-links");
+    var urls = document.getElementById("item-year-urls");
     for (var i = years.length - 1; i >= 0; --i)
 	{
 		var year = years[i];
 		
-        links.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
+        urls.innerHTML += '<a href = "#items-' + year + '">' + year + "</a>";
         if (i > 0)
 		{
-			links.innerHTML += ", ";
+			urls.innerHTML += ", ";
 		}
         else
 		{
-			links.innerHTML += ".";
+			urls.innerHTML += ".";
 		}
     }
 }
