@@ -10,7 +10,7 @@ body
 	text-align: left;
 }
 
-@media screen and (max-width:54em)
+@media screen and (max-width: 54em)
 {
     body
 	{
@@ -32,7 +32,7 @@ h1
     text-align: center;
 }
 
-@media screen and (max-width:32em)
+@media screen and (max-width: 32em)
 {
     h1
 	{
