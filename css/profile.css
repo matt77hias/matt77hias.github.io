@@ -23,6 +23,7 @@
 .icon-skype,
 .icon-slideshare,
 .icon-stackexchange,
+.icon-trello,
 .icon-twitter,
 .icon-youtube
 {
@@ -48,6 +49,7 @@
 .icon-skype:hover,
 .icon-slideshare:hover,
 .icon-stackexchange:hover,
+.icon-trello:hover,
 .icon-twitter:hover,
 .icon-youtube:hover
 {
@@ -117,6 +119,10 @@
 .icon-stackexchange
 {
     background: transparent url('../res/Icons/icon-stackexchange.png') top left no-repeat;
+}
+.icon-trello
+{
+    background: transparent url('../res/Icons/icon-trello.png') top left no-repeat;
 }
 .icon-twitter
 {
