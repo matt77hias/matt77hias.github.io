@@ -275,7 +275,7 @@ CreatePost("🧙 MAGE: Asserts",
     "August 2018", 8, 2020,
     "https://matt77hias.github.io/blog/2020/08/25/mage-asserts.html");
 
-CreatePost("Closure",
+CreatePost("🎈 Closure",
     ["Matthias Moulin"],
     "August 2018", 8, 2020,
     "https://matt77hias.github.io/blog/2020/08/24/closure.html");
