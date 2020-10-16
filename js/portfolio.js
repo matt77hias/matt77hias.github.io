@@ -500,7 +500,6 @@ CreateProject("Hybrid Survivor",
     "https://github.com/matt77hias/HybridSurvivor",
 	[
 		new Download("Oculus Rift", "https://github.com/matt77hias/HybridSurvivor-OculusRift", "res/Icons/icon-html.png"),
-		new Download("HTC Vive",    "https://github.com/matt77hias/HybridSurvivor-PC",         "res/Icons/icon-html.png"),
 		new Download("PC & Web",    "https://github.com/matt77hias/HybridSurvivor-HTCVive",    "res/Icons/icon-html.png")
 	]);
 
