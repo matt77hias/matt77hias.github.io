@@ -24,4 +24,4 @@ My personal [webpage](https://matt77hias.github.io).
 * [The Open Graph (OG) protocol](http://ogp.me)
 * [Twitter Card validator](https://cards-dev.twitter.com/validator)
 
-<p align="center">Copyright © 2015-2021 Matthias Moulin. All Rights Reserved.</p>
+<p align="center">Copyright © 2015-2022 Matthias Moulin. All Rights Reserved.</p>
