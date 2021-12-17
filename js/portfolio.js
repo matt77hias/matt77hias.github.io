@@ -521,12 +521,12 @@ CreateProject("Quadrature Experiments",
 // 1st Semester - 2nd Master of Science in Engineering (2014-2015)
 //-----------------------------------------------------------------------------
 
-CreateProject("Kajiya",
-    ["Matthias Moulin", "Mattias Buelens"],
-    "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
-    "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
-    "https://matt77hias.github.io/404.html",
-	[]);
+//CreateProject("Kajiya",
+//    ["Matthias Moulin", "Mattias Buelens"],
+//    "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
+//    "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
+//    "https://matt77hias.github.io/404.html",
+//	[]);
 
 CreateProject("Fingerprint Compression",
     ["Matthias Moulin"],
@@ -572,12 +572,12 @@ CreateProject("FrigoShare",
 		new Download("Code", "https://github.com/matt77hias/FrigoShare",                     "res/Icons/icon-html.png")
 	]);
 
-CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
-    ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Software Architecture <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H07Z9AE.htm'>(B-KUL-H07Z9A)</a>, June 2014",
-    "res/No Image.jpg", 6, 2014,
-    "https://matt77hias.github.io/404.html",
-	[]);
+//CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
+//    ["Matthias Moulin", "Ruben Pieters"],
+//    "Course: Software Architecture <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H07Z9AE.htm'>(B-KUL-H07Z9A)</a>, June 2014",
+//    "res/No Image.jpg", 6, 2014,
+//    "https://matt77hias.github.io/404.html",
+//	[]);
 	
 CreateProject("Sampling Experiments",
     ["Matthias Moulin"],
@@ -611,12 +611,12 @@ CreateProject("Smoothing",
 // 1st Semester - 1st Master of Science in Engineering (2013-2014)
 //-----------------------------------------------------------------------------
 
-CreateProject("Pacman",
-    ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
-    "res/Projects/Pacman/Thumbnail.png", 12, 2013,
-    "https://matt77hias.github.io/404.html",
-	[]);
+//CreateProject("Pacman",
+//    ["Matthias Moulin", "Ruben Pieters"],
+//    "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
+//    "res/Projects/Pacman/Thumbnail.png", 12, 2013,
+//    "https://matt77hias.github.io/404.html",
+//	[]);
 
 CreateProject("Lilyhammer Rendering Engine",
     ["Matthias Moulin"],
@@ -680,37 +680,37 @@ CreateProject("MazeStormer",
 // 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
 //-----------------------------------------------------------------------------
 
-CreateProject("Network Simulation, Part 2",
-    ["Matthias Moulin"],
-    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-    "res/Projects/NetworkSimulation2/Thumbnail.png", 4, 2013,
-    "https://github.com/matt77hias/NS2",
-	[]);
+//CreateProject("Network Simulation, Part 2",
+//    ["Matthias Moulin"],
+//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
+//    "res/Projects/NetworkSimulation2/Thumbnail.png", 4, 2013,
+//    "https://github.com/matt77hias/NS2",
+//	[]);
 	
-CreateProject("Network Simulation, Part 1",
-    ["Matthias Moulin"],
-    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-    "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
-    "https://github.com/matt77hias/NS1",
-	[]);
+//CreateProject("Network Simulation, Part 1",
+//    ["Matthias Moulin"],
+//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
+//    "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
+//    "https://github.com/matt77hias/NS1",
+//	[]);
 	
-CreateProject("Socket Experiments",
-    ["Matthias Moulin", "Ruben Pieters"],
-    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-    "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
-    "https://github.com/matt77hias/JavaSocketExperiments",
-	[]);
+//CreateProject("Socket Experiments",
+//    ["Matthias Moulin", "Ruben Pieters"],
+//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
+//    "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
+//    "https://github.com/matt77hias/JavaSocketExperiments",
+//	[]);
 	
 //-----------------------------------------------------------------------------
 // 1st Semester - 3th Bachelor of Science in Engineering (2012-2013)
 //-----------------------------------------------------------------------------
 
-CreateProject("MIPS Samples",
-    ["Matthias Moulin"],
-    "Course: Computer Architecture and System Software <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P5AE.htm'>(B-KUL-H01P5A)</a>, December 2012",
-    "res/Projects/MIPSSamples/Thumbnail.png", 12, 2012,
-    "https://github.com/matt77hias/MIPSSamples",
-	[]);
+//CreateProject("MIPS Samples",
+//    ["Matthias Moulin"],
+//    "Course: Computer Architecture and System Software <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P5AE.htm'>(B-KUL-H01P5A)</a>, December 2012",
+//    "res/Projects/MIPSSamples/Thumbnail.png", 12, 2012,
+//    "https://github.com/matt77hias/MIPSSamples",
+//	[]);
 
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
@@ -727,9 +727,9 @@ CreateProject("RoboRally",
 // 1st Semester - 2nd Bachelor of Science in Engineering (2011-2012)
 //-----------------------------------------------------------------------------
 
-CreateProject("Aurora",
-	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
-	"Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
-    "res/Projects/Aurora/Thumbnail.png", 12, 2011,
-    "https://github.com/matt77hias/Aurora",
-	[]);
+//CreateProject("Aurora",
+//	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
+//	"Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
+//    "res/Projects/Aurora/Thumbnail.png", 12, 2011,
+//    "https://github.com/matt77hias/Aurora",
+//	[]);
