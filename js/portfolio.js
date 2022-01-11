@@ -414,7 +414,7 @@ CreateProject("Monte Carlo Integration Techniques",
     ["Matthias Moulin"],
     "October 2016",
     "res/Projects/MC/Thumbnail.png", 10, 2016,
-    "https://github.com/matt77hias/MCExperiments",
+    "https://github.com/matt77hias/MC-Experiments",
 	[
 		new Download("Supplementary Notes", "https://github.com/matt77hias/MC/blob/master/MC.pdf", "res/Icons/icon-pdf.png"),
 		new Download("Supplementary Notes", "https://github.com/matt77hias/MC",                    "res/Icons/icon-html.png")
