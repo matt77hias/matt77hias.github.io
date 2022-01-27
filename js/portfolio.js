@@ -468,12 +468,12 @@ CreateProject("Rosetta smallpt",
 // 1st Semester - 1st PhD of Science in Engineering (2015-2016)
 //-----------------------------------------------------------------------------
 
-CreateProject("pbrtpy",
-    ["Matthias Moulin"],
-    "December 2015",
-    "res/Projects/pbrtpy/Thumbnail.png", 12, 2015,
-    "https://github.com/matt77hias/pbrtpy",
-	[]);
+//CreateProject("pbrtpy",
+//    ["Matthias Moulin"],
+//    "December 2015",
+//    "res/Projects/pbrtpy/Thumbnail.png", 12, 2015,
+//    "https://github.com/matt77hias/pbrtpy",
+//	[]);
 
 CreateProject("FalseColor Visualization",
     ["Matthias Moulin"],
