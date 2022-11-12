@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html>
-	
+
 	<!------------------------------------------------------------------------>
 	<! Head                                                                   >
 	<!------------------------------------------------------------------------>
@@ -69,14 +69,14 @@
 	<!------------------------------------------------------------------------>
 	<body>
 		<p class="proceedings">The Visual Computer, Volume 35, Issue 12, December 2019 (First online: July 2018)</p>
-		
+
 		<h1 id="title">On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs</h1>
-		
+
 		<div class="authorlist">
 			<p class="author"><a href="https://matt77hias.github.io">Matthias Moulin</a></p>
 			<p class="author"><a href="https://sites.google.com/site/philipdutre">Philip Dutr&eacute;</a></p>
 		</div>
-		
+
 		<div class="affiliation">
 			<p>
 			<a href="http://graphics.cs.kuleuven.be">Computer Graphics Research Group</a>, 
@@ -84,60 +84,60 @@
 			<a href="https://www.kuleuven.be/english">KU Leuven</a>
 			</p>
 		</div>
-		
+
 		<a href="Teaser.png"><img alt="teaser" src="Teaser.png" class="teaser" name="teaser"></a>
 
 		<div id="abstract-container" class="container">
 			<h3 id="abstract-title">Abstract</h3>
-			
+
 			<p class="abstract">Acceleration data structures (ADSs) exploit spatial coherence by distributing a scene's geometric primitives into spatial groups, effectively reducing the cost of ray tracing queries. The most effective ADSs are hierarchical, adaptive tree structures such as BSPs, BIHs and (S)BVHs. The de facto standard cost metric for building these structures is the Surface Area Heuristic (SAH), which assumes a scene-exterior isotropic ray distribution of non-terminating rays. Despite its restrictive assumptions, the SAH remains competitive against many fundamentally different cost metrics targeting more common ray distributions. Our goal is not to radically change and replace the SAH, but to adapt it by introducing the concept of local ray termination in the context of voxel partitioning during the ADS construction and voxel traversal order during ADS traversal. We develop heuristics to approximate local ray termination efficiently without additional preprocessing or ray (sub)sampling. Our heuristics are used for approximating the visibility probabilities in the Ray Termination Surface Area Heuristic (RTSAH) for constructing BSPs, BIHs and (S)BVHs for accelerating closest-hit ray queries and for approximating the hit probabilities in the Shadow Ray Distribution Heuristic (SRDH) for constructing dedicated BVHs for accelerating any-hit ray queries. The main aim of our paper is to analyse the potential of including local ray termination into the SAH. The results indicate rendering performance close to the references (SAH and NodeSATO) on average due to small and/or compensating gains in the number of ray-triangle intersection tests and ADS node traversal steps. Furthermore, prerendering build times are higher for the RTSAH due to triangle clipping.
 			</p>
 		</div>
 
 		<div id="downloads-container">
 			<h3 id="downloads-title">Paper and Supplementary Material</h3>
-		
+
 			<div class="download-item">
 				<a href="../../../pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Preprint.pdf"><img alt="icon" src="../../Icons/icon-pdf.png" class="download-item-icon"></a>
 				<a href="../../../pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Preprint.pdf" class="download-item-name">Preprint</a>
 			</div>
-	
+
 			<div class="download-item">
 				<a href="Citation.bib"><img alt="icon" src="../../Icons/icon-tex.png" class="download-item-icon"></a>
 				<a href="Citation.bib" class="download-item-name">Citation</a>
 			</div>
-	
+
 			<div class="download-item">
 				<a href="Abstract.txt"><img alt="icon" src="../../Icons/icon-txt.png" class="download-item-icon"></a>
 				<a href="Abstract.txt" class="download-item-name">Abstract</a>
 			</div>
-	
+
 			<div class="download-item">
 				<a href="../../../pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf"><img alt="icon" src="../../Icons/icon-pdf.png" class="download-item-icon"></a>
 				<a href="../../../pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary1.pdf" class="download-item-name">Supplementary Material (1/2)</a>
 			</div>
-	
+
 			<div class="download-item">
 				<a href="../../../pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf"><img alt="icon" src="../../Icons/icon-pdf.png" class="download-item-icon"></a>
 				<a href="../../../pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2018-1/Supplementary2.pdf" class="download-item-name">Supplementary Material (2/2)</a>
 			</div>
-	
+
 			<div class="download-item">
 				<a href="https://doi.org/10.1007/s00371-018-1575-x"><img alt="icon" src="../../Icons/icon-html.png" class="download-item-icon"></a>
 				<a href="https://doi.org/10.1007/s00371-018-1575-x" class="download-item-name">DOI</a>
 			</div>
-			
+
 			<div class="download-item">
 				<a href="https://lirias.kuleuven.be/handle/123456789/625753"><img alt="icon" src="../../Icons/icon-html.png" class="download-item-icon"></a>
 				<a href="https://lirias.kuleuven.be/handle/123456789/625753" class="download-item-name">Lirias</a>
 			</div>
 		</div>
-		
+
 		<hr>
-	
+
 		<footer>
 			<p class="copyright">Copyright © 2015-2023 Matthias Moulin. All Rights Reserved.</p>
 		</footer>
 	</body>
-	
+
 </html>
