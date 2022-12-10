@@ -1,1 +1,1 @@
-Rough, unpublished and unfinished work about the diffuse and specular Voxel Cone Tracing in MAGE, presented during my last working day at the Department of Computer Science, KU Leuven.
+Rough, unpublished and unfinished work about the diffuse and specular Voxel Cone Tracing in MAGE v0, presented during my last working day at the Department of Computer Science, KU Leuven.
