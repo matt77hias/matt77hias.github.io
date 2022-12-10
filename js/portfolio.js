@@ -338,7 +338,7 @@ CreatePublication("Specular Voxel Cone Tracing",
 		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2019-1/Presentation.pdf", undefined),
 		new Download("Citation",      "res/Publications/Moulin2019-1/Citation.bib",                                          undefined),
 		new Download("Abstract",      "res/Publications/Moulin2019-1/Abstract.txt",                                          undefined),
-		new Download("Code",          "https://github.com/matt77hias/MAGE",                                  "res/Icons/icon-html.png")
+		new Download("Code",          "https://github.com/matt77hias/MAGE-v0",                                  "res/Icons/icon-html.png")
     ]);
 
 CreatePublication("On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs",
@@ -393,17 +393,17 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
 // 2nd Semester - 2nd PhD of Science in Engineering (2016-2017)
 //-----------------------------------------------------------------------------
 
-CreateProject("MAGE",
+CreateProject("MAGE v0",
     ["Matthias Moulin"],
     "January 2017",
-    "res/Projects/MAGE/Thumbnail.png", 1, 2017,
-    "https://github.com/matt77hias/MAGE",
+    "res/Projects/MAGE-v0/Thumbnail.png", 1, 2017,
+    "https://github.com/matt77hias/MAGE-v0",
 	[
-		new Download("Assets",        "https://github.com/matt77hias/MAGE-Assets",     "res/Icons/icon-html.png"),
-		new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon-html.png"),
-		new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc",        "res/Icons/icon-html.png"),
-		new Download("Font Utility",  "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon-html.png"),
-		new Download("Meta",          "https://github.com/matt77hias/MAGE-Meta",       "res/Icons/icon-html.png")
+		new Download("Assets",        "https://github.com/matt77hias/MAGE-v0-Assets",     "res/Icons/icon-html.png"),
+		new Download("Code",          "https://github.com/matt77hias/MAGE-v0",            "res/Icons/icon-html.png"),
+		new Download("Documentation", "https://github.com/matt77hias/MAGE-v0-Doc",        "res/Icons/icon-html.png"),
+		new Download("Font Utility",  "https://github.com/matt77hias/MAGE-v0-SpriteFont", "res/Icons/icon-html.png"),
+		new Download("Meta",          "https://github.com/matt77hias/MAGE-v0-Meta",       "res/Icons/icon-html.png")
 	]);
 
 //-----------------------------------------------------------------------------
