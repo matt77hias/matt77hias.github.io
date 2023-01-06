@@ -693,17 +693,6 @@ CreateProject("MazeStormer",
 //    "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
 //    "https://github.com/matt77hias/JavaSocketExperiments",
 //	[]);
-	
-//-----------------------------------------------------------------------------
-// 1st Semester - 3th Bachelor of Science in Engineering (2012-2013)
-//-----------------------------------------------------------------------------
-
-//CreateProject("MIPS Samples",
-//    ["Matthias Moulin"],
-//    "Course: Computer Architecture and System Software <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P5AE.htm'>(B-KUL-H01P5A)</a>, December 2012",
-//    "res/Projects/MIPSSamples/Thumbnail.png", 12, 2012,
-//    "https://github.com/matt77hias/MIPSSamples",
-//	[]);
 
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
