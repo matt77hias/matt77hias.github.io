@@ -686,13 +686,6 @@ CreateProject("MazeStormer",
 //    "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
 //    "https://github.com/matt77hias/NS1",
 //	[]);
-	
-//CreateProject("Socket Experiments",
-//    ["Matthias Moulin", "Ruben Pieters"],
-//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-//    "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
-//    "https://github.com/matt77hias/JavaSocketExperiments",
-//	[]);
 
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
