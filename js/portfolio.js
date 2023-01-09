@@ -668,17 +668,6 @@ CreateProject("MazeStormer",
 		new Download("Demo 1", "https://www.youtube.com/watch?v=PkklxX5FeSE", "res/Icons/icon-html.png"), 
 		new Download("Demo 2", "https://www.youtube.com/watch?v=WiFAeo-Ifsk", "res/Icons/icon-html.png")
 	]);
-	
-//-----------------------------------------------------------------------------
-// 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
-//-----------------------------------------------------------------------------
-
-//CreateProject("Network Simulation, Part 1",
-//    ["Matthias Moulin"],
-//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-//    "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
-//    "https://github.com/matt77hias/NS1",
-//	[]);
 
 //-----------------------------------------------------------------------------
 // 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
