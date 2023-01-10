@@ -679,14 +679,3 @@ CreateProject("RoboRally",
     "res/Projects/RoboRally/Thumbnail.png", 6, 2012,
     "https://github.com/matt77hias/RoboRally",
 	[]);
-
-//-----------------------------------------------------------------------------
-// 1st Semester - 2nd Bachelor of Science in Engineering (2011-2012)
-//-----------------------------------------------------------------------------
-
-//CreateProject("Aurora",
-//	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
-//	"Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
-//    "res/Projects/Aurora/Thumbnail.png", 12, 2011,
-//    "https://github.com/matt77hias/Aurora",
-//	[]);
