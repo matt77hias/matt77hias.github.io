@@ -604,13 +604,6 @@ CreateProject("Smoothing",
 // 1st Semester - 1st Master of Science in Engineering (2013-2014)
 //-----------------------------------------------------------------------------
 
-//CreateProject("Pacman",
-//    ["Matthias Moulin", "Ruben Pieters"],
-//    "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
-//    "res/Projects/Pacman/Thumbnail.png", 12, 2013,
-//    "https://matt77hias.github.io/404.html",
-//	[]);
-
 CreateProject("Lilyhammer Rendering Engine",
     ["Matthias Moulin"],
     "Course: Computer Graphics I <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0Q66BE.htm'>(B-KUL-G0Q66B)</a>, December 2013",
