@@ -564,13 +564,6 @@ CreateProject("FrigoShare",
 		new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png"), 
 		new Download("Code", "https://github.com/matt77hias/FrigoShare",                     "res/Icons/icon-html.png")
 	]);
-
-//CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
-//    ["Matthias Moulin", "Ruben Pieters"],
-//    "Course: Software Architecture <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H07Z9AE.htm'>(B-KUL-H07Z9A)</a>, June 2014",
-//    "res/No Image.jpg", 6, 2014,
-//    "https://matt77hias.github.io/404.html",
-//	[]);
 	
 CreateProject("Sampling Experiments",
     ["Matthias Moulin"],
