@@ -514,13 +514,6 @@ CreateProject("Quadrature Experiments",
 // 1st Semester - 2nd Master of Science in Engineering (2014-2015)
 //-----------------------------------------------------------------------------
 
-//CreateProject("Kajiya",
-//    ["Matthias Moulin", "Mattias Buelens"],
-//    "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
-//    "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
-//    "https://matt77hias.github.io/404.html",
-//	[]);
-
 CreateProject("Fingerprint Compression",
     ["Matthias Moulin"],
     "Course: Wavelets <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H03F7AE.htm'>(B-KUL-H03F7A)</a>, December 2014",
