@@ -610,13 +610,6 @@ CreateProject("Car Rental Agency",
 		new Download("Java EE",    "https://github.com/matt77hias/JavaEE",   "res/Icons/icon-html.png"),
 		new Download("Java GAE",   "https://github.com/matt77hias/JavaGAE",  "res/Icons/icon-html.png")
 	]);
-	
-CreateProject("Synchronization Experiments",
-    ["Matthias Moulin"],
-    "Course: Operating Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04G1BE.htm'>(B-KUL-H04G1B)</a>, November 2013",
-    "res/Projects/SynchronizationExperiments/Thumbnail.png", 11, 2013,
-    "https://github.com/matt77hias/JavaSyncExperiments",
-	[]);
 
 //-----------------------------------------------------------------------------
 // Holiday (2013)
