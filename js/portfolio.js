@@ -615,12 +615,12 @@ CreateProject("Car Rental Agency",
 // Holiday (2013)
 //-----------------------------------------------------------------------------
 
-CreateProject("Snake",
-    ["Matthias Moulin"],
-    "August 2013",
-    "res/Projects/Snake/Thumbnail.png", 8, 2013,
-    "https://github.com/matt77hias/Snake",
-	[]);
+//CreateProject("Snake",
+//    ["Matthias Moulin"],
+//    "August 2013",
+//    "res/Projects/Snake/Thumbnail.png", 8, 2013,
+//    "https://github.com/matt77hias/Snake",
+//	[]);
 	
 //-----------------------------------------------------------------------------
 // 1st + 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
