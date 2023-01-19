@@ -637,7 +637,7 @@ CreateProject("MazeStormer",
 	]);
 
 //-----------------------------------------------------------------------------
-// 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
+// Bachelor of Science in Engineering (2011-2012) - y2.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("RoboRally",
