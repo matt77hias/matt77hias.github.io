@@ -623,7 +623,7 @@ CreateProject("Snake",
 	[]);
 	
 //-----------------------------------------------------------------------------
-// 1st + 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
+// Bachelor of Science in Engineering (2012-2013) - y3
 //-----------------------------------------------------------------------------
 
 CreateProject("MazeStormer",
