@@ -533,7 +533,7 @@ CreateProject("2048",
 	[]);
 
 //-----------------------------------------------------------------------------
-// 2nd Semester - 1st Master of Science in Engineering (2013-2014)
+// Master of Science in Engineering (2013-2014) - y1.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Incisor Segmentation",
