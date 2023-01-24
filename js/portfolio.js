@@ -478,7 +478,7 @@ CreateProject("Clipping",
 	[]);
 
 //-----------------------------------------------------------------------------
-// 2nd Semester - 2nd Master of Science in Engineering (2014-2015)
+// Master of Science in Engineering (2014-2015) - y2.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Hybrid Survivor",
