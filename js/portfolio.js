@@ -402,7 +402,7 @@ CreateProject("MAGE v0",
 	]);
 
 //-----------------------------------------------------------------------------
-// 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
+// PhD of Science in Engineering (2016-2017) - y2.s1
 //-----------------------------------------------------------------------------
 
 CreateProject("Monte Carlo Integration Techniques",
