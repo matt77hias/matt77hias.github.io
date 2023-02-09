@@ -623,7 +623,7 @@ CreateProject("Snake",
 	[]);
 	
 //-----------------------------------------------------------------------------
-// Bachelor of Science in Engineering - y3
+// Projects: Bachelor of Science in Engineering - y3
 //-----------------------------------------------------------------------------
 
 CreateProject("MazeStormer",
