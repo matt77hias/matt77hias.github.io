@@ -582,7 +582,7 @@ CreateProject("Smoothing",
 	[]);
 
 //-----------------------------------------------------------------------------
-// Master of Science in Engineering - y1.s1
+// Projects: Master of Science in Engineering - y1.s1
 //-----------------------------------------------------------------------------
 
 CreateProject("Lilyhammer Rendering Engine",
