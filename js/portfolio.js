@@ -533,7 +533,7 @@ CreateProject("2048",
 	[]);
 
 //-----------------------------------------------------------------------------
-// Master of Science in Engineering - y1.s2
+// Projects: Master of Science in Engineering - y1.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Incisor Segmentation",
