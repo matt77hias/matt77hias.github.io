@@ -506,7 +506,7 @@ CreateProject("Quadrature Experiments",
 	[]);
 
 //-----------------------------------------------------------------------------
-// Master of Science in Engineering - y2.s1
+// Projects: Master of Science in Engineering - y2.s1
 //-----------------------------------------------------------------------------
 
 CreateProject("Fingerprint Compression",
