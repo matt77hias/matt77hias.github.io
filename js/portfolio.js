@@ -478,7 +478,7 @@ CreateProject("Clipping",
 	[]);
 
 //-----------------------------------------------------------------------------
-// Master of Science in Engineering - y2.s2
+// Projects: Master of Science in Engineering - y2.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Hybrid Survivor",
