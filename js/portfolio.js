@@ -460,7 +460,7 @@ CreateProject("Rosetta smallpt",
 	]);
 	
 //-----------------------------------------------------------------------------
-// PhD of Science in Engineering - y1.s1
+// Projects: PhD of Science in Engineering - y1.s1
 //-----------------------------------------------------------------------------
 
 CreateProject("FalseColor Visualization",
