@@ -430,7 +430,7 @@ CreateProject("pippy",
 	[]);
 	
 //-----------------------------------------------------------------------------
-// PhD of Science in Engineering - y1.s2
+// Projects: PhD of Science in Engineering - y1.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Rosetta smallpt",
