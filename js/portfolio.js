@@ -402,7 +402,7 @@ CreateProject("MAGE v0",
 	]);
 
 //-----------------------------------------------------------------------------
-// PhD of Science in Engineering - y2.s1
+// Projects: PhD of Science in Engineering - y2.s1
 //-----------------------------------------------------------------------------
 
 CreateProject("Monte Carlo Integration Techniques",
