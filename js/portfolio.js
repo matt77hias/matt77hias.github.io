@@ -385,7 +385,7 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
 //-----------------------------------------------------------------------------
 	
 //-----------------------------------------------------------------------------
-// PhD of Science in Engineering - y2.s2
+// Projects: PhD of Science in Engineering - y2.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("MAGE v0",
