@@ -351,6 +351,10 @@ CreatePublication("On the Use of Local Ray Termination for Efficiently Construct
 		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/625753",                                   "res/Icons/icon-html.png")
     ]);
 
+//-----------------------------------------------------------------------------
+// Publications: Master of Science in Engineering
+//-----------------------------------------------------------------------------
+
 CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing",
     ["Matthias Moulin"],
     "Master's thesis, Department of Computer Science, KU Leuven, Belgium, June 2015",
