@@ -321,7 +321,7 @@ CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
     "https://matt77hias.github.io/blog/2017/08/24/creating-a-view-frustum.html");
 
 //-----------------------------------------------------------------------------
-// Publications
+// Publications: PhD of Science in Engineering
 //-----------------------------------------------------------------------------
 
 CreatePublication("Specular Voxel Cone Tracing",
