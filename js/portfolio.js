@@ -145,18 +145,21 @@ function CreateAuthor(name, url)
 function CreatePost(title, authors, description, month, year, url)
 {
     var post = new Post(title, authors, description, month, year, url);
+
     AddPost(post, year);
 }
 
 function CreateProject(title, authors, description, thumbnail, month, year, url, downloads)
 {
     var project = new Project(title, authors, description, thumbnail, month, year, url, downloads);
+
     AddProject(project, year);
 }
 
 function CreatePublication(title, authors, description, thumbnail, month, year, url, downloads)
 {
     var publication = new Publication(title, authors, description, thumbnail, month, year, url, downloads);
+
     AddPublication(publication, year);
 }
 
