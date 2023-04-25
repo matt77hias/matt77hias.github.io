@@ -145,18 +145,21 @@ function CreateAuthor(name, url)
 function CreatePost(title, authors, description, month, year, url)
 {
     var post = new Post(title, authors, description, month, year, url);
+
     AddPost(post, year);
 }
 
 function CreateProject(title, authors, description, thumbnail, month, year, url, downloads)
 {
     var project = new Project(title, authors, description, thumbnail, month, year, url, downloads);
+
     AddProject(project, year);
 }
 
 function CreatePublication(title, authors, description, thumbnail, month, year, url, downloads)
 {
     var publication = new Publication(title, authors, description, thumbnail, month, year, url, downloads);
+
     AddPublication(publication, year);
 }
 
@@ -272,13 +275,8 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 
 CreatePost("🧙 MAGE: Asserts",
     ["Matthias Moulin"],
-    "August 2018", 8, 2020,
+    "August 2020", 8, 2020,
     "https://matt77hias.github.io/blog/2020/08/25/mage-asserts.html");
-
-CreatePost("Closure",
-    ["Matthias Moulin"],
-    "August 2018", 8, 2020,
-    "https://matt77hias.github.io/blog/2020/08/24/closure.html");
 
 CreatePost("Voxel Cone Tracing",
     ["Matthias Moulin"],
@@ -326,7 +324,7 @@ CreatePost("Creating a View Frustum in Local/World/Camera Space using SIMD",
     "https://matt77hias.github.io/blog/2017/08/24/creating-a-view-frustum.html");
 
 //-----------------------------------------------------------------------------
-// Publications
+// Publications: PhD of Science in Engineering
 //-----------------------------------------------------------------------------
 
 CreatePublication("Specular Voxel Cone Tracing",
@@ -338,7 +336,7 @@ CreatePublication("Specular Voxel Cone Tracing",
 		new Download("Presentation",  "pdf.js/web/viewer.html?file=%2F../../res/Publications/Moulin2019-1/Presentation.pdf", undefined),
 		new Download("Citation",      "res/Publications/Moulin2019-1/Citation.bib",                                          undefined),
 		new Download("Abstract",      "res/Publications/Moulin2019-1/Abstract.txt",                                          undefined),
-		new Download("Code",          "https://github.com/matt77hias/MAGE",                                  "res/Icons/icon-html.png")
+		new Download("Code",          "https://github.com/matt77hias/MAGE-v0",                                  "res/Icons/icon-html.png")
     ]);
 
 CreatePublication("On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs",
@@ -355,6 +353,10 @@ CreatePublication("On the Use of Local Ray Termination for Efficiently Construct
 		new Download("DOI",           "https://doi.org/10.1007/s00371-018-1575-x",                                            "res/Icons/icon-html.png"),
 		new Download("Lirias",        "https://lirias.kuleuven.be/handle/123456789/625753",                                   "res/Icons/icon-html.png")
     ]);
+
+//-----------------------------------------------------------------------------
+// Publications: Master of Science in Engineering
+//-----------------------------------------------------------------------------
 
 CreatePublication("Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing",
     ["Matthias Moulin"],
@@ -386,28 +388,24 @@ CreatePublication("Efficient Visibility Heuristics for kd-trees Using the RTSAH"
 	]);
 
 //-----------------------------------------------------------------------------
-// Projects
-//-----------------------------------------------------------------------------
-	
-//-----------------------------------------------------------------------------
-// 2nd Semester - 2nd PhD of Science in Engineering (2016-2017)
+// Projects: PhD of Science in Engineering - y2.s2
 //-----------------------------------------------------------------------------
 
-CreateProject("MAGE",
+CreateProject("MAGE v0",
     ["Matthias Moulin"],
     "January 2017",
-    "res/Projects/MAGE/Thumbnail.png", 1, 2017,
-    "https://github.com/matt77hias/MAGE",
+    "res/Projects/MAGE-v0/Thumbnail.png", 1, 2017,
+    "https://github.com/matt77hias/MAGE-v0",
 	[
-		new Download("Assets",        "https://github.com/matt77hias/MAGE-Assets",     "res/Icons/icon-html.png"),
-		new Download("Code",          "https://github.com/matt77hias/MAGE",            "res/Icons/icon-html.png"),
-		new Download("Documentation", "https://github.com/matt77hias/MAGE-Doc",        "res/Icons/icon-html.png"),
-		new Download("Font Utility",  "https://github.com/matt77hias/MAGE-SpriteFont", "res/Icons/icon-html.png"),
-		new Download("Meta",          "https://github.com/matt77hias/MAGE-Meta",       "res/Icons/icon-html.png")
+		new Download("Assets",        "https://github.com/matt77hias/MAGE-v0-Assets",     "res/Icons/icon-html.png"),
+		new Download("Code",          "https://github.com/matt77hias/MAGE-v0",            "res/Icons/icon-html.png"),
+		new Download("Documentation", "https://github.com/matt77hias/MAGE-v0-Doc",        "res/Icons/icon-html.png"),
+		new Download("Font Utility",  "https://github.com/matt77hias/MAGE-v0-SpriteFont", "res/Icons/icon-html.png"),
+		new Download("Meta",          "https://github.com/matt77hias/MAGE-v0-Meta",       "res/Icons/icon-html.png")
 	]);
 
 //-----------------------------------------------------------------------------
-// 1st Semester - 2nd PhD of Science in Engineering (2016-2017)
+// Projects: PhD of Science in Engineering - y2.s1
 //-----------------------------------------------------------------------------
 
 CreateProject("Monte Carlo Integration Techniques",
@@ -435,7 +433,7 @@ CreateProject("pippy",
 	[]);
 	
 //-----------------------------------------------------------------------------
-// 2nd Semester - 1st PhD of Science in Engineering (2015-2016)
+// Projects: PhD of Science in Engineering - y1.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Rosetta smallpt",
@@ -465,15 +463,8 @@ CreateProject("Rosetta smallpt",
 	]);
 	
 //-----------------------------------------------------------------------------
-// 1st Semester - 1st PhD of Science in Engineering (2015-2016)
+// Projects: PhD of Science in Engineering - y1.s1
 //-----------------------------------------------------------------------------
-
-//CreateProject("pbrtpy",
-//    ["Matthias Moulin"],
-//    "December 2015",
-//    "res/Projects/pbrtpy/Thumbnail.png", 12, 2015,
-//    "https://github.com/matt77hias/pbrtpy",
-//	[]);
 
 CreateProject("FalseColor Visualization",
     ["Matthias Moulin"],
@@ -490,7 +481,7 @@ CreateProject("Clipping",
 	[]);
 
 //-----------------------------------------------------------------------------
-// 2nd Semester - 2nd Master of Science in Engineering (2014-2015)
+// Projects: Master of Science in Engineering - y2.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Hybrid Survivor",
@@ -518,15 +509,8 @@ CreateProject("Quadrature Experiments",
 	[]);
 
 //-----------------------------------------------------------------------------
-// 1st Semester - 2nd Master of Science in Engineering (2014-2015)
+// Projects: Master of Science in Engineering - y2.s1
 //-----------------------------------------------------------------------------
-
-//CreateProject("Kajiya",
-//    ["Matthias Moulin", "Mattias Buelens"],
-//    "Course: Requirements Analysis for Complex Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0K32AE.htm'>(B-KUL-G0K32A)</a>, December 2014",
-//    "res/Projects/Kajiya/Thumbnail.png", 12, 2014,
-//    "https://matt77hias.github.io/404.html",
-//	[]);
 
 CreateProject("Fingerprint Compression",
     ["Matthias Moulin"],
@@ -552,7 +536,7 @@ CreateProject("2048",
 	[]);
 
 //-----------------------------------------------------------------------------
-// 2nd Semester - 1st Master of Science in Engineering (2013-2014)
+// Projects: Master of Science in Engineering - y1.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("Incisor Segmentation",
@@ -571,13 +555,6 @@ CreateProject("FrigoShare",
 		new Download("Play", "https://play.google.com/store/apps/details?id=com.frigoshare", "res/Icons/icon-html.png"), 
 		new Download("Code", "https://github.com/matt77hias/FrigoShare",                     "res/Icons/icon-html.png")
 	]);
-
-//CreateProject("ReMeS: Remote Measurement, Monitoring and Control System",
-//    ["Matthias Moulin", "Ruben Pieters"],
-//    "Course: Software Architecture <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H07Z9AE.htm'>(B-KUL-H07Z9A)</a>, June 2014",
-//    "res/No Image.jpg", 6, 2014,
-//    "https://matt77hias.github.io/404.html",
-//	[]);
 	
 CreateProject("Sampling Experiments",
     ["Matthias Moulin"],
@@ -608,15 +585,8 @@ CreateProject("Smoothing",
 	[]);
 
 //-----------------------------------------------------------------------------
-// 1st Semester - 1st Master of Science in Engineering (2013-2014)
+// Projects: Master of Science in Engineering - y1.s1
 //-----------------------------------------------------------------------------
-
-//CreateProject("Pacman",
-//    ["Matthias Moulin", "Ruben Pieters"],
-//    "Course: Modelling of Complex Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H0N05AE.htm'>(B-KUL-H0N05A)</a>, December 2013",
-//    "res/Projects/Pacman/Thumbnail.png", 12, 2013,
-//    "https://matt77hias.github.io/404.html",
-//	[]);
 
 CreateProject("Lilyhammer Rendering Engine",
     ["Matthias Moulin"],
@@ -643,16 +613,9 @@ CreateProject("Car Rental Agency",
 		new Download("Java EE",    "https://github.com/matt77hias/JavaEE",   "res/Icons/icon-html.png"),
 		new Download("Java GAE",   "https://github.com/matt77hias/JavaGAE",  "res/Icons/icon-html.png")
 	]);
-	
-CreateProject("Synchronization Experiments",
-    ["Matthias Moulin"],
-    "Course: Operating Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04G1BE.htm'>(B-KUL-H04G1B)</a>, November 2013",
-    "res/Projects/SynchronizationExperiments/Thumbnail.png", 11, 2013,
-    "https://github.com/matt77hias/JavaSyncExperiments",
-	[]);
 
 //-----------------------------------------------------------------------------
-// Holiday (2013)
+// Projects: Holiday
 //-----------------------------------------------------------------------------
 
 CreateProject("Snake",
@@ -663,7 +626,7 @@ CreateProject("Snake",
 	[]);
 	
 //-----------------------------------------------------------------------------
-// 1st + 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
+// Projects: Bachelor of Science in Engineering - y3
 //-----------------------------------------------------------------------------
 
 CreateProject("MazeStormer",
@@ -675,45 +638,9 @@ CreateProject("MazeStormer",
 		new Download("Demo 1", "https://www.youtube.com/watch?v=PkklxX5FeSE", "res/Icons/icon-html.png"), 
 		new Download("Demo 2", "https://www.youtube.com/watch?v=WiFAeo-Ifsk", "res/Icons/icon-html.png")
 	]);
-	
-//-----------------------------------------------------------------------------
-// 2nd Semester - 3th Bachelor of Science in Engineering (2012-2013)
-//-----------------------------------------------------------------------------
-
-//CreateProject("Network Simulation, Part 2",
-//    ["Matthias Moulin"],
-//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-//    "res/Projects/NetworkSimulation2/Thumbnail.png", 4, 2013,
-//    "https://github.com/matt77hias/NS2",
-//	[]);
-	
-//CreateProject("Network Simulation, Part 1",
-//    ["Matthias Moulin"],
-//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-//    "res/Projects/NetworkSimulation1/Thumbnail.png", 4, 2013,
-//    "https://github.com/matt77hias/NS1",
-//	[]);
-	
-//CreateProject("Socket Experiments",
-//    ["Matthias Moulin", "Ruben Pieters"],
-//    "Course: Computer Networks <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/G0Q43AE.htm'>(B-KUL-G0Q43A)</a>, April 2013",
-//    "res/Projects/SocketExperiments/Thumbnail.png", 4, 2013,
-//    "https://github.com/matt77hias/JavaSocketExperiments",
-//	[]);
-	
-//-----------------------------------------------------------------------------
-// 1st Semester - 3th Bachelor of Science in Engineering (2012-2013)
-//-----------------------------------------------------------------------------
-
-//CreateProject("MIPS Samples",
-//    ["Matthias Moulin"],
-//    "Course: Computer Architecture and System Software <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P5AE.htm'>(B-KUL-H01P5A)</a>, December 2012",
-//    "res/Projects/MIPSSamples/Thumbnail.png", 12, 2012,
-//    "https://github.com/matt77hias/MIPSSamples",
-//	[]);
 
 //-----------------------------------------------------------------------------
-// 2nd Semester - 2nd Bachelor of Science in Engineering (2011-2012)
+// Projects: Bachelor of Science in Engineering - y2.s2
 //-----------------------------------------------------------------------------
 
 CreateProject("RoboRally",
@@ -722,14 +649,3 @@ CreateProject("RoboRally",
     "res/Projects/RoboRally/Thumbnail.png", 6, 2012,
     "https://github.com/matt77hias/RoboRally",
 	[]);
-
-//-----------------------------------------------------------------------------
-// 1st Semester - 2nd Bachelor of Science in Engineering (2011-2012)
-//-----------------------------------------------------------------------------
-
-//CreateProject("Aurora",
-//	["Matthias Moulin", "Nathan Moesen", "Pieter Marynissen", "Sebastiaan Maes", "Sophie Marien", "Tom Molderez"],
-//	"Course: Problem Solving and Design, Part 3 <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01D4BE.htm'>(B-KUL-H01D4B)</a>, December 2011",
-//    "res/Projects/Aurora/Thumbnail.png", 12, 2011,
-//    "https://github.com/matt77hias/Aurora",
-//	[]);
