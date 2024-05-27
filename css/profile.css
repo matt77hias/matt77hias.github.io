@@ -16,6 +16,7 @@
 .icon-goodreads,
 .icon-linkedin,
 .icon-mail,
+.icon-mastodon,
 .icon-orcid,
 .icon-readit,
 .icon-researchgate,
@@ -42,6 +43,7 @@
 .icon-goodreads:hover,
 .icon-linkedin:hover,
 .icon-mail:hover,
+.icon-mastodon:hover,
 .icon-orcid:hover,
 .icon-readit:hover,
 .icon-researchgate:hover,
@@ -91,6 +93,10 @@
 .icon-mail
 {
     background: transparent url('../res/Icons/icon-mail.png') top left no-repeat;
+}
+.icon-mastodon
+{
+    background: transparent url('../res/Icons/icon-twitter.png') top left no-repeat;
 }
 .icon-orcid
 {
