@@ -273,6 +273,11 @@ CreateAuthor("Ruben Pieters"      , "https://rubenpieters.github.io");
 // Posts
 //-----------------------------------------------------------------------------
 
+CreatePost("Public Frostbite Archive",
+    ["Matthias Moulin"],
+    "July 2025", 1, 2025,
+    "https://matt77hias.github.io/blog/2025-07-01-public-frostbite-archive.html");
+
 CreatePost("🧙 MAGE: Asserts",
     ["Matthias Moulin"],
     "August 2020", 8, 2020,
