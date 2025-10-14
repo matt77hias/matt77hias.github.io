@@ -1,4 +1,4 @@
-<img align="left" src="res/Picture.jpg" width="120px"/>
+<img align="left" src="res/Avatar.png" width="120px"/>
 
 [![License][s1]][li]
 
