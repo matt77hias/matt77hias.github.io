@@ -63,7 +63,8 @@ function buildCardYear(items, year, section, usePlaceholder)
         article.setAttribute('aria-label', item.title);
         const _navigate = () =>
         {
-            if (item.url.startsWith('http')) window.open(item.url, '_blank', 'noopener,noreferrer');
+            const _isExternal = item.url.startsWith('http') && !item.url.startsWith(location.origin + '/');
+            if (_isExternal) window.open(item.url, '_blank', 'noopener,noreferrer');
             else window.location.href = item.url;
         };
         article.addEventListener('click', e =>

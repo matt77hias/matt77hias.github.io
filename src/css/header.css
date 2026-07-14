@@ -139,6 +139,24 @@ header h2 {
     top: 1em;
 }
 
+/* Anchor tooltip to the right edge so it doesn't overflow off-screen */
+.header-buttons [data-tooltip]::after {
+    left: auto;
+    right: 0;
+    transform: translateY(-4px);
+}
+
+.header-buttons [data-tooltip]:hover::after,
+.header-buttons [data-tooltip]:focus-visible::after {
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .header-buttons [data-tooltip]::after {
+        transform: translateY(0);
+    }
+}
+
 /* ── Shared header button style ──────────────────────────── */
 .header-buttons button {
     background: var(--color-glass);

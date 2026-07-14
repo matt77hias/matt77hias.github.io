@@ -12,8 +12,9 @@ function applyGlitchState(btn, disabled)
     if (!btn) return;
     const label = disabled ? 'Enable glitch effect' : 'Disable glitch effect';
     btn.setAttribute('aria-pressed', String(disabled));
-    btn.setAttribute('aria-label', label);
-    btn.setAttribute('title', label);
+    btn.setAttribute('aria-label',   label);
+    btn.setAttribute('title',        label);
+    btn.setAttribute('data-tooltip', label);
     btn.classList.toggle('active', disabled);
 }
 
