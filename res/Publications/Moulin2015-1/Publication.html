@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html>
+
+	<!------------------------------------------------------------------------>
+	<!-- Head                                                               -->
+	<!------------------------------------------------------------------------>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author"                     content="Matthias Moulin">
+		<meta name="citation_abstract_html_url" content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Abstract.txt">
+		<meta name="citation_author"            content="Moulin, Matthias">
+		<meta name="citation_author"            content="Billen, Niels">
+		<meta name="citation_author"            content="Dutr&eacute;, Philip">
+		<meta name="citation_authors"           content="Moulin, Matthias; Billen, Niels; Dutr&eacute;, Philip">
+		<meta name="citation_date"              content="June 2015">
+		<meta name="citation_firstpage"         content="31">
+		<meta name="citation_journal_title"     content="Eurographics Symposium on Rendering - Experimental Ideas &amp; Implementations, June 2015">
+		<meta name="citation_lastpage"          content="39">
+		<meta name="citation_pdf_url"           content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Preprint.pdf">
+		<meta name="citation_publisher"         content="The Eurographics Association">
+		<meta name="citation_title"             content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta name="copyright"                  content="Copyright © 2015-2026 Matthias Moulin. All Rights Reserved.">
+		<meta name="dc.creator"                 content="Philip Dutr&eacute;">
+		<meta name="dc.creator"                 content="Niels Billen">
+		<meta name="dc.creator"                 content="Matthias Moulin">
+		<meta name="dc.date"                    content="2015">
+		<meta name="dc.identifier"              content="url:https://matt77hias.github.io/res/Publications/Moulin2015-1/Preprint.pdf">
+		<meta name="dc.publisher"               content="The Eurographics Association">
+		<meta name="dc.title"                   content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta name="eprints.creators_name"      content="Dutr&eacute;, Philip">
+		<meta name="eprints.creators_name"      content="Billen, Niels">
+		<meta name="eprints.creators_name"      content="Moulin, Matthias">
+		<meta name="eprints.date"               content="2015">
+		<meta name="eprints.date_type"          content="published">
+		<meta name="eprints.datestamp"          content="2015">
+		<meta name="eprints.pagerange"          content="31-39">
+		<meta name="eprints.title"              content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta name="eprints.type"               content="article">
+		<meta name="HandheldFriendly"           content="true">
+		<meta name="MobileOptimized"            content="320">
+		<meta name="prism.endingPage"           content="X">
+		<meta name="prism.objectTitle"          content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta name="prism.publicationDate"      content="2015">
+		<meta name="prism.startingPage"         content="X">
+		<meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+		<meta property="article:author"         content="Moulin, Matthias"/>
+		<meta property="article:author"         content="Billen, Niels"/>
+		<meta property="article:author"         content="Dutr&eacute;, Philip"/>
+		<meta property="og:description"         content="Eurographics Symposium on Rendering - Experimental Ideas &amp; Implementations, June 2015"/>
+		<meta property="og:image"               content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Teaser.png"/>
+		<meta property="og:image:type"          content="image/png">
+		<meta property="og:image:url"           content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Teaser.png">
+		<meta property="og:title"               content="Efficient Visibility Heuristics for kd-trees Using the RTSAH"/>
+		<meta property="og:type"                content="article">
+		<meta property="og:url"                 content="https://matt77hias.github.io/res/Publications/Moulin2015-1/Publication.html"/>
+		<title>Efficient visibility heuristics for kd-trees using the RTSAH</title> 
+		<link rel="stylesheet"                  href="https://graphics.cs.kuleuven.be/css.css" type="text/css">
+	</head>
+
+	<!------------------------------------------------------------------------>
+	<!-- Body                                                               -->
+	<!------------------------------------------------------------------------>
+	<body>
+		<p class="proceedings">Eurographics Symposium on Rendering - Experimental Ideas &amp; Implementations, June 2015</p>
+
+		<h1 id="title">Efficient Visibility Heuristics for kd-trees Using the RTSAH</h1>
+
+		<div class="authorlist">
+			<p class="author"><a href="https://matt77hias.github.io">Matthias Moulin</a></p>
+			<p class="author"><a href="https://nielsbillen.github.io">Niels Billen</a></p>
+			<p class="author"><a href="https://sites.google.com/site/philipdutre">Philip Dutr&eacute;</a></p>
+		</div>
+
+		<div class="affiliation">
+			<p>
+			<a href="http://graphics.cs.kuleuven.be">Computer Graphics Research Group</a>, 
+			<a href="https://wms.cs.kuleuven.be/cs/english">Department of Computer Science</a>, 
+			<a href="https://www.kuleuven.be/english">KU Leuven</a>
+			</p>
+		</div>
+
+		<a href="Teaser.png"><img alt="teaser" src="Teaser.png" class="teaser" name="teaser"></a>
+
+		<div id="abstract-container" class="container">
+			<h3 id="abstract-title">Abstract</h3>
+			
+			<p class="abstract">Acceleration data structures such as kd-trees aim at reducing the per-ray cost which is crucial for rendering performance. The de-facto standard for constructing kd-trees, the Surface Area Heuristic (SAH), does not take ray termination into account and instead assumes rays never hit a geometric primitive. The Ray Termination Surface Area Heuristic (RTSAH) is a cost metric originally used for determining the traversal order of the voxels for occlusion rays that takes ray termination into account. We adapt this RTSAH to building kd-trees that aim at reducing the per-ray cost of rays. Our build procedure has the same overall computational complexity and considers the same finite set of splitting planes as the SAH. By taking ray termination into account, we favor cutting off child voxels which are not or hardly visible to each other. This results in fundamentally different and more qualitative kd-trees compared to the SAH.
+			</p>
+		</div>
+
+		<div id="downloads-container">
+			<h3 id="downloads-title">Paper and Supplementary Material</h3>
+
+			<div class="download-item">
+				<a href="Preprint.pdf"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-pdf.png" class="download-item-icon"></a>
+				<a href="Preprint.pdf" class="download-item-name">Preprint</a>
+			</div>
+
+			<div class="download-item">
+				<a href="Citation.bib"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-tex.png" class="download-item-icon"></a>
+				<a href="Citation.bib" class="download-item-name">Citation</a>
+			</div>
+
+			<div class="download-item">
+				<a href="Abstract.txt"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-txt.png" class="download-item-icon"></a>
+				<a href="Abstract.txt" class="download-item-name">Abstract</a>
+			</div>
+
+			<div class="download-item">
+				<a href="Presentation.pdf"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-pdf.png" class="download-item-icon"></a>
+				<a href="Presentation.pdf" class="download-item-name">Presentation</a>
+			</div>
+
+			<div class="download-item">
+				<a href="Poster.pdf"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-pdf.png" class="download-item-icon"></a>
+				<a href="Poster.pdf" class="download-item-name">Poster</a>
+			</div>
+
+			<div class="download-item">
+				<a href="https://dx.doi.org/10.2312/sre.20151164"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-html.png" class="download-item-icon"></a>
+				<a href="https://dx.doi.org/10.2312/sre.20151164" class="download-item-name">DOI</a>
+			</div>
+
+			<div class="download-item">
+				<a href="https://lirias.kuleuven.be/handle/123456789/501514"><img alt="icon" src="https://graphics.cs.kuleuven.be/images/icon-html.png" class="download-item-icon"></a>
+				<a href="https://lirias.kuleuven.be/handle/123456789/501514" class="download-item-name">Lirias</a>
+			</div>
+		</div>
+	</body>
+
+</html>
