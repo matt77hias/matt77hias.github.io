@@ -1,0 +1,203 @@
+@import './base.css';
+@import './header.css';
+@import './navigation.css';
+
+/* ── Page layout ─────────────────────────────────────────── */
+
+#pub-main,
+#proj-main {
+    padding-top: var(--space-lg);
+}
+
+
+/* ── Title card ──────────────────────────────────────────── */
+
+.pub-title {
+    border-bottom: none;
+    display: block;
+    font-size: 1.6em;
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 0 0 0.4em;
+    text-align: center;
+}
+
+@media screen and (max-width: 32em) {
+    .pub-title { font-size: 1.25em; }
+}
+
+.pub-venue {
+    color: var(--color-text-muted);
+    font-family: var(--font-condensed);
+    font-size: 0.95em;
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+.pub-authors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25em 1.5em;
+    margin: 0.5em 0;
+    font-size: 0.95em;
+}
+
+.pub-authors a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-dim);
+    text-underline-offset: 0.2em;
+}
+
+.pub-authors a:hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+    opacity: 1;
+}
+
+.pub-affiliation {
+    color: var(--color-text-muted);
+    font-size: 0.875em;
+    text-align: center;
+    margin: 0.5em 0 0;
+    line-height: 1.5;
+}
+
+.pub-affiliation a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--color-text-muted) 50%, transparent);
+    text-underline-offset: 0.2em;
+}
+
+.pub-affiliation a:hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+    opacity: 1;
+}
+
+/* ── Teaser image ────────────────────────────────────────── */
+
+.pub-teaser {
+    border-radius: var(--radius-card);
+    display: block;
+    height: auto;
+    margin: var(--space-lg) auto 0;
+    max-width: 100%;
+}
+
+/* ── Section headings inside articles ────────────────────── */
+
+#pub-main > article h2,
+#proj-main > article h2 {
+    font-size: 1.5em;
+}
+
+/* ── Abstract / Description ──────────────────────────────── */
+
+.pub-abstract {
+    color: var(--color-text-muted);
+    text-align: justify;
+}
+
+.pub-abstract a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-dim);
+    text-underline-offset: 0.2em;
+}
+
+.pub-abstract a:hover {
+    text-decoration-color: var(--color-accent);
+}
+
+.pub-abstract + .pub-abstract {
+    margin-top: 0.75em;
+}
+
+.pub-list {
+    color: var(--color-text-muted);
+    margin: 0.5em 0 0.75em 1.5em;
+    padding: 0;
+}
+
+.pub-list li {
+    margin-bottom: 0.35em;
+}
+
+.pub-abstract ul li {
+    margin-bottom: 0.4em;
+}
+
+/* ── Downloads ───────────────────────────────────────────── */
+
+.pub-downloads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.pub-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 4.5em;
+    max-width: 7em;
+    text-decoration: none;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+}
+
+.pub-download:hover {
+    color: var(--color-accent);
+    opacity: 1;
+}
+
+.pub-download svg {
+    display: block;
+    fill: none;
+    height: 2.75em;
+    width: 2.75em;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+    margin-bottom: 0.3em;
+    transition: stroke 0.2s ease, fill 0.2s ease;
+}
+
+/* Forge logos are filled, not stroked */
+.pub-download svg:has(use[href="#icon-github"]),
+.pub-download svg:has(use[href="#icon-gitlab"]),
+.pub-download svg:has(use[href="#icon-bitbucket"]) {
+    fill: currentColor;
+    stroke: none;
+    height: 2.25em;
+    width: 2.25em;
+    margin-bottom: 0.8em;
+}
+
+.pub-download-label {
+    font-size: 0.85em;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+/* ── Print ───────────────────────────────────────────────── */
+@media print {
+    body { background: white; color: black; }
+    header, nav, .profile { display: none !important; }
+    #pub-main > article,
+    #proj-main > article {
+        backdrop-filter: none;
+        background: none;
+        border: none;
+        box-shadow: none;
+        max-width: none;
+        padding: 0;
+    }
+    a:not([href^="#"]):not([href^="javascript"])::after { content: ' (' attr(href) ')'; font-size: 0.8em; }
+}

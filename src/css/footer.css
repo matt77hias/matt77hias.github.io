@@ -1,0 +1,27 @@
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+    justify-content: center;
+    margin-top: var(--space-xl);
+    padding: 1.5em 0 1em;
+}
+
+.footer-avatar {
+    display: block;
+    height: 2.25em;
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
+    width: 2.25em;
+}
+
+.footer-avatar:hover {
+    opacity: 0.9;
+}
+
+p.copyright {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}

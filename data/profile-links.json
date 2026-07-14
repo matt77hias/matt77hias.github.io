@@ -1,0 +1,21 @@
+[
+  { "icon": "github",        "label": "GitHub",         "url": "https://github.com/matt77hias__obf__",                           "group": "code" },
+  { "icon": "gitlab",        "label": "GitLab",         "url": "https://gitlab.com/matt77hias__obf__",                           "group": "code" },
+  { "icon": "bitbucket",     "label": "Bitbucket",      "url": "https://bitbucket.org/matt77hias__obf__",                        "group": "code" },
+  { "icon": "orcid",         "label": "ORCID",          "url": "https://orcid.org/0000-0002-__obf__0616-8483",                   "group": "academic" },
+  { "icon": "researchgate",  "label": "ResearchGate",   "url": "https://www.researchgate.net/profile/Matthias___obf__Moulin",    "group": "academic" },
+  { "icon": "slideshare",    "label": "SlideShare",     "url": "https://www.slideshare.net/matt77hias__obf__",                   "group": "academic" },
+  { "icon": "linkedin",      "label": "LinkedIn",       "url": "https://www.linkedin.com/in/matthias-__obf__moulin",             "group": "social" },
+  { "icon": "bluesky",       "label": "Bluesky",        "url": "https://bsky.app/profile/matt77hias__obf__.bsky.social",         "group": "social" },
+  { "icon": "mastodon",      "label": "Mastodon",       "url": "https://mastodon.gamedev.place/@matt77hias__obf__", "rel": "me", "group": "social" },
+  { "icon": "reddit",        "label": "Reddit",         "url": "https://www.reddit.com/user/matt77hias__obf__",                  "group": "social" },
+  { "icon": "shadertoy",     "label": "ShaderToy",      "url": "https://www.shadertoy.com/user/matt77hias__obf__",               "group": "creative" },
+  { "icon": "deviantart",    "label": "DeviantArt",     "url": "https://www.deviantart.com/matt77hias__obf__",                   "group": "creative" },
+  { "icon": "gamedevnet",    "label": "GameDev.net",    "url": "https://www.gamedev.net/profile/241527-matt77hias__obf__",       "group": "creative" },
+  { "icon": "youtube",       "label": "YouTube",        "url": "https://www.youtube.com/user/matt77hias__obf__",                 "group": "misc" },
+  { "icon": "goodreads",     "label": "Goodreads",      "url": "https://www.goodreads.com/matt77hias__obf__",                    "group": "misc" },
+  { "icon": "trello",        "label": "Trello",         "url": "https://trello.com/matt77hias__obf__",                           "group": "misc" },
+  { "icon": "stackexchange", "label": "Stack Exchange", "url": "https://stackexchange.com/users/1919325/matth__obf__ias",        "group": "misc" },
+  { "icon": "skype",         "label": "Skype",          "url": "skype:matthias.__obf__moulin@outlook.com?chat",                  "group": "misc" },
+  { "icon": "mail",          "label": "Email",          "url": "mailto:matthias.__obf__moulin@gmail.com",                        "group": "misc" }
+]

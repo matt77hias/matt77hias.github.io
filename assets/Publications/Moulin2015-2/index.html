@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Matthias Moulin">
+		<meta name="description" content="Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing &mdash; Master's thesis, KU Leuven, 2015.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="https://matt77hias.github.io/assets/Publications/Moulin2015-2/teaser.png">
+		<meta name="twitter:site" content="@matt77hias">
+		<meta name="twitter:title" content="Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing">
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing"/>
+		<meta property="og:description" content="Master's thesis, Department of Computer Science, KU Leuven, June 2015"/>
+		<meta property="og:image" content="https://matt77hias.github.io/assets/Publications/Moulin2015-2/teaser.png"/>
+		<meta property="og:url" content="https://matt77hias.github.io/assets/Publications/Moulin2015-2/"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#34d399">
+		<meta name="color-scheme" content="dark light">
+		<meta name="citation_title" content="Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing">
+		<meta name="citation_author" content="Moulin, Matthias">
+		<meta name="citation_date" content="June 2015">
+		<meta name="citation_dissertation_institution" content="KU Leuven">
+		<meta name="citation_publisher" content="KU Leuven">
+		<meta name="citation_pdf_url" content="https://matt77hias.github.io/assets/Publications/Moulin2015-2/Dissertation.pdf">
+		<title>Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing</title>
+		<link rel="canonical" href="https://matt77hias.github.io/assets/Publications/Moulin2015-2/">
+		<link rel="manifest"      href="../../../manifest.json">
+		<link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"Thesis","name":"Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing","author":[{"@type":"Person","name":"Matthias Moulin"}],"datePublished":"2015-06","publisher":{"@type":"Organization","name":"KU Leuven"},"url":"https://matt77hias.github.io/assets/Publications/Moulin2015-2/"}</script>
+		<link rel="preconnect"    href="https://www.googletagmanager.com">
+		<link rel="dns-prefetch"  href="https://www.googletagmanager.com">
+		<link rel="stylesheet"    href="../../../src/css/tokens.css">
+		<link rel="stylesheet"    href="../../../src/css/publication-page.css">
+		<link rel="stylesheet"    href="../../../src/css/profile.css">
+		<script src="../../../src/js/theme-init.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SD3ZFZNHLD"></script>
+		<script src="../../../src/js/google-analytics.js"></script>
+	</head>
+
+	<body id="pub">
+		<a class="skip-link" href="#pub-main">Skip to content</a>
+
+		<main id="pub-main" tabindex="-1">
+			<article>
+				<p class="pub-venue">Master&rsquo;s thesis, Department of Computer Science, KU Leuven, June 2015</p>
+				<h2 class="pub-title">Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing</h2>
+				<div class="pub-authors">
+					<a href="https://matt77hias.github.io" rel="noopener noreferrer">Matthias Moulin</a>
+				</div>
+				<p class="pub-affiliation">
+					<a href="https://graphics.cs.kuleuven.be" rel="noopener noreferrer">Computer Graphics Research Group</a>,
+					<a href="https://wms.cs.kuleuven.be/cs/english" rel="noopener noreferrer">Department of Computer Science</a>,
+					<a href="https://www.kuleuven.be/english" rel="noopener noreferrer">KU Leuven</a>
+				</p>
+				<a href="teaser.png"><img src="teaser.png" alt="Teaser figure for Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing" loading="lazy" width="775" height="775" class="pub-teaser"></a>
+			</article>
+
+			<article>
+				<h2>Abstract</h2>
+				<p class="pub-abstract">Acceleration data structures such as kd-trees, which partition geometric primitives, aim to reduce the ray traversal cost. Photon maps such as kd-trees, which partition photons, aim to reduce the cost of performing k-nearest neighbor queries. We introduce three hybrid kd-trees, which partition both geometric primitives and photons:</p>
+				<ul class="pub-list">
+					<li>The <strong>Hybrid Additive Photon Map (HAPM)</strong> adds photons to the kd-tree acceleration data structure, using the primitive partitioning to also partition photons.</li>
+					<li>The <strong>Hybrid Swapping Photon Map (HSPM)</strong> constructs a hybrid kd-tree for the joint set of primitives and photons using our novel Hybrid Heuristic (HH) build cost metric.</li>
+					<li>The <strong>Hybrid Connected Photon Map (HCPM)</strong> maintains separate kd-trees for primitives and photons, connected via ropes.</li>
+				</ul>
+				<p class="pub-abstract">Our HH encapsulates both the RTSAH for acceleration data structures and the Voxel Volume Heuristic for photon maps. By taking ray termination into account we achieve intersection test reductions up to 47% for primary rays and 41% for shadow rays versus the SAH. The HAPM and HSPM generally increase total rendering time; only the HCPM achieves reductions of up to 1%.</p>
+			</article>
+
+			<article>
+				<h2>Dissertation and Supplementary Material</h2>
+				<div class="pub-downloads">
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-2/Dissertation.pdf" aria-label="Dissertation" title="Dissertation" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Dissertation</span>
+					</a>
+					<a class="pub-download" href="Citation.bib" aria-label="Citation" title="Citation">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-tex"/></svg>
+						<span class="pub-download-label">Citation</span>
+					</a>
+					<a class="pub-download" href="Abstract.txt" aria-label="Abstract (EN)" title="Abstract (EN)">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-txt"/></svg>
+						<span class="pub-download-label">Abstract (EN)</span>
+					</a>
+					<a class="pub-download" href="Abstract_NL.txt" aria-label="Abstract (NL)" title="Abstract (NL)">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-txt"/></svg>
+						<span class="pub-download-label">Abstract (NL)</span>
+					</a>
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-2/Presentation.pdf" aria-label="Presentation" title="Presentation" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Presentation</span>
+					</a>
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-2/Poster.pdf" aria-label="Poster" title="Poster" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Poster</span>
+					</a>
+				</div>
+			</article>
+		</main>
+
+		<footer>
+			<img class="footer-avatar" alt="" width="36" height="36">
+			<p class="copyright"></p>
+		</footer>
+
+		<script type="module" src="../../../src/js/layout.js"></script>
+	</body>
+
+</html>

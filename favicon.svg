@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Painter palette -->
+  <ellipse cx="28" cy="36" rx="22" ry="18" fill="#f5c842"/>
+  <ellipse cx="28" cy="36" rx="22" ry="18" fill="none" stroke="#c8960c" stroke-width="2.5"/>
+  <!-- Thumb hole -->
+  <ellipse cx="34" cy="44" rx="5" ry="4.5" fill="#c8960c"/>
+  <ellipse cx="34" cy="44" rx="5" ry="4.5" fill="#f5c842" transform="translate(0,-1.5)"/>
+  <!-- Paint blobs -->
+  <circle cx="16" cy="28" r="4" fill="#e04040"/>
+  <circle cx="24" cy="21" r="4" fill="#3a8fde"/>
+  <circle cx="34" cy="20" r="4" fill="#45b86e"/>
+  <circle cx="43" cy="25" r="4" fill="#d06de0"/>
+  <circle cx="44" cy="35" r="4" fill="#f07f30"/>
+  <!-- Pencil body -->
+  <rect x="42" y="5" width="9" height="34" rx="2" ry="2"
+        fill="#f9d878" stroke="#c8960c" stroke-width="1.5"
+        transform="rotate(40 46.5 22)"/>
+  <!-- Pencil eraser band -->
+  <rect x="42" y="5" width="9" height="5" rx="1.5" ry="1.5"
+        fill="#e8a0a0" stroke="#c8960c" stroke-width="1.5"
+        transform="rotate(40 46.5 22)"/>
+  <!-- Pencil tip -->
+  <polygon points="42,39 51,39 46.5,50"
+           fill="#f5e0b0" stroke="#c8960c" stroke-width="1.5"
+           transform="rotate(40 46.5 44.5)"/>
+</svg>

@@ -1,0 +1,111 @@
+.profile {
+    overflow-x: auto;
+    padding: var(--space-md) var(--space-md) var(--space-xl);
+    scrollbar-width: none;
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.65em;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    min-width: max-content;
+    padding: 0.25em 0.5em;
+}
+
+.social-list li:not(:has(.social-divider)) {
+    display: contents;
+}
+
+.social-divider {
+    align-self: center;
+    background: var(--color-glass-border);
+    border-radius: var(--radius-divider);
+    height: 1.5em;
+    width: 1px;
+}
+
+/* ── Social icon links (SVG-based) ───────────────────────── */
+.social-link {
+    align-items: center;
+    background: var(--color-glass);
+    backdrop-filter: var(--blur-glass);
+    -webkit-backdrop-filter: var(--blur-glass);
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    display: inline-flex;
+    height: 3em;
+    justify-content: center;
+    position: relative;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+    width: 3em;
+}
+
+.social-link:hover {
+    background: var(--color-glass-hover);
+    box-shadow: 0 0 14px var(--brand-glow, var(--color-accent-glow));
+    border-color: var(--brand-color, var(--color-accent-dim));
+    color: var(--brand-color, var(--color-accent));
+    opacity: 1;
+}
+
+/* ── Tooltip (inherits shared rule from base.css) ─────────── */
+
+/* ── Per-brand accent colours ─────────────────────────────── */
+.social-link[aria-label="Bluesky"]:hover      { --brand-color: #0085ff; --brand-glow: rgba(0,133,255,0.25); }
+.social-link[aria-label="GitHub"]:hover       { --brand-color: #e6edf3; --brand-glow: rgba(230,237,243,0.2); }
+.social-link[aria-label="GitLab"]:hover       { --brand-color: #fc6d26; --brand-glow: rgba(252,109,38,0.25); }
+.social-link[aria-label="Bitbucket"]:hover    { --brand-color: #0052cc; --brand-glow: rgba(0,82,204,0.25); }
+.social-link[aria-label="LinkedIn"]:hover     { --brand-color: #0a66c2; --brand-glow: rgba(10,102,194,0.25); }
+.social-link[aria-label="YouTube"]:hover      { --brand-color: #ff0000; --brand-glow: rgba(255,0,0,0.25); }
+.social-link[aria-label="Reddit"]:hover       { --brand-color: #ff4500; --brand-glow: rgba(255,69,0,0.25); }
+.social-link[aria-label="Mastodon"]:hover     { --brand-color: #6364ff; --brand-glow: rgba(99,100,255,0.25); }
+.social-link[aria-label="ORCID"]:hover        { --brand-color: #a6ce39; --brand-glow: rgba(166,206,57,0.25); }
+.social-link[aria-label="ResearchGate"]:hover { --brand-color: #00ccbb; --brand-glow: rgba(0,204,187,0.25); }
+.social-link[aria-label="SlideShare"]:hover   { --brand-color: #0077b5; --brand-glow: rgba(0,119,181,0.25); }
+.social-link[aria-label="Stack Exchange"]:hover { --brand-color: #f48024; --brand-glow: rgba(244,128,36,0.25); }
+.social-link[aria-label="Trello"]:hover       { --brand-color: #0052cc; --brand-glow: rgba(0,82,204,0.25); }
+.social-link[aria-label="DeviantArt"]:hover   { --brand-color: #05cc47; --brand-glow: rgba(5,204,71,0.25); }
+.social-link[aria-label="Goodreads"]:hover    { --brand-color: #f4f1ea; --brand-glow: rgba(244,241,234,0.2); }
+.social-link[aria-label="Skype"]:hover        { --brand-color: #00aff0; --brand-glow: rgba(0,175,240,0.25); }
+.social-link[aria-label="ShaderToy"]:hover    { --brand-color: #34d399; --brand-glow: rgba(52,211,153,0.25); }
+.social-link[aria-label="GameDev.net"]:hover  { --brand-color: #ff6b35; --brand-glow: rgba(255,107,53,0.25); }
+.social-link[aria-label="Email"]:hover        { --brand-color: #ea4335; --brand-glow: rgba(234,67,53,0.25); }
+
+.social-icon {
+    fill: currentColor;
+    height: 1.2em;
+    pointer-events: none;
+    width: 1.2em;
+}
+
+/* ── Icon micro-glitch on hover ──────────────────────────── */
+@keyframes icon-glitch {
+    0%               { transform: translate(0, 0);       filter: none; }
+    20%              { transform: translate(-2px, 0);     filter: drop-shadow(2px 0 0 rgba(255,0,80,0.9)) drop-shadow(-2px 0 0 rgba(0,255,220,0.9)); }
+    40%              { transform: translate(2px, -1px);   filter: drop-shadow(-3px 0 0 rgba(255,0,80,0.7)) drop-shadow(3px 0 0 rgba(0,255,220,0.7)); }
+    60%              { transform: translate(-1px, 1px);   filter: drop-shadow(1px 0 0 rgba(255,220,0,0.8)); }
+    80%              { transform: translate(1px, 0);      filter: drop-shadow(-1px 0 0 rgba(0,255,220,0.6)); }
+    100%             { transform: translate(0, 0);        filter: none; }
+}
+
+.social-link:hover .social-icon {
+    animation: icon-glitch 0.25s steps(1) forwards;
+}
+
+.glitch-disabled .social-link:hover .social-icon {
+    animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .social-link:hover .social-icon {
+        animation: none;
+    }
+}

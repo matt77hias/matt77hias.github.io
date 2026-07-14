@@ -1,102 +1,54 @@
 <!doctype html>
+<html lang="en">
 
-<html>
-
-	<!------------------------------------------------------------------------>
-	<!-- Head                                                               -->
-	<!------------------------------------------------------------------------>
 	<head>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
 		<meta name="author"             content="Matthias Moulin">
-		<meta name="copyright"          content="Copyright © 2015-2026 Matthias Moulin. All Rights Reserved.">
-		<meta name="HandheldFriendly"   content="true">
-		<meta name="MobileOptimized"    content="320">
-        <meta name="twitter:card"       content="summary">
-		<meta name="twitter:image"      content="https://matt77hias.github.io/res/Avatar.png">
+		<meta name="description"        content="Portfolio of software and research projects by Matthias Moulin.">
+		<meta name="twitter:card"       content="summary">
+		<meta name="twitter:image"      content="https://matt77hias.github.io/assets/Avatar.png">
 		<meta name="twitter:site"       content="@matt77hias">
-		<meta name="twitter:title"      content="Matthias Moulin - Portfolio">
+		<meta name="twitter:title"       content="Matthias Moulin - Portfolio">
+		<meta name="twitter:description" content="Portfolio of software and research projects by Matthias Moulin.">
 		<meta name="viewport"           content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color"        content="#34d399">
+		<meta name="color-scheme"       content="dark light">
+		<meta property="og:type"        content="website"/>
 		<meta property="og:title"       content="Matthias Moulin - Portfolio"/>
-		<meta property="og:description" content="An overview of some of my projects."/>
-		<meta property="og:image"       content="https://matt77hias.github.io/res/Avatar.png"/>
+		<meta property="og:description" content="Portfolio of software and research projects by Matthias Moulin."/>
+		<meta property="og:image"       content="https://matt77hias.github.io/assets/Avatar.png"/>
 		<meta property="og:url"         content="https://matt77hias.github.io/portfolio.html"/>
 		<title>Matthias Moulin - Portfolio</title>
-		<link rel="icon" 		        href="favicon.ico"        type="image/x-icon">
-		<link rel="shortcut icon"       href="favicon.ico"        type="image/x-icon">
-        <link rel="stylesheet"          href="css/header.css"     type="text/css">
-		<link rel="stylesheet"          href="css/navigation.css" type="text/css">
-		<link rel="stylesheet"          href="css/profile.css"    type="text/css">
-        <link rel="stylesheet"          href="css/content.css"    type="text/css">
-        <link rel="stylesheet"          href="css/portfolio.css"  type="text/css">
-		<link rel="stylesheet"          href="css/footer.css"     type="text/css">
-        <script src="js/google-analytics.js" async                type="text/javascript"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
+		<link rel="canonical"     href="https://matt77hias.github.io/portfolio.html">
+		<link rel="preconnect"    href="https://www.googletagmanager.com">
+		<link rel="dns-prefetch"  href="https://www.googletagmanager.com">
+		<link rel="manifest"      href="manifest.json">
+		<link rel="icon"          href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet"    href="src/css/tokens.css">
+		<link rel="stylesheet"    href="src/css/site.css">
+		<link rel="stylesheet"    href="src/css/items.css">
+		<script src="src/js/theme-init.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SD3ZFZNHLD"></script>
+		<script src="src/js/google-analytics.js"></script>
+	</head>
 
-	<!------------------------------------------------------------------------>
-	<!-- Body                                                               -->
-	<!------------------------------------------------------------------------>
-    <body id="portfolio">
-		<header>
-            <h1>Matthias Moulin</h1>
-        </header>
+	<body id="portfolio">
+		<a class="skip-link" href="#main-content">Skip to content</a>
 
-        <nav id="navigationbar">
-            <a class="home"             href="index.html"       >Home</a>
-            <a class="publications"     href="publications.html">Publications</a>
-            <a class="portfolio"        href="portfolio.html"   >Portfolio</a>
-            <a class="blog"             href="blog.html"        >Blog</a>
-			<a class="resume"           href="pdf.js/web/viewer.html?file=%2F../../res/CV.pdf">Resume</a>
-            <select onchange="window.location = this.value;">
-                <option value=""                 >Navigation</option>
-                <option value="index.html"       >Home</option>
-                <option value="publications.html">Publications</option>
-                <option value="portfolio.html"   >Portfolio</option>
-				<option value="blog.html"        >Blog</option>
-                <option value="pdf.js/web/viewer.html?file=%2F../../res/CV.pdf">Resume</option>
-            </select>
-        </nav>
-
-		<div class="profile">
-			<a href="https://bitbucket.org/matt77hias"                     class="icon-bitbucket"     target="_blank"></a>
-			<a href="https://www.deviantart.com/matt77hias"                class="icon-deviantart"    target="_blank"></a>
-			<a href="https://www.gamedev.net/profile/241527-matt77hias"    class="icon-gamedevnet"    target="_blank"></a>
-			<a href="https://github.com/matt77hias"                        class="icon-github"        target="_blank"></a>
-			<a href="https://gitlab.com/matt77hias"                        class="icon-gitlab"        target="_blank"></a>
-			<a href="https://www.goodreads.com/matt77hias"                 class="icon-goodreads"     target="_blank"></a>
-			<a href="https://www.linkedin.com/in/matthias-moulin"          class="icon-linkedin"      target="_blank"></a>
-			<a href="mailto:matthias.moulin@badmail.gmail.com"             class="icon-mail"          target="_blank"></a>
-			<a href="https://mastodon.gamedev.place/@matt77hias" rel="me"  class="icon-mastodon"      target="_blank"></a>
-			<a href="https://orcid.org/0000-0002-0616-8483"                class="icon-orcid"         target="_blank"></a>
-			<a href="https://www.reddit.com/user/matt77hias"               class="icon-readit"        target="_blank"></a>
-			<a href="https://www.researchgate.net/profile/Matthias_Moulin" class="icon-researchgate"  target="_blank"></a>
-			<a href="https://www.shadertoy.com/user/matt77hias"            class="icon-shadertoy"     target="_blank"></a>
-			<a href="skype:matthias.moulin@badmail.outlook.com?chat"       class="icon-skype"         target="_blank"></a>
-			<a href="https://www.slideshare.net/matt77hias"                class="icon-slideshare"    target="_blank"></a>
-			<a href="https://stackexchange.com/users/1919325/matthias"     class="icon-stackexchange" target="_blank"></a>
-			<a href="https://trello.com/matt77hias"                        class="icon-trello"        target="_blank"></a>
-			<!-- <a href="https://twitter.com/matt77hias"               		   class="icon-twitter"       target="_blank"></a> -->
-			<a href="https://www.youtube.com/user/matt77hias"              class="icon-youtube"       target="_blank"></a>
-		</div>
-
-        <article id="item-list">
-			<h1>Portfolio
-				<span class="subheader"> 
-					<img id="thumbnail-view-button" class="view-button" src="res/Icons/thumbnail-view.svg" onclick="ShowThumbnails()">
-					<img id="list-view-button"      class="view-button" src="res/Icons/list-view.svg"      onclick="ShowList()">
-				</span>
-			</h1>
-			<p>These are some of my projects, sorted by year:</p>
-			<p id="item-year-urls" class="item-urls"></p>
-        </article>
-
-		<script src="js/security.js"      type="text/javascript"></script>
-        <script src="js/portfolio.js"     type="text/javascript"></script>
-        <script src="js/projects-view.js" type="text/javascript"></script>
+		<main id="main-content" tabindex="-1">
+			<article id="item-list">
+				<h2>Portfolio</h2>
+				<div id="item-list-body" aria-live="polite" aria-busy="true"></div>
+			</article>
+		</main>
 
 		<footer>
-			<p class="copyright">Copyright © 2015-2026 Matthias Moulin. All Rights Reserved.</p>
+			<img class="footer-avatar" alt="" width="36" height="36">
+			<p class="copyright"></p>
 		</footer>
-    </body>
+
+		<script type="module" src="src/js/layout.js"></script>
+		<script type="module" src="src/js/views/portfolio-view.js"></script>
+	</body>
 
 </html>

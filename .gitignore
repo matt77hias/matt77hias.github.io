@@ -1,1 +1,6 @@
 *.db
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+src/serve.py

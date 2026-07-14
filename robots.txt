@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matt77hias.github.io/sitemap.xml

@@ -1,0 +1,499 @@
+[
+  {
+    "title": "MAGE v0",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "A research-grade rendering engine built in C++17 using DirectX 11, featuring a deferred shading pipeline, physically-based materials, and custom memory management.",
+    "thumbnail": "assets/Projects/MAGE-v0/Thumbnail.png",
+    "month": 1,
+    "year": 2017,
+    "url": "https://github.com/matt77hias/MAGE-v0",
+    "downloads": [
+      {
+        "description": "Assets",
+        "url": "https://github.com/matt77hias/MAGE-v0-Assets",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Code",
+        "url": "https://github.com/matt77hias/MAGE-v0",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Documentation",
+        "url": "https://github.com/matt77hias/MAGE-v0-Doc",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Font Utility",
+        "url": "https://github.com/matt77hias/MAGE-v0-SpriteFont",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Meta",
+        "url": "https://github.com/matt77hias/MAGE-v0-Meta",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "Monte Carlo Integration Techniques",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Implementations and supplementary notes covering Monte Carlo integration techniques including importance sampling, stratified sampling, and quasi-Monte Carlo methods.",
+    "thumbnail": "assets/Projects/MC/Thumbnail.png",
+    "month": 10,
+    "year": 2016,
+    "url": "https://github.com/matt77hias/MC-Experiments",
+    "downloads": [
+      {
+        "description": "Supplementary Notes (PDF)",
+        "url": "https://github.com/matt77hias/MC/blob/master/MC.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Supplementary Notes (Code)",
+        "url": "https://github.com/matt77hias/MC",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "fibpy",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Python library for computing Fibonacci lattices and sequences, useful in quasi-Monte Carlo sampling.",
+    "thumbnail": "assets/Projects/fibpy/Thumbnail.png",
+    "month": 10,
+    "year": 2016,
+    "url": "https://github.com/matt77hias/fibpy",
+    "downloads": []
+  },
+  {
+    "title": "pippy",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Python library implementing various point distribution and sampling pattern generators.",
+    "thumbnail": "assets/Projects/pippy/Thumbnail.png",
+    "month": 10,
+    "year": 2016,
+    "url": "https://github.com/matt77hias/pippy",
+    "downloads": []
+  },
+  {
+    "title": "Rosetta smallpt",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Ports of Kevin Beason's smallpt global illumination renderer to 18 programming languages, serving as a cross-language reference for path tracing.",
+    "thumbnail": "assets/Projects/smallpt/Thumbnail.png",
+    "month": 9,
+    "year": 2016,
+    "url": "https://github.com/matt77hias/smallpt",
+    "downloads": [
+      {
+        "description": "C",
+        "url": "https://github.com/matt77hias/c-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "C++",
+        "url": "https://github.com/matt77hias/cpp-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "C#",
+        "url": "https://github.com/matt77hias/cs-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "CoffeeScript",
+        "url": "https://github.com/matt77hias/coffee-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "CUDA",
+        "url": "https://github.com/matt77hias/cu-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Erlang",
+        "url": "https://github.com/matt77hias/erl-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "GLSL",
+        "url": "https://www.shadertoy.com/view/MlcczX",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Haskell",
+        "url": "https://github.com/matt77hias/hs-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Java",
+        "url": "https://github.com/matt77hias/java-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "JavaScript",
+        "url": "https://github.com/matt77hias/js-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "J#",
+        "url": "https://github.com/matt77hias/jsl-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Prolog",
+        "url": "https://github.com/matt77hias/pl-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Python",
+        "url": "https://github.com/matt77hias/py-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Python 2.7 + NumPy",
+        "url": "https://github.com/matt77hias/numpy-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Python 3.5 + NumPy",
+        "url": "https://github.com/matt77hias/numpy-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Racket",
+        "url": "https://github.com/matt77hias/rkt-smallpt",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "TypeScript",
+        "url": "https://github.com/matt77hias/ts-smallpt",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "FalseColor Visualization",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Tool for applying false-color mappings to HDR images, useful for visualizing luminance ranges and rendering artifacts.",
+    "thumbnail": "assets/Projects/FalseColor/Thumbnail.png",
+    "month": 11,
+    "year": 2015,
+    "url": "https://github.com/matt77hias/FalseColor",
+    "downloads": []
+  },
+  {
+    "title": "Clipping",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Implementation of polygon clipping algorithms including Sutherland-Hodgman for use in software rasterization pipelines.",
+    "thumbnail": "assets/Projects/Clipping/Thumbnail.png",
+    "month": 11,
+    "year": 2015,
+    "url": "https://github.com/matt77hias/Clipping",
+    "downloads": []
+  },
+  {
+    "title": "Hybrid Survivor",
+    "authors": [
+      "Matthias Moulin",
+      "Milan Samyn",
+      "Samuel Lannoy"
+    ],
+    "description": "Course: Capita Selecta Computer Science: Human Machine Communication: Game Design <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H05N2AE.htm'>(B-KUL-H05N2A)</a>",
+    "thumbnail": "assets/Projects/HybridSurvivor/Thumbnail.png",
+    "month": 6,
+    "year": 2015,
+    "url": "https://github.com/matt77hias/HybridSurvivor",
+    "downloads": [
+      {
+        "description": "Oculus Rift",
+        "url": "https://github.com/matt77hias/HybridSurvivor-OculusRift",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "PC & Web",
+        "url": "https://github.com/matt77hias/HybridSurvivor-PC",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "Stochastic Experiments",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Deterministic and Stochastic Integration Techniques <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H03G3BE.htm'>(B-KUL-H03G3B)</a>",
+    "thumbnail": "assets/Projects/StochasticExperiments/Thumbnail.png",
+    "month": 5,
+    "year": 2015,
+    "url": "https://github.com/matt77hias/StochasticExperiments",
+    "downloads": []
+  },
+  {
+    "title": "Quadrature Experiments",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Deterministic and Stochastic Integration Techniques <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H03G3BE.htm'>(B-KUL-H03G3B)</a>",
+    "thumbnail": "assets/Projects/QuadratureExperiments/Thumbnail.png",
+    "month": 5,
+    "year": 2015,
+    "url": "https://github.com/matt77hias/QuadratureExperiments",
+    "downloads": []
+  },
+  {
+    "title": "Fingerprint Compression",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Wavelets <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H03F7AE.htm'>(B-KUL-H03F7A)</a>",
+    "thumbnail": "assets/Projects/FingerprintCompression/Thumbnail.png",
+    "month": 12,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/FingerprintCompression",
+    "downloads": []
+  },
+  {
+    "title": "Tron",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Comparative Programming Languages <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04L5AE.htm'>(B-KUL-H04L5A)</a>",
+    "thumbnail": "assets/Projects/Tron/Thumbnail.png",
+    "month": 12,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/Tron",
+    "downloads": [
+      {
+        "description": "Play",
+        "url": "https://matt77hias.github.io/Tron/",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "2048",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Comparative Programming Languages <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04L5AE.htm'>(B-KUL-H04L5A)</a>",
+    "thumbnail": "assets/Projects/2048/Thumbnail.png",
+    "month": 12,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/2048",
+    "downloads": []
+  },
+  {
+    "title": "Incisor Segmentation",
+    "authors": [
+      "Matthias Moulin",
+      "Milan Samyn"
+    ],
+    "description": "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>",
+    "thumbnail": "assets/Projects/IncisorSegmentation/Thumbnail.png",
+    "month": 6,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/IncisorSegmentation",
+    "downloads": []
+  },
+  {
+    "title": "FrigoShare",
+    "authors": [
+      "Herbert Beraldo",
+      "Matthias Moulin",
+      "Ruben Pieters"
+    ],
+    "description": "Course: User Interfaces <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04I2AE.htm'>(B-KUL-H04I2A)</a>",
+    "thumbnail": "assets/Projects/FrigoShare/Thumbnail.png",
+    "month": 6,
+    "year": 2014,
+    "url": "https://anarchikul.wordpress.com/",
+    "downloads": [
+      {
+        "description": "Play",
+        "url": "https://play.google.com/store/apps/details?id=com.frigoshare",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Code",
+        "url": "https://github.com/matt77hias/FrigoShare",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "Sampling Experiments",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Computer Graphics II <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0B36AE.htm'>(B-KUL-G0B36A)</a>",
+    "thumbnail": "assets/Projects/SamplingExperiments/Thumbnail.png",
+    "month": 4,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/SamplingExperiments",
+    "downloads": []
+  },
+  {
+    "title": "Face Recognition",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>",
+    "thumbnail": "assets/Projects/FaceRecognition/Thumbnail.png",
+    "month": 3,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/FaceRecognition",
+    "downloads": []
+  },
+  {
+    "title": "Segmentation",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>",
+    "thumbnail": "assets/Projects/Segmentation/Thumbnail.png",
+    "month": 3,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/Segmentation",
+    "downloads": []
+  },
+  {
+    "title": "Smoothing",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Computer Vision <a href='https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A5AE.htm'>(B-KUL-H02A5A)</a>",
+    "thumbnail": "assets/Projects/Smoothing/Thumbnail.png",
+    "month": 3,
+    "year": 2014,
+    "url": "https://github.com/matt77hias/Smoothing",
+    "downloads": []
+  },
+  {
+    "title": "Lilyhammer Rendering Engine",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Course: Computer Graphics I <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/G0Q66BE.htm'>(B-KUL-G0Q66B)</a>",
+    "thumbnail": "assets/Projects/LilyhammerRenderingEngine/Thumbnail.png",
+    "month": 12,
+    "year": 2013,
+    "url": "assets/Projects/LilyhammerRenderingEngine/Project.html",
+    "downloads": []
+  },
+  {
+    "title": "JUnit Test Daemon",
+    "authors": [
+      "Matthias Moulin",
+      "Mattias Buelens",
+      "Ruben Pieters",
+      "Vital D'haveloose"
+    ],
+    "description": "Course: Design of Software Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04J9BE.htm'>(B-KUL-H04J9B)</a>",
+    "thumbnail": "assets/Projects/JUnitTestDeamon/Thumbnail.png",
+    "month": 12,
+    "year": 2013,
+    "url": "https://github.com/matt77hias/junit",
+    "downloads": []
+  },
+  {
+    "title": "Car Rental Agency",
+    "authors": [
+      "Matthias Moulin",
+      "Ruben Pieters"
+    ],
+    "description": "Course: Distributed Systems <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H04I4AE.htm'>(B-KUL-H04I4A)</a>",
+    "thumbnail": null,
+    "month": 12,
+    "year": 2013,
+    "url": "https://github.com/matt77hias/CarRental-Meta",
+    "downloads": [
+      {
+        "description": "Java RMI 1",
+        "url": "https://github.com/matt77hias/JavaRMI1",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Java RMI 2",
+        "url": "https://github.com/matt77hias/JavaRMI2",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Java EE",
+        "url": "https://github.com/matt77hias/JavaEE",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Java GAE",
+        "url": "https://github.com/matt77hias/JavaGAE",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "Snake",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Classic Snake game implementation.",
+    "thumbnail": "assets/Projects/Snake/Thumbnail.png",
+    "month": 8,
+    "year": 2013,
+    "url": "https://github.com/matt77hias/Snake",
+    "downloads": []
+  },
+  {
+    "title": "MazeStormer",
+    "authors": [
+      "Dennis Frett",
+      "Matthias Moulin",
+      "Mattias Buelens",
+      "Stijn Hoskens",
+      "Vital D'haveloose"
+    ],
+    "description": "Course: Problem Solving and Design: Computer Science <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01Q3CE.htm'>(B-KUL-H01Q3C)</a>",
+    "thumbnail": "assets/Projects/MazeStormer/Thumbnail.png",
+    "month": 6,
+    "year": 2013,
+    "url": "https://github.com/matt77hias/MazeStormer",
+    "downloads": [
+      {
+        "description": "Demo 1",
+        "url": "https://www.youtube.com/watch?v=PkklxX5FeSE",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Demo 2",
+        "url": "https://www.youtube.com/watch?v=WiFAeo-Ifsk",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "RoboRally",
+    "authors": [
+      "Matthias Moulin",
+      "Ruben Pieters"
+    ],
+    "description": "Course: Object Oriented Programming <a href='https://onderwijsaanbod.kuleuven.be/syllabi/v/e/H01P1AE.htm'>(B-KUL-H01P1A)</a>",
+    "thumbnail": "assets/Projects/RoboRally/Thumbnail.png",
+    "month": 6,
+    "year": 2012,
+    "url": "https://github.com/matt77hias/RoboRally",
+    "downloads": []
+  }
+]

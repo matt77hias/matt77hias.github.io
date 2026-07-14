@@ -1,0 +1,177 @@
+[
+  {
+    "title": "Specular Voxel Cone Tracing",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Internal Presentation, Department of Computer Science, KU Leuven",
+    "thumbnail": "assets/Publications/Moulin2019-1/thumbnail.png",
+    "month": 1,
+    "year": 2019,
+    "url": "assets/Publications/Moulin2019-1/",
+    "downloads": [
+      {
+        "description": "Presentation",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2019-1/Presentation.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Citation",
+        "url": "assets/Publications/Moulin2019-1/Citation.bib",
+        "icon": "#icon-dl-tex"
+      },
+      {
+        "description": "Abstract",
+        "url": "assets/Publications/Moulin2019-1/Abstract.txt",
+        "icon": "#icon-dl-txt"
+      },
+      {
+        "description": "Code",
+        "url": "https://github.com/matt77hias/MAGE-v0",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs",
+    "authors": [
+      "Matthias Moulin",
+      "Philip Dutré"
+    ],
+    "description": "The Visual Computer, Volume 35, Issue 12",
+    "thumbnail": "assets/Publications/Moulin2018-1/thumbnail.png",
+    "month": 7,
+    "year": 2018,
+    "url": "assets/Publications/Moulin2018-1/",
+    "downloads": [
+      {
+        "description": "Preprint",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2018-1/Preprint.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Citation",
+        "url": "assets/Publications/Moulin2018-1/Citation.bib",
+        "icon": "#icon-dl-tex"
+      },
+      {
+        "description": "Abstract",
+        "url": "assets/Publications/Moulin2018-1/Abstract.txt",
+        "icon": "#icon-dl-txt"
+      },
+      {
+        "description": "Supplementary Material (1/2)",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2018-1/Supplementary1.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Supplementary Material (2/2)",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2018-1/Supplementary2.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "DOI",
+        "url": "https://doi.org/10.1007/s00371-018-1575-x",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Lirias",
+        "url": "https://lirias.kuleuven.be/handle/123456789/625753",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  },
+  {
+    "title": "Hybrid Kd-trees for Photon Mapping and Accelerating Ray Tracing",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "description": "Master's thesis, Department of Computer Science, KU Leuven, Belgium",
+    "thumbnail": "assets/Publications/Moulin2015-2/thumbnail.png",
+    "month": 6,
+    "year": 2015,
+    "url": "assets/Publications/Moulin2015-2/",
+    "downloads": [
+      {
+        "description": "Dissertation",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-2/Dissertation.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Citation",
+        "url": "assets/Publications/Moulin2015-2/Citation.bib",
+        "icon": "#icon-dl-tex"
+      },
+      {
+        "description": "Abstract",
+        "url": "assets/Publications/Moulin2015-2/Abstract.txt",
+        "icon": "#icon-dl-txt"
+      },
+      {
+        "description": "Abstract (NL)",
+        "url": "assets/Publications/Moulin2015-2/Abstract_NL.txt",
+        "icon": "#icon-dl-txt"
+      },
+      {
+        "description": "Presentation",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-2/Presentation.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Poster",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-2/Poster.pdf",
+        "icon": "#icon-dl-pdf"
+      }
+    ]
+  },
+  {
+    "title": "Efficient Visibility Heuristics for kd-trees Using the RTSAH",
+    "authors": [
+      "Matthias Moulin",
+      "Niels Billen",
+      "Philip Dutré"
+    ],
+    "description": "Eurographics Symposium on Rendering - Experimental Ideas & Implementations",
+    "thumbnail": "assets/Publications/Moulin2015-1/thumbnail.png",
+    "month": 6,
+    "year": 2015,
+    "url": "assets/Publications/Moulin2015-1/",
+    "downloads": [
+      {
+        "description": "Preprint",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-1/Preprint.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Citation",
+        "url": "assets/Publications/Moulin2015-1/Citation.bib",
+        "icon": "#icon-dl-tex"
+      },
+      {
+        "description": "Abstract",
+        "url": "assets/Publications/Moulin2015-1/Abstract.txt",
+        "icon": "#icon-dl-txt"
+      },
+      {
+        "description": "Presentation",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-1/Presentation.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "Poster",
+        "url": "src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-1/Poster.pdf",
+        "icon": "#icon-dl-pdf"
+      },
+      {
+        "description": "DOI",
+        "url": "https://doi.org/10.2312/sre.20151164",
+        "icon": "#icon-dl-link"
+      },
+      {
+        "description": "Lirias",
+        "url": "https://lirias.kuleuven.be/handle/123456789/501514",
+        "icon": "#icon-dl-link"
+      }
+    ]
+  }
+]

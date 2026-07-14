@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Matthias Moulin">
+		<meta name="description" content="On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs &mdash; The Visual Computer, 2019.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="https://matt77hias.github.io/assets/Publications/Moulin2018-1/teaser.png">
+		<meta name="twitter:site" content="@matt77hias">
+		<meta name="twitter:title" content="On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs">
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs"/>
+		<meta property="og:description" content="The Visual Computer, Volume 35, Issue 12, December 2019"/>
+		<meta property="og:image" content="https://matt77hias.github.io/assets/Publications/Moulin2018-1/teaser.png"/>
+		<meta property="og:url" content="https://matt77hias.github.io/assets/Publications/Moulin2018-1/"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#34d399">
+		<meta name="color-scheme" content="dark light">
+		<meta name="citation_title" content="On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs">
+		<meta name="citation_author" content="Moulin, Matthias">
+		<meta name="citation_author" content="Dutr&eacute;, Philip">
+		<meta name="citation_date" content="December 2019">
+		<meta name="citation_volume" content="35">
+		<meta name="citation_issue" content="12">
+		<meta name="citation_firstpage" content="1809">
+		<meta name="citation_lastpage" content="1826">
+		<meta name="citation_journal_title" content="The Visual Computer">
+		<meta name="citation_publisher" content="Springer Berlin Heidelberg">
+		<meta name="citation_pdf_url" content="https://matt77hias.github.io/assets/Publications/Moulin2018-1/Preprint.pdf">
+		<title>On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs</title>
+		<link rel="canonical" href="https://matt77hias.github.io/assets/Publications/Moulin2018-1/">
+		<link rel="manifest"      href="../../../manifest.json">
+		<link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs","author":[{"@type":"Person","name":"Matthias Moulin"},{"@type":"Person","name":"Philip Dutr\u00e9"}],"datePublished":"2019-12","publisher":{"@type":"Organization","name":"Springer Berlin Heidelberg"},"isPartOf":{"@type":"Periodical","name":"The Visual Computer"},"url":"https://matt77hias.github.io/assets/Publications/Moulin2018-1/"}</script>
+		<link rel="preconnect"    href="https://www.googletagmanager.com">
+		<link rel="dns-prefetch"  href="https://www.googletagmanager.com">
+		<link rel="stylesheet"    href="../../../src/css/tokens.css">
+		<link rel="stylesheet"    href="../../../src/css/publication-page.css">
+		<link rel="stylesheet"    href="../../../src/css/profile.css">
+		<script src="../../../src/js/theme-init.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SD3ZFZNHLD"></script>
+		<script src="../../../src/js/google-analytics.js"></script>
+	</head>
+
+	<body id="pub">
+		<a class="skip-link" href="#pub-main">Skip to content</a>
+
+		<main id="pub-main" tabindex="-1">
+			<article>
+				<p class="pub-venue">The Visual Computer, Volume 35, Issue 12, December 2019 (First online: July 2018)</p>
+				<h2 class="pub-title">On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs</h2>
+				<div class="pub-authors">
+					<a href="https://matt77hias.github.io" rel="noopener noreferrer">Matthias Moulin</a>
+					<a href="https://sites.google.com/site/philipdutre" rel="noopener noreferrer">Philip Dutr&eacute;</a>
+				</div>
+				<p class="pub-affiliation">
+					<a href="https://graphics.cs.kuleuven.be" rel="noopener noreferrer">Computer Graphics Research Group</a>,
+					<a href="https://wms.cs.kuleuven.be/cs/english" rel="noopener noreferrer">Department of Computer Science</a>,
+					<a href="https://www.kuleuven.be/english" rel="noopener noreferrer">KU Leuven</a>
+				</p>
+				<a href="teaser.png"><img src="teaser.png" alt="Teaser figure for On the Use of Local Ray Termination for Efficiently Constructing Qualitative BSPs, BIHs and (S)BVHs" loading="lazy" width="4000" height="2250" class="pub-teaser"></a>
+			</article>
+
+			<article>
+				<h2>Abstract</h2>
+				<p class="pub-abstract">Acceleration data structures (ADSs) exploit spatial coherence by distributing a scene's geometric primitives into spatial groups, effectively reducing the cost of ray tracing queries. The most effective ADSs are hierarchical, adaptive tree structures such as BSPs, BIHs and (S)BVHs. The de facto standard cost metric for building these structures is the Surface Area Heuristic (SAH), which assumes a scene-exterior isotropic ray distribution of non-terminating rays. Despite its restrictive assumptions, the SAH remains competitive against many fundamentally different cost metrics.</p>
+				<p class="pub-abstract">Our goal is to adapt the SAH by introducing local ray termination into voxel partitioning during ADS construction and voxel traversal ordering. We develop efficient heuristics to approximate local ray termination without additional preprocessing. These heuristics are used for the Ray Termination Surface Area Heuristic (RTSAH) for BSPs, BIHs and (S)BVHs for closest-hit queries, and for the Shadow Ray Distribution Heuristic (SRDH) for BVHs for any-hit queries.</p>
+				<p class="pub-abstract">Results indicate rendering performance close to SAH on average, with small gains in ray-triangle intersection tests and ADS node traversal. Prerendering build times are higher for the RTSAH due to triangle clipping.</p>
+			</article>
+
+			<article>
+				<h2>Paper and Supplementary Material</h2>
+				<div class="pub-downloads">
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2018-1/Preprint.pdf" aria-label="Preprint" title="Preprint" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Preprint</span>
+					</a>
+					<a class="pub-download" href="Citation.bib" aria-label="Citation" title="Citation">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-tex"/></svg>
+						<span class="pub-download-label">Citation</span>
+					</a>
+					<a class="pub-download" href="Abstract.txt" aria-label="Abstract" title="Abstract">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-txt"/></svg>
+						<span class="pub-download-label">Abstract</span>
+					</a>
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2018-1/Supplementary1.pdf" aria-label="Supplementary (1/2)" title="Supplementary (1/2)" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Supplementary (1/2)</span>
+					</a>
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2018-1/Supplementary2.pdf" aria-label="Supplementary (2/2)" title="Supplementary (2/2)" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Supplementary (2/2)</span>
+					</a>
+					<a class="pub-download" href="https://doi.org/10.1007/s00371-018-1575-x" aria-label="DOI" title="DOI" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-link"/></svg>
+						<span class="pub-download-label">DOI</span>
+					</a>
+					<a class="pub-download" href="https://lirias.kuleuven.be/handle/123456789/625753" aria-label="Lirias" title="Lirias" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-link"/></svg>
+						<span class="pub-download-label">Lirias</span>
+					</a>
+				</div>
+			</article>
+		</main>
+
+		<footer>
+			<img class="footer-avatar" alt="" width="36" height="36">
+			<p class="copyright"></p>
+		</footer>
+
+		<script type="module" src="../../../src/js/layout.js"></script>
+	</body>
+
+</html>

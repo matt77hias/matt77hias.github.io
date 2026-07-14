@@ -1,0 +1,28 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.skip-link {
+    background: var(--color-accent);
+    border-radius: var(--radius-sm);
+    clip-path: inset(50%);
+    color: var(--color-on-accent, #000);
+    font-family: var(--font-condensed);
+    font-size: 1em;
+    height: 1px;
+    left: 1rem;
+    overflow: hidden;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 1rem;
+    white-space: nowrap;
+    width: 1px;
+    z-index: var(--z-skip);
+}
+
+.skip-link:focus-visible {
+    clip-path: none;
+    height: auto;
+    overflow: visible;
+    width: auto;
+}

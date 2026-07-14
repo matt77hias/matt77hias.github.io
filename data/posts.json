@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Public Frostbite Archive",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 7,
+    "year": 2025,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2025/07/01/public-frostbite-archive.html"
+  },
+  {
+    "title": "🧙 MAGE: Asserts",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 8,
+    "year": 2020,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2020/08/25/mage-asserts.html"
+  },
+  {
+    "title": "Voxel Cone Tracing",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 8,
+    "year": 2018,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2018/08/19/voxel-cone-tracing.html"
+  },
+  {
+    "title": "The Constructible Array",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 8,
+    "year": 2018,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2018/08/08/the-constructible-array.html"
+  },
+  {
+    "title": "Linear, Gamma and sRGB Color Spaces",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 7,
+    "year": 2018,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2018/07/01/linear-gamma-and-sRGB-color-spaces.html"
+  },
+  {
+    "title": "Candidate Partitions of Hierarchical Acceleration Data Structures for Ray Tracing",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 2,
+    "year": 2018,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2018/02/04/candidate-partitions-of-hierarchical-acceleration-data-structures-for-ray-tracing.html"
+  },
+  {
+    "title": "The Universal Pointer",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 1,
+    "year": 2018,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2018/01/28/the-universal-pointer.html"
+  },
+  {
+    "title": "C++ Wishlist",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 1,
+    "year": 2018,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2018/01/27/cpp-wishlist.html"
+  },
+  {
+    "title": "NDC to Projection to Camera Space",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 10,
+    "year": 2017,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2017/10/19/ndc-to-projection-to-view-space.html"
+  },
+  {
+    "title": "Reducing Shader Binding Dependencies",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 9,
+    "year": 2017,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2017/09/07/reducing-shader-binding-dependencies.html"
+  },
+  {
+    "title": "Creating a View Frustum in Local/World/Camera Space using SIMD",
+    "authors": [
+      "Matthias Moulin"
+    ],
+    "month": 8,
+    "year": 2017,
+    "thumbnail": null,
+    "url": "https://matt77hias.github.io/blog/2017/08/24/creating-a-view-frustum.html"
+  }
+]

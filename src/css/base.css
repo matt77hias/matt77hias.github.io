@@ -1,0 +1,233 @@
+@import './reset.css';
+@import './footer.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── Main landmark ───────────────────────────────────────── */
+main {
+    display: block;
+    padding-top: var(--space-lg);
+}
+
+main > article {
+    background: var(--color-glass);
+    backdrop-filter: var(--blur-glass);
+    -webkit-backdrop-filter: var(--blur-glass);
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-xl);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--space-xl);
+    max-width: var(--max-width-article);
+    padding: var(--space-xl) var(--space-2xl);
+    transition: var(--transition-medium);
+}
+
+
+/* Only apply hover lift to small articles (Welcome card), not large content containers */
+#home main > article:hover {
+    border-color: var(--color-accent-dim);
+    box-shadow: var(--shadow-card-hover);
+}
+
+@media screen and (max-width: 62em) {
+    main > article {
+        margin-left: var(--space-md);
+        margin-right: var(--space-md);
+    }
+}
+
+@media screen and (max-width: 38em) {
+    main > article {
+        padding: var(--space-lg) var(--space-md);
+    }
+}
+
+main > article:first-child {
+    margin-top: 0;
+}
+
+main > article:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Base ────────────────────────────────────────────────── */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-regular);
+    font-size: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    text-align: left;
+}
+
+p {
+    line-height: 1.7;
+    margin: 0 0 0.75em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: var(--transition-glow);
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+
+/* ── Headings ────────────────────────────────────────────── */
+h1 {
+    font-family: var(--font-condensed);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--font-condensed);
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--font-condensed-bold);
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+article h1,
+article h2 {
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5em;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.5em;
+}
+
+/* ── Utilities ───────────────────────────────────────────── */
+.bordered {
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 8px var(--color-shadow-soft);
+    padding: 0.25em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+    padding-bottom: var(--space-md);
+    padding-top: var(--space-md);
+}
+
+.container-item {
+    min-width: 0;
+}
+
+aside.container-item {
+    flex-shrink: 0;
+}
+
+.large-thumbnail {
+    opacity: 0;
+    transition: var(--transition-opacity);
+}
+
+@media screen and (max-width: 32em) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.subheader {
+    display: inline-flex;
+    gap: 0.4em;
+    vertical-align: middle;
+    margin-left: auto;
+}
+
+/* ── Shared tooltip ─────────────────────────────────────── */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    background: var(--color-bg);
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    content: attr(data-tooltip);
+    font-family: var(--font-condensed);
+    font-size: 0.75em;
+    left: 50%;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    padding: 0.25em 0.6em;
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% + 0.4em);
+    transform: translateX(-50%) translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    white-space: nowrap;
+    z-index: var(--z-tooltip);
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-tooltip]::after {
+        transition: opacity 0.1s ease;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* ── Focus visible ───────────────────────────────────────── */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+/* ── Print ───────────────────────────────────────────────── */
+@media print {
+    header, nav, .profile, footer, .skip-link { display: none !important; }
+
+    body { background: white; color: black; }
+
+    main > article {
+        backdrop-filter: none;
+        background: none;
+        border: none;
+        box-shadow: none;
+        max-width: none;
+        padding: 0;
+    }
+
+    a:not([href^="#"]):not([href^="javascript"])::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}

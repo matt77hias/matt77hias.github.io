@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Matthias Moulin">
+		<meta name="description" content="Efficient Visibility Heuristics for kd-trees Using the RTSAH &mdash; Eurographics Symposium on Rendering, 2015.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="https://matt77hias.github.io/assets/Publications/Moulin2015-1/teaser.png">
+		<meta name="twitter:site" content="@matt77hias">
+		<meta name="twitter:title" content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Efficient Visibility Heuristics for kd-trees Using the RTSAH"/>
+		<meta property="og:description" content="Eurographics Symposium on Rendering, June 2015"/>
+		<meta property="og:image" content="https://matt77hias.github.io/assets/Publications/Moulin2015-1/teaser.png"/>
+		<meta property="og:url" content="https://matt77hias.github.io/assets/Publications/Moulin2015-1/"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#34d399">
+		<meta name="color-scheme" content="dark light">
+		<meta name="citation_title" content="Efficient Visibility Heuristics for kd-trees Using the RTSAH">
+		<meta name="citation_author" content="Moulin, Matthias">
+		<meta name="citation_author" content="Billen, Niels">
+		<meta name="citation_author" content="Dutr&eacute;, Philip">
+		<meta name="citation_date" content="June 2015">
+		<meta name="citation_firstpage" content="31">
+		<meta name="citation_lastpage" content="39">
+		<meta name="citation_journal_title" content="Eurographics Symposium on Rendering - Experimental Ideas &amp; Implementations, June 2015">
+		<meta name="citation_publisher" content="The Eurographics Association">
+		<meta name="citation_pdf_url" content="https://matt77hias.github.io/assets/Publications/Moulin2015-1/Preprint.pdf">
+		<title>Efficient Visibility Heuristics for kd-trees Using the RTSAH</title>
+		<link rel="canonical" href="https://matt77hias.github.io/assets/Publications/Moulin2015-1/">
+		<link rel="manifest"      href="../../../manifest.json">
+		<link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Efficient Visibility Heuristics for kd-trees Using the RTSAH","author":[{"@type":"Person","name":"Matthias Moulin"},{"@type":"Person","name":"Niels Billen"},{"@type":"Person","name":"Philip Dutr\u00e9"}],"datePublished":"2015-06","publisher":{"@type":"Organization","name":"The Eurographics Association"},"url":"https://matt77hias.github.io/assets/Publications/Moulin2015-1/"}</script>
+		<link rel="preconnect"    href="https://www.googletagmanager.com">
+		<link rel="dns-prefetch"  href="https://www.googletagmanager.com">
+		<link rel="stylesheet"    href="../../../src/css/tokens.css">
+		<link rel="stylesheet"    href="../../../src/css/publication-page.css">
+		<link rel="stylesheet"    href="../../../src/css/profile.css">
+		<script src="../../../src/js/theme-init.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SD3ZFZNHLD"></script>
+		<script src="../../../src/js/google-analytics.js"></script>
+	</head>
+
+	<body id="pub">
+		<a class="skip-link" href="#pub-main">Skip to content</a>
+
+		<main id="pub-main" tabindex="-1">
+			<article>
+				<p class="pub-venue">Eurographics Symposium on Rendering &mdash; Experimental Ideas &amp; Implementations, June 2015</p>
+				<h2 class="pub-title">Efficient Visibility Heuristics for kd-trees Using the RTSAH</h2>
+				<div class="pub-authors">
+					<a href="https://matt77hias.github.io" rel="noopener noreferrer">Matthias Moulin</a>
+					<a href="https://nielsbillen.github.io" rel="noopener noreferrer">Niels Billen</a>
+					<a href="https://sites.google.com/site/philipdutre" rel="noopener noreferrer">Philip Dutr&eacute;</a>
+				</div>
+				<p class="pub-affiliation">
+					<a href="https://graphics.cs.kuleuven.be" rel="noopener noreferrer">Computer Graphics Research Group</a>,
+					<a href="https://wms.cs.kuleuven.be/cs/english" rel="noopener noreferrer">Department of Computer Science</a>,
+					<a href="https://www.kuleuven.be/english" rel="noopener noreferrer">KU Leuven</a>
+				</p>
+				<a href="teaser.png"><img src="teaser.png" alt="Teaser figure for Efficient Visibility Heuristics for kd-trees Using the RTSAH" loading="lazy" width="1088" height="544" class="pub-teaser"></a>
+			</article>
+
+			<article>
+				<h2>Abstract</h2>
+				<p class="pub-abstract">Acceleration data structures such as kd-trees aim at reducing the per-ray cost which is crucial for rendering performance. The de-facto standard for constructing kd-trees, the Surface Area Heuristic (SAH), does not take ray termination into account and instead assumes rays never hit a geometric primitive. The Ray Termination Surface Area Heuristic (RTSAH) is a cost metric originally used for determining the traversal order of the voxels for occlusion rays that takes ray termination into account. We adapt this RTSAH to building kd-trees that aim at reducing the per-ray cost of rays. Our build procedure has the same overall computational complexity and considers the same finite set of splitting planes as the SAH. By taking ray termination into account, we favor cutting off child voxels which are not or hardly visible to each other. This results in fundamentally different and more qualitative kd-trees compared to the SAH.</p>
+			</article>
+
+			<article>
+				<h2>Paper and Supplementary Material</h2>
+				<div class="pub-downloads">
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-1/Preprint.pdf" aria-label="Preprint" title="Preprint" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Preprint</span>
+					</a>
+					<a class="pub-download" href="Citation.bib" aria-label="Citation" title="Citation">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-tex"/></svg>
+						<span class="pub-download-label">Citation</span>
+					</a>
+					<a class="pub-download" href="Abstract.txt" aria-label="Abstract" title="Abstract">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-txt"/></svg>
+						<span class="pub-download-label">Abstract</span>
+					</a>
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-1/Presentation.pdf" aria-label="Presentation" title="Presentation" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Presentation</span>
+					</a>
+					<a class="pub-download" href="../../../src/external/pdf.js/web/viewer.html?file=%2F../../assets/Publications/Moulin2015-1/Poster.pdf" aria-label="Poster" title="Poster" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-pdf"/></svg>
+						<span class="pub-download-label">Poster</span>
+					</a>
+					<a class="pub-download" href="https://doi.org/10.2312/sre.20151164" aria-label="DOI" title="DOI" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-link"/></svg>
+						<span class="pub-download-label">DOI</span>
+					</a>
+					<a class="pub-download" href="https://lirias.kuleuven.be/handle/123456789/501514" aria-label="Lirias" title="Lirias" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dl-link"/></svg>
+						<span class="pub-download-label">Lirias</span>
+					</a>
+				</div>
+			</article>
+		</main>
+
+		<footer>
+			<img class="footer-avatar" alt="" width="36" height="36">
+			<p class="copyright"></p>
+		</footer>
+
+		<script type="module" src="../../../src/js/layout.js"></script>
+	</body>
+
+</html>

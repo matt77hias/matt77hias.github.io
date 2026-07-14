@@ -1,0 +1,28 @@
+{
+  "name": "Matthias Moulin",
+  "short_name": "matt77hias",
+  "description": "Personal website of Matthias Moulin, computer graphics researcher and software engineer.",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#34d399",
+  "background_color": "#0a0f1e",
+  "categories": ["portfolio"],
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/Avatar.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/Avatar.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
