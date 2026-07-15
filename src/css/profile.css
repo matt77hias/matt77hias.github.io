@@ -87,15 +87,6 @@
 }
 
 /* ── Icon micro-glitch on hover ──────────────────────────── */
-@keyframes icon-glitch {
-    0%               { transform: translate(0, 0);       filter: none; }
-    20%              { transform: translate(-2px, 0);     filter: drop-shadow(2px 0 0 rgba(255,0,80,0.9)) drop-shadow(-2px 0 0 rgba(0,255,220,0.9)); }
-    40%              { transform: translate(2px, -1px);   filter: drop-shadow(-3px 0 0 rgba(255,0,80,0.7)) drop-shadow(3px 0 0 rgba(0,255,220,0.7)); }
-    60%              { transform: translate(-1px, 1px);   filter: drop-shadow(1px 0 0 rgba(255,220,0,0.8)); }
-    80%              { transform: translate(1px, 0);      filter: drop-shadow(-1px 0 0 rgba(0,255,220,0.6)); }
-    100%             { transform: translate(0, 0);        filter: none; }
-}
-
 .social-link:hover .social-icon {
     animation: icon-glitch 0.25s steps(1) forwards;
 }
@@ -107,5 +98,20 @@
 @media (prefers-reduced-motion: reduce) {
     .social-link:hover .social-icon {
         animation: none;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .profile {
+        overflow-x: visible;
+    }
+
+    .social-list {
+        flex-wrap: wrap;
+        min-width: 0;
+    }
+
+    .social-divider {
+        display: none;
     }
 }

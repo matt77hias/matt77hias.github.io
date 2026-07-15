@@ -173,6 +173,7 @@ async function initFooter()
     const avatar = document.querySelector('footer .footer-avatar');
     if (avatar)
     {
+        avatar.loading = 'lazy';
         avatar.src = rootUrl(site.avatarPath);
         avatar.alt = site.avatarAlt;
     }

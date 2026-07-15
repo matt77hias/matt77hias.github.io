@@ -4,7 +4,8 @@
 
 @font-face {
     font-family: 'regular';
-    src: url('../../assets/fonts/OpenSans-Light.ttf') format('truetype');
+    src: url('../../assets/fonts/OpenSans-Light.woff2') format('woff2'),
+         url('../../assets/fonts/OpenSans-Light.ttf')   format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,7 +13,8 @@
 
 @font-face {
     font-family: 'condensed';
-    src: url('../../assets/fonts/OpenSans-CondLight.ttf') format('truetype');
+    src: url('../../assets/fonts/OpenSans-CondLight.woff2') format('woff2'),
+         url('../../assets/fonts/OpenSans-CondLight.ttf')   format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,7 +22,8 @@
 
 @font-face {
     font-family: 'condensedbold';
-    src: url('../../assets/fonts/OpenSans-CondBold.ttf') format('truetype');
+    src: url('../../assets/fonts/OpenSans-CondBold.woff2') format('woff2'),
+         url('../../assets/fonts/OpenSans-CondBold.ttf')   format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

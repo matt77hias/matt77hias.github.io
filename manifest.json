@@ -15,6 +15,16 @@
     },
     {
       "src": "assets/Avatar.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/Avatar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/Avatar.png",
       "sizes": "1024x1024",
       "type": "image/png"
     },
