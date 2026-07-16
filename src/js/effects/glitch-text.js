@@ -1,8 +1,9 @@
 import { isGlitchDisabled } from './glitch-toggle.js';
 
-function init() {
-const h1 = document.querySelector('header h1');
-if (!h1) return;
+function init()
+{
+    const h1 = document.querySelector('header h1');
+    if (!h1) return;
 
 // ── Slice pool ────────────────────────────────────────────────
 // Each clone covers the full h1 box but is clipped + shifted per frame.
@@ -14,7 +15,8 @@ const redSlices  = [];
 const cyanSlices = [];
 let _slicesReady = false;
 
-function makeClone(extraClass) {
+function makeClone(extraClass)
+{
     const el = document.createElement('h1');
     el.className = 'h1-slice' + (extraClass ? ' ' + extraClass : '');
     el.textContent = h1.textContent;
@@ -24,10 +26,12 @@ function makeClone(extraClass) {
     return el;
 }
 
-function ensureSlices() {
+function ensureSlices()
+{
     if (_slicesReady) return;
     _slicesReady = true;
-    for (let i = 0; i < NUM_SLICES; i++) {
+    for (let i = 0; i < NUM_SLICES; i++)
+    {
         mainSlices.push(makeClone(''));
         redSlices.push(makeClone('h1-slice--red'));
         cyanSlices.push(makeClone('h1-slice--cyan'));
@@ -36,7 +40,8 @@ function ensureSlices() {
 
 // ── Frame state ───────────────────────────────────────────────
 // A "frame state" is an array of slice descriptors so we can hold frames.
-function buildFrameState(totalH) {
+function buildFrameState(totalH)
+{
     // Decide burst intensity: calm (0) or violent (1)
     const violent = Math.random() < 0.35;
 
@@ -47,7 +52,8 @@ function buildFrameState(totalH) {
     // Build non-uniform slice boundaries — thin slices dominate,
     // occasional thick "torn" slices for CP2077 feel
     const bounds = [0];
-    for (let i = 1; i < n; i++) {
+    for (let i = 1; i < n; i++)
+    {
         const prev = bounds[bounds.length - 1];
         const remaining = totalH - prev;
         const slicesLeft = n - i;
@@ -60,7 +66,8 @@ function buildFrameState(totalH) {
 
     const maxShift = violent ? 140 : 55;
 
-    return bounds.slice(0, -1).map((top, i) => {
+    return bounds.slice(0, -1).map((top, i) =>
+    {
         const bottom  = bounds[i + 1];
         const shifted = Math.random() < (violent ? 0.65 : 0.45);
         // Bias towards one side occasionally (like a hard corruption block)
@@ -74,12 +81,15 @@ function buildFrameState(totalH) {
 }
 
 // ── Apply a frame state to the DOM ────────────────────────────
-function applyFrameState(state, totalH) {
+function applyFrameState(state, totalH)
+{
     h1.style.visibility = 'hidden';
 
     const n = state.length;
-    for (let i = 0; i < NUM_SLICES; i++) {
-        if (i >= n) {
+    for (let i = 0; i < NUM_SLICES; i++)
+    {
+        if (i >= n)
+        {
             mainSlices[i].style.display = 'none';
             redSlices[i].style.display  = 'none';
             cyanSlices[i].style.display = 'none';
@@ -98,7 +108,8 @@ function applyFrameState(state, totalH) {
         m.style.transform = dx ? `translateX(${dx}px)` : 'none';
 
         // Chromatic aberration ghosts — only on big shifts
-        if (bigShift) {
+        if (bigShift)
+        {
             const r = redSlices[i];
             r.style.display   = 'block';
             r.style.clipPath  = clip;
@@ -108,16 +119,21 @@ function applyFrameState(state, totalH) {
             c.style.display   = 'block';
             c.style.clipPath  = clip;
             c.style.transform = `translateX(${dx + 7}px)`;
-        } else {
+        }
+        else
+        {
             redSlices[i].style.display  = 'none';
             cyanSlices[i].style.display = 'none';
         }
     }
 }
 
-function clearFrame() {
+function clearFrame()
+{
+    if (!_slicesReady) return;
     h1.style.visibility = '';
-    for (let i = 0; i < NUM_SLICES; i++) {
+    for (let i = 0; i < NUM_SLICES; i++)
+    {
         mainSlices[i].style.display = 'none';
         redSlices[i].style.display  = 'none';
         cyanSlices[i].style.display = 'none';
@@ -128,7 +144,8 @@ function clearFrame() {
 let timer    = null;
 let _stopped = false;
 
-function burst() {
+function burst()
+{
     if (_stopped || isGlitchDisabled()) { clearFrame(); return; }
     ensureSlices();
 
@@ -137,9 +154,11 @@ function burst() {
     const ticks  = 4 + Math.floor(Math.random() * 7);
     let t = 0;
 
-    function nextTick() {
+    function nextTick()
+    {
         if (_stopped) { clearFrame(); return; }
-        if (t >= ticks) {
+        if (t >= ticks)
+        {
             clearFrame();
             scheduleBurst();
             return;
@@ -154,9 +173,11 @@ function burst() {
 
         // Hold same state for extra ticks if holdFor > 1
         let held = 1;
-        function holdStep() {
+        function holdStep()
+        {
             if (_stopped) { clearFrame(); return; }
-            if (held >= holdFor || t >= ticks) {
+            if (held >= holdFor || t >= ticks)
+            {
                 timer = setTimeout(nextTick, interval);
                 return;
             }
@@ -170,7 +191,8 @@ function burst() {
     nextTick();
 }
 
-function scheduleBurst() {
+function scheduleBurst()
+{
     if (_stopped) return;
     // CP2077 cadence: quick double-glitch sometimes, long quiet stretches otherwise
     const roll = Math.random();
@@ -182,28 +204,32 @@ function scheduleBurst() {
     timer = setTimeout(burst, idle);
 }
 
-function stop() {
+function stop()
+{
     _stopped = true;
     clearTimeout(timer);
     timer = null;
     clearFrame();
 }
 
-function resume() {
+function resume()
+{
     _stopped = false;
 }
 
-document.addEventListener('glitch-state-changed', ({ detail }) => {
+document.addEventListener('glitch-state-changed', ({ detail }) =>
+{
     if (detail.disabled) stop();
-    else if (!document.hidden) { ensureSlices(); resume(); scheduleBurst(); }
+    else if (!document.hidden) { stop(); ensureSlices(); resume(); scheduleBurst(); }
 });
 
-document.addEventListener('visibilitychange', () => {
+document.addEventListener('visibilitychange', () =>
+{
     if (document.hidden) stop();
-    else if (!isGlitchDisabled()) { resume(); scheduleBurst(); }
+    else if (!isGlitchDisabled()) { stop(); ensureSlices(); resume(); scheduleBurst(); }
 });
 
-if (!isGlitchDisabled()) scheduleBurst();
+if (!isGlitchDisabled() && !document.hidden) scheduleBurst();
 }
 
 init();

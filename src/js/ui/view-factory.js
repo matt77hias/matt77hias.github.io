@@ -27,5 +27,15 @@ export async function createView(readyFn, config)
         buildControls(slot);
     }
 
-    rebuildItems();
+    try { rebuildItems(); }
+    catch (e)
+    {
+        console.error(`Failed to render ${config.storagePrefix} items:`, e);
+        if (el)
+        {
+            const body = el.querySelector('#item-list-body') ?? el;
+            body.setAttribute('aria-busy', 'false');
+            body.innerHTML = '<p role="alert">Failed to render items.</p>';
+        }
+    }
 }

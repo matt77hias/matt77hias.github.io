@@ -11,7 +11,8 @@ main {
     padding-top: var(--space-lg);
 }
 
-main > article {
+main > article,
+main > section {
     background: var(--color-glass);
     backdrop-filter: var(--blur-glass);
     -webkit-backdrop-filter: var(--blur-glass);
@@ -29,29 +30,34 @@ main > article {
 
 
 /* Only apply hover lift to small articles (Welcome card), not large content containers */
-#home main > article:hover {
+#home main > article:hover,
+#home main > section:hover {
     border-color: var(--color-accent-dim);
     box-shadow: var(--shadow-card-hover);
 }
 
 @media screen and (max-width: 62em) {
-    main > article {
+    main > article,
+    main > section {
         margin-left: var(--space-md);
         margin-right: var(--space-md);
     }
 }
 
 @media screen and (max-width: 38em) {
-    main > article {
+    main > article,
+    main > section {
         padding: var(--space-lg) var(--space-md);
     }
 }
 
-main > article:first-child {
+main > article:first-child,
+main > section:first-child {
     margin-top: 0;
 }
 
-main > article:last-child {
+main > article:last-child,
+main > section:last-child {
     margin-bottom: 0;
 }
 
@@ -115,7 +121,9 @@ h4 {
 
 
 article h1,
-article h2 {
+article h2,
+section h1,
+section h2 {
     border-bottom: 1px solid var(--color-border);
     display: flex;
     align-items: baseline;
@@ -230,7 +238,8 @@ aside.container-item {
 
     body { background: white; color: black; }
 
-    main > article {
+    main > article,
+    main > section {
         backdrop-filter: none;
         background: none;
         border: none;

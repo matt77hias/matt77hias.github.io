@@ -39,7 +39,7 @@ async function loadIconSprite()
         const r = await fetch(rootUrl('assets/icons.svg'));
         if (!r.ok) throw new Error(r.status);
         const contentType = r.headers.get('content-type') || '';
-        if (!contentType.includes('svg') && !contentType.includes('xml') && !contentType.includes('text'))
+        if (!contentType.includes('svg') && !contentType.includes('xml'))
             throw new Error(`Unexpected content-type: ${contentType}`);
         const svg = await r.text();
         const tmp = document.createElement('div');
@@ -77,14 +77,11 @@ function buildHeader()
     if (showGlitch)
     {
         const glitchBtn = document.createElement('button');
-        const glitchDisabled = isGlitchDisabled();
         glitchBtn.id = 'glitch-toggle';
-        const glitchLabel = glitchDisabled ? 'Enable glitch effect' : 'Disable glitch effect';
-        glitchBtn.setAttribute('aria-label',   glitchLabel);
-        glitchBtn.setAttribute('title',        glitchLabel);
-        glitchBtn.setAttribute('data-tooltip', glitchLabel);
-        glitchBtn.setAttribute('aria-pressed', String(glitchDisabled));
-        document.body.classList.toggle('glitch-disabled', glitchDisabled);
+        glitchBtn.setAttribute('aria-label',   'Disable glitch effect');
+        glitchBtn.setAttribute('title',        'Disable glitch effect');
+        glitchBtn.setAttribute('data-tooltip', 'Disable glitch effect');
+        glitchBtn.setAttribute('aria-pressed', 'false');
         glitchBtn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-glitch-wave"/></svg>';
         btns.appendChild(glitchBtn);
     }
@@ -283,9 +280,17 @@ async function initProfile()
         a.className = 'social-link';
         a.setAttribute('aria-label', link.label);
         a.setAttribute('data-tooltip', link.label);
-        const rel = link.rel ? [link.rel, 'noopener', 'noreferrer'] : ['noopener', 'noreferrer'];
-        a.rel = rel.join(' ');
-        if (!NO_NEW_TAB.some(p => cleanUrl.startsWith(p))) a.target = '_blank';
+        const opensNewTab = !NO_NEW_TAB.some(p => cleanUrl.startsWith(p));
+        if (opensNewTab)
+        {
+            const rel = link.rel ? [link.rel, 'noopener', 'noreferrer'] : ['noopener', 'noreferrer'];
+            a.rel = rel.join(' ');
+            a.target = '_blank';
+        }
+        else if (link.rel)
+        {
+            a.rel = link.rel;
+        }
 
         const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
         svg.setAttribute('class', 'social-icon');

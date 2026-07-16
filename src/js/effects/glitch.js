@@ -271,81 +271,96 @@ export function initGlitch(img)
     // ── Glitch levels ──────────────────────────────────────────
 
     const LEVELS = [
-        { idle: [300, 900], fn()
         {
-            drawClean();
-            rgbSplit(rand(3, 8));
-            sliceDisplace(randInt(1, 4), canvas.width * 0.04);
-            memoryDump(randInt(1, 2));
-            scanlines();
-        }},
+            idle: [300, 900],
+            fn()
+            {
+                drawClean();
+                rgbSplit(rand(3, 8));
+                sliceDisplace(randInt(1, 4), canvas.width * 0.04);
+                memoryDump(randInt(1, 2));
+                scanlines();
+            },
+        },
 
-        { idle: [600, 2000], fn()
         {
-            drawClean();
-            rgbSplit(rand(8, 18));
-            sliceDisplace(randInt(3, 8), canvas.width * 0.10);
-            colorBar();
-            memoryDump(randInt(2, 5));
-            if (Math.random() < 0.4) invertStrip();
-            scanlines();
-        }},
+            idle: [600, 2000],
+            fn()
+            {
+                drawClean();
+                rgbSplit(rand(8, 18));
+                sliceDisplace(randInt(3, 8), canvas.width * 0.10);
+                colorBar();
+                memoryDump(randInt(2, 5));
+                if (Math.random() < 0.4) invertStrip();
+                scanlines();
+            },
+        },
 
-        { idle: [1500, 4000], fn()
         {
-            saveFrame();
-            drawClean();
-            rgbSplit(rand(16, 30));
-            sliceDisplace(randInt(6, 14), canvas.width * 0.25);
-            if (Math.random() < 0.5) ghostEcho(rand(0.25, 0.5));
-            colorBar(); colorBar();
-            memoryDump(randInt(5, 10));
-            corruptBlock();
-            invertStrip(); invertStrip();
-            if (Math.random() < 0.4) pixelate(randInt(6, 12));
-            dataCorruptText();
-            scanlines();
-        }},
+            idle: [1500, 4000],
+            fn()
+            {
+                saveFrame();
+                drawClean();
+                rgbSplit(rand(16, 30));
+                sliceDisplace(randInt(6, 14), canvas.width * 0.25);
+                if (Math.random() < 0.5) ghostEcho(rand(0.25, 0.5));
+                colorBar(); colorBar();
+                memoryDump(randInt(5, 10));
+                corruptBlock();
+                invertStrip(); invertStrip();
+                if (Math.random() < 0.4) pixelate(randInt(6, 12));
+                dataCorruptText();
+                scanlines();
+            },
+        },
 
-        { idle: [3000, 7000], fn()
         {
-            saveFrame();
-            drawClean();
-            rgbSplit(rand(28, 48));
-            screenTear();
-            sliceDisplace(randInt(12, 22), canvas.width * 0.45);
-            ghostEcho(rand(0.3, 0.6));
-            for (let i = 0; i < 4; i++) colorBar();
-            memoryDump(randInt(10, 18));
-            for (let i = 0; i < 3; i++) corruptBlock();
-            for (let i = 0; i < 4; i++) invertStrip();
-            interlace();
-            pixelate(randInt(8, 16));
-            dataCorruptText(); dataCorruptText();
-            if (Math.random() < 0.5) channelIsolate();
-            scanlines();
-        }},
+            idle: [3000, 7000],
+            fn()
+            {
+                saveFrame();
+                drawClean();
+                rgbSplit(rand(28, 48));
+                screenTear();
+                sliceDisplace(randInt(12, 22), canvas.width * 0.45);
+                ghostEcho(rand(0.3, 0.6));
+                for (let i = 0; i < 4; i++) colorBar();
+                memoryDump(randInt(10, 18));
+                for (let i = 0; i < 3; i++) corruptBlock();
+                for (let i = 0; i < 4; i++) invertStrip();
+                interlace();
+                pixelate(randInt(8, 16));
+                dataCorruptText(); dataCorruptText();
+                if (Math.random() < 0.5) channelIsolate();
+                scanlines();
+            },
+        },
 
-        { idle: [6000, 14000], fn()
         {
-            saveFrame();
-            drawClean();
-            whiteFlash(rand(0.3, 0.7));
-            rgbSplit(rand(40, 65));
-            vSync();
-            screenTear();
-            sliceDisplace(randInt(18, 30), canvas.width * 0.65);
-            ghostEcho(rand(0.4, 0.7));
-            for (let i = 0; i < 6; i++) colorBar();
-            memoryDump(randInt(18, 28));
-            for (let i = 0; i < 5; i++) corruptBlock();
-            for (let i = 0; i < 6; i++) invertStrip();
-            interlace();
-            pixelate(randInt(12, 22));
-            channelIsolate();
-            for (let i = 0; i < 4; i++) dataCorruptText();
-            scanlines();
-        }},
+            idle: [6000, 14000],
+            fn()
+            {
+                saveFrame();
+                drawClean();
+                whiteFlash(rand(0.3, 0.7));
+                rgbSplit(rand(40, 65));
+                vSync();
+                screenTear();
+                sliceDisplace(randInt(18, 30), canvas.width * 0.65);
+                ghostEcho(rand(0.4, 0.7));
+                for (let i = 0; i < 6; i++) colorBar();
+                memoryDump(randInt(18, 28));
+                for (let i = 0; i < 5; i++) corruptBlock();
+                for (let i = 0; i < 6; i++) invertStrip();
+                interlace();
+                pixelate(randInt(12, 22));
+                channelIsolate();
+                for (let i = 0; i < 4; i++) dataCorruptText();
+                scanlines();
+            },
+        },
     ];
 
     function pickLevel()
@@ -411,9 +426,9 @@ export function initGlitch(img)
     function start()
     {
         if (_started) return;
+        if (!img.parentNode) return;
         _started = true;
 
-        if (!img.parentNode) return;
         sync();
         drawClean();
         scanlines();
@@ -436,7 +451,7 @@ export function initGlitch(img)
             {
                 canvas.style.display = '';
                 img.style.display    = 'none';
-                if (!document.hidden) scheduleGlitch();
+                if (!document.hidden) { cancelPending(); drawClean(); scheduleGlitch(); }
             }
         });
 
@@ -448,6 +463,7 @@ export function initGlitch(img)
             }
             else if (!isGlitchDisabled())
             {
+                cancelPending();
                 drawClean();
                 scheduleGlitch();
             }

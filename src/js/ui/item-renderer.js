@@ -38,16 +38,20 @@ export function setDescription(el, description)
         }
         else if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'A')
         {
-            const a = document.createElement('a');
             const href = node.getAttribute('href') || '';
             if (/^https?:\/\//.test(href))
             {
+                const a = document.createElement('a');
                 a.href = href;
                 a.rel = 'noopener noreferrer';
                 a.target = '_blank';
+                a.textContent = node.textContent;
+                el.appendChild(a);
             }
-            a.textContent = node.textContent;
-            el.appendChild(a);
+            else
+            {
+                el.appendChild(document.createTextNode(node.textContent));
+            }
         }
         // all other element types are dropped
     }

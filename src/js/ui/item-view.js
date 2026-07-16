@@ -22,7 +22,7 @@ function makeThumb(src, alt, className)
     return img;
 }
 
-function buildTileYear(items, year, section, usePlaceholder)
+function buildTileYear(items, section, usePlaceholder)
 {
     const tileGrid = document.createElement('div');
     tileGrid.className = 'item-tile-grid';
@@ -51,19 +51,21 @@ function buildTileYear(items, year, section, usePlaceholder)
     }
 }
 
-function buildCardYear(items, year, section, usePlaceholder)
+function buildCardYear(items, section, usePlaceholder)
 {
     for (const item of items)
     {
         const src = item.thumbnail || (usePlaceholder ? PLACEHOLDER_THUMBNAIL : null);
-        const article = document.createElement('article');
+        const article = document.createElement('div');
         article.className = 'item-thumbnail-view container';
         article.tabIndex = 0;
         article.setAttribute('role', 'link');
         article.setAttribute('aria-label', item.title);
         const _navigate = () =>
         {
-            const _isExternal = item.url.startsWith('http') && !item.url.startsWith(location.origin + '/');
+            let _isExternal = false;
+            try { _isExternal = new URL(item.url, location.href).origin !== location.origin; }
+            catch { _isExternal = false; }
             if (_isExternal) window.open(item.url, '_blank', 'noopener,noreferrer');
             else window.location.href = item.url;
         };
@@ -85,12 +87,12 @@ function buildCardYear(items, year, section, usePlaceholder)
             aside.className = 'container-item';
             article.appendChild(aside);
 
-            const img = makeThumb(src, '', 'item-thumbnail');
+            const img = makeThumb(src, item.title, 'item-thumbnail');
             aside.appendChild(img);
             tintFromThumbnail(article, img, src);
         }
 
-        const content = document.createElement('section');
+        const content = document.createElement('div');
         content.className = 'container-item';
         article.appendChild(content);
 
@@ -184,8 +186,8 @@ function _rebuildSectionView(section, mode)
         if (!child.classList.contains('item-year-heading')) child.remove();
     }
     if (mode === 'list')        buildListYear(meta.items, section);
-    else if (mode === 'tiles')  buildTileYear(meta.items, meta.year, section, meta.usePlaceholder);
-    else                        buildCardYear(meta.items, meta.year, section, meta.usePlaceholder);
+    else if (mode === 'tiles')  buildTileYear(meta.items, section, meta.usePlaceholder);
+    else                        buildCardYear(meta.items, section, meta.usePlaceholder);
 }
 
 function _rebuildAllSections(mode)
@@ -251,8 +253,8 @@ export function buildYearSection(items, year, topAnchorId, usePlaceholder = fals
     if (showHeadings) section.appendChild(buildYearHeading(year, topAnchorId));
 
     if (viewMode === 'list')       buildListYear(items, section);
-    else if (viewMode === 'tiles') buildTileYear(items, year, section, usePlaceholder);
-    else                           buildCardYear(items, year, section, usePlaceholder);
+    else if (viewMode === 'tiles') buildTileYear(items, section, usePlaceholder);
+    else                           buildCardYear(items, section, usePlaceholder);
 }
 
 function _renderEmpty(message)

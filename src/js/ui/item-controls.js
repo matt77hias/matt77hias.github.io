@@ -48,7 +48,8 @@ export function createItemPageController(config)
     const PANEL_FILTER = storagePrefix + 'PanelFilter';
     const PANEL_VIEW   = storagePrefix + 'PanelView';
 
-    let _activeFilter  = (() => {
+    let _activeFilter  = (() =>
+    {
         if (defaultTypeFilter === null) return null;
         let stored; try { stored = localStorage.getItem(storagePrefix + 'Filter'); } catch {}
         const valid = typeFilterOptions.map(o => o.value);
@@ -72,20 +73,20 @@ export function createItemPageController(config)
 
     // Cached Fuse search result for the duration of a single rebuildItems call.
     // Avoids running the same full-set scan multiple times per rebuild.
-    let _searchIds = null;
+    let _searchUrls = null;
 
-    function _getSearchIds()
+    function _getSearchUrls()
     {
         if (!_searchQuery) return null;
-        if (!_searchIds) _searchIds = new Set(_ensureFuse().search(_searchQuery).map(r => r.item));
-        return _searchIds;
+        if (!_searchUrls) _searchUrls = new Set(_ensureFuse().search(_searchQuery).map(r => r.item.url));
+        return _searchUrls;
     }
 
     function _applySearch(items)
     {
-        const ids = _getSearchIds();
-        if (!ids) return items;
-        return items.filter(i => ids.has(i));
+        const urls = _getSearchUrls();
+        if (!urls) return items;
+        return items.filter(i => urls.has(i.url));
     }
 
     function _applyFilters(items)
@@ -109,7 +110,7 @@ export function createItemPageController(config)
 
     function rebuildItems()
     {
-        _searchIds = null;  // reset per-rebuild cache
+        _searchUrls = null;  // reset per-rebuild cache
         clearBuilt();
         if (_yearPillsBar) rebuildYearPills(_yearPillsBar, _getAvailableYears, _selectedYears, rebuildItems);
 

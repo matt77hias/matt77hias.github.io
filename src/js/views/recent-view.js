@@ -39,7 +39,7 @@ async function init()
             const img = document.createElement('img');
             img.className = 'recent-thumbnail';
             img.src = item.thumbnail;
-            img.alt = '';
+            img.alt = item.title;
             img.loading = 'lazy';
 
             imgWrap.appendChild(img);

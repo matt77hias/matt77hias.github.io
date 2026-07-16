@@ -9,7 +9,7 @@ function _compareItems(a, b)
 {
     if (b.year  !== a.year)  return b.year  - a.year;
     if (b.month !== a.month) return b.month - a.month;
-    return (b.title || '').localeCompare(a.title || '');
+    return (a.title || '').localeCompare(b.title || '');
 }
 
 function _indexByYear(map, item)
@@ -27,7 +27,7 @@ function _sortedYears(map)
 function _itemsOfYear(map, year)
 {
     const items = (map[year] ?? []).slice();
-    items.sort((a, b) => b.month - a.month);
+    items.sort(_compareItems);
     return items;
 }
 
@@ -42,68 +42,70 @@ function _fetchJson(url)
 
 // ── Lazy per-dataset loaders ──────────────────────────────────
 
-let _authorsReady = null;
-function _ensureAuthors()
+function _once(fn)
 {
-    if (!_authorsReady)
-        _authorsReady = _fetchJson('data/authors.json').then(authors => { _authors = authors; });
-    return _authorsReady;
+    let p = null;
+    return () =>
+    {
+        if (!p)
+        {
+            p = fn();
+            p.catch(() => { p = null; });
+        }
+        return p;
+    };
 }
 
-let _postsPromise = null;
-export function postsReady()
-{
-    if (!_postsPromise)
-        _postsPromise = Promise.all([_ensureAuthors(), _fetchJson('data/posts.json')])
-            .then(([, posts]) =>
-            {
-                for (const p of posts) _indexByYear(_postsByYear, { ...p, type: 'Post' });
-            });
-    return _postsPromise;
-}
+const _ensureAuthors = _once(() =>
+    _fetchJson('data/authors.json').then(authors => { _authors = authors; })
+);
 
-let _projectsPromise = null;
-export function projectsReady()
+export const postsReady = _once(() =>
 {
-    if (!_projectsPromise)
-        _projectsPromise = Promise.all([_ensureAuthors(), _fetchJson('data/projects.json')])
-            .then(([, projects]) =>
-            {
-                for (const p of projects)
-                {
-                    const item = { ...p, type: 'Project' };
-                    _indexByYear(_projectsByYear, item);
-                    _portfolioItems.push(item);
-                }
-            });
-    return _projectsPromise;
-}
+    _postsByYear = {};
+    return Promise.all([_ensureAuthors(), _fetchJson('data/posts.json')])
+        .then(([, posts]) =>
+        {
+            for (const p of posts) _indexByYear(_postsByYear, { ...p, type: 'Post' });
+        });
+});
 
-let _publicationsPromise = null;
-export function publicationsReady()
+export const projectsReady = _once(() =>
 {
-    if (!_publicationsPromise)
-        _publicationsPromise = Promise.all([_ensureAuthors(), _fetchJson('data/publications.json')])
-            .then(([, publications]) =>
+    _projectsByYear = {};
+    _portfolioItems = _portfolioItems.filter(i => i.type !== 'Project');
+    return Promise.all([_ensureAuthors(), _fetchJson('data/projects.json')])
+        .then(([, projects]) =>
+        {
+            for (const p of projects)
             {
-                for (const p of publications)
-                {
-                    const item = { ...p, type: 'Publication' };
-                    _indexByYear(_publicationsByYear, item);
-                    _portfolioItems.push(item);
-                }
-            });
-    return _publicationsPromise;
-}
+                const item = { ...p, type: 'Project' };
+                _indexByYear(_projectsByYear, item);
+                _portfolioItems.push(item);
+            }
+        });
+});
+
+export const publicationsReady = _once(() =>
+{
+    _publicationsByYear = {};
+    _portfolioItems = _portfolioItems.filter(i => i.type !== 'Publication');
+    return Promise.all([_ensureAuthors(), _fetchJson('data/publications.json')])
+        .then(([, publications]) =>
+        {
+            for (const p of publications)
+            {
+                const item = { ...p, type: 'Publication' };
+                _indexByYear(_publicationsByYear, item);
+                _portfolioItems.push(item);
+            }
+        });
+});
 
 /** Convenience: load all datasets (used by portfolio and recent views). */
-let _allReady = null;
-export function allReady()
-{
-    if (!_allReady)
-        _allReady = Promise.all([postsReady(), projectsReady(), publicationsReady()]);
-    return _allReady;
-}
+export const allReady = _once(() =>
+    Promise.all([postsReady(), projectsReady(), publicationsReady()])
+);
 
 // ── Accessors ─────────────────────────────────────────────────
 

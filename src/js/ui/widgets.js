@@ -79,7 +79,6 @@ export function buildReadOnlyPillGroup(container, label, options, activeKey)
         if (icon) { btn.innerHTML = icon + text; } else { btn.textContent = text; }
         btn.dataset.value = value;
         btn.disabled = true;
-        btn.setAttribute('aria-disabled', 'true');
         btn.setAttribute('aria-pressed', String(value === activeKey()));
         if (value === activeKey()) btn.classList.add('active');
         bar.appendChild(btn);
@@ -127,7 +126,7 @@ export function rebuildYearPills(container, getAvailableYears, selectedYears, on
     {
         if (!available.has(y)) { selectedYears.delete(y); staleCleared = true; }
     }
-    if (staleCleared) { onChange(); return; }
+    if (staleCleared) { onChange(); return; }  // onChange rebuilds pills; focus lost intentionally
 
     const allBtn = document.createElement('button');
     allBtn.className = 'filter-pill';
@@ -179,7 +178,6 @@ export function buildYearPillsUI(container, getAvailableYears, selectedYears, on
     wrapper.className = 'pill-group';
 
     const lbl = document.createElement('span');
-    lbl.id = 'year-pills-label';
     lbl.className = 'pill-group-label';
     lbl.textContent = 'Years';
     wrapper.appendChild(lbl);
@@ -187,7 +185,7 @@ export function buildYearPillsUI(container, getAvailableYears, selectedYears, on
     const bar = document.createElement('div');
     bar.className = 'filter-pills';
     bar.setAttribute('role', 'group');
-    bar.setAttribute('aria-labelledby', 'year-pills-label');
+    bar.setAttribute('aria-label', 'Years');
 
     rebuildYearPills(bar, getAvailableYears, selectedYears, onChange);
 
@@ -233,6 +231,7 @@ export function buildCollapsibleControls(defs, container)
         const isOpen = safeGet(def.key, null) !== 'closed';
 
         const tab = document.createElement('button');
+        tab.id = def.key + '-tab';
         tab.className = 'ctrl-tab' + (isOpen ? ' open' : '');
         tab.setAttribute('aria-expanded', String(isOpen));
         tab.setAttribute('aria-controls', def.key + '-body');
@@ -251,6 +250,7 @@ export function buildCollapsibleControls(defs, container)
         const body = document.createElement('div');
         body.className = 'ctrl-panel-body' + (isOpen ? ' open' : '');
         body.id = def.key + '-body';
+        body.setAttribute('aria-labelledby', def.key + '-tab');
         def.build(body);
         panelWrap.appendChild(body);
 

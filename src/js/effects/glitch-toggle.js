@@ -29,10 +29,12 @@ export function initGlitchToggle()
     btn.addEventListener('click', () =>
     {
         const disabled = !isGlitchDisabled();
-        try {
+        try
+        {
             if (disabled) localStorage.setItem(GLITCH_KEY, '1');
             else          localStorage.removeItem(GLITCH_KEY);
-        } catch { /* ignore storage errors (e.g. Safari private browsing) */ }
+        }
+        catch { /* ignore storage errors (e.g. Safari private browsing) */ }
         applyGlitchState(btn, disabled);
         document.dispatchEvent(new CustomEvent('glitch-state-changed', { detail: { disabled } }));
     });
